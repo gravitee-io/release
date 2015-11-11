@@ -1,0 +1,92 @@
+{
+    "name" : "Gravitee.IO",
+    "version" : "0.3.0-SNAPSHOT",
+    "buildTimestamp" : "",
+    "scmSshUrl" : "git@github.com:gravitee-io",
+    "scmHttpUrl" : "https://github.com/gravitee-io/",
+    "components" : [
+        {
+            "name" : "gravitee-common",
+            "version" : "0.3.0-SNAPSHOT"
+        },
+        {
+            "name" : "gravitee-definition",
+            "version" : "0.2.0"
+        },
+        {
+            "name" : "gravitee-gateway",
+            "version" : "0.3.0-SNAPSHOT"
+        },
+        {
+            "name" : "gravitee-management-rest-api",
+            "version" : "0.2.0"
+        },
+        {
+            "name" : "gravitee-management-webui",
+            "version" : "0.3.0-SNAPSHOT"
+        },
+        {
+            "name" : "gravitee-plugin-core",
+            "version" : "0.2.0"
+        },
+        {
+            "name" : "gravitee-policy-apikey",
+            "version" : "0.2.0"
+        },
+        {
+            "name" : "gravitee-policy-authentication",
+            "version" : "0.2.0"
+        },
+        {
+            "name" : "gravitee-policy-cors",
+            "version" : "0.2.0"
+        },
+        {
+            "name" : "gravitee-policy-ratelimit",
+            "version" : "0.2.0"
+        },
+        {
+            "name" : "gravitee-reporter-es",
+            "version" : "0.2.0"
+        },
+        {
+            "name" : "gravitee-reporter-file",
+            "version" : "0.2.0"
+        },
+        {
+            "name" : "gravitee-repository",
+            "version" : "0.2.0-SNAPSHOT"
+        },
+        {
+            "name" : "gravitee-repository-jpa",
+            "version" : "0.2.0"
+        },
+        {
+            "name" : "gravitee-repository-mongodb",
+            "version" : "0.2.0"
+        },
+        {
+            "name" : "gravitee-repository-redis",
+            "version" : "0.2.0"
+        }
+    ],
+    "buildDependencies" : [
+        [
+            "gravitee-common", "gravitee-repository"
+        ],
+        [
+            "gravitee-definition", "gravitee-plugin-core"
+        ],
+        [
+            "gravitee-gateway"
+        ],
+        [
+            "gravitee-policy-apikey", "gravitee-policy-authentication", "gravitee-policy-cors", "gravitee-policy-ratelimit",
+            "gravitee-reporter-es", "gravitee-reporter-file", "gravitee-repository-jdbc", "gravitee-repository-mongodb",
+            "gravitee-repository-redis"
+        ],
+        [
+            "gravitee-management-rest-api", "gravitee-management-webui"
+        ]
+    ]
+}
