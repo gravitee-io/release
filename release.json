@@ -11,7 +11,7 @@
         },
         {
             "name" : "gravitee-definition",
-            "version" : "0.3.0-SNAPSHOT"
+            "version" : "0.3.0"
         },
         {
             "name" : "gravitee-gateway",
@@ -27,7 +27,7 @@
         },
         {
             "name" : "gravitee-plugin-core",
-            "version" : "0.3.0-SNAPSHOT"
+            "version" : "0.3.0"
         },
         {
             "name" : "gravitee-policy-apikey",
@@ -63,7 +63,7 @@
         },
         {
             "name" : "gravitee-repository-mongodb",
-            "version" : "0.3.0-SNAPSHOT"
+            "version" : "0.3.0"
         },
         {
             "name" : "gravitee-repository-redis",
