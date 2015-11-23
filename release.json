@@ -68,6 +68,10 @@
         {
             "name" : "gravitee-repository-redis",
             "version" : "0.2.0-SNAPSHOT"
+        },
+        {
+            "name": "gravitee-repository-elasticsearch",
+            "version" : "0.3.0-SNAPSHOT"
         }
     ],
     "buildDependencies" : [
@@ -75,14 +79,14 @@
             "gravitee-common", "gravitee-repository"
         ],
         [
-            "gravitee-definition", "gravitee-plugin-core", "gravitee-repository-jdbc", "gravitee-repository-mongodb"
+            "gravitee-definition", "gravitee-plugin-core", "gravitee-repository-jdbc", "gravitee-repository-mongodb", "gravitee-repository-elasticsearch", "gravitee-repository-redis"
         ],
         [
             "gravitee-gateway"
         ],
         [
             "gravitee-policy-apikey", "gravitee-policy-authentication", "gravitee-policy-cors", "gravitee-policy-ratelimit",
-            "gravitee-reporter-es", "gravitee-reporter-file", "gravitee-repository-redis"
+            "gravitee-reporter-es", "gravitee-reporter-file"
         ],
         [
             "gravitee-management-rest-api", "gravitee-management-webui"
