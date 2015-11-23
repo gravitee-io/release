@@ -58,7 +58,7 @@
             "version" : "0.3.0"
         },
         {
-            "name" : "gravitee-repository-jpa",
+            "name" : "gravitee-repository-jdbc",
             "version" : "0.2.0"
         },
         {
