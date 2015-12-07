@@ -11,27 +11,27 @@
         },
         {
             "name" : "gravitee-definition",
-            "version" : "0.3.0"
+            "version" : "0.4.0-SNAPSHOT"
         },
         {
             "name" : "gravitee-gateway",
-            "version" : "0.3.0"
+            "version" : "0.4.0-SNAPSHOT"
         },
         {
             "name" : "gravitee-management-rest-api",
-            "version" : "0.3.0"
+            "version" : "0.4.0-SNAPSHOT"
         },
         {
             "name" : "gravitee-management-webui",
-            "version" : "0.3.0"
+            "version" : "0.4.0-SNAPSHOT"
         },
         {
             "name" : "gravitee-plugin-core",
-            "version" : "0.3.0"
+            "version" : "0.4.0-SNAPSHOT"
         },
         {
             "name" : "gravitee-policy-apikey",
-            "version" : "0.2.0"
+            "version" : "0.3.0-SNAPSHOT"
         },
         {
             "name" : "gravitee-policy-authentication",
@@ -39,7 +39,7 @@
         },
         {
             "name" : "gravitee-policy-cors",
-            "version" : "0.2.0"
+            "version" : "0.3.0-SNAPSHOT"
         },
         {
             "name" : "gravitee-policy-ratelimit",
@@ -47,7 +47,7 @@
         },
         {
             "name" : "gravitee-reporter-es",
-            "version" : "0.3.0"
+            "version" : "0.4.0-SNAPSHOT"
         },
         {
             "name" : "gravitee-reporter-file",
@@ -55,15 +55,15 @@
         },
         {
             "name" : "gravitee-repository",
-            "version" : "0.3.0"
+            "version" : "0.4.0-SNAPSHOT"
         },
         {
             "name" : "gravitee-repository-jdbc",
-            "version" : "0.3.0"
+            "version" : "0.4.0-SNAPSHOT"
         },
         {
             "name" : "gravitee-repository-mongodb",
-            "version" : "0.3.0"
+            "version" : "0.4.0-SNAPSHOT"
         },
         {
             "name" : "gravitee-repository-redis",
@@ -71,7 +71,7 @@
         },
         {
             "name": "gravitee-repository-elasticsearch",
-            "version" : "0.3.0"
+            "version" : "0.4.0-SNAPSHOT"
         }
     ],
     "buildDependencies" : [
