@@ -18,6 +18,10 @@
             "version" : "0.4.0-SNAPSHOT"
         },
         {
+            "name" : "gravitee-gateway-api",
+            "version" : "0.4.0-SNAPSHOT"
+        },
+        {
             "name" : "gravitee-management-rest-api",
             "version" : "0.4.0-SNAPSHOT"
         },
@@ -27,6 +31,10 @@
         },
         {
             "name" : "gravitee-plugin-core",
+            "version" : "0.4.0-SNAPSHOT"
+        },
+        {
+            "name" : "gravitee-policy-api",
             "version" : "0.4.0-SNAPSHOT"
         },
         {
@@ -44,6 +52,10 @@
         {
             "name" : "gravitee-policy-ratelimit",
             "version" : "0.2.0"
+        },
+        {
+            "name" : "gravitee-reporter-api",
+            "version" : "0.4.0-SNAPSHOT"
         },
         {
             "name" : "gravitee-reporter-es",
@@ -79,7 +91,13 @@
             "gravitee-common", "gravitee-repository"
         ],
         [
-            "gravitee-definition", "gravitee-plugin-core", "gravitee-repository-jdbc", "gravitee-repository-mongodb", "gravitee-repository-elasticsearch", "gravitee-repository-redis"
+            "gravitee-reporter-api", "gravitee-definition", "gravitee-plugin-core", "gravitee-repository-jdbc", "gravitee-repository-mongodb", "gravitee-repository-elasticsearch", "gravitee-repository-redis"
+        ],
+        [
+            "gravitee-gateway-api"
+        ],
+        [
+            "gravitee-policy-api"
         ],
         [
             "gravitee-gateway"
