@@ -91,13 +91,16 @@
             "gravitee-common", "gravitee-repository"
         ],
         [
-            "gravitee-reporter-api", "gravitee-definition", "gravitee-plugin-core", "gravitee-repository-jdbc", "gravitee-repository-mongodb", "gravitee-repository-elasticsearch", "gravitee-repository-redis"
+            "gravitee-reporter-api", "gravitee-definition", "gravitee-repository-jdbc", "gravitee-repository-mongodb", "gravitee-repository-elasticsearch", "gravitee-repository-redis"
         ],
         [
             "gravitee-gateway-api"
         ],
         [
             "gravitee-policy-api"
+        ],
+        [
+            "gravitee-plugin-core"
         ],
         [
             "gravitee-gateway"
