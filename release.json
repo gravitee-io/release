@@ -64,6 +64,10 @@
         {
             "name" : "gravitee-policy-rest-to-soap",
             "version" : "0.1.0-SNAPSHOT"
+        },
+        {
+            "name": "gravitee-policy-transform-queryparameters",
+            "version" : "0.1.0-SNAPSHOT"
         }
         {
             "name" : "gravitee-reporter-api",
@@ -119,7 +123,7 @@
         ],
         [
             "gravitee-policy-apikey", "gravitee-policy-authentication", "gravitee-policy-cors", "gravitee-policy-ratelimit",
-            "gravitee-policy-request-content-limit", "gravitee-policy-transform-headers", "gravitee-policy-rest-to-soap", "gravitee-reporter-es", "gravitee-reporter-file"
+            "gravitee-policy-request-content-limit", "gravitee-policy-transform-headers", "gravitee-policy-rest-to-soap", "gravitee-policy-transform-queryparameters", "gravitee-reporter-es", "gravitee-reporter-file"
         ],
         [
             "gravitee-management-rest-api", "gravitee-management-webui"
