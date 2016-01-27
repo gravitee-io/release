@@ -95,7 +95,7 @@
         },
         {
             "name" : "gravitee-repository-mongodb",
-            "version" : "0.5.0"
+            "version" : "0.6.0-SNAPSHOT"
         },
         {
             "name" : "gravitee-repository-redis",
