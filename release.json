@@ -7,7 +7,7 @@
     "components" : [
         {
             "name" : "gravitee-common",
-            "version" : "0.4.0"
+            "version" : "0.5.0-SNAPSHOT"
         },
         {
             "name" : "gravitee-definition",
@@ -19,11 +19,11 @@
         },
         {
             "name" : "gravitee-gateway-api",
-            "version" : "0.7.0"
+            "version" : "0.8.0-SNAPSHOT"
         },
         {
             "name" : "gravitee-management-rest-api",
-            "version" : "0.7.0"
+            "version" : "0.8.0-SNAPSHOT"
         },
         {
             "name" : "gravitee-management-webui",
@@ -31,7 +31,7 @@
         },
         {
             "name" : "gravitee-plugin-core",
-            "version" : "0.5.0"
+            "version" : "0.6.0-SNAPSHOT"
         },
         {
             "name" : "gravitee-policy-api",
@@ -39,7 +39,7 @@
         },
         {
             "name" : "gravitee-policy-apikey",
-            "version" : "0.6.0"
+            "version" : "0.7.0-SNAPSHOT"
         },
         {
             "name" : "gravitee-policy-authentication",
@@ -78,20 +78,24 @@
             "version" : "0.1.0"
         },
         {
+            "name": "gravitee-policy-cache",
+            "version" : "0.1.0-SNAPSHOT"
+        },
+        {
             "name" : "gravitee-reporter-api",
-            "version" : "0.5.0"
+            "version" : "0.6.0-SNAPSHOT"
         },
         {
             "name" : "gravitee-reporter-es",
-            "version" : "0.5.0"
+            "version" : "0.6.0-SNAPSHOT"
         },
         {
             "name" : "gravitee-reporter-file",
-            "version" : "0.3.0"
+            "version" : "0.4.0-SNAPSHOT"
         },
         {
             "name" : "gravitee-repository",
-            "version" : "0.7.0"
+            "version" : "0.8.0-SNAPSHOT"
         },
         {
             "name" : "gravitee-repository-jdbc",
@@ -99,11 +103,11 @@
         },
         {
             "name" : "gravitee-repository-mongodb",
-            "version" : "0.7.0"
+            "version" : "0.8.0-SNAPSHOT"
         },
         {
             "name" : "gravitee-repository-redis",
-            "version" : "0.3.0"
+            "version" : "0.4.0-SNAPSHOT"
         },
         {
             "name": "gravitee-repository-elasticsearch",
@@ -132,7 +136,7 @@
         [
             "gravitee-policy-apikey", "gravitee-policy-authentication", "gravitee-policy-cors", "gravitee-policy-ratelimit",
             "gravitee-policy-request-content-limit", "gravitee-policy-transformheaders", "gravitee-policy-rest-to-soap",
-            "gravitee-policy-transformqueryparams", "gravitee-policy-ipfiltering", "gravitee-policy-mock",
+            "gravitee-policy-transformqueryparams", "gravitee-policy-ipfiltering", "gravitee-policy-mock", "gravitee-policy-cache"
             "gravitee-reporter-es", "gravitee-reporter-file"
         ],
         [
