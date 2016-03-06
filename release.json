@@ -136,7 +136,7 @@
         [
             "gravitee-policy-apikey", "gravitee-policy-authentication", "gravitee-policy-cors", "gravitee-policy-ratelimit",
             "gravitee-policy-request-content-limit", "gravitee-policy-transformheaders", "gravitee-policy-rest-to-soap",
-            "gravitee-policy-transformqueryparams", "gravitee-policy-ipfiltering", "gravitee-policy-mock", "gravitee-policy-cache"
+            "gravitee-policy-transformqueryparams", "gravitee-policy-ipfiltering", "gravitee-policy-mock", "gravitee-policy-cache",
             "gravitee-reporter-es", "gravitee-reporter-file"
         ],
         [
