@@ -1,6 +1,6 @@
 {
     "name" : "Gravitee.IO",
-    "version" : "0.9.0-SNAPSHOT",
+    "version" : "0.8.2-SNAPSHOT",
     "buildTimestamp" : "",
     "scmSshUrl" : "git@github.com:gravitee-io",
     "scmHttpUrl" : "https://github.com/gravitee-io/",
@@ -40,10 +40,6 @@
         {
             "name" : "gravitee-policy-apikey",
             "version" : "0.7.0"
-        },
-        {
-            "name" : "gravitee-policy-authentication",
-            "version" : "0.1.0"
         },
         {
             "name" : "gravitee-policy-cors",
@@ -134,7 +130,7 @@
             "gravitee-gateway"
         ],
         [
-            "gravitee-policy-apikey", "gravitee-policy-authentication", "gravitee-policy-cors", "gravitee-policy-ratelimit",
+            "gravitee-policy-apikey", "gravitee-policy-cors", "gravitee-policy-ratelimit",
             "gravitee-policy-request-content-limit", "gravitee-policy-transformheaders", "gravitee-policy-rest-to-soap",
             "gravitee-policy-transformqueryparams", "gravitee-policy-ipfiltering", "gravitee-policy-mock", "gravitee-policy-cache",
             "gravitee-reporter-es", "gravitee-reporter-file"
