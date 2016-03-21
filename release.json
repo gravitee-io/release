@@ -102,6 +102,10 @@
             "version" : "0.9.0-SNAPSHOT"
         },
         {
+            "name" : "gravitee-repository-test",
+            "version" : "0.1.0-SNAPSHOT"
+        },
+        {
             "name" : "gravitee-repository-jdbc",
             "version" : "0.3.0"
         },
@@ -120,7 +124,7 @@
     ],
     "buildDependencies" : [
         [
-            "gravitee-common", "gravitee-repository"
+            "gravitee-common", "gravitee-repository", "gravitee-repository-test"
         ],
         [
             "gravitee-reporter-api", "gravitee-definition", "gravitee-repository-jdbc", "gravitee-repository-mongodb", "gravitee-repository-elasticsearch", "gravitee-repository-redis"
