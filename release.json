@@ -36,7 +36,7 @@
         {
             "name" : "gravitee-policy-api",
             "version" : "0.6.0"
-        },ca
+        },
         {
             "name" : "gravitee-policy-apikey",
             "version" : "0.8.0"
