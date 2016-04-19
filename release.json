@@ -7,7 +7,7 @@
     "components": [
         {
             "name": "gravitee-common",
-            "version": "0.6.0"
+            "version": "0.7.0-SNAPSHOT"
         },
         {
             "name": "gravitee-definition",
@@ -15,7 +15,7 @@
         },
         {
             "name": "gravitee-gateway",
-            "version": "0.10.0"
+            "version": "0.11.0-SNAPSHOT"
         },
         {
             "name": "gravitee-gateway-api",
@@ -23,19 +23,23 @@
         },
         {
             "name": "gravitee-management-rest-api",
-            "version": "0.10.0"
+            "version": "0.11.0-SNAPSHOT"
         },
         {
             "name": "gravitee-management-webui",
-            "version": "0.10.0"
+            "version": "0.11.0-SNAPSHOT"
         },
         {
             "name": "gravitee-plugin-core",
-            "version": "0.9.0"
+            "version": "0.10.0-SNAPSHOT"
+        },
+        {
+            "name": "gravitee-policy-core",
+            "version": "0.1.0-SNAPSHOT"
         },
         {
             "name": "gravitee-policy-api",
-            "version": "0.6.0"
+            "version": "0.7.0-SNAPSHOT"
         },
         {
             "name": "gravitee-policy-apikey",
@@ -43,7 +47,7 @@
         },
         {
             "name": "gravitee-policy-cors",
-            "version": "0.3.0"
+            "version": "0.4.0-SNAPSHOT"
         },
         {
             "name": "gravitee-policy-ratelimit",
@@ -148,6 +152,7 @@
             "gravitee-policy-api"
         ],
         [
+            "gravitee-policy-core",
             "gravitee-plugin-core"
         ],
         [
