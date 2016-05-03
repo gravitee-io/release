@@ -1,21 +1,21 @@
 {
     "name": "Gravitee.io",
-    "version": "0.12.0-SNAPSHOT",
-    "buildTimestamp": "2016-04-20T22:40:29+0000",
+    "version": "0.12.0",
+    "buildTimestamp": "2016-05-03T23:16:38+0000",
     "scmSshUrl": "git@github.com:gravitee-io",
     "scmHttpUrl": "https://github.com/gravitee-io/",
     "components": [
         {
             "name": "gravitee-common",
-            "version": "0.8.0-SNAPSHOT"
+            "version": "0.8.0"
         },
         {
             "name": "gravitee-definition",
-            "version": "0.10.0-SNAPSHOT"
+            "version": "0.10.0"
         },
         {
             "name": "gravitee-gateway",
-            "version": "0.12.0-SNAPSHOT"
+            "version": "0.12.0"
         },
         {
             "name": "gravitee-gateway-api",
@@ -23,11 +23,11 @@
         },
         {
             "name": "gravitee-management-rest-api",
-            "version": "0.12.0-SNAPSHOT"
+            "version": "0.12.0"
         },
         {
             "name": "gravitee-management-webui",
-            "version": "0.12.0-SNAPSHOT"
+            "version": "0.12.0"
         },
         {
             "name": "gravitee-plugin-core",
@@ -39,7 +39,7 @@
         },
         {
             "name": "gravitee-policy-api",
-            "version": "0.8.0-SNAPSHOT"
+            "version": "0.8.0"
         },
         {
             "name": "gravitee-policy-apikey",
@@ -91,11 +91,11 @@
         },
         {
             "name": "gravitee-reporter-api",
-            "version": "0.7.0-SNAPSHOT"
+            "version": "0.7.0"
         },
         {
             "name": "gravitee-reporter-es",
-            "version": "0.9.0-SNAPSHOT"
+            "version": "0.9.0"
         },
         {
             "name": "gravitee-reporter-file",
@@ -103,7 +103,7 @@
         },
         {
             "name": "gravitee-repository",
-            "version": "0.11.0-SNAPSHOT"
+            "version": "0.11.0"
         },
         {
             "name": "gravitee-repository-test",
@@ -123,7 +123,7 @@
         },
         {
             "name": "gravitee-repository-elasticsearch",
-            "version": "0.7.0-SNAPSHOT"
+            "version": "0.7.0"
         },
         {
             "name": "gravitee-repository-ehcache",
