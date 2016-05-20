@@ -1,7 +1,7 @@
 {
     "name": "Gravitee.io",
     "version": "0.13.0-SNAPSHOT",
-    "buildTimestamp": "2016-05-20T21:22:57+0000",
+    "buildTimestamp": "2016-05-20T21:58:36+0000",
     "scmSshUrl": "git@github.com:gravitee-io",
     "scmHttpUrl": "https://github.com/gravitee-io/",
     "components": [
@@ -15,11 +15,11 @@
         },
         {
             "name": "gravitee-gateway",
-            "version": "0.13.0-SNAPSHOT"
+            "version": "0.13.0"
         },
         {
             "name": "gravitee-gateway-api",
-            "version": "0.10.0-SNAPSHOT"
+            "version": "0.10.0"
         },
         {
             "name": "gravitee-management-rest-api",
@@ -27,11 +27,11 @@
         },
         {
             "name": "gravitee-management-webui",
-            "version": "0.13.0-SNAPSHOT"
+            "version": "0.13.0"
         },
         {
             "name": "gravitee-plugin-core",
-            "version": "0.11.0-SNAPSHOT"
+            "version": "0.11.0"
         },
         {
             "name": "gravitee-policy-core",
@@ -79,11 +79,11 @@
         },
         {
             "name": "gravitee-policy-cache",
-            "version": "0.3.0-SNAPSHOT"
+            "version": "0.3.0"
         },
         {
             "name": "gravitee-policy-xslt",
-            "version": "0.2.0-SNAPSHOT"
+            "version": "0.2.0"
         },
         {
             "name": "gravitee-policy-xml-json",
@@ -91,11 +91,11 @@
         },
         {
             "name": "gravitee-policy-oauth2",
-            "version": "0.1.0-SNAPSHOT"
+            "version": "0.1.0"
         },
         {
             "name": "gravitee-policy-html-json",
-            "version": "0.1.0-SNAPSHOT"
+            "version": "0.1.0"
         },
         {
             "name": "gravitee-reporter-api",
