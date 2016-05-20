@@ -1,13 +1,13 @@
 {
     "name": "Gravitee.io",
     "version": "0.13.0-SNAPSHOT",
-    "buildTimestamp": "2016-05-04T07:10:35+0000",
+    "buildTimestamp": "2016-05-20T21:22:57+0000",
     "scmSshUrl": "git@github.com:gravitee-io",
     "scmHttpUrl": "https://github.com/gravitee-io/",
     "components": [
         {
             "name": "gravitee-common",
-            "version": "0.9.0-SNAPSHOT"
+            "version": "0.9.0"
         },
         {
             "name": "gravitee-definition",
@@ -111,7 +111,7 @@
         },
         {
             "name": "gravitee-repository",
-            "version": "0.12.0-SNAPSHOT"
+            "version": "0.12.0"
         },
         {
             "name": "gravitee-repository-test",
@@ -123,7 +123,7 @@
         },
         {
             "name": "gravitee-repository-mongodb",
-            "version": "0.10.0-SNAPSHOT"
+            "version": "0.10.0"
         },
         {
             "name": "gravitee-repository-redis",
