@@ -94,6 +94,10 @@
             "version": "0.1.0"
         },
         {
+            "name": "gravitee-policy-groovy",
+            "version": "0.1.0-SNAPSHOT"
+        },
+        {
             "name": "gravitee-reporter-api",
             "version": "0.7.0"
         },
@@ -191,6 +195,7 @@
             "gravitee-policy-xml-json",
             "gravitee-policy-oauth2",
             "gravitee-policy-html-json",
+            "gravitee-policy-groovy",
             "gravitee-reporter-es",
             "gravitee-reporter-file"
         ],
