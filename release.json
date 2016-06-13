@@ -7,11 +7,11 @@
     "components": [
         {
             "name": "gravitee-common",
-            "version": "0.9.0"
+            "version": "0.10.0-SNAPSHOT"
         },
         {
             "name": "gravitee-definition",
-            "version": "0.11.0"
+            "version": "0.12.0-SNAPSHOT"
         },
         {
             "name": "gravitee-gateway",
@@ -23,7 +23,7 @@
         },
         {
             "name": "gravitee-management-rest-api",
-            "version": "0.13.2"
+            "version": "0.14.0-SNAPSHOT"
         },
         {
             "name": "gravitee-management-webui",
@@ -31,11 +31,7 @@
         },
         {
             "name": "gravitee-plugin-core",
-            "version": "0.11.0"
-        },
-        {
-            "name": "gravitee-policy-core",
-            "version": "0.1.0"
+            "version": "0.12.0-SNAPSHOT"
         },
         {
             "name": "gravitee-policy-api",
@@ -136,6 +132,18 @@
         {
             "name": "gravitee-repository-ehcache",
             "version": "0.1.0"
+        },
+        {
+            "name": "gravitee-resource-api",
+            "version": "0.1.0-SNAPSHOT"
+        },
+        {
+            "name": "gravitee-resource-cache",
+            "version": "0.1.0-SNAPSHOT"
+        },
+        {
+            "name": "gravitee-resource-oauth2",
+            "version": "0.1.0-SNAPSHOT"
         }
     ],
     "buildDependencies": [
@@ -146,6 +154,7 @@
         ],
         [
             "gravitee-reporter-api",
+            "gravitee-resource-api",
             "gravitee-definition",
             "gravitee-repository-jdbc",
             "gravitee-repository-mongodb",
@@ -160,13 +169,14 @@
             "gravitee-policy-api"
         ],
         [
-            "gravitee-policy-core",
             "gravitee-plugin-core"
         ],
         [
             "gravitee-gateway"
         ],
         [
+            "gravitee-resource-cache",
+            "gravitee-resource-oauth2",
             "gravitee-policy-apikey",
             "gravitee-policy-cors",
             "gravitee-policy-ratelimit",
