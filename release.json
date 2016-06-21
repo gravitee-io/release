@@ -11,23 +11,23 @@
         },
         {
             "name": "gravitee-definition",
-            "version": "0.12.0"
+            "version": "0.13.0-SNAPSHOT"
         },
         {
             "name": "gravitee-gateway",
-            "version": "0.14.1"
+            "version": "0.15.0-SNAPSHOT"
         },
         {
             "name": "gravitee-gateway-api",
-            "version": "0.11.0"
+            "version": "0.12.0-SNAPSHOT"
         },
         {
             "name": "gravitee-management-rest-api",
-            "version": "0.14.1"
+            "version": "0.15.0-SNAPSHOT"
         },
         {
             "name": "gravitee-management-webui",
-            "version": "0.14.0"
+            "version": "0.15.0-SNAPSHOT"
         },
         {
             "name": "gravitee-plugin-core",
@@ -96,6 +96,10 @@
         {
             "name": "gravitee-policy-groovy",
             "version": "0.1.0"
+        },
+        {
+            "name": "gravitee-policy-dynamic-routing",
+            "version": "0.1.0-SNAPSHOT"
         },
         {
             "name": "gravitee-reporter-api",
@@ -191,6 +195,7 @@
             "gravitee-policy-oauth2",
             "gravitee-policy-html-json",
             "gravitee-policy-groovy",
+            "gravitee-policy-dynamic-routing",
             "gravitee-reporter-es",
             "gravitee-reporter-file"
         ],
