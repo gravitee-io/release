@@ -148,6 +148,10 @@
         {
             "name": "gravitee-resource-oauth2",
             "version": "0.1.0"
+        },
+        {
+            "name": "gravitee-oauth2-server",
+            "version": "1.0.0"
         }
     ],
     "buildDependencies": [
@@ -200,6 +204,7 @@
             "gravitee-reporter-file"
         ],
         [
+            "gravitee-oauth2-server",
             "gravitee-management-rest-api",
             "gravitee-management-webui"
         ]
