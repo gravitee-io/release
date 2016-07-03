@@ -152,6 +152,10 @@
         {
             "name": "gravitee-oauth2-server",
             "version": "1.0.0"
+        },
+        {
+            "name": "gravitee-fetcher-api",
+            "version": "0.1.0-SNAPSHOT"
         }
     ],
     "buildDependencies": [
@@ -167,7 +171,8 @@
             "gravitee-repository-mongodb",
             "gravitee-repository-elasticsearch",
             "gravitee-repository-redis",
-            "gravitee-repository-ehcache"
+            "gravitee-repository-ehcache",
+            "gravitee-fetcher-api"
         ],
         [
             "gravitee-gateway-api"
