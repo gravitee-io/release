@@ -102,6 +102,10 @@
             "version": "0.2.0-SNAPSHOT"
         },
         {
+            "name": "gravitee-policy-logging",
+            "version": "0.1.0-SNAPSHOT"
+        },
+        {
             "name": "gravitee-reporter-api",
             "version": "0.9.0-SNAPSHOT"
         },
@@ -205,6 +209,7 @@
             "gravitee-policy-html-json",
             "gravitee-policy-groovy",
             "gravitee-policy-dynamic-routing",
+            "gravitee-policy-logging",
             "gravitee-reporter-es",
             "gravitee-reporter-file"
         ],
