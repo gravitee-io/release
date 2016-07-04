@@ -59,7 +59,7 @@
         },
         {
             "name": "gravitee-policy-rest-to-soap",
-            "version": "0.5.0"
+            "version": "0.6.0-SNAPSHOT"
         },
         {
             "name": "gravitee-policy-transformqueryparams",
@@ -75,7 +75,7 @@
         },
         {
             "name": "gravitee-policy-cache",
-            "version": "0.4.0"
+            "version": "0.5.0-SNAPSHOT"
         },
         {
             "name": "gravitee-policy-xslt",
