@@ -31,7 +31,7 @@
         },
         {
             "name": "gravitee-plugin-core",
-            "version": "0.13.0-SNAPSHOT"
+            "version": "0.12.0"
         },
         {
             "name": "gravitee-policy-api",
@@ -71,7 +71,7 @@
         },
         {
             "name": "gravitee-policy-mock",
-            "version": "0.3.0"
+            "version": "0.4.0-SNAPSHOT"
         },
         {
             "name": "gravitee-policy-cache",
@@ -87,7 +87,7 @@
         },
         {
             "name": "gravitee-policy-oauth2",
-            "version": "0.2.0"
+            "version": "0.3.0-SNAPSHOT"
         },
         {
             "name": "gravitee-policy-html-json",
@@ -156,10 +156,6 @@
         {
             "name": "gravitee-oauth2-server",
             "version": "1.0.0"
-        },
-        {
-            "name": "gravitee-fetcher-api",
-            "version": "0.1.0-SNAPSHOT"
         }
     ],
     "buildDependencies": [
@@ -175,8 +171,7 @@
             "gravitee-repository-mongodb",
             "gravitee-repository-elasticsearch",
             "gravitee-repository-redis",
-            "gravitee-repository-ehcache",
-            "gravitee-fetcher-api"
+            "gravitee-repository-ehcache"
         ],
         [
             "gravitee-gateway-api"
