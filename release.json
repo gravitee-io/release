@@ -1,7 +1,7 @@
 {
     "name": "Gravitee.io",
-    "version": "0.16.0-SNAPSHOT",
-    "buildTimestamp": "2016-06-21T17:33:05+0000",
+    "version": "0.16.0",
+    "buildTimestamp": "2016-07-05T09:01:24+0000",
     "scmSshUrl": "git@github.com:gravitee-io",
     "scmHttpUrl": "https://github.com/gravitee-io/",
     "components": [
@@ -11,23 +11,23 @@
         },
         {
             "name": "gravitee-definition",
-            "version": "0.14.0-SNAPSHOT"
+            "version": "0.14.0"
         },
         {
             "name": "gravitee-gateway",
-            "version": "0.16.0-SNAPSHOT"
+            "version": "0.16.0"
         },
         {
             "name": "gravitee-gateway-api",
-            "version": "0.13.0-SNAPSHOT"
+            "version": "0.13.0"
         },
         {
             "name": "gravitee-management-rest-api",
-            "version": "0.16.0-SNAPSHOT"
+            "version": "0.16.0"
         },
         {
             "name": "gravitee-management-webui",
-            "version": "0.16.0-SNAPSHOT"
+            "version": "0.16.0"
         },
         {
             "name": "gravitee-plugin-core",
@@ -59,7 +59,7 @@
         },
         {
             "name": "gravitee-policy-rest-to-soap",
-            "version": "0.6.0-SNAPSHOT"
+            "version": "0.6.0"
         },
         {
             "name": "gravitee-policy-transformqueryparams",
@@ -71,15 +71,15 @@
         },
         {
             "name": "gravitee-policy-mock",
-            "version": "0.4.0-SNAPSHOT"
+            "version": "0.4.0"
         },
         {
             "name": "gravitee-policy-cache",
-            "version": "0.5.0-SNAPSHOT"
+            "version": "0.5.0"
         },
         {
             "name": "gravitee-policy-xslt",
-            "version": "0.4.0-SNAPSHOT"
+            "version": "0.4.0"
         },
         {
             "name": "gravitee-policy-xml-json",
@@ -87,7 +87,7 @@
         },
         {
             "name": "gravitee-policy-oauth2",
-            "version": "0.3.0-SNAPSHOT"
+            "version": "0.3.0"
         },
         {
             "name": "gravitee-policy-html-json",
@@ -99,19 +99,19 @@
         },
         {
             "name": "gravitee-policy-dynamic-routing",
-            "version": "0.2.0-SNAPSHOT"
+            "version": "0.2.0"
         },
         {
             "name": "gravitee-policy-logging",
-            "version": "0.1.0-SNAPSHOT"
+            "version": "0.1.0"
         },
         {
             "name": "gravitee-reporter-api",
-            "version": "0.9.0-SNAPSHOT"
+            "version": "0.9.0"
         },
         {
             "name": "gravitee-reporter-es",
-            "version": "0.11.0-SNAPSHOT"
+            "version": "0.11.0"
         },
         {
             "name": "gravitee-reporter-file",
