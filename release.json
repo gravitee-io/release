@@ -161,7 +161,9 @@
     "buildDependencies": [
         [
             "gravitee-common",
-            "gravitee-repository",
+            "gravitee-repository"
+        ],
+        [
             "gravitee-repository-test"
         ],
         [
