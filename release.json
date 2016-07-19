@@ -164,6 +164,10 @@
         {
             "name": "gravitee-fetcher-http",
             "version": "0.1.0-SNAPSHOT"
+        },
+        {
+            "name": "gravitee-fetcher-git",
+            "version": "0.1.0-SNAPSHOT"
         }
     ],
     "buildDependencies": [
@@ -218,7 +222,8 @@
             "gravitee-policy-logging",
             "gravitee-reporter-es",
             "gravitee-reporter-file",
-            "gravitee-fetcher-http"
+            "gravitee-fetcher-http",
+            "gravitee-fetcher-git"
         ],
         [
             "gravitee-oauth2-server",
