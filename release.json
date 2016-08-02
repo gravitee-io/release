@@ -1,7 +1,7 @@
 {
     "name": "Gravitee.io",
-    "version": "0.18.0-SNAPSHOT",
-    "buildTimestamp": "2016-08-02T11:12:25+0000",
+    "version": "0.18.0",
+    "buildTimestamp": "2016-08-02T11:27:25+0000",
     "scmSshUrl": "git@github.com:gravitee-io",
     "scmHttpUrl": "https://github.com/gravitee-io/",
     "components": [
@@ -15,7 +15,7 @@
         },
         {
             "name": "gravitee-gateway",
-            "version": "0.18.0-SNAPSHOT"
+            "version": "0.18.0"
         },
         {
             "name": "gravitee-gateway-api",
@@ -23,11 +23,11 @@
         },
         {
             "name": "gravitee-management-rest-api",
-            "version": "0.18.0-SNAPSHOT"
+            "version": "0.18.0"
         },
         {
             "name": "gravitee-management-webui",
-            "version": "0.18.0-SNAPSHOT"
+            "version": "0.18.0"
         },
         {
             "name": "gravitee-plugin",
@@ -59,7 +59,7 @@
         },
         {
             "name": "gravitee-policy-rest-to-soap",
-            "version": "0.7.0-SNAPSHOT"
+            "version": "0.7.0"
         },
         {
             "name": "gravitee-policy-transformqueryparams",
@@ -71,7 +71,7 @@
         },
         {
             "name": "gravitee-policy-mock",
-            "version": "0.5.0-SNAPSHOT"
+            "version": "0.5.0"
         },
         {
             "name": "gravitee-policy-cache",
@@ -107,7 +107,7 @@
         },
         {
             "name": "gravitee-policy-jwt",
-            "version": "0.1.0-SNAPSHOT"
+            "version": "0.1.0"
         },
         {
             "name": "gravitee-reporter-api",
@@ -147,7 +147,7 @@
         },
         {
             "name": "gravitee-repository-hazelcast",
-            "version": "0.1.0-SNAPSHOT"
+            "version": "0.1.0"
         },
         {
             "name": "gravitee-resource-api",
