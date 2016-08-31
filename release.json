@@ -15,7 +15,7 @@
         },
         {
             "name": "gravitee-gateway",
-            "version": "0.18.0"
+            "version": "0.19.0-SNAPSHOT"
         },
         {
             "name": "gravitee-gateway-api",
@@ -23,11 +23,11 @@
         },
         {
             "name": "gravitee-management-rest-api",
-            "version": "0.18.0"
+            "version": "0.19.0-SNAPSHOT"
         },
         {
             "name": "gravitee-management-webui",
-            "version": "0.18.0"
+            "version": "0.19.0-SNAPSHOT"
         },
         {
             "name": "gravitee-plugin",
@@ -43,7 +43,7 @@
         },
         {
             "name": "gravitee-policy-cors",
-            "version": "0.5.0"
+            "version": "0.6.0-SNAPSHOT"
         },
         {
             "name": "gravitee-policy-ratelimit",
