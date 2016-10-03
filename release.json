@@ -1,7 +1,7 @@
 {
     "name": "Gravitee.io",
-    "version": "0.19.1-SNAPSHOT",
-    "buildTimestamp": "2016-09-07T10:20:34+0000",
+    "version": "0.19.1",
+    "buildTimestamp": "2016-10-03T20:22:36+0000",
     "scmSshUrl": "git@github.com:gravitee-io",
     "scmHttpUrl": "https://github.com/gravitee-io/",
     "components": [
@@ -15,7 +15,7 @@
         },
         {
             "name": "gravitee-gateway",
-            "version": "0.19.1-SNAPSHOT"
+            "version": "0.19.1"
         },
         {
             "name": "gravitee-gateway-api",
@@ -27,7 +27,7 @@
         },
         {
             "name": "gravitee-management-webui",
-            "version": "0.19.1-SNAPSHOT"
+            "version": "0.19.1"
         },
         {
             "name": "gravitee-plugin",
@@ -55,7 +55,7 @@
         },
         {
             "name": "gravitee-policy-transformheaders",
-            "version": "0.5.0-SNAPSHOT"
+            "version": "0.5.0"
         },
         {
             "name": "gravitee-policy-rest-to-soap",
@@ -63,7 +63,7 @@
         },
         {
             "name": "gravitee-policy-transformqueryparams",
-            "version": "0.4.0-SNAPSHOT"
+            "version": "0.4.0"
         },
         {
             "name": "gravitee-policy-ipfiltering",
@@ -139,7 +139,7 @@
         },
         {
             "name": "gravitee-repository-elasticsearch",
-            "version": "0.12.0-SNAPSHOT"
+            "version": "0.12.0"
         },
         {
             "name": "gravitee-repository-ehcache",
