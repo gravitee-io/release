@@ -3,12 +3,17 @@
 == Repository
 === Mongodb
 We have refactored how Gravitee.io manages memberships.
-If you have a 0.x.x version of Gravitee.io using the Mongodb Repositoy, you have 2 scripts to run to migrate your datas.
+If you have a 0.x.x version of Gravitee.io using the Mongodb Repository, you have to run 2 scripts to migrate your datas.
+
+Before running any script, please create a dump of your existing database.
 
 upgrades/1.0.0/mongodb/1-copy-members-to-memberships.js::
 This script creates the new `memberships` collection in MongoDB and add all api/application members.
 It does not remove old values from the `apis` and `applications` collections.
 
-upgrades/1.0.0/mongodb/1-copy-members-to-memberships.js::
+upgrades/1.0.0/mongodb/2-remove-members.js:
 This script removes old datas. **It must be run after** `1-copy-members-to-memberships.js`
+**This operation is irreversible**.
+
+upgrades/1.0.0/mongodb/3-endpoint-configuration.js:
 **This operation is irreversible**.
