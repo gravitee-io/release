@@ -59,7 +59,8 @@ db.apis.find().forEach(
                             path.splice(apiKey, 1);
                         }
                     }
-                    
+
+                    payload.definition = JSON.stringify(definition);
                     db.events.updateOne({ _id: event._id}, {$set: {payload: JSON.stringify(payload)}}, { upsert: true} );
                 }
             }
