@@ -1,9 +1,7 @@
 db.apis.find().forEach(
     function(api) {
-        db.events.find({'properties.api_id': api._id}).sort({'createdAt':-1}).limit(1).forEach(
+        db.events.find({'type': 'PUBLISH_API', 'properties.api_id': api._id}).sort({'createdAt':-1}).limit(1).forEach(
             function(event) {
-                if (event.type === 'PUBLISH_API') {
-
                     var payload = JSON.parse(event.payload);
                     var definition = JSON.parse(payload.definition);
 
@@ -62,7 +60,6 @@ db.apis.find().forEach(
 
                     payload.definition = JSON.stringify(definition);
                     db.events.updateOne({ _id: event._id}, {$set: {payload: JSON.stringify(payload)}}, { upsert: true} );
-                }
             }
         );
     }
