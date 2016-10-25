@@ -10,7 +10,8 @@ db.apis.find().forEach(
                     if (definition.proxy.http !== undefined) {
                         dumpRequest = definition.proxy.http.configuration.dumpRequest;
                     }
-
+		    
+		    if (definition.proxy.endpoints !== undefined) {
                     for (var i = 0 ; i < definition.proxy.endpoints.length ; i++) {
                         var endpoint = definition.proxy.endpoints[i];
                         endpoint.name = 'endpoint_' + i;
@@ -28,10 +29,10 @@ db.apis.find().forEach(
 
                             delete endpoint.http.dumpRequest;
                         }
-
-                        delete definition.proxy.http;
                     }
-
+		    }
+		    
+ 		    delete definition.proxy.http;
                     if (dumpRequest) {
                         definition.proxy.dumpRequest = dumpRequest;
                     }
