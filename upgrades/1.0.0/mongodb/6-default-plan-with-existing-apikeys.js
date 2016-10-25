@@ -14,8 +14,8 @@ db.apis.find().forEach(
         var plan = {
             _id: guid(),
             _class: 'io.gravitee.repository.mongodb.management.internal.model.PlanMongo',
-            name: 'API ' + api.name + ' Plan',
-            description: 'Default API ' + api.name + ' Plan',
+            name: api.name + ' Plan',
+            description: 'Default ' + api.name + ' Plan',
             validation: 'AUTO',
             type: 'API',
             order: new NumberInt(1),
