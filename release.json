@@ -87,7 +87,7 @@
         },
         {
             "name": "gravitee-policy-oauth2",
-            "version": "1.0.0"
+            "version": "1.1.0-SNAPSHOT"
         },
         {
             "name": "gravitee-policy-html-json",
@@ -163,7 +163,7 @@
         },
         {
             "name": "gravitee-resource-oauth2",
-            "version": "1.0.0"
+            "version": "1.1.0-SNAPSHOT"
         },
         {
             "name": "gravitee-oauth2-server",
