@@ -55,7 +55,7 @@
         },
         {
             "name": "gravitee-policy-transformheaders",
-            "version": "1.0.0"
+            "version": "1.1.0-SNAPSHOT"
         },
         {
             "name": "gravitee-policy-rest-to-soap",
