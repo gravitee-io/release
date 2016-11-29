@@ -215,7 +215,9 @@
         ],
         [
             "gravitee-resource-cache",
-            "gravitee-resource-oauth2",
+            "gravitee-resource-oauth2"
+        ],
+        [
             "gravitee-policy-apikey",
             "gravitee-policy-cors",
             "gravitee-policy-ratelimit",
