@@ -1,7 +1,7 @@
 {
     "name": "Gravitee.io",
     "version": "1.1.0-SNAPSHOT",
-    "buildTimestamp": "2016-11-07T20:52:42+0000",
+    "buildTimestamp": "2016-11-29T21:32:10+0000",
     "scmSshUrl": "git@github.com:gravitee-io",
     "scmHttpUrl": "https://github.com/gravitee-io/",
     "components": [
@@ -11,19 +11,19 @@
         },
         {
             "name": "gravitee-definition",
-            "version": "1.1.0-SNAPSHOT"
+            "version": "1.1.0"
         },
         {
             "name": "gravitee-gateway",
-            "version": "1.1.0-SNAPSHOT"
+            "version": "1.1.0"
         },
         {
             "name": "gravitee-gateway-api",
-            "version": "1.1.0-SNAPSHOT"
+            "version": "1.1.0"
         },
         {
             "name": "gravitee-management-rest-api",
-            "version": "1.1.0-SNAPSHOT"
+            "version": "1.1.0"
         },
         {
             "name": "gravitee-management-webui",
@@ -55,7 +55,7 @@
         },
         {
             "name": "gravitee-policy-transformheaders",
-            "version": "1.1.0-SNAPSHOT"
+            "version": "1.1.0"
         },
         {
             "name": "gravitee-policy-rest-to-soap",
@@ -87,7 +87,7 @@
         },
         {
             "name": "gravitee-policy-oauth2",
-            "version": "1.1.0-SNAPSHOT"
+            "version": "1.1.0"
         },
         {
             "name": "gravitee-policy-html-json",
@@ -115,31 +115,31 @@
         },
         {
             "name": "gravitee-reporter-api",
-            "version": "1.1.0-SNAPSHOT"
+            "version": "1.1.0"
         },
         {
             "name": "gravitee-reporter-es",
-            "version": "1.1.0-SNAPSHOT"
+            "version": "1.1.0"
         },
         {
             "name": "gravitee-reporter-file",
-            "version": "1.1.0-SNAPSHOT"
+            "version": "1.1.0"
         },
         {
             "name": "gravitee-repository",
-            "version": "1.1.0-SNAPSHOT"
+            "version": "1.1.0"
         },
         {
             "name": "gravitee-repository-test",
-            "version": "1.1.0-SNAPSHOT"
+            "version": "1.1.0"
         },
         {
             "name": "gravitee-repository-mongodb",
-            "version": "1.1.0-SNAPSHOT"
+            "version": "1.1.0"
         },
         {
             "name": "gravitee-repository-redis",
-            "version": "1.1.0-SNAPSHOT"
+            "version": "1.1.0"
         },
         {
             "name": "gravitee-repository-elasticsearch",
@@ -163,7 +163,7 @@
         },
         {
             "name": "gravitee-resource-oauth2",
-            "version": "1.1.0-SNAPSHOT"
+            "version": "1.1.0"
         },
         {
             "name": "gravitee-oauth2-server",
