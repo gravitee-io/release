@@ -215,6 +215,7 @@
             "gravitee-repository-redis",
             "gravitee-repository-ehcache",
             "gravitee-repository-hazelcast",
+            "gravitee-repository-cassandra",
             "gravitee-fetcher-api"
         ],
         [
@@ -254,6 +255,7 @@
             "gravitee-policy-jwt",
             "gravitee-policy-resource-filtering",
             "gravitee-policy-json-to-json",
+            "gravitee-policy-keyless",
             "gravitee-reporter-es",
             "gravitee-reporter-file",
             "gravitee-fetcher-http",
