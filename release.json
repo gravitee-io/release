@@ -1,13 +1,13 @@
 {
     "name": "Gravitee.io",
     "version": "1.2.0-SNAPSHOT",
-    "buildTimestamp": "2016-11-29T21:41:01+0000",
+    "buildTimestamp": "2017-01-11T00:18:25+0000",
     "scmSshUrl": "git@github.com:gravitee-io",
     "scmHttpUrl": "https://github.com/gravitee-io/",
     "components": [
         {
             "name": "gravitee-common",
-            "version": "1.1.0-SNAPSHOT"
+            "version": "1.1.0"
         },
         {
             "name": "gravitee-definition",
@@ -15,11 +15,11 @@
         },
         {
             "name": "gravitee-gateway",
-            "version": "1.2.0-SNAPSHOT"
+            "version": "1.2.0"
         },
         {
             "name": "gravitee-gateway-api",
-            "version": "1.2.0-SNAPSHOT"
+            "version": "1.2.0"
         },
         {
             "name": "gravitee-management-rest-api",
@@ -39,67 +39,67 @@
         },
         {
             "name": "gravitee-policy-apikey",
-            "version": "1.1.0-SNAPSHOT"
+            "version": "1.1.0"
         },
         {
             "name": "gravitee-policy-cors",
-            "version": "1.1.0-SNAPSHOT"
+            "version": "1.1.0"
         },
         {
             "name": "gravitee-policy-ratelimit",
-            "version": "1.1.0-SNAPSHOT"
+            "version": "1.1.0"
         },
         {
             "name": "gravitee-policy-request-content-limit",
-            "version": "1.1.0-SNAPSHOT"
+            "version": "1.1.0"
         },
         {
             "name": "gravitee-policy-transformheaders",
-            "version": "1.2.0-SNAPSHOT"
+            "version": "1.2.0"
         },
         {
             "name": "gravitee-policy-rest-to-soap",
-            "version": "1.1.0-SNAPSHOT"
+            "version": "1.1.0"
         },
         {
             "name": "gravitee-policy-transformqueryparams",
-            "version": "1.1.0-SNAPSHOT"
+            "version": "1.1.0"
         },
         {
             "name": "gravitee-policy-ipfiltering",
-            "version": "1.1.0-SNAPSHOT"
+            "version": "1.1.0"
         },
         {
             "name": "gravitee-policy-mock",
-            "version": "1.1.0-SNAPSHOT"
+            "version": "1.1.0"
         },
         {
             "name": "gravitee-policy-cache",
-            "version": "1.1.0-SNAPSHOT"
+            "version": "1.1.0"
         },
         {
             "name": "gravitee-policy-xslt",
-            "version": "1.1.0-SNAPSHOT"
+            "version": "1.1.0"
         },
         {
             "name": "gravitee-policy-xml-json",
-            "version": "1.1.0-SNAPSHOT"
+            "version": "1.1.0"
         },
         {
             "name": "gravitee-policy-oauth2",
-            "version": "1.2.0-SNAPSHOT"
+            "version": "1.2.0"
         },
         {
             "name": "gravitee-policy-html-json",
-            "version": "1.1.0-SNAPSHOT"
+            "version": "1.1.0"
         },
         {
             "name": "gravitee-policy-groovy",
-            "version": "1.1.0-SNAPSHOT"
+            "version": "1.1.0"
         },
         {
             "name": "gravitee-policy-dynamic-routing",
-            "version": "1.1.0-SNAPSHOT"
+            "version": "1.1.0"
         },
         {
             "name": "gravitee-policy-logging",
@@ -107,15 +107,15 @@
         },
         {
             "name": "gravitee-policy-jwt",
-            "version": "1.1.0-SNAPSHOT"
+            "version": "1.1.0"
         },
         {
             "name": "gravitee-policy-resource-filtering",
-            "version": "1.1.0-SNAPSHOT"
+            "version": "1.1.0"
         },
         {
             "name": "gravitee-policy-json-to-json",
-            "version": "1.0.0-SNAPSHOT"
+            "version": "1.0.0"
         },
         {
             "name": "gravitee-policy-keyless",
@@ -123,11 +123,11 @@
         },
         {
             "name": "gravitee-reporter-api",
-            "version": "1.2.0-SNAPSHOT"
+            "version": "1.2.0"
         },
         {
             "name": "gravitee-reporter-es",
-            "version": "1.2.0-SNAPSHOT"
+            "version": "1.2.0"
         },
         {
             "name": "gravitee-reporter-file",
@@ -135,19 +135,19 @@
         },
         {
             "name": "gravitee-repository",
-            "version": "1.2.0-SNAPSHOT"
+            "version": "1.2.0"
         },
         {
             "name": "gravitee-repository-test",
-            "version": "1.2.0-SNAPSHOT"
+            "version": "1.2.0"
         },
         {
             "name": "gravitee-repository-mongodb",
-            "version": "1.2.0-SNAPSHOT"
+            "version": "1.2.0"
         },
         {
             "name": "gravitee-repository-redis",
-            "version": "1.2.0-SNAPSHOT"
+            "version": "1.2.0"
         },
         {
             "name": "gravitee-repository-elasticsearch",
@@ -163,7 +163,7 @@
         },
         {
             "name": "gravitee-repository-cassandra",
-            "version": "1.0.0-SNAPSHOT"
+            "version": "1.0.0"
         },
         {
             "name": "gravitee-resource-api",
@@ -171,11 +171,11 @@
         },
         {
             "name": "gravitee-resource-cache",
-            "version": "1.1.0-SNAPSHOT"
+            "version": "1.1.0"
         },
         {
             "name": "gravitee-resource-oauth2",
-            "version": "1.2.0-SNAPSHOT"
+            "version": "1.2.0"
         },
         {
             "name": "gravitee-oauth2-server",
@@ -187,15 +187,15 @@
         },
         {
             "name": "gravitee-fetcher-http",
-            "version": "1.1.0-SNAPSHOT"
+            "version": "1.1.0"
         },
         {
             "name": "gravitee-fetcher-git",
-            "version": "1.1.0-SNAPSHOT"
+            "version": "1.1.0"
         },
         {
             "name": "gravitee-fetcher-gitlab",
-            "version": "1.0.0-SNAPSHOT"
+            "version": "1.0.0"
         }
     ],
     "buildDependencies": [
