@@ -115,7 +115,7 @@
         },
         {
             "name": "gravitee-policy-json-to-json",
-            "version": "1.0.0"
+            "version": "1.1.0-SNAPSHOT"
         },
         {
             "name": "gravitee-policy-keyless",
