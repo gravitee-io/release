@@ -18,14 +18,14 @@ This script removes old datas. **It must be run after** `1-copy-members-to-membe
 upgrades/1.0.0/mongodb/3-endpoint-configuration.js::
 **This operation is irreversible**.
 
-upgrades/1.0.0/mongodb/4-remove-api-key-policy.js
+upgrades/1.0.0/mongodb/4-remove-api-key-policy.js::
 **This operation is irreversible**.
 
-upgrades/1.0.0/mongodb/5-update-published-api.js
+upgrades/1.0.0/mongodb/5-update-published-api.js::
 **This operation is irreversible**.
 
-upgrades/1.0.0/mongodb/6-default-plan-with-existing-apikeys.js
+upgrades/1.0.0/mongodb/6-default-plan-with-existing-apikeys.js::
 **This operation is irreversible**.
 
-upgrades/1.0.0/mongodb/7-copy-views-to-api.js
+upgrades/1.0.0/mongodb/7-copy-views-to-api.js::
 **This operation is irreversible**.
