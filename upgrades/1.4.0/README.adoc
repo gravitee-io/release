@@ -6,8 +6,9 @@
 Before running any script, please create a dump of your existing database.
 
 upgrades/1.4.0/mongodb/1-update-application.js::
-This script create the new `status` attribute on all applications with the default value `ACTIVE`
+This script creates the new `status` attribute on all applications with the default value `ACTIVE`.
 
 upgrades/1.4.0/mongodb/2-create-archived-app.js::
-This script recreate deleted apps with the `status` attribute with the default value `ARCHIVED`
+This script creates deleted apps with `status=ARCHIVED` for each subscriptions where there is no application associated.
 
+ WARNING : edit the script before running it. You have to choose the user owner of the ARCHIVED applications.

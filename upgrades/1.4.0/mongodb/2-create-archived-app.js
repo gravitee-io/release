@@ -28,6 +28,25 @@ subAppIds.forEach(
           updatedAt: now
         }
       );
+
+      /*
+        Applications must have a PRIMARY_OWNER member. 
+        Fill the `userId` attribute with the one you choose.
+        Choose the Administration by defaut.
+       */
+      db.memberships.insertOne(
+        {
+          _id : {
+            userId : "Fill with the user ID",
+            referenceId : appId,
+            referenceType : "APPLICATION"
+          },
+          _class : "io.gravitee.repository.mongodb.management.internal.model.MembershipMongo",
+          type : "PRIMARY_OWNER",
+          createdAt : now,
+          updatedAt : now
+        }
+      );
     }
   }
 );
