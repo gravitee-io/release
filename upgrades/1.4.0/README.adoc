@@ -17,4 +17,4 @@ This script creates the new `status` attribute on all applications with the defa
 upgrades/1.4.0/mongodb/2-create-archived-app.js::
 This script creates deleted apps with `status=ARCHIVED` for each subscriptions where there is no application associated.
 
- WARNING : edit the script before running it. You have to choose the user owner of the ARCHIVED applications.
+ WARNING: edit the script before running it. You have to choose the user owner of the ARCHIVED applications.
