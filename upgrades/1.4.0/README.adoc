@@ -1,5 +1,11 @@
 = Upgrade to 1.4.0
 
+== Portal
+Portal configuration file as been replaced by a new json file named `constants.json` (see https://github.com/gravitee-io/gravitee-management-webui/blob/1.4.0/constants.json). 
+
+This new configuration has exactly the same content as the previous one, minus the platform `version` which is now handle automatically by the portal during the build phase.
+
+
 == Repository
 === Mongodb
 
