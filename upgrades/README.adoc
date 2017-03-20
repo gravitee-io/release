@@ -9,6 +9,9 @@ include::1.0.0/README.adoc[leveloffset=+1]
 endif::[]
 
 ifndef::env-github[]
+
+NOTE: Files specified in this guide can be found at https://github.com/gravitee-io/release/tree/master/upgrades
+
 include::https://raw.githubusercontent.com/gravitee-io/release/master/upgrades/1.4.0/README.adoc[leveloffset=+1]
 
 include::https://raw.githubusercontent.com/gravitee-io/release/master/upgrades/1.1.0/README.adoc[leveloffset=+1]
