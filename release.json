@@ -87,7 +87,7 @@
         },
         {
             "name": "gravitee-policy-oauth2",
-            "version": "1.2.0"
+            "version": "1.3.0-SNAPSHOT"
         },
         {
             "name": "gravitee-policy-html-json",
@@ -175,7 +175,7 @@
         },
         {
             "name": "gravitee-resource-oauth2",
-            "version": "1.2.0"
+            "version": "1.3.0-SNAPSHOT"
         },
         {
             "name": "gravitee-oauth2-server",
@@ -196,7 +196,16 @@
         {
             "name": "gravitee-fetcher-gitlab",
             "version": "1.0.0"
-        }
+        },
+        {
+            "name": "gravitee-resource-oauth2-provider-api",
+            "version": "1.0.0-SNAPSHOT"
+        },
+        {
+            "name": "gravitee-resource-oauth2-provider-am",
+            "version": "1.0.0-SNAPSHOT"
+        },
+        
     ],
     "buildDependencies": [
         [
@@ -225,6 +234,9 @@
             "gravitee-policy-api"
         ],
         [
+            "gravitee-resource-oauth2-provider-api"
+        ],
+        [
             "gravitee-plugin"
         ],
         [
@@ -232,7 +244,8 @@
         ],
         [
             "gravitee-resource-cache",
-            "gravitee-resource-oauth2"
+            "gravitee-resource-oauth2",
+            "gravitee-resource-oauth2-provider-am"
         ],
         [
             "gravitee-policy-apikey",
