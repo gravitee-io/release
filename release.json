@@ -237,7 +237,7 @@
         ],
         [
             "gravitee-gateway",
-            "gravitee-resource-oauth2-provider-api",
+            "gravitee-resource-oauth2-provider-api"
         ],
         [
             "gravitee-resource-cache",
