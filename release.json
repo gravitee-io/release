@@ -236,11 +236,11 @@
             "gravitee-plugin"
         ],
         [
-            "gravitee-gateway"
+            "gravitee-gateway",
+            "gravitee-resource-oauth2-provider-api",
         ],
         [
             "gravitee-resource-cache",
-            "gravitee-resource-oauth2-provider-api",
             "gravitee-resource-oauth2-provider-generic",
             "gravitee-resource-oauth2-provider-am"
         ],
