@@ -1,7 +1,7 @@
 {
     "name": "Gravitee.io",
-    "version": "1.6.0-SNAPSHOT",
-    "buildTimestamp": "2017-05-16T23:57:34+0000",
+    "version": "1.6.0",
+    "buildTimestamp": "2017-05-17T04:46:10+0000",
     "scmSshUrl": "git@github.com:gravitee-io",
     "scmHttpUrl": "https://github.com/gravitee-io/",
     "components": [
@@ -23,7 +23,7 @@
         },
         {
             "name": "gravitee-management-rest-api",
-            "version": "1.6.0-SNAPSHOT"
+            "version": "1.6.0"
         },
         {
             "name": "gravitee-management-webui",
@@ -126,7 +126,7 @@
             "version": "1.4.0"
         },
         {
-            "name": "gravitee-reporter-es",
+            "name": "gravitee-reporter-elasticsearch",
             "version": "1.4.0"
         },
         {
@@ -271,7 +271,7 @@
             "gravitee-policy-resource-filtering",
             "gravitee-policy-json-to-json",
             "gravitee-policy-keyless",
-            "gravitee-reporter-es",
+            "gravitee-reporter-elasticsearch",
             "gravitee-reporter-file",
             "gravitee-fetcher-http",
             "gravitee-fetcher-git",
