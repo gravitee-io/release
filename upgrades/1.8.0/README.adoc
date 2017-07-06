@@ -1,0 +1,9 @@
+= Upgrade to 1.8.0
+
+== Repository
+=== Mongodb
+
+Before running any script, please create a dump of your existing database.
+
+upgrades/1.8.0/mongodb/1-convert-roles.js::
+This script convert old roles to the new customized permissions.
