@@ -1,6 +1,6 @@
 {
     "name": "Gravitee.io",
-    "version": "1.9.0-SNAPSHOT",
+    "version": "1.8.1-SNAPSHOT",
     "buildTimestamp": "2017-07-11T21:34:42+0000",
     "scmSshUrl": "git@github.com:gravitee-io",
     "scmHttpUrl": "https://github.com/gravitee-io/",
@@ -15,7 +15,7 @@
         },
         {
             "name": "gravitee-gateway",
-            "version": "1.8.0"
+            "version": "1.8.1-SNAPSHOT"
         },
         {
             "name": "gravitee-gateway-api",
@@ -23,11 +23,11 @@
         },
         {
             "name": "gravitee-management-rest-api",
-            "version": "1.8.0"
+            "version": "1.8.1-SNAPSHOT"
         },
         {
             "name": "gravitee-management-webui",
-            "version": "1.8.0"
+            "version": "1.8.1-SNAPSHOT"
         },
         {
             "name": "gravitee-plugin",
@@ -199,7 +199,7 @@
         },
         {
             "name": "gravitee-fetcher-http",
-            "version": "1.1.0"
+            "version": "1.2.0-SNAPSHOT"
         },
         {
             "name": "gravitee-fetcher-git",
@@ -207,7 +207,7 @@
         },
         {
             "name": "gravitee-fetcher-gitlab",
-            "version": "1.0.0"
+            "version": "1.1.0-SNAPSHOT"
         }
     ],
     "buildDependencies": [
