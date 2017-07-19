@@ -28,41 +28,44 @@ print("\n\nCreate default memberships");
 db.users.find().forEach(
   function(user) {
     print("    - user = " + user._id);
-    var roles = user.roles;
-    if (roles && roles.length > 0) {
-      var role = roles[0];
-
-      if (user._id === "admin") {
-        role = "ADMIN"
-      } else if (role === "API_CONSUMER") {
-        role = "USER"
-      }
-      print("    - role = " + role);
-      db.memberships.insert( [
-        {
-          _id : {
-            userId : user._id,
-            referenceId : "DEFAULT",
-            referenceType : "MANAGEMENT"
-          },
-          _class : "io.gravitee.repository.mongodb.management.internal.model.MembershipMongo",
-          type : "1:" + role,
-          createdAt : now,
-          updatedAt : now
-        },
-        {
-          _id : {
-            userId : user._id,
-            referenceId : "DEFAULT",
-            referenceType : "PORTAL"
-          },
-          _class : "io.gravitee.repository.mongodb.management.internal.model.MembershipMongo",
-          type : "2:" + role,
-          createdAt : now,
-          updatedAt : now
+    var role = "USER";
+    if (user.roles) {
+      var roles = user.roles;
+      if (roles && roles.length > 0) {
+        role = roles[0];
+        if (role === "API_CONSUMER") {
+          role = "USER"
         }
-      ]);
+      }
     }
+    if (user._id === "admin") {
+      role = "ADMIN"
+    }
+    print("    - role = " + role);
+    db.memberships.insert( [
+      {
+        _id : {
+          userId : user._id,
+          referenceId : "DEFAULT",
+          referenceType : "MANAGEMENT"
+        },
+        _class : "io.gravitee.repository.mongodb.management.internal.model.MembershipMongo",
+        type : "1:" + role,
+        createdAt : now,
+        updatedAt : now
+      },
+      {
+        _id : {
+          userId : user._id,
+          referenceId : "DEFAULT",
+          referenceType : "PORTAL"
+        },
+        _class : "io.gravitee.repository.mongodb.management.internal.model.MembershipMongo",
+        type : "2:" + role,
+        createdAt : now,
+        updatedAt : now
+      }
+    ]);
   }
 );
 
