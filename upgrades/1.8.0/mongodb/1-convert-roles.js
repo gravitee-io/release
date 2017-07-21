@@ -28,20 +28,28 @@ print("\n\nCreate default memberships");
 db.users.find().forEach(
   function(user) {
     print("    - user = " + user._id);
-    var role = "USER";
+    var mgmt_role = "USER";
+    var portal_role = "USER";
     if (user.roles) {
       var roles = user.roles;
       if (roles && roles.length > 0) {
-        role = roles[0];
-        if (role === "API_CONSUMER") {
-          role = "USER"
+        mgmt_role = roles[0];
+        portal_role = roles[0];
+        if (mgmt_role === "API_CONSUMER") {
+          mgmt_role = "USER";
+          portal_role = "USER";
         }
       }
     }
     if (user._id === "admin") {
-      role = "ADMIN"
+      mgmt_role = "ADMIN";
+      portal_role = "ADMIN";
+    } else if (user._id === "api1") {
+      mgmt_role = "API_PUBLISHER";
+      portal_role = "USER";
     }
-    print("    - role = " + role);
+    print("    - mgmt_role = " + mgmt_role);
+    print("    - portal_role = " + portal_role);
     db.memberships.insert( [
       {
         _id : {
@@ -50,7 +58,7 @@ db.users.find().forEach(
           referenceType : "MANAGEMENT"
         },
         _class : "io.gravitee.repository.mongodb.management.internal.model.MembershipMongo",
-        type : "1:" + role,
+        type : "1:" + mgmt_role,
         createdAt : now,
         updatedAt : now
       },
@@ -61,7 +69,7 @@ db.users.find().forEach(
           referenceType : "PORTAL"
         },
         _class : "io.gravitee.repository.mongodb.management.internal.model.MembershipMongo",
-        type : "2:" + role,
+        type : "2:" + portal_role,
         createdAt : now,
         updatedAt : now
       }
