@@ -15,7 +15,7 @@
         },
         {
             "name": "gravitee-gateway",
-            "version": "1.8.2"
+            "version": "1.8.3-SNAPSHOT"
         },
         {
             "name": "gravitee-gateway-api",
@@ -23,11 +23,11 @@
         },
         {
             "name": "gravitee-management-rest-api",
-            "version": "1.8.2"
+            "version": "1.8.3-SNAPSHOT"
         },
         {
             "name": "gravitee-management-webui",
-            "version": "1.8.2"
+            "version": "1.8.3-SNAPSHOT"
         },
         {
             "name": "gravitee-plugin",
@@ -183,11 +183,11 @@
         },
         {
             "name": "gravitee-resource-oauth2-provider-generic",
-            "version": "1.4.0"
+            "version": "1.5.0-SNAPSHOT"
         },
         {
             "name": "gravitee-resource-oauth2-provider-am",
-            "version": "1.1.0"
+            "version": "1.2.0-SNAPSHOT"
         },
         {
             "name": "gravitee-oauth2-server",
