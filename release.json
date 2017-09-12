@@ -114,6 +114,10 @@
             "version": "1.0.0-SNAPSHOT"
         },
         {
+            "name": "gravitee-policy-request-validation",
+            "version": "1.0.0-SNAPSHOT"
+        },
+        {
             "name": "gravitee-policy-resource-filtering",
             "version": "1.2.0-SNAPSHOT"
         },
@@ -276,6 +280,7 @@
             "gravitee-policy-json-to-json",
             "gravitee-policy-keyless",
             "gravitee-policy-override-http-method",
+            "gravitee-policy-request-validation",
             "gravitee-reporter-elasticsearch",
             "gravitee-reporter-file",
             "gravitee-fetcher-http",
