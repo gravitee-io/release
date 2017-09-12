@@ -147,11 +147,11 @@
         },
         {
             "name": "gravitee-repository-test",
-            "version": "1.8.1"
+            "version": "1.9.0-SNAPSHOT"
         },
         {
             "name": "gravitee-repository-mongodb",
-            "version": "1.8.1"
+            "version": "1.9.0-SNAPSHOT"
         },
         {
             "name": "gravitee-repository-redis",
@@ -191,7 +191,7 @@
         },
         {
             "name": "gravitee-resource-oauth2-provider-generic",
-            "version": "1.5.0"
+            "version": "1.6.0-SNAPSHOT"
         },
         {
             "name": "gravitee-resource-oauth2-provider-am",
