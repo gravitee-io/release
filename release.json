@@ -11,7 +11,7 @@
         },
         {
             "name": "gravitee-definition",
-            "version": "1.4.0"
+            "version": "1.5.0-SNAPSHOT"
         },
         {
             "name": "gravitee-gateway",
@@ -127,11 +127,11 @@
         },
         {
             "name": "gravitee-reporter-api",
-            "version": "1.6.0"
+            "version": "1.7.0-SNAPSHOT"
         },
         {
             "name": "gravitee-reporter-elasticsearch",
-            "version": "1.6.0"
+            "version": "1.7.0-SNAPSHOT"
         },
         {
             "name": "gravitee-reporter-file",
@@ -139,7 +139,7 @@
         },
         {
             "name": "gravitee-repository",
-            "version": "1.8.1"
+            "version": "1.9.0-SNAPSHOT"
         },
         {
             "name": "gravitee-repository-test",
@@ -155,7 +155,7 @@
         },
         {
             "name": "gravitee-repository-elasticsearch",
-            "version": "1.8.0"
+            "version": "1.9.0-SNAPSHOT"
         },
         {
             "name": "gravitee-repository-ehcache",
