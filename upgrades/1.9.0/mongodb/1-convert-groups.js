@@ -19,7 +19,7 @@ db.memberships.find().forEach(
       db.memberships.insert(membership);
       print('   ...... remove old group: ');
       db.memberships.remove({_id: oldId});
-    } else {
+    } else if (!membership.roles) {
       print('   ...... update');
       db.memberships.updateOne(
         {_id: membership._id},
