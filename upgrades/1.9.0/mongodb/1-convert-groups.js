@@ -15,6 +15,7 @@ db.memberships.find().forEach(
         referenceId: membership._id.referenceId,
         referenceType: "GROUP"
       };
+      membership.roles = roles;
       print('   ...... insert new group');
       db.memberships.insert(membership);
       print('   ...... remove old group: ');
