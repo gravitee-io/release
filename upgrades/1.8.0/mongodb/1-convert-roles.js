@@ -32,10 +32,10 @@ db.memberships.find().forEach(
 // create default roles for scope MANAGEMENT and PORTAL
 print("\n\nCreate default memberships");
 //get all userIds with MANAGEMENT role
-var migratedUsers = db.memberships
-  .find({"_id.referenceId": "DEFAULT", "_id.referenceType": "MANAGEMENT"}, {"_id": 1})
-  .toArray()
-  .map( function(id) {
+var migratedUsers = db.memberships.
+  find({"_id.referenceId": "DEFAULT", "_id.referenceType": "MANAGEMENT"}, {"_id": 1}).
+  toArray().
+  map( function(id) {
     return id._id.userId;
   });
 db.users.find().forEach(
