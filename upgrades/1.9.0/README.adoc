@@ -7,7 +7,7 @@ In this new version (and thanks to issue https://github.com/gravitee-io/issues/i
 HTTP query parameters are now multi-valued in the same way as HTTP headers.
 
 This means that when you're trying to look for query parameter value from an EL, you have to take care
-about the position of the query parameter value.
+about the position of the query parameter value (this is true only for mixin EL).
 
 For example, for the incoming request `https://gateway/myapi/v1/myresource?my-param=0` or
 `https://gateway/myapi/v1/myresource?my-param=0&my-param=1`, the following EL was working in version `< 1.9.x`:
@@ -16,10 +16,23 @@ For example, for the incoming request `https://gateway/myapi/v1/myresource?my-pa
 {#properties[#request.params['my-param']]}
 ```
 
-must be changed to this EL with version `>= 1.9.x`:
+but must be changed to this EL with version `>= 1.9.x`:
 
 ```
 {#properties[#request.params['my-param'][0]]}
+```
+
+On the other side, if you're not using mixin EL to access a single valued query parameter, the following EL is still
+valid and is not affected by the change.
+
+```
+{#request.params['my-param']}
+```
+
+is still valid and is equivalent to:
+
+```
+{#request.params['my-param'][0]}
 ```
 
 == Repository
