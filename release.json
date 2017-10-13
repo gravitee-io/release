@@ -130,6 +130,10 @@
             "version": "1.1.0"
         },
         {
+            "name": "gravitee-policy-openid-connect-userinfo",
+            "version": "1.0.0-SNAPSHOT"
+        },
+        {
             "name": "gravitee-reporter-api",
             "version": "1.8.0-SNAPSHOT"
         },
@@ -187,15 +191,15 @@
         },
         {
             "name": "gravitee-resource-oauth2-provider-api",
-            "version": "1.0.0"
+            "version": "1.1.0-SNAPSHOT"
         },
         {
             "name": "gravitee-resource-oauth2-provider-generic",
-            "version": "1.6.0"
+            "version": "1.7.0-SNAPSHOT"
         },
         {
             "name": "gravitee-resource-oauth2-provider-am",
-            "version": "1.3.0"
+            "version": "1.4.0-SNAPSHOT"
         },
         {
             "name": "gravitee-oauth2-server",
@@ -281,6 +285,7 @@
             "gravitee-policy-keyless",
             "gravitee-policy-override-http-method",
             "gravitee-policy-request-validation",
+            "gravitee-policy-openid-connect-userinfo",
             "gravitee-reporter-elasticsearch",
             "gravitee-reporter-file",
             "gravitee-fetcher-http",
