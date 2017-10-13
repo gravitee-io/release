@@ -220,12 +220,17 @@
         {
             "name": "gravitee-fetcher-gitlab",
             "version": "1.1.0"
+        },
+        {
+            "name": "gravitee-expression-language",
+            "version": "1.0.0-SNAPSHOT"
         }
     ],
     "buildDependencies": [
         [
             "gravitee-common",
-            "gravitee-repository"
+            "gravitee-repository",
+            "gravitee-expression-language"
         ],
         [
             "gravitee-repository-test"
