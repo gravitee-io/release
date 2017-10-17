@@ -134,6 +134,10 @@
             "version": "1.0.0-SNAPSHOT"
         },
         {
+            "name": "gravitee-policy-latency",
+            "version": "1.0.0-SNAPSHOT"
+        },
+        {
             "name": "gravitee-reporter-api",
             "version": "1.8.0-SNAPSHOT"
         },
@@ -291,6 +295,7 @@
             "gravitee-policy-override-http-method",
             "gravitee-policy-request-validation",
             "gravitee-policy-openid-connect-userinfo",
+            "gravitee-policy-latency",
             "gravitee-reporter-elasticsearch",
             "gravitee-reporter-file",
             "gravitee-fetcher-http",
