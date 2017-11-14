@@ -15,7 +15,7 @@
         },
         {
             "name": "gravitee-gateway",
-            "version": "1.10.4"
+            "version": "1.11.0-SNAPSHOT"
         },
         {
             "name": "gravitee-gateway-api",
@@ -23,15 +23,15 @@
         },
         {
             "name": "gravitee-management-rest-api",
-            "version": "1.10.4"
+            "version": "1.11.0-SNAPSHOT"
         },
         {
             "name": "gravitee-management-webui",
-            "version": "1.10.4"
+            "version": "1.11.0-SNAPSHOT"
         },
         {
             "name": "gravitee-plugin",
-            "version": "1.2.0"
+            "version": "1.3.0"
         },
         {
             "name": "gravitee-policy-api",
@@ -143,7 +143,7 @@
         },
         {
             "name": "gravitee-reporter-elasticsearch",
-            "version": "1.8.0"
+            "version": "1.9.0-SNAPSHOT"
         },
         {
             "name": "gravitee-reporter-file",
@@ -151,23 +151,23 @@
         },
         {
             "name": "gravitee-repository",
-            "version": "1.10.0"
+            "version": "1.11.0-SNAPSHOT"
         },
         {
             "name": "gravitee-repository-test",
-            "version": "1.10.0"
+            "version": "1.11.0-SNAPSHOT"
         },
         {
             "name": "gravitee-repository-mongodb",
-            "version": "1.10.0"
+            "version": "1.11.0-SNAPSHOT"
         },
         {
             "name": "gravitee-repository-redis",
-            "version": "1.10.0"
+            "version": "1.11.0-SNAPSHOT"
         },
         {
             "name": "gravitee-repository-elasticsearch",
-            "version": "1.10.0"
+            "version": "1.11.0-SNAPSHOT"
         },
         {
             "name": "gravitee-repository-ehcache",
@@ -179,11 +179,11 @@
         },
         {
             "name": "gravitee-repository-cassandra",
-            "version": "1.10.0"
+            "version": "1.11.0-SNAPSHOT"
         },
         {
             "name": "gravitee-repository-dynamodb",
-            "version": "1.10.1"
+            "version": "1.11.0-SNAPSHOT"
         },
         {
             "name": "gravitee-resource-api",
@@ -199,11 +199,11 @@
         },
         {
             "name": "gravitee-resource-oauth2-provider-generic",
-            "version": "1.7.0"
+            "version": "1.8.0-SNAPSHOT"
         },
         {
             "name": "gravitee-resource-oauth2-provider-am",
-            "version": "1.4.0"
+            "version": "1.5.0-SNAPSHOT"
         },
         {
             "name": "gravitee-oauth2-server",
@@ -215,7 +215,7 @@
         },
         {
             "name": "gravitee-fetcher-http",
-            "version": "1.2.0"
+            "version": "1.3.0-SNAPSHOT"
         },
         {
             "name": "gravitee-fetcher-git",
@@ -223,7 +223,7 @@
         },
         {
             "name": "gravitee-fetcher-gitlab",
-            "version": "1.1.0"
+            "version": "1.2.0-SNAPSHOT"
         },
         {
             "name": "gravitee-expression-language",
