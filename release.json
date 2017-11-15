@@ -232,7 +232,9 @@
     ],
     "buildDependencies": [
         [
-            "gravitee-common",
+            "gravitee-common"
+        ],
+        [
             "gravitee-repository",
             "gravitee-expression-language"
         ],
