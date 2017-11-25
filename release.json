@@ -1,6 +1,6 @@
 {
     "name": "Gravitee.io",
-    "version": "1.12.0-SNAPSHOT",
+    "version": "1.11.4-SNAPSHOT",
     "buildTimestamp": "2017-11-22T07:59:49+0000",
     "scmSshUrl": "git@github.com:gravitee-io",
     "scmHttpUrl": "https://github.com/gravitee-io/",
@@ -15,7 +15,7 @@
         },
         {
             "name": "gravitee-gateway",
-            "version": "1.11.3"
+            "version": "1.11.4-SNAPSHOT"
         },
         {
             "name": "gravitee-gateway-api",
@@ -23,11 +23,11 @@
         },
         {
             "name": "gravitee-management-rest-api",
-            "version": "1.11.3"
+            "version": "1.11.4-SNAPSHOT"
         },
         {
             "name": "gravitee-management-webui",
-            "version": "1.11.3"
+            "version": "1.11.4-SNAPSHOT"
         },
         {
             "name": "gravitee-plugin",
@@ -143,7 +143,7 @@
         },
         {
             "name": "gravitee-reporter-elasticsearch",
-            "version": "1.9.1"
+            "version": "1.9.2-SNAPSHOT"
         },
         {
             "name": "gravitee-reporter-file",
@@ -167,7 +167,7 @@
         },
         {
             "name": "gravitee-repository-elasticsearch",
-            "version": "1.11.1"
+            "version": "1.11.2-SNAPSHOT"
         },
         {
             "name": "gravitee-repository-ehcache",
