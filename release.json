@@ -138,6 +138,10 @@
             "version": "1.0.0"
         },
         {
+            "name": "gravitee-policy-assign-content",
+            "version": "1.0.0-SNAPSHOT"
+        },
+        {
             "name": "gravitee-reporter-api",
             "version": "1.8.0"
         },
@@ -298,6 +302,7 @@
             "gravitee-policy-request-validation",
             "gravitee-policy-openid-connect-userinfo",
             "gravitee-policy-latency",
+            "gravitee-policy-assign-content",
             "gravitee-reporter-elasticsearch",
             "gravitee-reporter-file",
             "gravitee-fetcher-http",
