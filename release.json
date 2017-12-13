@@ -1,7 +1,7 @@
 {
     "name": "Gravitee.io",
-    "version": "1.12.1-SNAPSHOT",
-    "buildTimestamp": "2017-12-13T00:08:29+0000",
+    "version": "1.12.1",
+    "buildTimestamp": "2017-12-13T09:13:17+0000",
     "scmSshUrl": "git@github.com:gravitee-io",
     "scmHttpUrl": "https://github.com/gravitee-io/",
     "components": [
@@ -15,7 +15,7 @@
         },
         {
             "name": "gravitee-gateway",
-            "version": "1.12.1-SNAPSHOT"
+            "version": "1.12.1"
         },
         {
             "name": "gravitee-gateway-api",
@@ -23,11 +23,11 @@
         },
         {
             "name": "gravitee-management-rest-api",
-            "version": "1.12.1-SNAPSHOT"
+            "version": "1.12.1"
         },
         {
             "name": "gravitee-management-webui",
-            "version": "1.12.1-SNAPSHOT"
+            "version": "1.12.1"
         },
         {
             "name": "gravitee-plugin",
@@ -187,7 +187,7 @@
         },
         {
             "name": "gravitee-repository-dynamodb",
-            "version": "1.12.1-SNAPSHOT"
+            "version": "1.12.1"
         },
         {
             "name": "gravitee-resource-api",
