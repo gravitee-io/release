@@ -1,6 +1,6 @@
 {
     "name": "Gravitee.io",
-    "version": "1.13.0-SNAPSHOT",
+    "version": "1.12.2-SNAPSHOT",
     "buildTimestamp": "2017-12-13T09:13:17+0000",
     "scmSshUrl": "git@github.com:gravitee-io",
     "scmHttpUrl": "https://github.com/gravitee-io/",
@@ -15,7 +15,7 @@
         },
         {
             "name": "gravitee-gateway",
-            "version": "1.12.1"
+            "version": "1.12.2-SNAPSHOT"
         },
         {
             "name": "gravitee-gateway-api",
@@ -23,11 +23,11 @@
         },
         {
             "name": "gravitee-management-rest-api",
-            "version": "1.12.1"
+            "version": "1.12.2-SNAPSHOT"
         },
         {
             "name": "gravitee-management-webui",
-            "version": "1.12.1"
+            "version": "1.12.2-SNAPSHOT"
         },
         {
             "name": "gravitee-plugin",
@@ -95,7 +95,7 @@
         },
         {
             "name": "gravitee-policy-groovy",
-            "version": "1.6.0"
+            "version": "1.6.1-SNAPSHOT"
         },
         {
             "name": "gravitee-policy-dynamic-routing",
