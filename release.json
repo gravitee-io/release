@@ -1,13 +1,13 @@
 {
     "name": "Gravitee.io",
-    "version": "1.12.4-SNAPSHOT",
-    "buildTimestamp": "2018-01-05T16:18:41+0000",
+    "version": "1.12.4",
+    "buildTimestamp": "2018-01-11T16:43:50+0000",
     "scmSshUrl": "git@github.com:gravitee-io",
     "scmHttpUrl": "https://github.com/gravitee-io/",
     "components": [
         {
             "name": "gravitee-common",
-            "version": "1.8.1-SNAPSHOT"
+            "version": "1.8.1"
         },
         {
             "name": "gravitee-definition",
@@ -15,7 +15,7 @@
         },
         {
             "name": "gravitee-gateway",
-            "version": "1.12.4-SNAPSHOT"
+            "version": "1.12.4"
         },
         {
             "name": "gravitee-gateway-api",
@@ -23,11 +23,11 @@
         },
         {
             "name": "gravitee-management-rest-api",
-            "version": "1.12.4-SNAPSHOT"
+            "version": "1.12.4"
         },
         {
             "name": "gravitee-management-webui",
-            "version": "1.12.4-SNAPSHOT"
+            "version": "1.12.4"
         },
         {
             "name": "gravitee-plugin",
@@ -147,7 +147,7 @@
         },
         {
             "name": "gravitee-reporter-elasticsearch",
-            "version": "1.10.1-SNAPSHOT"
+            "version": "1.10.1"
         },
         {
             "name": "gravitee-reporter-file",
@@ -163,7 +163,7 @@
         },
         {
             "name": "gravitee-repository-mongodb",
-            "version": "1.12.1-SNAPSHOT"
+            "version": "1.12.1"
         },
         {
             "name": "gravitee-repository-redis",
@@ -171,7 +171,7 @@
         },
         {
             "name": "gravitee-repository-elasticsearch",
-            "version": "1.12.1-SNAPSHOT"
+            "version": "1.12.1"
         },
         {
             "name": "gravitee-repository-ehcache",
