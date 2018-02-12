@@ -1,0 +1,10 @@
+= Upgrade to 1.14.0
+
+== Repository
+=== Mongodb
+
+Before running any script, please create a dump of your existing database.
+
+upgrades/1.14.0/mongodb/1-users-migration.js::
+This script remove plain username reference and prefer UUID.
+
