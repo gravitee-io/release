@@ -1,7 +1,7 @@
 {
     "name": "Gravitee.io",
-    "version": "1.13.3-SNAPSHOT",
-    "buildTimestamp": "2018-02-06T22:35:09+0000",
+    "version": "1.13.3",
+    "buildTimestamp": "2018-02-18T22:26:41+0000",
     "scmSshUrl": "git@github.com:gravitee-io",
     "scmHttpUrl": "https://github.com/gravitee-io/",
     "components": [
@@ -15,7 +15,7 @@
         },
         {
             "name": "gravitee-gateway",
-            "version": "1.13.3-SNAPSHOT"
+            "version": "1.13.3"
         },
         {
             "name": "gravitee-gateway-api",
@@ -23,11 +23,11 @@
         },
         {
             "name": "gravitee-management-rest-api",
-            "version": "1.13.3-SNAPSHOT"
+            "version": "1.13.3"
         },
         {
             "name": "gravitee-management-webui",
-            "version": "1.13.3-SNAPSHOT"
+            "version": "1.13.3"
         },
         {
             "name": "gravitee-plugin",
@@ -83,11 +83,11 @@
         },
         {
             "name": "gravitee-policy-xml-json",
-            "version": "1.3.0-SNAPSHOT"
+            "version": "1.3.0"
         },
         {
             "name": "gravitee-policy-oauth2",
-            "version": "1.6.1-SNAPSHOT"
+            "version": "1.6.1"
         },
         {
             "name": "gravitee-policy-html-json",
@@ -147,7 +147,7 @@
         },
         {
             "name": "gravitee-reporter-elasticsearch",
-            "version": "1.11.1-SNAPSHOT"
+            "version": "1.11.1"
         },
         {
             "name": "gravitee-reporter-file",
