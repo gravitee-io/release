@@ -1,6 +1,8 @@
 = Upgrade Notes
 
 ifdef::env-github[]
+include::1.14.3/README.adoc[leveloffset=+1]
+
 include::1.14.0/README.adoc[leveloffset=+1]
 
 include::1.13.0/README.adoc[leveloffset=+1]
@@ -27,6 +29,8 @@ endif::[]
 ifndef::env-github[]
 
 NOTE: Files specified in this guide can be found at https://github.com/gravitee-io/release/tree/master/upgrades
+
+include::https://raw.githubusercontent.com/gravitee-io/release/master/upgrades/1.14.3/README.adoc[leveloffset=+1]
 
 include::https://raw.githubusercontent.com/gravitee-io/release/master/upgrades/1.14.0/README.adoc[leveloffset=+1]
 
