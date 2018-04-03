@@ -39,107 +39,186 @@
         },
         {
             "name": "gravitee-policy-apikey",
-            "version": "1.5.0"
+            "version": "1.5.0",
+            "plugins": [
+                { "type": "policy",  "id": "api-key" }
+            ]
         },
         {
             "name": "gravitee-policy-cors",
-            "version": "1.6.0"
+            "version": "1.6.0",
+            "plugins": [
+                { "type": "policy", "id": "cors" }
+            ]
         },
         {
             "name": "gravitee-policy-ratelimit",
-            "version": "1.2.0"
+            "version": "1.2.0",
+            "plugins": [
+                { "type": "policy", "id": "rate-limit" },
+                { "type": "policy", "id": "quota" }
+            ]
         },
         {
             "name": "gravitee-policy-request-content-limit",
-            "version": "1.2.0"
+            "version": "1.2.0",
+            "plugins": [
+                { "type": "policy", "id": "request-content-limit" }
+            ]
         },
         {
             "name": "gravitee-policy-transformheaders",
-            "version": "1.3.1"
+            "version": "1.3.1",
+            "plugins": [
+                { "type": "policy", "id": "transform-headers" }
+            ]
         },
         {
             "name": "gravitee-policy-rest-to-soap",
-            "version": "1.3.0"
+            "version": "1.3.0",
+            "plugins": [
+                { "type": "policy", "id": "rest-to-soap" }
+            ]
         },
         {
             "name": "gravitee-policy-transformqueryparams",
-            "version": "1.2.0"
+            "version": "1.2.0",
+            "plugins": [
+                { "type": "policy", "id": "transform-queryparams" }
+            ]
         },
         {
             "name": "gravitee-policy-ipfiltering",
-            "version": "1.2.0"
+            "version": "1.2.0",
+            "plugins": [
+                { "type": "policy", "id": "ip-filtering" }
+            ]
         },
         {
             "name": "gravitee-policy-mock",
-            "version": "1.5.0"
+            "version": "1.5.0",
+            "plugins": [
+                { "type": "policy", "id": "mock" }
+            ]
         },
         {
             "name": "gravitee-policy-cache",
-            "version": "1.5.0"
+            "version": "1.5.0",
+            "plugins": [
+                { "type": "policy", "id": "cache" }
+            ]
         },
         {
             "name": "gravitee-policy-xslt",
-            "version": "1.2.0"
+            "version": "1.2.0",
+            "plugins": [
+                { "type": "policy", "id": "xslt" }
+            ]
         },
         {
             "name": "gravitee-policy-xml-json",
-            "version": "1.3.0"
+            "version": "1.3.0",
+            "plugins": [
+                { "type": "policy", "id": "xml-json" }
+            ]
         },
         {
             "name": "gravitee-policy-oauth2",
-            "version": "1.6.1"
+            "version": "1.6.1",
+            "plugins": [
+                { "type": "policy", "id": "oauth2" }
+            ]
         },
         {
             "name": "gravitee-policy-html-json",
-            "version": "1.3.0"
+            "version": "1.3.0",
+            "plugins": [
+                { "type": "policy", "id": "html-json" }
+            ]
         },
         {
             "name": "gravitee-policy-groovy",
-            "version": "1.7.0"
+            "version": "1.7.0",
+            "plugins": [
+                { "type": "policy", "id": "groovy" }
+            ]
         },
         {
             "name": "gravitee-policy-dynamic-routing",
-            "version": "1.3.1"
+            "version": "1.3.1",
+            "plugins": [
+                { "type": "policy", "id": "dynamic-routing" }
+            ]
         },
         {
             "name": "gravitee-policy-logging",
-            "version": "1.1.0"
+            "version": "1.1.0",
+            "plugins": [
+                { "type": "policy", "id": "logging" }
+            ]
         },
         {
             "name": "gravitee-policy-jwt",
-            "version": "1.5.0"
+            "version": "1.5.0",
+            "plugins": [
+                { "type": "policy", "id": "jwt" }
+            ]
         },
         {
             "name": "gravitee-policy-override-http-method",
-            "version": "1.0.0"
+            "version": "1.0.0",
+            "plugins": [
+                { "type": "policy", "id": "policy-override-request-method" }
+            ]
         },
         {
             "name": "gravitee-policy-request-validation",
-            "version": "1.0.0"
+            "version": "1.0.0",
+            "plugins": [
+                { "type": "policy", "id": "policy-request-validation" }
+            ]
         },
         {
             "name": "gravitee-policy-resource-filtering",
-            "version": "1.2.0"
+            "version": "1.2.0",
+            "plugins": [
+                { "type": "policy", "id": "resource-filtering" }
+            ]
         },
         {
             "name": "gravitee-policy-json-to-json",
-            "version": "1.2.0"
+            "version": "1.2.0",
+            "plugins": [
+                { "type": "policy", "id": "json-to-json" }
+            ]
         },
         {
             "name": "gravitee-policy-keyless",
-            "version": "1.1.0"
+            "version": "1.1.0",
+            "plugins": [
+                { "type": "policy", "id": "key-less" }
+            ]
         },
         {
             "name": "gravitee-policy-openid-connect-userinfo",
-            "version": "1.0.0"
+            "version": "1.0.0",
+            "plugins": [
+                { "type": "policy", "id": "policy-openid-userinfo" }
+            ]
         },
         {
             "name": "gravitee-policy-latency",
-            "version": "1.0.0"
+            "version": "1.0.0",
+            "plugins": [
+                { "type": "policy", "id": "latency" }
+            ]
         },
         {
             "name": "gravitee-policy-assign-content",
-            "version": "1.0.0"
+            "version": "1.0.0",
+            "plugins": [
+                { "type": "policy", "id": "policy-assign-content" }
+            ]
         },
         {
             "name": "gravitee-reporter-api",
@@ -147,7 +226,10 @@
         },
         {
             "name": "gravitee-reporter-file",
-            "version": "1.3.0"
+            "version": "1.3.0",
+            "plugins": [
+                { "type": "reporter", "id": "file" }
+            ]
         },
         {
             "name": "gravitee-repository",
@@ -159,31 +241,53 @@
         },
         {
             "name": "gravitee-repository-mongodb",
-            "version": "1.15.0"
+            "version": "1.15.0",
+            "plugins": [
+                { "type": "repository", "id": "repository-mongodb" }
+            ]
         },
         {
             "name": "gravitee-repository-redis",
-            "version": "1.15.0"
+            "version": "1.15.0",
+            "plugins": [
+                { "type": "repository", "id": "repository-redis" }
+            ]
         },
         {
             "name": "gravitee-elasticsearch",
-            "version": "1.15.1"
+            "version": "1.15.1",
+            "plugins": [
+                { "type": "repository", "id": "repository-elasticsearch" },
+                { "type": "reporter", "id": "elastic" }
+            ]
         },
         {
             "name": "gravitee-repository-ehcache",
-            "version": "1.0.0"
+            "version": "1.0.0",
+            "plugins": [
+                { "type": "repository", "id": "repository-ehcache" }
+            ]
         },
         {
             "name": "gravitee-repository-hazelcast",
-            "version": "1.0.0"
+            "version": "1.0.0",
+            "plugins": [
+                { "type": "repository", "id": "repository-hazelcast" }
+            ]
         },
         {
             "name": "gravitee-repository-dynamodb",
-            "version": "1.12.1"
+            "version": "1.12.1",
+            "plugins": [
+                { "type": "repository", "id": "repository-dynamodb" }
+            ]
         },
         {
             "name": "gravitee-repository-jdbc",
-            "version": "1.15.0"
+            "version": "1.15.0",
+            "plugins": [
+                { "type": "repository", "id": "repository-jdbc" }
+            ]
         },
         {
             "name": "gravitee-resource-api",
@@ -191,7 +295,10 @@
         },
         {
             "name": "gravitee-resource-cache",
-            "version": "1.1.0"
+            "version": "1.1.0",
+            "plugins": [
+                { "type": "resource", "id": "cache" }
+            ]
         },
         {
             "name": "gravitee-resource-oauth2-provider-api",
@@ -199,11 +306,17 @@
         },
         {
             "name": "gravitee-resource-oauth2-provider-generic",
-            "version": "1.9.0"
+            "version": "1.9.0",
+            "plugins": [
+                { "type": "resource", "id": "oauth2" }
+            ]
         },
         {
             "name": "gravitee-resource-oauth2-provider-am",
-            "version": "1.6.0"
+            "version": "1.6.0",
+            "plugins": [
+                { "type": "resource", "id": "oauth2-am-resource" }
+            ]
         },
         {
             "name": "gravitee-oauth2-server",
@@ -215,15 +328,24 @@
         },
         {
             "name": "gravitee-fetcher-http",
-            "version": "1.4.0"
+            "version": "1.4.0",
+            "plugins": [
+                { "type": "fetcher", "id": "http-fetcher" }
+            ]
         },
         {
             "name": "gravitee-fetcher-git",
-            "version": "1.2.0"
+            "version": "1.2.0",
+            "plugins": [
+                { "type": "fetcher", "id": "git-fetcher" }
+            ]
         },
         {
             "name": "gravitee-fetcher-gitlab",
-            "version": "1.3.0"
+            "version": "1.3.0",
+            "plugins": [
+                { "type": "fetcher", "id": "gitlab-fetcher" }
+            ]
         },
         {
             "name": "gravitee-expression-language",
