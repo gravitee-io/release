@@ -182,6 +182,10 @@
             "version": "1.12.1"
         },
         {
+            "name": "gravitee-repository-jdbc",
+            "version": "1.15.0-SNAPSHOT"
+        },
+        {
             "name": "gravitee-resource-api",
             "version": "1.0.0"
         },
@@ -246,6 +250,7 @@
             "gravitee-repository-ehcache",
             "gravitee-repository-hazelcast",
             "gravitee-repository-dynamodb",
+            "gravitee-repository-jdbc",
             "gravitee-fetcher-api"
         ],
         [
