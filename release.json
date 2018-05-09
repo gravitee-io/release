@@ -207,6 +207,13 @@
             ]
         },
         {
+            "name": "gravitee-policy-jws",
+            "version": "1.0.0-SNAPSHOT",
+            "plugins": [
+                { "type": "policy", "id": "policy-jws" }
+            ]
+        },
+        {
             "name": "gravitee-reporter-api",
             "version": "1.9.0"
         },
@@ -404,6 +411,7 @@
             "gravitee-policy-openid-connect-userinfo",
             "gravitee-policy-latency",
             "gravitee-policy-assign-content",
+            "gravitee-policy-jws",
             "gravitee-elasticsearch",
             "gravitee-reporter-file",
             "gravitee-fetcher-http",
