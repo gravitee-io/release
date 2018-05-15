@@ -28,20 +28,22 @@ db.users.find().forEach(
             print('Updating memberships for user: ' + oldUserId);
             db.memberships.find({'_id.userId': oldUserId}).forEach(
                 function(membership) {
-                    membership._id.userId = user._id;
+		    if (membership !== undefined) {
+                        membership._id.userId = user._id;
 
-                    // insert the membership, using the new _id
-                    print('Create new membership for new user ID: ' + membership._id.userId);
-                    db.memberships.insert(membership)
+                        // insert the membership, using the new _id
+                        print('Create new membership for new user ID: ' + membership._id.userId);
+                        db.memberships.insert(membership)
 
-                    // remove the membership with the old _id
-                    print('Removing memberships for old user ID: ' + oldUserId);
-                    db.memberships.remove({'_id.userId': oldUserId, '_id.referenceType': membership._id.referenceType, '_id.referenceId': membership._id.referenceId})
+                        // remove the membership with the old _id
+                        print('Removing memberships for old user ID: ' + oldUserId);
+                        db.memberships.remove({'_id.userId': oldUserId, '_id.referenceType': membership._id.referenceType, '_id.referenceId': membership._id.referenceId})
+		    }
                 }
             );
         } else {
-            print('User: ' + user._id + ' [ ' + membership._id.referenceType + '-' + membership._id.referenceId + ']  already have a username [' + user.username+ '], skipping');
-        }
+            print('User: ' + user._id + ' already have a username [' + user.username+ '], skipping');
+	}
     }
 )
 
