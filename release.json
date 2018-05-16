@@ -23,7 +23,7 @@
         },
         {
             "name": "gravitee-management-rest-api",
-            "version": "1.16.0"
+            "version": "1.16.1-SNAPSHOT"
         },
         {
             "name": "gravitee-management-webui",
