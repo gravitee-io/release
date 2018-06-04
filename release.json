@@ -159,7 +159,7 @@
         },
         {
             "name": "gravitee-repository-redis",
-            "version": "1.16.1-SNAPSHOT"
+            "version": "1.16.0"
         },
         {
             "name": "gravitee-elasticsearch",
