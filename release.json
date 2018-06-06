@@ -7,7 +7,7 @@
     "components": [
         {
             "name": "gravitee-common",
-            "version": "1.10.0"
+            "version": "1.11.0-SNAPSHOT"
         },
         {
             "name": "gravitee-definition",
@@ -15,7 +15,7 @@
         },
         {
             "name": "gravitee-gateway",
-            "version": "1.16.3"
+            "version": "1.17.0-SNAPSHOT"
         },
         {
             "name": "gravitee-gateway-api",
@@ -23,11 +23,11 @@
         },
         {
             "name": "gravitee-management-rest-api",
-            "version": "1.16.3"
+            "version": "1.17.0-SNAPSHOT"
         },
         {
             "name": "gravitee-management-webui",
-            "version": "1.16.3"
+            "version": "1.17.0-SNAPSHOT"
         },
         {
             "name": "gravitee-plugin",
