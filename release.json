@@ -1,7 +1,7 @@
 {
     "name": "Gravitee.io",
-    "version": "1.17.0-SNAPSHOT",
-    "buildTimestamp": "2018-06-15T04:25:54+0000",
+    "version": "1.17.0",
+    "buildTimestamp": "2018-06-15T05:53:54+0000",
     "scmSshUrl": "git@github.com:gravitee-io",
     "scmHttpUrl": "https://github.com/gravitee-io/",
     "components": [
@@ -15,19 +15,19 @@
         },
         {
             "name": "gravitee-gateway",
-            "version": "1.17.0-SNAPSHOT"
+            "version": "1.17.0"
         },
         {
             "name": "gravitee-gateway-api",
-            "version": "1.10.0-SNAPSHOT"
+            "version": "1.10.0"
         },
         {
             "name": "gravitee-management-rest-api",
-            "version": "1.17.0-SNAPSHOT"
+            "version": "1.17.0"
         },
         {
             "name": "gravitee-management-webui",
-            "version": "1.17.0-SNAPSHOT"
+            "version": "1.17.0"
         },
         {
             "name": "gravitee-plugin",
@@ -95,11 +95,11 @@
         },
         {
             "name": "gravitee-policy-dynamic-routing",
-            "version": "1.4.0-SNAPSHOT"
+            "version": "1.4.0"
         },
         {
             "name": "gravitee-policy-jwt",
-            "version": "1.6.0-SNAPSHOT"
+            "version": "1.6.0"
         },
         {
             "name": "gravitee-policy-override-http-method",
@@ -163,7 +163,7 @@
         },
         {
             "name": "gravitee-elasticsearch",
-            "version": "1.17.0-SNAPSHOT"
+            "version": "1.17.0"
         },
         {
             "name": "gravitee-repository-ehcache",
@@ -179,7 +179,7 @@
         },
         {
             "name": "gravitee-repository-jdbc",
-            "version": "1.17.0-SNAPSHOT"
+            "version": "1.17.0"
         },
         {
             "name": "gravitee-resource-api",
