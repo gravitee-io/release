@@ -1,16 +1,17 @@
 {
     "name": "Gravitee.io",
-    "version": "0.0.1-SNAPSHOT",
-    "buildTimestamp": "2018-07-11T16:04:58+0000",
+    "version": "0.0.1",
+    "buildTimestamp": "2018-07-12T15:37:47+0000",
     "scmSshUrl": "git@github.com:gravitee-io",
     "scmHttpUrl": "https://github.com/gravitee-io/",
     "components": [
         {
-            "name": "repo-test1"
+            "name": "repo-test1",
+            "version": "0.0.1"
         },
         {
             "name": "repo-test2",
-            "version": "1.0.0-SNAPSHOT"
+            "version": "1.0.0"
         }
     ],
     "buildDependencies": [
