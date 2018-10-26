@@ -1,7 +1,7 @@
 {
     "name": "Gravitee.io",
-    "version": "1.20.1-SNAPSHOT",
-    "buildTimestamp": "2018-10-18T15:15:18+0000",
+    "version": "1.20.1",
+    "buildTimestamp": "2018-10-26T14:44:27+0000",
     "scmSshUrl": "git@github.com:gravitee-io",
     "scmHttpUrl": "https://github.com/gravitee-io/",
     "components": [
@@ -15,7 +15,7 @@
         },
         {
             "name": "gravitee-gateway",
-            "version": "1.20.1-SNAPSHOT"
+            "version": "1.20.1"
         },
         {
             "name": "gravitee-gateway-api",
@@ -23,11 +23,11 @@
         },
         {
             "name": "gravitee-management-rest-api",
-            "version": "1.20.1-SNAPSHOT"
+            "version": "1.20.1"
         },
         {
             "name": "gravitee-management-webui",
-            "version": "1.20.1-SNAPSHOT"
+            "version": "1.20.1"
         },
         {
             "name": "gravitee-plugin",
@@ -151,7 +151,7 @@
         },
         {
             "name": "gravitee-repository-test",
-            "version": "1.20.1-SNAPSHOT"
+            "version": "1.20.1"
         },
         {
             "name": "gravitee-repository-mongodb",
@@ -175,7 +175,7 @@
         },
         {
             "name": "gravitee-repository-jdbc",
-            "version": "1.20.1-SNAPSHOT"
+            "version": "1.20.1"
         },
         {
             "name": "gravitee-resource-api",
