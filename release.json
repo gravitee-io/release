@@ -254,15 +254,15 @@
             "version": "1.2.0-SNAPSHOT"
         },
         {
-            "name": "graviteeio-notifier-api",
+            "name": "gravitee-notifier-api",
             "version": "1.0.0-SNAPSHOT"
         },
         {
-            "name": "graviteeio-notifier-email",
+            "name": "gravitee-notifier-email",
             "version": "1.0.0-SNAPSHOT"
         },
         {
-            "name": "graviteeio-alert-api",
+            "name": "gravitee-alert-api",
             "version": "1.0.0-SNAPSHOT"
         }
     ],
