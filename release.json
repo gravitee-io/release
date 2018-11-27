@@ -291,7 +291,6 @@
             "gravitee-repository-jdbc",
             "gravitee-repository-gateway-bridge-http",
             "gravitee-fetcher-api",
-            "gravitee-alert-api",
             "gravitee-notifier-email"
         ],
         [
@@ -301,10 +300,13 @@
             "gravitee-policy-api"
         ],
         [
-            "gravitee-plugin"
+            "graviteeio-node"
         ],
         [
-            "graviteeio-node"
+            "gravitee-alert-api"
+        ],
+        [
+            "gravitee-plugin"
         ],
         [
             "gravitee-gateway",
