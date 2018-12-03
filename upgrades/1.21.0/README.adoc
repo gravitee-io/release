@@ -1,0 +1,15 @@
+= Upgrade to 1.21.0
+
+== Identity Provider
+
+This release introduces the ability to manage identity providers dynamically from the Management API to handle
+authentication through the portal.
+
+It means that it is no more needed to configure identity providers from two locations: the `constants.json` for the UI
+and the `gravitee.yml` for the Management API.
+
+Now, you can configure as many identity providers as you need with a cleaner way to configure them.
+
+If you configured an `oauth2` provider in previous versions, you must have to create an identity provider with the `oauth2`
+name to preserve compatibility with existing authenticated users. If you did not follow this point, multiples users will
+be created for the same user ID.
