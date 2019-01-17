@@ -1,7 +1,7 @@
 {
     "name": "Gravitee.io",
     "version": "1.22.0-SNAPSHOT",
-    "buildTimestamp": "2018-12-06T11:46:53+0000",
+    "buildTimestamp": "2019-01-17T10:55:52+0000",
     "scmSshUrl": "git@github.com:gravitee-io",
     "scmHttpUrl": "https://github.com/gravitee-io/",
     "components": [
@@ -151,7 +151,7 @@
         },
         {
             "name": "gravitee-repository",
-            "version": "1.22.0-SNAPSHOT"
+            "version": "1.22.0"
         },
         {
             "name": "gravitee-repository-test",
@@ -271,7 +271,7 @@
         },
         {
             "name": "gravitee-service-discovery-api",
-            "version": "1.0.0-SNAPSHOT"
+            "version": "1.0.0"
         },
         {
             "name": "gravitee-service-discovery-consul",
