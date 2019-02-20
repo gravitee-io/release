@@ -226,6 +226,10 @@
             "version": "1.0.0"
         },
         {
+            "name": "gravitee-fetcher-github",
+            "version": "1.0.0"
+        },
+        {
             "name": "gravitee-expression-language",
             "version": "1.0.0"
         },
@@ -329,7 +333,8 @@
             "gravitee-fetcher-http",
             "gravitee-fetcher-git",
             "gravitee-fetcher-gitlab",
-            "gravitee-fetcher-bitbucket"
+            "gravitee-fetcher-bitbucket",
+            "gravitee-fetcher-github"
         ],
         [
             "gravitee-oauth2-server",
