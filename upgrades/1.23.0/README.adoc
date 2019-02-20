@@ -1,0 +1,11 @@
+= Upgrade to 1.23.0
+
+== Groups of users
+
+This version comes with an improvement on how to manage groups of users.
+On previous releases, the group administrator could add members from the user search only.
+
+From now, it will be able to add members not only from this search but also by email.
+By default neither of them is available, so in this case only the administrator of the platform will be able to add some.
+
+So for the existing groups, you will have to enable the search mode to allow group administrators to add members.
