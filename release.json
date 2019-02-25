@@ -39,7 +39,7 @@
         },
         {
             "name": "gravitee-policy-apikey",
-            "version": "1.6.3"
+            "version": "1.6.4-SNAPSHOT"
         },
         {
             "name": "gravitee-policy-ratelimit",
@@ -67,7 +67,7 @@
         },
         {
             "name": "gravitee-policy-mock",
-            "version": "1.5.0"
+            "version": "1.6.0-SNAPSHOT"
         },
         {
             "name": "gravitee-policy-cache",
