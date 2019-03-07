@@ -1,0 +1,7 @@
+= Upgrade to 1.24.0
+
+== User creation REST API
+
+We have added the possibility to create users from the UI.
+Previously the POST on `/management/users` was used to register a user.
+Now this is used to create a user on the platform and the registration service has been moved under `/management/users/registration` and `/management/users/registration/finalize`.
