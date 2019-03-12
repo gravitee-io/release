@@ -206,10 +206,6 @@
             "version": "1.3.0-SNAPSHOT"
         },
         {
-            "name": "gravitee-oauth2-server",
-            "version": "1.1.0-SNAPSHOT"
-        },
-        {
             "name": "gravitee-fetcher-api",
             "version": "1.2.0-SNAPSHOT"
         },
@@ -372,7 +368,6 @@
             "gravitee-fetcher-github"
         ],
         [
-            "gravitee-oauth2-server",
             "gravitee-management-rest-api",
             "gravitee-management-webui"
         ]
