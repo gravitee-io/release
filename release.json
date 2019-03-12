@@ -174,10 +174,6 @@
             "version": "1.24.0-SNAPSHOT"
         },
         {
-            "name": "gravitee-repository-ehcache",
-            "version": "1.1.0-SNAPSHOT"
-        },
-        {
             "name": "gravitee-repository-hazelcast",
             "version": "1.1.0-SNAPSHOT"
         },
@@ -306,7 +302,6 @@
             "gravitee-definition",
             "gravitee-repository-mongodb",
             "gravitee-repository-redis",
-            "gravitee-repository-ehcache",
             "gravitee-repository-hazelcast",
             "gravitee-repository-jdbc",
             "gravitee-repository-gateway-bridge-http",
