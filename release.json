@@ -187,7 +187,7 @@
         },
         {
             "name": "gravitee-resource-cache",
-            "version": "1.1.0"
+            "version": "1.1.1"
         },
         {
             "name": "gravitee-resource-oauth2-provider-api",
@@ -228,6 +228,7 @@
         {
             "name": "gravitee-fetcher-bitbucket",
             "version": "1.1.0"
+            "version": "1.0.0"
         },
         {
             "name": "gravitee-fetcher-github",
