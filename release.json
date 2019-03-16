@@ -191,7 +191,7 @@
         },
         {
             "name": "gravitee-resource-cache",
-            "version": "1.1.0"
+            "version": "1.1.1"
         },
         {
             "name": "gravitee-resource-oauth2-provider-api",
