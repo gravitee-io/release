@@ -276,6 +276,10 @@
         {
             "name": "gravitee-policy-generate-jwt",
             "version": "1.1.0-SNAPSHOT"
+        },
+        {
+            "name": "gravitee-service-discovery-eureka",
+            "version": "1.1.0-SNAPSHOT"
         }
     ],
     "buildDependencies": [
@@ -290,7 +294,8 @@
         ],
         [
             "gravitee-repository-test",
-            "gravitee-service-discovery-consul"
+            "gravitee-service-discovery-consul",
+            "gravitee-service-discovery-eureka"
         ],
         [
             "gravitee-reporter-api",
