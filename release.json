@@ -1,7 +1,7 @@
 {
     "name": "Gravitee.io",
     "version": "1.24.0-SNAPSHOT",
-    "buildTimestamp": "2019-03-22T10:32:18+0000",
+    "buildTimestamp": "2019-03-22T11:51:07+0000",
     "scmSshUrl": "git@github.com:gravitee-io",
     "scmHttpUrl": "https://github.com/gravitee-io/",
     "components": [
@@ -47,11 +47,11 @@
         },
         {
             "name": "gravitee-policy-request-content-limit",
-            "version": "1.4.0-SNAPSHOT"
+            "version": "1.4.0"
         },
         {
             "name": "gravitee-policy-transformheaders",
-            "version": "1.4.0-SNAPSHOT"
+            "version": "1.4.0"
         },
         {
             "name": "gravitee-policy-rest-to-soap",
@@ -59,31 +59,31 @@
         },
         {
             "name": "gravitee-policy-transformqueryparams",
-            "version": "1.3.0-SNAPSHOT"
+            "version": "1.3.0"
         },
         {
             "name": "gravitee-policy-ipfiltering",
-            "version": "1.3.0-SNAPSHOT"
+            "version": "1.3.0"
         },
         {
             "name": "gravitee-policy-mock",
-            "version": "1.6.0-SNAPSHOT"
+            "version": "1.6.0"
         },
         {
             "name": "gravitee-policy-cache",
-            "version": "1.6.0-SNAPSHOT"
+            "version": "1.6.0"
         },
         {
             "name": "gravitee-policy-xslt",
-            "version": "1.3.0-SNAPSHOT"
+            "version": "1.3.0"
         },
         {
             "name": "gravitee-policy-xml-json",
-            "version": "1.4.0-SNAPSHOT"
+            "version": "1.4.0"
         },
         {
             "name": "gravitee-policy-oauth2",
-            "version": "1.8.0-SNAPSHOT"
+            "version": "1.8.0"
         },
         {
             "name": "gravitee-policy-html-json",
@@ -211,11 +211,11 @@
         },
         {
             "name": "gravitee-fetcher-git",
-            "version": "1.5.0-SNAPSHOT"
+            "version": "1.5.0"
         },
         {
             "name": "gravitee-fetcher-gitlab",
-            "version": "1.7.0-SNAPSHOT"
+            "version": "1.7.0"
         },
         {
             "name": "gravitee-fetcher-bitbucket",
