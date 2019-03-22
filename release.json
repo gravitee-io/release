@@ -43,7 +43,7 @@
         },
         {
             "name": "gravitee-policy-ratelimit",
-            "version": "1.5.0-SNAPSHOT"
+            "version": "1.5.0"
         },
         {
             "name": "gravitee-policy-request-content-limit",
