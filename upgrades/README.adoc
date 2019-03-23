@@ -7,6 +7,8 @@ include::1.23.0/README.adoc[leveloffset=+1]
 
 include::1.21.0/README.adoc[leveloffset=+1]
 
+include::1.20.15/README.adoc[leveloffset=+1]
+
 include::1.20.13/README.adoc[leveloffset=+1]
 
 include::1.20.0/README.adoc[leveloffset=+1]
@@ -53,6 +55,8 @@ include::https://raw.githubusercontent.com/gravitee-io/release/master/upgrades/1
 include::https://raw.githubusercontent.com/gravitee-io/release/master/upgrades/1.23.0/README.adoc[leveloffset=+1]
 
 include::https://raw.githubusercontent.com/gravitee-io/release/master/upgrades/1.21.0/README.adoc[leveloffset=+1]
+
+include::https://raw.githubusercontent.com/gravitee-io/release/master/upgrades/1.20.15/README.adoc[leveloffset=+1]
 
 include::https://raw.githubusercontent.com/gravitee-io/release/master/upgrades/1.20.13/README.adoc[leveloffset=+1]
 

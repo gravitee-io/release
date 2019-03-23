@@ -1,0 +1,7 @@
+= Upgrade to 1.20.15
+
+== Repository
+=== Mongodb
+
+https://raw.githubusercontent.com/gravitee-io/release/master/upgrades/1.20.15/mongodb/1-add.default.user.status.js[upgrades/1.20.15/mongodb/1-add.default.user.status.js]::
+This script add the default status (`ACTIVE`) for all users.
