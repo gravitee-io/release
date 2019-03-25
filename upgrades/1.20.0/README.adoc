@@ -9,3 +9,8 @@ Starting from this version, the API Gateway is less permissive for HTTPS request
 the API publisher to ask for `Trust All`. Otherwise, the API publisher must have to configure finely endpoint's trustore.
 
 If you did not configure SSL support for your API's backends, you may probably have to to do it to make them work again.
+
+=== Mongodb
+
+https://raw.githubusercontent.com/gravitee-io/release/master/upgrades/1.20.0/mongodb/Migration.120.SSL.js[upgrades/1.20.0/mongodb/Migration.120.SSL.js]::
+This script update ssl endpoints to store the default configuration if not present.
