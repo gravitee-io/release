@@ -259,7 +259,7 @@
         },
         {
             "name": "graviteeio-node",
-            "version": "1.2.2"
+            "version": "1.2.3"
         },
         {
             "name": "gravitee-notifier-api",
