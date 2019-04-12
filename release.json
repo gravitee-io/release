@@ -231,7 +231,7 @@
         },
         {
             "name": "gravitee-repository-gateway-bridge-http",
-            "version": "1.24.0"
+            "version": "1.24.1-SNAPSHOT"
         },
         {
             "name": "gravitee-policy-url-rewriting",
