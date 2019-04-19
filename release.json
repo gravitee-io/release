@@ -11,7 +11,7 @@
         },
         {
             "name": "gravitee-definition",
-            "version": "1.17.0"
+            "version": "1.18.0-SNAPSHOT"
         },
         {
             "name": "gravitee-gateway",
@@ -19,7 +19,7 @@
         },
         {
             "name": "gravitee-gateway-api",
-            "version": "1.14.0"
+            "version": "1.15.0-SNAPSHOT"
         },
         {
             "name": "gravitee-management-rest-api",
@@ -35,7 +35,7 @@
         },
         {
             "name": "gravitee-policy-api",
-            "version": "1.4.0"
+            "version": "1.5.0-SNAPSHOT"
         },
         {
             "name": "gravitee-policy-apikey",
@@ -43,11 +43,11 @@
         },
         {
             "name": "gravitee-policy-ratelimit",
-            "version": "1.5.0"
+            "version": "1.6.0-SNAPSHOT"
         },
         {
             "name": "gravitee-policy-request-content-limit",
-            "version": "1.4.0"
+            "version": "1.5.0-SNAPSHOT"
         },
         {
             "name": "gravitee-policy-transformheaders",
@@ -107,11 +107,11 @@
         },
         {
             "name": "gravitee-policy-request-validation",
-            "version": "1.2.0"
+            "version": "1.3.0-SNAPSHOT"
         },
         {
             "name": "gravitee-policy-resource-filtering",
-            "version": "1.3.0"
+            "version": "1.4.0-SNAPSHOT"
         },
         {
             "name": "gravitee-policy-json-to-json",
@@ -147,11 +147,11 @@
         },
         {
             "name": "gravitee-reporter-api",
-            "version": "1.13.0"
+            "version": "1.14.0-SNAPSHOT"
         },
         {
             "name": "gravitee-reporter-file",
-            "version": "1.4.0"
+            "version": "1.5.0-SNAPSHOT"
         },
         {
             "name": "gravitee-repository",
@@ -243,11 +243,11 @@
         },
         {
             "name": "gravitee-reporter-kafka",
-            "version": "1.1.0"
+            "version": "1.2.0-SNAPSHOT"
         },
         {
             "name": "graviteeio-node",
-            "version": "1.3.1"
+            "version": "1.4.0-SNAPSHOT"
         },
         {
             "name": "gravitee-notifier-api",
