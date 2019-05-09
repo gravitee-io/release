@@ -15,7 +15,7 @@
         },
         {
             "name": "gravitee-gateway",
-            "version": "1.25.1"
+            "version": "1.25.2-SNAPSHOT"
         },
         {
             "name": "gravitee-gateway-api",
@@ -23,11 +23,11 @@
         },
         {
             "name": "gravitee-management-rest-api",
-            "version": "1.25.1"
+            "version": "1.25.2-SNAPSHOT"
         },
         {
             "name": "gravitee-management-webui",
-            "version": "1.25.1"
+            "version": "1.25.2-SNAPSHOT"
         },
         {
             "name": "gravitee-plugin",
