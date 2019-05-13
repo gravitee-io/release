@@ -276,6 +276,10 @@
         {
             "name": "gravitee-service-discovery-eureka",
             "version": "1.1.0"
+        },
+        {
+            "name": "gravitee-policy-role-based-access-control",
+            "version": "1.0.0-SNAPSHOT"
         }
     ],
     "buildDependencies": [
@@ -358,6 +362,7 @@
             "gravitee-policy-callout-http",
             "gravitee-policy-generate-jwt",
             "gravitee-policy-assign-attributes",
+            "gravitee-policy-role-based-access-control",
             "gravitee-elasticsearch",
             "gravitee-reporter-file",
             "gravitee-reporter-kafka",
