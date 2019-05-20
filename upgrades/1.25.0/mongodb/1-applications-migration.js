@@ -4,7 +4,8 @@ db.applications.find().forEach(
     function (application) {
         print("    update the application");
 
-        if (application.type) {
+        if (application.type && !application.metadata && !application.metadata.type) {
+            print("    set the SIMPLE application type for: " + application._id);
             db.applications.updateOne(
                 { _id: application._id },
                 {
@@ -14,6 +15,7 @@ db.applications.find().forEach(
         }
 
         if (application.clientId) {
+            print("    put the clientId of the application into metadata: " + application._id);
             db.applications.updateOne(
                 { _id: application._id },
                 {
