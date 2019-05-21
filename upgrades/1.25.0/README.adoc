@@ -13,3 +13,6 @@ To follow that new feature, the Rest Management API has been updated to reflect 
 
 https://raw.githubusercontent.com/gravitee-io/release/master/upgrades/1.25.0/mongodb/1-applications-migration.js[upgrades/1.25.0/mongodb/1-applications-migration.js]::
 This script update applications according to the new way Gravitee.io is managing them.
+
+https://raw.githubusercontent.com/gravitee-io/release/master/upgrades/1.25.0/mongodb/2-users-archived-upgrade.js[upgrades/1.25.0/mongodb/2-users-archived-upgrade.js]::
+This script update the sourceId of all archived users.
