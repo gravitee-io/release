@@ -2,13 +2,31 @@
 
 == Breaking Changes
 === Plans
-
 A plan can now be attached to one and only one api. As a consequence, the *plans* collection has a unique ```api``` identifier.
+
+=== Environment
+In this new version Gravitee comes with a new way of managing your environments.
+By default, Gravitee is configured with a first Environment :
+```json
+environment {
+	id: DEFAULT,
+	name: Default environment
+}
+```
+
+It will allow you to manage more than one environment for each instance of Gravitee
 
 == Repository
 === Mongodb
 
 Before running any script, please create a dump of your existing database.
 
+upgrades/3.0.0/mongodb/1-collections-linked-to-environment.js::
+This script adds a new field that refers the default environment.
+
+upgrades/3.0.0/mongodb/2-id-migration.js::
+This script changes the format of some collections id and drop some field.
+
 upgrades/3.0.0/mongodb/3-replace-apiArray-by-unique-api.js::
 This script adds a new field that refers the api and remove the api array.
+
