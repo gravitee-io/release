@@ -1,7 +1,7 @@
 {
     "name": "Gravitee.io",
-    "version": "1.27.0-SNAPSHOT",
-    "buildTimestamp": "2019-06-19T08:12:30+0000",
+    "version": "1.27.0",
+    "buildTimestamp": "2019-06-19T08:50:37+0000",
     "scmSshUrl": "git@github.com:gravitee-io",
     "scmHttpUrl": "https://github.com/gravitee-io/",
     "components": [
@@ -23,11 +23,11 @@
         },
         {
             "name": "gravitee-management-rest-api",
-            "version": "1.27.0-SNAPSHOT"
+            "version": "1.27.0"
         },
         {
             "name": "gravitee-management-webui",
-            "version": "1.27.0-SNAPSHOT"
+            "version": "1.27.0"
         },
         {
             "name": "gravitee-plugin",
@@ -139,7 +139,7 @@
         },
         {
             "name": "gravitee-policy-callout-http",
-            "version": "1.5.0-SNAPSHOT"
+            "version": "1.5.0"
         },
         {
             "name": "gravitee-policy-assign-attributes",
