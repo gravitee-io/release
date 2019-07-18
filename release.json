@@ -1,7 +1,7 @@
 {
     "name": "Gravitee.io",
-    "version": "1.28.0-SNAPSHOT",
-    "buildTimestamp": "2019-07-18T16:57:33+0000",
+    "version": "1.28.0",
+    "buildTimestamp": "2019-07-18T17:30:16+0000",
     "scmSshUrl": "git@github.com:gravitee-io",
     "scmHttpUrl": "https://github.com/gravitee-io/",
     "components": [
@@ -23,11 +23,11 @@
         },
         {
             "name": "gravitee-management-rest-api",
-            "version": "1.28.0-SNAPSHOT"
+            "version": "1.28.0"
         },
         {
             "name": "gravitee-management-webui",
-            "version": "1.28.0-SNAPSHOT"
+            "version": "1.28.0"
         },
         {
             "name": "gravitee-plugin",
@@ -51,7 +51,7 @@
         },
         {
             "name": "gravitee-policy-transformheaders",
-            "version": "1.6.0-SNAPSHOT"
+            "version": "1.6.0"
         },
         {
             "name": "gravitee-policy-rest-to-soap",
