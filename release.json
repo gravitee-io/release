@@ -15,7 +15,7 @@
         },
         {
             "name": "gravitee-gateway",
-            "version": "1.25.9"
+            "version": "1.25.10-SNAPSHOT"
         },
         {
             "name": "gravitee-gateway-api",
@@ -23,11 +23,11 @@
         },
         {
             "name": "gravitee-management-rest-api",
-            "version": "1.25.9"
+            "version": "1.25.10-SNAPSHOT"
         },
         {
             "name": "gravitee-management-webui",
-            "version": "1.25.9"
+            "version": "1.25.10-SNAPSHOT"
         },
         {
             "name": "gravitee-plugin",
@@ -107,7 +107,7 @@
         },
         {
             "name": "gravitee-policy-request-validation",
-            "version": "1.3.1"
+            "version": "1.3.2"
         },
         {
             "name": "gravitee-policy-resource-filtering",
@@ -159,11 +159,11 @@
         },
         {
             "name": "gravitee-repository-test",
-            "version": "1.25.1"
+            "version": "1.25.2-SNAPSHOT"
         },
         {
             "name": "gravitee-repository-mongodb",
-            "version": "1.25.1"
+            "version": "1.25.2-SNAPSHOT"
         },
         {
             "name": "gravitee-repository-redis",
@@ -171,7 +171,7 @@
         },
         {
             "name": "gravitee-elasticsearch",
-            "version": "1.25.6"
+            "version": "1.25.7-SNAPSHOT"
         },
         {
             "name": "gravitee-repository-jdbc",
@@ -271,7 +271,7 @@
         },
         {
             "name": "gravitee-policy-generate-jwt",
-            "version": "1.1.3"
+            "version": "1.1.4-SNAPSHOT"
         },
         {
             "name": "gravitee-service-discovery-eureka",
