@@ -171,7 +171,7 @@
         },
         {
             "name": "gravitee-elasticsearch",
-            "version": "1.25.7-SNAPSHOT"
+            "version": "1.25.8-SNAPSHOT"
         },
         {
             "name": "gravitee-repository-jdbc",
