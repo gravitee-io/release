@@ -1,7 +1,7 @@
 {
     "name": "Gravitee.io",
     "version": "1.25.10-SNAPSHOT",
-    "buildTimestamp": "2019-07-23T16:15:53+0000",
+    "buildTimestamp": "2019-08-21T16:16:59+0000",
     "scmSshUrl": "git@github.com:gravitee-io",
     "scmHttpUrl": "https://github.com/gravitee-io/",
     "components": [
@@ -15,7 +15,7 @@
         },
         {
             "name": "gravitee-gateway",
-            "version": "1.25.10-SNAPSHOT"
+            "version": "1.25.10"
         },
         {
             "name": "gravitee-gateway-api",
@@ -159,11 +159,11 @@
         },
         {
             "name": "gravitee-repository-test",
-            "version": "1.25.2-SNAPSHOT"
+            "version": "1.25.2"
         },
         {
             "name": "gravitee-repository-mongodb",
-            "version": "1.25.2-SNAPSHOT"
+            "version": "1.25.2"
         },
         {
             "name": "gravitee-repository-redis",
@@ -271,7 +271,7 @@
         },
         {
             "name": "gravitee-policy-generate-jwt",
-            "version": "1.1.4-SNAPSHOT"
+            "version": "1.1.4"
         },
         {
             "name": "gravitee-service-discovery-eureka",
