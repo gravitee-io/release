@@ -24,10 +24,10 @@ db.pages.find().forEach(
         }
         
         db.pages.updateOne(
-            { "_id": page._id; },
+            { "_id": page._id },
             {
                 $set: { "referenceId": referenceId, "referenceType": referenceType },
-                $unset: { "api": ""};
+                $unset: { "api": ""}
             }
         );
     }
@@ -51,7 +51,7 @@ db.rating.find().forEach(
             { "_id": rating._id },
             {
                 $set: { "referenceId": referenceId, "referenceType": referenceType },
-                $unset: { "api": ""};
+                $unset: { "api": ""}
             }
         );
     }
