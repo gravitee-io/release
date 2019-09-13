@@ -95,7 +95,7 @@
         },
         {
             "name": "gravitee-policy-dynamic-routing",
-            "version": "1.7.0"
+            "version": "1.8.0-SNAPSHOT"
         },
         {
             "name": "gravitee-policy-jwt",
