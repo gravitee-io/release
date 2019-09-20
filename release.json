@@ -1,7 +1,7 @@
 {
     "name": "Gravitee.io",
     "version": "1.29.1-SNAPSHOT",
-    "buildTimestamp": "2019-09-17T17:56:07+0000",
+    "buildTimestamp": "2019-09-20T10:04:02+0000",
     "scmSshUrl": "git@github.com:gravitee-io",
     "scmHttpUrl": "https://github.com/gravitee-io/",
     "components": [
@@ -11,7 +11,7 @@
         },
         {
             "name": "gravitee-definition",
-            "version": "1.19.1-SNAPSHOT"
+            "version": "1.19.1"
         },
         {
             "name": "gravitee-gateway",
