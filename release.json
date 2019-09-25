@@ -19,7 +19,7 @@
         },
         {
             "name": "gravitee-gateway-api",
-            "version": "1.19.1-SNAPSHOT"
+            "version": "1.19.1"
         },
         {
             "name": "gravitee-management-rest-api",
