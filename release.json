@@ -1,6 +1,6 @@
 {
     "name": "Gravitee.io",
-    "version": "1.25.12",
+    "version": "1.25.13-SNAPSHOT",
     "buildTimestamp": "2019-09-30T21:11:42+0000",
     "scmSshUrl": "git@github.com:gravitee-io",
     "scmHttpUrl": "https://github.com/gravitee-io/",
