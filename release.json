@@ -7,7 +7,7 @@
     "components": [
         {
             "name": "gravitee-common",
-            "version": "1.15.1"
+            "version": "1.15.2-SNAPSHOT"
         },
         {
             "name": "gravitee-definition",
@@ -15,7 +15,7 @@
         },
         {
             "name": "gravitee-gateway",
-            "version": "1.25.13"
+            "version": "1.25.14-SNAPSHOT"
         },
         {
             "name": "gravitee-gateway-api",
@@ -23,11 +23,11 @@
         },
         {
             "name": "gravitee-management-rest-api",
-            "version": "1.25.13"
+            "version": "1.25.14-SNAPSHOT"
         },
         {
             "name": "gravitee-management-webui",
-            "version": "1.25.13"
+            "version": "1.25.14-SNAPSHOT"
         },
         {
             "name": "gravitee-plugin",
@@ -91,7 +91,7 @@
         },
         {
             "name": "gravitee-policy-groovy",
-            "version": "1.9.1"
+            "version": "1.9.2"
         },
         {
             "name": "gravitee-policy-dynamic-routing",
@@ -107,7 +107,7 @@
         },
         {
             "name": "gravitee-policy-request-validation",
-            "version": "1.3.2"
+            "version": "1.3.3-SNAPSHOT"
         },
         {
             "name": "gravitee-policy-resource-filtering",
@@ -171,11 +171,11 @@
         },
         {
             "name": "gravitee-elasticsearch",
-            "version": "1.25.10"
+            "version": "1.25.11-SNAPSHOT"
         },
         {
             "name": "gravitee-repository-jdbc",
-            "version": "1.25.2"
+            "version": "1.25.3-SNAPSHOT"
         },
         {
             "name": "gravitee-resource-api",
