@@ -15,7 +15,7 @@
         },
         {
             "name": "gravitee-gateway",
-            "version": "1.28.5"
+            "version": "1.28.6-SNAPSHOT"
         },
         {
             "name": "gravitee-gateway-api",
@@ -23,11 +23,11 @@
         },
         {
             "name": "gravitee-management-rest-api",
-            "version": "1.28.5"
+            "version": "1.28.6-SNAPSHOT"
         },
         {
             "name": "gravitee-management-webui",
-            "version": "1.28.5"
+            "version": "1.28.6-SNAPSHOT"
         },
         {
             "name": "gravitee-plugin",
@@ -107,7 +107,7 @@
         },
         {
             "name": "gravitee-policy-request-validation",
-            "version": "1.4.1"
+            "version": "1.4.2-SNAPSHOT"
         },
         {
             "name": "gravitee-policy-resource-filtering",
@@ -171,11 +171,11 @@
         },
         {
             "name": "gravitee-elasticsearch",
-            "version": "1.28.2"
+            "version": "1.28.3-SNAPSHOT"
         },
         {
             "name": "gravitee-repository-jdbc",
-            "version": "1.28.1"
+            "version": "1.28.2-SNAPSHOT"
         },
         {
             "name": "gravitee-resource-api",
@@ -247,7 +247,7 @@
         },
         {
             "name": "graviteeio-node",
-            "version": "1.5.0"
+            "version": "1.5.1-SNAPSHOT"
         },
         {
             "name": "gravitee-notifier-api",
