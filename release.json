@@ -1,7 +1,7 @@
 {
     "name": "Gravitee.io",
     "version": "1.29.5-SNAPSHOT",
-    "buildTimestamp": "2019-10-07T09:12:52+0000",
+    "buildTimestamp": "2019-10-25T11:04:58+0000",
     "scmSshUrl": "git@github.com:gravitee-io",
     "scmHttpUrl": "https://github.com/gravitee-io/",
     "components": [
@@ -15,7 +15,7 @@
         },
         {
             "name": "gravitee-gateway",
-            "version": "1.29.5-SNAPSHOT"
+            "version": "1.29.5"
         },
         {
             "name": "gravitee-gateway-api",
@@ -107,7 +107,7 @@
         },
         {
             "name": "gravitee-policy-request-validation",
-            "version": "1.5.2-SNAPSHOT"
+            "version": "1.5.2"
         },
         {
             "name": "gravitee-policy-resource-filtering",
@@ -175,7 +175,7 @@
         },
         {
             "name": "gravitee-repository-jdbc",
-            "version": "1.29.2-SNAPSHOT"
+            "version": "1.29.2"
         },
         {
             "name": "gravitee-resource-api",
