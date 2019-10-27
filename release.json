@@ -139,7 +139,7 @@
         },
         {
             "name": "gravitee-policy-callout-http",
-            "version": "1.6.0"
+            "version": "1.7.0-SNAPSHOT"
         },
         {
             "name": "gravitee-policy-assign-attributes",
@@ -247,7 +247,7 @@
         },
         {
             "name": "graviteeio-node",
-            "version": "1.5.0"
+            "version": "1.5.1"
         },
         {
             "name": "gravitee-notifier-api",
