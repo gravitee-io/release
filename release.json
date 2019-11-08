@@ -107,7 +107,7 @@
         },
         {
             "name": "gravitee-policy-request-validation",
-            "version": "1.6.0-SNAPSHOT"
+            "version": "1.5.3"
         },
         {
             "name": "gravitee-policy-resource-filtering",
