@@ -51,7 +51,7 @@
         },
         {
             "name": "gravitee-policy-transformheaders",
-            "version": "1.6.0"
+            "version": "1.6.1"
         },
         {
             "name": "gravitee-policy-rest-to-soap",
@@ -139,7 +139,7 @@
         },
         {
             "name": "gravitee-policy-callout-http",
-            "version": "1.7.0-SNAPSHOT"
+            "version": "1.7.0"
         },
         {
             "name": "gravitee-policy-assign-attributes",
