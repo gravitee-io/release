@@ -38,43 +38,50 @@ out: ?foo=ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-._%7E%3
 In case of query parameters used in the target of a dynamic-routing policy, here is the change.
 Before :
 ```
-in:  {#endpoints['default']}?foo=ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-._~:/=*,+@!$'%3D
+in:  ?foo=ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-._~:/=*,+@!$'%3D
 out: ?foo=ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-._%7E%2F%3D*%2C%20%40%21%24%27%5B%5D%28%29%3D
 ```
 
 After:
 ```
-in:  {#endpoints['default']}?foo=ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-._~:/=*,+@!$'%3D
+in:  ?foo=ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-._~:/=*,+@!$'%3D
 out: ?foo=ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-._~:/=*,+@!$'[]()%3D
 ```
 
+
 After (with legacy config enabled):
 ```
-in:  {#endpoints['default']}?foo=ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-._~:/=*,+@!$'%3D
+in:  ?foo=ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-._~:/=*,+@!$'%3D
 out: ?foo=ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-._%7E%3A%2F%3D*%2C%2B%40%21%24%27%5B%5D%28%29%253D
 ```
 
+[WARNING]
+====
+The legacy mode is not able to have the exact same behavior than release <1.25.11
+
 You can see some changes :
 
-- the legacy mode encode the `+` sign (`%2B`) while old version use `%20`.
-- the legacy mode encode the `%` sign (`%25`).
+ - the legacy mode encodes the `+` sign (`%2B`) while old version use `%20`,
+ - the legacy mode encodes the `%` sign (`%25`).
 
+So, be careful when upgrading to this release and monitor apis that use "complex" dynamic-routing.
+====
 
 === Path
 Before this release, the path used in a dynamic-routing policy was decoded.
 ```
-in: {#endpoints['default']}/ab%20cd%3Def
+in:  /ab%20cd%3Def
 out: /ab%20cd=ef
 
-in: {#endpoints['default']}/a%2Fb/c
+in:  /a%2Fb/c
 out: /a/b/c
 ```
 
 After:
 ```
-in: {#endpoints['default']}/ab%20cd%3Def
+in:  /ab%20cd%3Def
 out: /ab%20cd%3Def
 
-in: {#endpoints['default']}/a%2Fb/c
+in:  /a%2Fb/c
 out: /a%2Fb/c
 ```
