@@ -1,12 +1,8 @@
 = Upgrade to 3.0.0
 
-== Breaking Changes
-=== Plans
-A plan can now be attached to one and only one api. As a consequence, the *plans* collection has a unique ```api``` identifier.
-
 === Environment
 In this new version Gravitee comes with a new way of managing your environments.
-By default, Gravitee is configured with a first Environment :
+By default, Gravitee is configured with a first Environment:
 ```json
 environment {
 	id: DEFAULT,
@@ -14,7 +10,10 @@ environment {
 }
 ```
 
-It will allow you to manage more than one environment for each instance of Gravitee
+It will allow you to manage more than one environment for each instance of Gravitee.
+
+If you are using the REST API directly, please note that you will have to adapt the URL
+from `https://host/management/` to `https://host/management/DEFAULT/`
 
 == Repository
 === Mongodb
