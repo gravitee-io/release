@@ -95,7 +95,7 @@
         },
         {
             "name": "gravitee-policy-dynamic-routing",
-            "version": "1.5.3"
+            "version": "1.5.4-SNAPSHOT"
         },
         {
             "name": "gravitee-policy-jwt",
@@ -155,7 +155,7 @@
         },
         {
             "name": "gravitee-repository",
-            "version": "1.25.3"
+            "version": "1.25.4-SNAPSHOT"
         },
         {
             "name": "gravitee-repository-test",
@@ -163,7 +163,7 @@
         },
         {
             "name": "gravitee-repository-mongodb",
-            "version": "1.25.3"
+            "version": "1.25.4-SNAPSHOT"
         },
         {
             "name": "gravitee-repository-redis",
@@ -171,7 +171,7 @@
         },
         {
             "name": "gravitee-elasticsearch",
-            "version": "1.25.12"
+            "version": "1.25.13-SNAPSHOT"
         },
         {
             "name": "gravitee-repository-jdbc",
