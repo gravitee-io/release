@@ -7,7 +7,7 @@
     "components": [
         {
             "name": "gravitee-common",
-            "version": "1.16.0"
+            "version": "1.16.1-SNAPSHOT"
         },
         {
             "name": "gravitee-definition",
@@ -28,7 +28,7 @@
         },
         {
             "name": "gravitee-plugin",
-            "version": "1.10.0"
+            "version": "1.11.0-SNAPSHOT"
         },
         {
             "name": "gravitee-policy-api",
@@ -92,7 +92,7 @@
         },
         {
             "name": "gravitee-policy-dynamic-routing",
-            "version": "1.9.0"
+            "version": "1.9.1-SNAPSHOT"
         },
         {
             "name": "gravitee-policy-jwt",
@@ -108,7 +108,7 @@
         },
         {
             "name": "gravitee-policy-resource-filtering",
-            "version": "1.4.0"
+            "version": "1.5.0-SNAPSHOT"
         },
         {
             "name": "gravitee-policy-json-to-json",
@@ -140,7 +140,7 @@
         },
         {
             "name": "gravitee-policy-assign-attributes",
-            "version": "1.1.0"
+            "version": "1.2.0-SNAPSHOT"
         },
         {
             "name": "gravitee-reporter-api",
@@ -152,7 +152,7 @@
         },
         {
             "name": "gravitee-repository",
-            "version": "1.30.0"
+            "version": "1.30.1-SNAPSHOT"
         },
         {
             "name": "gravitee-repository-test",
@@ -168,7 +168,7 @@
         },
         {
             "name": "gravitee-elasticsearch",
-            "version": "1.30.0"
+            "version": "1.30.1-SNAPSHOT"
         },
         {
             "name": "gravitee-repository-jdbc",
@@ -228,7 +228,7 @@
         },
         {
             "name": "gravitee-repository-gateway-bridge-http",
-            "version": "1.30.0"
+            "version": "1.30.1-SNAPSHOT"
         },
         {
             "name": "gravitee-policy-url-rewriting",
@@ -244,11 +244,11 @@
         },
         {
             "name": "graviteeio-node",
-            "version": "1.6.0"
+            "version": "1.6.1-SNAPSHOT"
         },
         {
             "name": "gravitee-notifier-api",
-            "version": "1.2.0"
+            "version": "1.2.1-SNAPSHOT"
         },
         {
             "name": "gravitee-notifier-email",
@@ -256,7 +256,7 @@
         },
         {
             "name": "gravitee-alert-api",
-            "version": "1.2.0"
+            "version": "1.2.1-SNAPSHOT"
         },
         {
             "name": "gravitee-service-discovery-api",
