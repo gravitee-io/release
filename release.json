@@ -1,7 +1,7 @@
 {
     "name": "Gravitee.io",
-    "version": "1.30.2-SNAPSHOT",
-    "buildTimestamp": "2019-12-19T19:03:12+0000",
+    "version": "1.30.2",
+    "buildTimestamp": "2020-01-16T01:16:26+0000",
     "scmSshUrl": "git@github.com:gravitee-io",
     "scmHttpUrl": "https://github.com/gravitee-io/",
     "components": [
@@ -15,7 +15,7 @@
         },
         {
             "name": "gravitee-gateway",
-            "version": "1.30.2-SNAPSHOT"
+            "version": "1.30.2"
         },
         {
             "name": "gravitee-gateway-api",
@@ -23,11 +23,11 @@
         },
         {
             "name": "gravitee-management-rest-api",
-            "version": "1.30.2-SNAPSHOT"
+            "version": "1.30.2"
         },
         {
             "name": "gravitee-management-webui",
-            "version": "1.30.2-SNAPSHOT"
+            "version": "1.30.2"
         },
         {
             "name": "gravitee-plugin",
@@ -67,7 +67,7 @@
         },
         {
             "name": "gravitee-policy-mock",
-            "version": "1.7.1-SNAPSHOT"
+            "version": "1.7.1"
         },
         {
             "name": "gravitee-policy-cache",
@@ -155,19 +155,19 @@
         },
         {
             "name": "gravitee-repository",
-            "version": "1.30.2-SNAPSHOT"
+            "version": "1.30.2"
         },
         {
             "name": "gravitee-repository-test",
-            "version": "1.30.1-SNAPSHOT"
+            "version": "1.30.1"
         },
         {
             "name": "gravitee-repository-mongodb",
-            "version": "1.30.1-SNAPSHOT"
+            "version": "1.30.1"
         },
         {
             "name": "gravitee-repository-redis",
-            "version": "1.30.1-SNAPSHOT"
+            "version": "1.30.1"
         },
         {
             "name": "gravitee-elasticsearch",
@@ -175,7 +175,7 @@
         },
         {
             "name": "gravitee-repository-jdbc",
-            "version": "1.30.1-SNAPSHOT"
+            "version": "1.30.1"
         },
         {
             "name": "gravitee-resource-api",
@@ -231,7 +231,7 @@
         },
         {
             "name": "gravitee-repository-gateway-bridge-http",
-            "version": "1.30.2-SNAPSHOT"
+            "version": "1.30.2"
         },
         {
             "name": "gravitee-policy-url-rewriting",
@@ -247,7 +247,7 @@
         },
         {
             "name": "graviteeio-node",
-            "version": "1.6.2-SNAPSHOT"
+            "version": "1.6.2"
         },
         {
             "name": "gravitee-notifier-api",
