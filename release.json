@@ -14,20 +14,17 @@
             "version": "1.18.1"
         },
         {
-            "name": "gravitee-gateway",
-            "version": "1.25.19"
+            "name": "gravitee-gateway"
         },
         {
             "name": "gravitee-gateway-api",
             "version": "1.15.3"
         },
         {
-            "name": "gravitee-management-rest-api",
-            "version": "1.25.19"
+            "name": "gravitee-management-rest-api"
         },
         {
-            "name": "gravitee-management-webui",
-            "version": "1.25.19"
+            "name": "gravitee-management-webui"
         },
         {
             "name": "gravitee-plugin",
