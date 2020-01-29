@@ -111,7 +111,7 @@
         },
         {
             "name": "gravitee-policy-resource-filtering",
-            "version": "1.4.0"
+            "version": "1.5.1"
         },
         {
             "name": "gravitee-policy-json-to-json",
