@@ -1,7 +1,7 @@
 {
     "name": "Gravitee.io",
     "version": "1.25.21-SNAPSHOT",
-    "buildTimestamp": "2020-01-17T08:13:27+0000",
+    "buildTimestamp": "2020-01-30T14:36:33+0000",
     "scmSshUrl": "git@github.com:gravitee-io",
     "scmHttpUrl": "https://github.com/gravitee-io/",
     "components": [
@@ -163,7 +163,7 @@
         },
         {
             "name": "gravitee-repository-mongodb",
-            "version": "1.25.6-SNAPSHOT"
+            "version": "1.25.6"
         },
         {
             "name": "gravitee-repository-redis",
@@ -203,7 +203,7 @@
         },
         {
             "name": "gravitee-fetcher-api",
-            "version": "1.3.0-SNAPSHOT"
+            "version": "1.3.0"
         },
         {
             "name": "gravitee-fetcher-http",
