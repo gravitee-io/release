@@ -15,7 +15,7 @@
         },
         {
             "name": "gravitee-gateway",
-            "version": "1.25.21-SNAPSHOT"
+            "version": "1.25.21"
         },
         {
             "name": "gravitee-gateway-api",
