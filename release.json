@@ -59,7 +59,7 @@
         },
         {
             "name": "gravitee-policy-transformqueryparams",
-            "version": "1.4.0"
+            "version": "1.4.1"
         },
         {
             "name": "gravitee-policy-ipfiltering",
@@ -99,7 +99,7 @@
         },
         {
             "name": "gravitee-policy-jwt",
-            "version": "1.13.0"
+            "version": "1.14.0-SNAPSHOT"
         },
         {
             "name": "gravitee-policy-override-http-method",
