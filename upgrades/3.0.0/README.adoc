@@ -1,12 +1,20 @@
 = Upgrade to 3.0.0
 
-=== Environment
+=== Organization & Environment
 In this new version Gravitee comes with a new way of managing your environments.
-By default, Gravitee is configured with a first Environment:
+By default, Gravitee is configured with a first Organization:
+```json
+organization {
+	id: DEFAULT,
+	name: Default organization
+}
+```
+And a first Environment in this Organization:
 ```json
 environment {
 	id: DEFAULT,
-	name: Default environment
+	name: Default environment,
+	organization: DEFAULT
 }
 ```
 
