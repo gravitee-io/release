@@ -1,4 +1,4 @@
-print('Plans migration');
+print('Plans migration - plans have now only one api');
 db.plans.find().forEach(
     function(plan) {
         
@@ -9,7 +9,7 @@ db.plans.find().forEach(
                 { _id: plan._id },
                 {
                     $set: { api: apiId},
-                    $unset: { apis: "" }
+                    $unset: { apis: '' }
                 }
             );
         }

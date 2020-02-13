@@ -1,5 +1,5 @@
 = Upgrade to 3.0.0
-
+== General
 === Organization & Environment
 In this new version Gravitee comes with a new way of managing your environments.
 By default, Gravitee is configured with a first Organization:
@@ -39,11 +39,23 @@ For instance, to access the _Platform Overview_ page, you should use `https://ho
 Before running any script, please create a dump of your existing database.
 
 https://raw.githubusercontent.com/gravitee-io/release/master/upgrades/3.0.0/mongodb/1-collections-linked-to-environment.js[upgrades/3.0.0/mongodb/1-collections-linked-to-environment.js]::
-This script adds a new field that refers the default environment.
+This script adds new fields that refer the default environment or the default organization.
 
-https://raw.githubusercontent.com/gravitee-io/release/master/upgrades/3.0.0/mongodb/2-id-migration.js[upgrades/3.0.0/mongodb/2-id-migration.js]::
-This script changes the format of some collections id and drop some field.
+https://raw.githubusercontent.com/gravitee-io/release/master/upgrades/3.0.0/mongodb/2-roles-groups-and-memberships-migration.js[upgrades/3.0.0/mongodb/2-roles-groups-and-memberships-migration.js]::
+This script migrates permission values in roles since MANAGEMENT roles and PORTAL roles have been merged and dispatched into new ENVIRONMENT and ORGANIZATION roles.
+It also updates memberships and groups by adding or removing columns.
+
 
 https://raw.githubusercontent.com/gravitee-io/release/master/upgrades/3.0.0/mongodb/3-replace-apiArray-by-unique-api.js[upgrades/3.0.0/mongodb/upgrades/3.0.0/mongodb/3-replace-apiArray-by-unique-api.js]::
 This script adds a new field that refers the api and remove the api array.
 
+== Upgrader
+=== Identity providers
+Because of the evolution of the roles and their scope, role mappings in *Identity Providers* must be updated. To achieve this, a specific service has been created and will be launched at APIM startup. As this is not necessary to launch this service more than once, it can be disabled with some configuration.
+[source, yaml]
+----
+services:
+  # v3 upgrader service. Can be disabled after first launch.
+  v3-upgrader:
+    enabled: true
+----
