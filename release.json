@@ -1,13 +1,13 @@
 {
     "name": "Gravitee.io",
-    "version": "1.25.22-SNAPSHOT",
-    "buildTimestamp": "2020-01-30T16:53:25+0000",
+    "version": "1.25.22",
+    "buildTimestamp": "2020-02-20T16:11:08+0000",
     "scmSshUrl": "git@github.com:gravitee-io",
     "scmHttpUrl": "https://github.com/gravitee-io/",
     "components": [
         {
             "name": "gravitee-common",
-            "version": "1.15.5-SNAPSHOT"
+            "version": "1.15.5"
         },
         {
             "name": "gravitee-definition",
@@ -15,7 +15,7 @@
         },
         {
             "name": "gravitee-gateway",
-            "version": "1.25.22-SNAPSHOT"
+            "version": "1.25.22"
         },
         {
             "name": "gravitee-gateway-api",
@@ -23,11 +23,11 @@
         },
         {
             "name": "gravitee-management-rest-api",
-            "version": "1.25.22-SNAPSHOT"
+            "version": "1.25.22"
         },
         {
             "name": "gravitee-management-webui",
-            "version": "1.25.22-SNAPSHOT"
+            "version": "1.25.22"
         },
         {
             "name": "gravitee-plugin",
@@ -99,7 +99,7 @@
         },
         {
             "name": "gravitee-policy-jwt",
-            "version": "1.13.1-SNAPSHOT"
+            "version": "1.13.1"
         },
         {
             "name": "gravitee-policy-override-http-method",
@@ -139,7 +139,7 @@
         },
         {
             "name": "gravitee-policy-callout-http",
-            "version": "1.7.1-SNAPSHOT"
+            "version": "1.7.1"
         },
         {
             "name": "gravitee-policy-assign-attributes",
@@ -163,7 +163,7 @@
         },
         {
             "name": "gravitee-repository-mongodb",
-            "version": "1.25.7-SNAPSHOT"
+            "version": "1.25.7"
         },
         {
             "name": "gravitee-repository-redis",
@@ -171,7 +171,7 @@
         },
         {
             "name": "gravitee-elasticsearch",
-            "version": "1.25.14-SNAPSHOT"
+            "version": "1.25.14"
         },
         {
             "name": "gravitee-repository-jdbc",
@@ -279,7 +279,7 @@
         },
         {
             "name": "gravitee-policy-role-based-access-control",
-            "version": "1.0.1-SNAPSHOT"
+            "version": "1.0.1"
         }
     ],
     "buildDependencies": [
