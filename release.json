@@ -7,7 +7,7 @@
     "components": [
         {
             "name": "gravitee-common",
-            "version": "1.16.1"
+            "version": "1.16.2-SNAPSHOT"
         },
         {
             "name": "gravitee-definition",
@@ -15,7 +15,7 @@
         },
         {
             "name": "gravitee-gateway",
-            "version": "1.30.3"
+            "version": "1.30.4-SNAPSHOT"
         },
         {
             "name": "gravitee-gateway-api",
@@ -23,11 +23,11 @@
         },
         {
             "name": "gravitee-management-rest-api",
-            "version": "1.30.3"
+            "version": "1.30.4-SNAPSHOT"
         },
         {
             "name": "gravitee-management-webui",
-            "version": "1.30.3"
+            "version": "1.30.4-SNAPSHOT"
         },
         {
             "name": "gravitee-plugin",
@@ -99,7 +99,7 @@
         },
         {
             "name": "gravitee-policy-jwt",
-            "version": "1.14.0"
+            "version": "1.14.1-SNAPSHOT"
         },
         {
             "name": "gravitee-policy-override-http-method",
@@ -139,7 +139,7 @@
         },
         {
             "name": "gravitee-policy-callout-http",
-            "version": "1.7.0"
+            "version": "1.7.1"
         },
         {
             "name": "gravitee-policy-assign-attributes",
@@ -163,7 +163,7 @@
         },
         {
             "name": "gravitee-repository-mongodb",
-            "version": "1.30.2"
+            "version": "1.30.3-SNAPSHOT"
         },
         {
             "name": "gravitee-repository-redis",
@@ -171,7 +171,7 @@
         },
         {
             "name": "gravitee-elasticsearch",
-            "version": "1.30.2"
+            "version": "1.30.3-SNAPSHOT"
         },
         {
             "name": "gravitee-repository-jdbc",
@@ -279,7 +279,7 @@
         },
         {
             "name": "gravitee-policy-role-based-access-control",
-            "version": "1.0.0"
+            "version": "1.0.1"
         },
         {
             "name": "gravitee-policy-ssl-enforcement",
