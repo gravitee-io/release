@@ -4,10 +4,8 @@ db.identity_providers.update({}, {$set: {referenceId: "DEFAULT", referenceType: 
 print('Parameters migration');
 db.parameters.update({}, {$set: {referenceId: "DEFAULT", referenceType: "ENVIRONMENT"}}, false, true);
 
-
-print('Roles migration');
-db.roles.update({}, {$set: {referenceId: "DEFAULT", referenceType: "ENVIRONMENT"}}, false, true);
-
+print('Users migration');
+db.users.update({}, {$set: {referenceId: "DEFAULT", referenceType: "ORGANIZATION"}}, false, true);
 
 print('Pages migration');
 db.pages.find().forEach(
@@ -54,5 +52,33 @@ db.rating.find().forEach(
                 $unset: { "api": ""}
             }
         );
+    }
+);
+
+print('Roles migration');
+db.roles.find().forEach(
+    function(role) {
+        const oldId = role._id;
+        role._id = { 
+            "scope": role._id.scope, 
+            "name": role._id.name,
+            "referenceId": "DEFAULT",
+            "referenceType": "ORGANIZATION"
+        }
+        db.roles.remove({ "_id" : oldId });
+        db.roles.insert(role);
+    }
+);
+
+print('Views migration');
+db.views.find().forEach(
+    function(view) {
+        const oldId = view._id;
+        view._id = {
+            "_id": view._id,
+            "environment": "DEFAULT"
+        }
+        db.views.remove({ "_id": oldId });
+        db.views.insert(view);
     }
 );

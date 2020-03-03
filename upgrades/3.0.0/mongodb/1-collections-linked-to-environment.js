@@ -21,9 +21,3 @@ db.entrypoints.update({}, {$set: {"environment": "DEFAULT"}}, false, true);
 
 print('Groups migration');
 db.groups.update({}, {$set: {"environment": "DEFAULT"}}, false, true);
-
-print('Users migration');
-db.users.update({}, {$set: {"environment": "DEFAULT"}}, false, true);
-
-print('Views migration');
-db.views.update({}, {$set: {"environment": "DEFAULT"}}, false, true);
