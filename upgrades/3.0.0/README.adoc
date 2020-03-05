@@ -32,12 +32,12 @@ In this new version, if api-keys used to call an API is invalid or has expired, 
 
 Before running any script, please create a dump of your existing database.
 
-upgrades/3.0.0/mongodb/1-collections-linked-to-environment.js::
+https://raw.githubusercontent.com/gravitee-io/release/master/upgrades/3.0.0/mongodb/1-collections-linked-to-environment.js[upgrades/3.0.0/mongodb/1-collections-linked-to-environment.js]::
 This script adds a new field that refers the default environment.
 
-upgrades/3.0.0/mongodb/2-id-migration.js::
+https://raw.githubusercontent.com/gravitee-io/release/master/upgrades/3.0.0/mongodb/2-id-migration.js[upgrades/3.0.0/mongodb/2-id-migration.js]::
 This script changes the format of some collections id and drop some field.
 
-upgrades/3.0.0/mongodb/3-replace-apiArray-by-unique-api.js::
+https://raw.githubusercontent.com/gravitee-io/release/master/upgrades/3.0.0/mongodb/3-replace-apiArray-by-unique-api.js[upgrades/3.0.0/mongodb/upgrades/3.0.0/mongodb/3-replace-apiArray-by-unique-api.js]::
 This script adds a new field that refers the api and remove the api array.
 
