@@ -1,0 +1,17 @@
+= Upgrade Notes
+
+ifdef::env-github[]
+include::3.0.0/README.adoc[leveloffset=+1]
+endif::[]
+
+ifndef::env-github[]
+
+NOTE: Files specified in this guide can be found at https://github.com/gravitee-io/release/tree/master/upgrades/3.x
+
+WARNING: If you plan to skip versions when you upgrade, ensure that you read the version-specific upgrade notes for each intermediate version. You may be required to perform manual actions as part of the upgrade.
+
+WARNING: Be sure to run scripts on the correct database since `gravitee` is not always the default database! Check your db name by running `show dbs;`
+
+include::https://raw.githubusercontent.com/gravitee-io/release/master/upgrades/3.0.0/README.adoc[leveloffset=+1]
+
+endif::[]
