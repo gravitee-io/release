@@ -27,9 +27,6 @@
             "name": "gravitee-management-webui"
         },
         {
-            "name": "gravitee-portal-rest-api"
-        },
-        {
             "name": "gravitee-portal-webui"
         },
         {
