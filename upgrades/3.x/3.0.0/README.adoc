@@ -20,12 +20,18 @@ environment {
 
 It will allow you to manage more than one environment for each instance of Gravitee.
 
-If you are using the REST API directly, please note that you will have to adapt the URL
-from `https://host/management/` to `https://host/management/DEFAULT/`
-
 == Breaking Changes
 === API-Key policy
 In this new version, if api-keys used to call an API is invalid or has expired, the gateway will fail with a *401* (instead of 403 in previous versions of Gravitee).
+
+=== Management API
+If you are using the REST API directly, please note that you will have to adapt the URL
+from `https://host/management/` to `https://host/management/DEFAULT/`
+
+=== Management UI
+The actual portal has been replaced by a brand new version, with its own location. As a consequence, the URL of the management UI has been modified to remove the */management* part.
+
+For instance, to access the _Platform Overview_ page, you should use `https://host/\#!/platform` instead of `https://host/#!/management/platform`
 
 == Repository
 === Mongodb
