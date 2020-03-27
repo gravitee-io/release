@@ -7,4 +7,4 @@ The use of the config file is still available but the JSON format has changed.
 
 _**If you use your own `constants.json` file, please read the documentation to adpat it to the new format.**_
 
-See https://docs.gravitee.io/apim_installguide_portal_configuration.html
+See https://docs.gravitee.io/apim/1.x/apim_installguide_portal_configuration.html

@@ -8,5 +8,5 @@ To avoid incompatibilities on this version, the `Trust All` server certificates 
 
 === Mongodb
 
-https://raw.githubusercontent.com/gravitee-io/release/master/upgrades/1.20.0/mongodb/Migration.120.SSL.js[upgrades/1.20.0/mongodb/Migration.120.SSL.js]::
+https://raw.githubusercontent.com/gravitee-io/release/master/upgrades/1.x/1.20.0/mongodb/Migration.120.SSL.js[upgrades/1.20.0/mongodb/Migration.120.SSL.js]::
 This script update ssl endpoints to store the default configuration if not present.

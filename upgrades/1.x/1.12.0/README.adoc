@@ -32,4 +32,4 @@ For existing users, be careful about port mapping, firewall rules, ... since the
 instead of `9300` used by the native client.
 
 Configuration for both API Gateway and Management API have been updated to reflect the new Elasticsearch connector.
-You can have a look to https://docs.gravitee.io/apim_installguide_repositories_elasticsearch.html[configuration page].
+You can have a look to https://docs.gravitee.io/apim/1.x/apim_installguide_repositories_elasticsearch.html[configuration page].
