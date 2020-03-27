@@ -282,7 +282,7 @@
             "version": "1.0.0"
         },
         {
-            "name": "gravitee-policy-xml-validation",
+            "name": "gravitee-policy-xsd",
             "version": "1.0.0-SNAPSHOT"
         }
     ],
