@@ -280,6 +280,10 @@
         {
             "name": "gravitee-policy-role-based-access-control",
             "version": "1.0.0"
+        },
+        {
+            "name": "gravitee-policy-xml-validation",
+            "version": "1.0.0-SNAPSHOT"
         }
     ],
     "buildDependencies": [
@@ -363,6 +367,7 @@
             "gravitee-policy-generate-jwt",
             "gravitee-policy-assign-attributes",
             "gravitee-policy-role-based-access-control",
+            "gravitee-policy-xml-validation",
             "gravitee-elasticsearch",
             "gravitee-reporter-file",
             "gravitee-reporter-kafka",
