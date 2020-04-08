@@ -49,6 +49,9 @@ It also updates memberships and groups by adding or removing columns.
 https://raw.githubusercontent.com/gravitee-io/release/master/upgrades/3.0.0/mongodb/3-replace-apiArray-by-unique-api.js[upgrades/3.0.0/mongodb/upgrades/3.0.0/mongodb/3-replace-apiArray-by-unique-api.js]::
 This script adds a new field that refers the api and remove the api array.
 
+https://raw.githubusercontent.com/gravitee-io/release/master/upgrades/3.0.0/mongodb/4-remove-devMode.js[upgrades/3.0.0/mongodb/upgrades/3.0.0/mongodb/4-remove-devMode.js]::
+This script removes the 'devMode' parameter, since the legacy portal has been replaced.
+
 == Upgrader
 === Identity providers
 Because of the evolution of the roles and their scope, role mappings in *Identity Providers* must be updated. To achieve this, a specific service has been created and will be launched at APIM startup. As this is not necessary to launch this service more than once, it can be disabled with some configuration.
