@@ -51,33 +51,35 @@ db.roles.find().sort( { '_id.scope': 1 } ).forEach(
         const oldScope = role._id.scope;
         if (oldScope === 1) {
             if (hasPermValue(role.permissions, 1600) || hasPermValue(role.permissions, 2100)) {
-                let existingRoleCursor = db.roles.find({scope: 'ORGANIZATION', name: oldId.name, referenceId: 'DEFAULT', referenceType: 'ORGANIZATION'});
-                if (!existingRoleCursor.hasNext()) {
-                    let newRole = Object.assign({}, role);
-                    newRole._id = 'ORGANIZATION_' + oldId.name;
-                    newRole.scope = 'ORGANIZATION';
-                    newRole.name = oldId.name;
-                    newRole.referenceId = 'DEFAULT';
-                    newRole.referenceType = 'ORGANIZATION';
+                
+                let newRole = Object.assign({}, role);
+                newRole._id = 'ORGANIZATION_' + oldId.name;
+                newRole.scope = 'ORGANIZATION';
+                newRole.name = oldId.name;
+                newRole.referenceId = 'DEFAULT';
+                newRole.referenceType = 'ORGANIZATION';
 
-                    newRole.permissions = [];
-                    let roleNewPermissions = []
-                    role.permissions.forEach(
-                        function(permission) {
-                            let permValue = permission - (permission % 100);
-                            if (permValue === 1600) {
-                                newRole.permissions.push(1200 + permission % 100);
-                            } else if (permValue === 2100) {
-                                newRole.permissions.push(1000 + permission % 100);
-                            } else {
-                                roleNewPermissions.push(permission);
-                            }
+                newRole.permissions = [];
+                let roleNewPermissions = []
+                role.permissions.forEach(
+                    function(permission) {
+                        let permValue = permission - (permission % 100);
+                        if (permValue === 1600) {
+                            newRole.permissions.push(1200 + permission % 100);
+                        } else if (permValue === 2100) {
+                            newRole.permissions.push(1000 + permission % 100);
+                        } else {
+                            roleNewPermissions.push(permission);
                         }
-                    );
-                    role.permissions = roleNewPermissions;
+                    }
+                );
+                role.permissions = roleNewPermissions;
 
-                    db.roles.insert(newRole);
+                let existingRoleCursor = db.roles.find({scope: 'ORGANIZATION', name: oldId.name, referenceId: 'DEFAULT', referenceType: 'ORGANIZATION'});
+                if (existingRoleCursor.hasNext()) {
+                    db.roles.remove({'_id': existingRoleCursor.next()._id});
                 }
+                db.roles.insert(newRole);
             } 
 
             let roleNewPermissions = []
@@ -117,11 +119,13 @@ db.roles.find().sort( { '_id.scope': 1 } ).forEach(
             role.referenceType = 'ORGANIZATION';
 
             db.roles.remove({ '_id' : oldId });
+
             let existingRoleCursor = db.roles.find({scope: 'ENVIRONMENT', name: oldId.name, referenceId: 'DEFAULT', referenceType: 'ORGANIZATION'});
-            if (!existingRoleCursor.hasNext()) {
-                db.roles.insert(role);
+            if (existingRoleCursor.hasNext()) {
+                db.roles.remove({'_id': existingRoleCursor.next()._id});
             }
-        } else if (oldScope === 2) {
+            db.roles.insert(role);
+    } else if (oldScope === 2) {
             // has already been treated and deleted ?
             let portalRoleCursor = db.roles.find({'_id':oldId});
             if (portalRoleCursor.hasNext()) {
@@ -146,9 +150,11 @@ db.roles.find().sort( { '_id.scope': 1 } ).forEach(
     
                 db.roles.remove({ '_id' : oldId });
                 let existingRoleCursor = db.roles.find({scope: 'ENVIRONMENT', name: oldId.name, referenceId: 'DEFAULT', referenceType: 'ORGANIZATION'});
-                if (!existingRoleCursor.hasNext()) {
-                    db.roles.insert(role);
+                if (existingRoleCursor.hasNext()) {
+                    db.roles.remove({'_id': existingRoleCursor.next()._id});
                 }
+                db.roles.insert(role);
+
             }
         } else if (oldScope === 3) {
             role._id = 'API_' + oldId.name;
@@ -159,9 +165,11 @@ db.roles.find().sort( { '_id.scope': 1 } ).forEach(
 
             db.roles.remove({ '_id' : oldId });
             let existingRoleCursor = db.roles.find({scope: 'API', name: oldId.name, referenceId: 'DEFAULT', referenceType: 'ORGANIZATION'});
-            if (!existingRoleCursor.hasNext()) {
-                db.roles.insert(role);
+            if (existingRoleCursor.hasNext()) {
+                db.roles.remove({'_id': existingRoleCursor.next()._id});
             }
+            db.roles.insert(role);
+
         } else if (oldScope === 4) {
             role._id = 'APPLICATION_' + oldId.name;
             role.scope = 'APPLICATION';
@@ -171,9 +179,11 @@ db.roles.find().sort( { '_id.scope': 1 } ).forEach(
 
             db.roles.remove({ '_id' : oldId });
             let existingRoleCursor = db.roles.find({scope: 'APPLICATION', name: oldId.name, referenceId: 'DEFAULT', referenceType: 'ORGANIZATION'});
-            if (!existingRoleCursor.hasNext()) {
-                db.roles.insert(role);
+            if (existingRoleCursor.hasNext()) {
+                db.roles.remove({'_id': existingRoleCursor.next()._id});
             }
+            db.roles.insert(role);
+
         } else if (oldScope === 5) {
             role._id = 'GROUP_' + oldId.name;
             role.scope = 'GROUP';
@@ -183,9 +193,11 @@ db.roles.find().sort( { '_id.scope': 1 } ).forEach(
 
             db.roles.remove({ '_id' : oldId });
             let existingRoleCursor = db.roles.find({scope: 'GROUP', name: oldId.name, referenceId: 'DEFAULT', referenceType: 'ORGANIZATION'});
-            if (!existingRoleCursor.hasNext()) {
-                db.roles.insert(role);
+            if (existingRoleCursor.hasNext()) {
+                db.roles.remove({'_id': existingRoleCursor.next()._id});
             }
+            db.roles.insert(role);
+
         }
     }
 );
@@ -287,13 +299,13 @@ db.groups.find().forEach(
 
                 db.memberships.insert(newMembership);
             });
-            db.groups.updateOne(
-                { _id: group._id },
-                {
-                    $set: {'environmentId': 'DEFAULT'},
-                    $unset: { roles: '' }
-                }
-            );
         }
+        db.groups.updateOne(
+            { _id: group._id },
+            {
+                $set: {'environmentId': 'DEFAULT'},
+                $unset: { roles: '' }
+            }
+        );
     }
 );
