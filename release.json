@@ -159,7 +159,7 @@
         },
         {
             "name": "gravitee-repository-test",
-            "version": "1.30.3-SNAPSHOT"
+            "version": "1.30.3"
         },
         {
             "name": "gravitee-repository-mongodb",
