@@ -1,4 +1,5 @@
 print('Plans migration - plans have now only one api');
+db.plans.dropIndexes();
 db.plans.find().forEach(
     function(plan) {
         
@@ -16,3 +17,5 @@ db.plans.find().forEach(
         
     }
 );
+db.plans.createIndex( { "api" : 1 } );
+db.plans.reIndex();

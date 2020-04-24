@@ -45,6 +45,7 @@ hasPermValue = function (permissions, permValue) {
 }
 
 print('Roles migration - scope renaming & new Id & MANAGEMENT and PORTAL replaced by ENVIRONMENT and ORGANIZATION');
+db.roles.dropIndexes();
 db.roles.find().sort( { '_id.scope': 1 } ).forEach(
     function(role) {
         const oldId = role._id;
@@ -201,8 +202,12 @@ db.roles.find().sort( { '_id.scope': 1 } ).forEach(
         }
     }
 );
+db.roles.createIndex( {"id": 1 } );
+db.roles.createIndex( {"scope": 1 } );
+db.roles.reIndex();
 
 print('Memberships migration - new structure + MANAGEMENT and PORTAL replaced by ENVIRONMENT and ORGANIZATION');
+db.memberships.dropIndexes();
 db.memberships.find().forEach(
     function(membership) {
         if(!membership.roleId) {
@@ -259,9 +264,13 @@ db.memberships.find().forEach(
                     'referenceId': newReferenceId,
                     'referenceType': newReferenceType,
                     'roleId': newRoleId,
-                    'createdAt': membership.createdAt,
-                    'updatedAt': membership.updatedAt
                 };
+                if (membership.createdAt) {
+                    newMembership['createdAt'] = membership.createdAt;
+                }
+                if (membership.updatedAt) {
+                    newMembership['updatedAt'] = membership.updatedAt;
+                }
 
                 db.memberships.insert(newMembership);
             });
@@ -269,6 +278,20 @@ db.memberships.find().forEach(
         }
     }
 );
+db.memberships.createIndex( { "id" : 1 }, { unique : true } );
+db.memberships.createIndex( { "memberId" : 1 } );
+db.memberships.createIndex( { "member" : 1 } );
+db.memberships.createIndex( { "referenceId" : 1 } );
+db.memberships.createIndex( { "referenceType" : 1 } );
+db.memberships.createIndex( { "referenceId":1, "referenceType":1 } );
+db.memberships.createIndex( { "referenceId":1, "referenceType":1, "roleId":1 } );
+db.memberships.createIndex( { "roleId" : 1 } );
+db.memberships.createIndex( { "memberId":1, "memberType":1, "referenceType":1 });
+db.memberships.createIndex( { "memberId":1, "memberType":1, "referenceType":1, "roleId":1 });
+db.memberships.createIndex( { "memberId":1, "memberType":1, "referenceType":1, "referenceId":1 });
+db.memberships.createIndex( { "memberId":1, "memberType":1, "referenceType":1, "referenceId":1, "roleId":1 });
+db.memberships.createIndex( { "memberId":1, "memberType":1 });
+db.memberships.reIndex();
 
 print('Groups migration - default role are now store in "memberships" collection + add environmentId field');
 db.groups.find().forEach(

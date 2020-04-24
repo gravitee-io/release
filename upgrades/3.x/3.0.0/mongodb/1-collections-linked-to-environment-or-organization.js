@@ -43,7 +43,6 @@ db.views.find().forEach(
 );
 
 print('IdentityProviders migration - add referenceId and referenceType field');
-db.identity_providers.update({}, {$set: {referenceId: 'DEFAULT', referenceType: 'ENVIRONMENT'}}, false, true);
 db.identity_providers.find().forEach(
     function(idp) {
         if (!idp.referenceId) {
