@@ -1,5 +1,11 @@
 = Upgrade to 3.0.0
+
+== Important
+If you are using mongoDB, it is *strongly recommended* to run the scripts to upgrade your database *before* starting the new version of the gravitee REST APIs.
+Otherwise, you could experience data corruption issues.
+
 == General
+
 === Organization & Environment
 In this new version Gravitee comes with a new way of managing your environments.
 By default, Gravitee is configured with a first Organization:
@@ -44,10 +50,12 @@ This script adds new fields that refer the default environment or the default or
 https://raw.githubusercontent.com/gravitee-io/release/master/upgrades/3.x/3.0.0/mongodb/2-roles-groups-and-memberships-migration.js[upgrades/3.x/3.0.0/mongodb/2-roles-groups-and-memberships-migration.js]::
 This script migrates permission values in roles since MANAGEMENT roles and PORTAL roles have been merged and dispatched into new ENVIRONMENT and ORGANIZATION roles.
 It also updates memberships and groups by adding or removing columns.
+All previous indexes for *roles* and *memberships* will be deleted and replaced by new indexes.
 
 
 https://raw.githubusercontent.com/gravitee-io/release/master/upgrades/3.x/3.0.0/mongodb/3-replace-apiArray-by-unique-api.js[upgrades/3.x/3.0.0/mongodb/3-replace-apiArray-by-unique-api.js]::
 This script adds a new field that refers the api and remove the api array.
+All previous indexes for *plans* will be deleted and replaced by new indexes.
 
 https://raw.githubusercontent.com/gravitee-io/release/master/upgrades/3.x/3.0.0/mongodb/4-remove-devMode.js[upgrades/3.x/3.0.0/mongodb/4-remove-devMode.js]::
 This script removes the 'devMode' parameter, since the legacy portal has been replaced.
