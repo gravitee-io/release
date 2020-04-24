@@ -163,11 +163,11 @@
         },
         {
             "name": "gravitee-repository-mongodb",
-            "version": "1.30.5-SNAPSHOT"
+            "version": "1.30.5"
         },
         {
             "name": "gravitee-repository-redis",
-            "version": "1.30.3-SNAPSHOT"
+            "version": "1.30.3"
         },
         {
             "name": "gravitee-elasticsearch",
