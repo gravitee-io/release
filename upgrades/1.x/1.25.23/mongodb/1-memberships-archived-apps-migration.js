@@ -10,3 +10,13 @@ db.applications.find({status: 'ARCHIVED'}).forEach(
                     })
             })
     });
+
+print('Deleted API\'s Memberships migration');
+db.memberships.find({'_id.referenceType': 'API'}).forEach(
+    function (membership) {
+        const existingApiCursor = db.apis.find({"_id": membership._id.referenceId})
+        if (!existingApiCursor.hasNext()) {
+            print("Clean API memberships for the deleted API '" + membership._id.referenceId + "' and user '" + membership._id.userId + "'");
+            db.memberships.deleteOne(membership);
+        }
+    });
