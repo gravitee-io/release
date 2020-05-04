@@ -107,7 +107,7 @@
         },
         {
             "name": "gravitee-policy-request-validation",
-            "version": "1.7.0"
+            "version": "1.7.1-SNAPSHOT"
         },
         {
             "name": "gravitee-policy-resource-filtering",
@@ -175,7 +175,7 @@
         },
         {
             "name": "gravitee-repository-jdbc",
-            "version": "1.30.4"
+            "version": "1.30.5-SNAPSHOT"
         },
         {
             "name": "gravitee-resource-api",
