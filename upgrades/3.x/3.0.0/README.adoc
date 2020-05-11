@@ -9,18 +9,18 @@ Otherwise, you could experience data corruption issues.
 === Organization & Environment
 In this new version Gravitee comes with a new way of managing your environments.
 By default, Gravitee is configured with a first Organization:
-```json
+```
 organization {
-	id: DEFAULT,
-	name: Default organization
+  id: DEFAULT,
+  name: Default organization
 }
 ```
 And a first Environment in this Organization:
-```json
+```
 environment {
-	id: DEFAULT,
-	name: Default environment,
-	organization: DEFAULT
+  id: DEFAULT,
+  name: Default environment,
+  organization: DEFAULT
 }
 ```
 
@@ -38,6 +38,46 @@ from `https://host/management/` to `https://host/management/DEFAULT/`
 The actual portal has been replaced by a brand new version, with its own location. As a consequence, the URL of the management UI has been modified to remove the */management* part.
 
 For instance, to access the _Platform Overview_ page, you should use `https://host/\#!/platform` instead of `https://host/#!/management/platform`
+
+=== Memberships, roles and role mappings
+One major breaking change in this new version is the replacement of *MANAGEMENT* and *PORTAL* scopes by *ENVIRONNMENT* and *ORGANIZATION* scopes. It's not just a renaming but a dispatch of permissions among these 2 news scopes. As a consequence, all existing memberships, roles, groups and Identity Providers role mappings should be updated.
+
+* Memberhips, roles and groups have to be updated with migration scripts <<mongodb, here>>
+* Role Mappings for Identity Providers stored in database will be updated with a specific upgrader. See <<upgrader, Upgrader>>
+* Role mappings defined in the *gravitee.yml* file have to be updated with these new scopes.
+
+Here's a correlation table of permissions before and after migration :
+[options="header"]
+|=============
+|Permission Name |Scope Name before migration |Scope name after migration
+|INSTANCE                     |MANAGEMENT  |ENVIRONMENT
+|GROUP                        |MANAGEMENT  |ENVIRONMENT
+|TAG                          |MANAGEMENT  |ENVIRONMENT
+|TENANT                       |MANAGEMENT  |ENVIRONMENT
+|API                          |MANAGEMENT  |ENVIRONMENT
+|ROLE                         |MANAGEMENT  |ORGANIZATION
+|APPLICATION                  |MANAGEMENT  |ENVIRONMENT
+|PLATFORM                     |MANAGEMENT  |ENVIRONMENT
+|AUDIT                        |MANAGEMENT  |ENVIRONMENT
+|NOTIFICATION                 |MANAGEMENT  |ENVIRONMENT
+|USER                         |MANAGEMENT  |ORGANIZATION
+|MESSAGE                      |MANAGEMENT  |ENVIRONMENT
+|DICTIONARY                   |MANAGEMENT  |ENVIRONMENT
+|ALERT                        |MANAGEMENT  |ENVIRONMENT
+|ENTRYPOINT                   |MANAGEMENT  |ENVIRONMENT
+|SETTINGS                     |MANAGEMENT  |ENVIRONMENT
+|DASHBOARD                    |MANAGEMENT  |ENVIRONMENT
+|QUALITY_RULE                 |MANAGEMENT  |ENVIRONMENT
+|METADATA                     |PORTAL      |ENVIRONMENT
+|DOCUMENTATION                |PORTAL      |ENVIRONMENT
+|APPLICATION                  |PORTAL      |ENVIRONMENT
+|VIEW                         |PORTAL      |ENVIRONMENT
+|TOP_APIS                     |PORTAL      |ENVIRONMENT
+|SETTINGS                     |PORTAL      |ENVIRONMENT
+|API_HEADER                   |PORTAL      |ENVIRONMENT
+|IDENTITY_PROVIDER            |PORTAL      |ENVIRONMENT
+|CLIENT_REGISTRATION_PROVIDER |PORTAL      |ENVIRONMENT
+|=============
 
 == Repository
 === Mongodb
