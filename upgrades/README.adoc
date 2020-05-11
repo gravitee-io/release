@@ -1,5 +1,5 @@
 = Upgrade Notes
 
-* link:1.x/README.adoc[APÏ Management 1.x]
+* link:1.x/README.adoc[API Management 1.x]
 
-* link:3.x/README.adoc[APÏ Management 3.x]
+* link:3.x/README.adoc[API Management 3.x]
