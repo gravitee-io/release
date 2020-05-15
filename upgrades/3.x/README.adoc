@@ -12,6 +12,6 @@ WARNING: If you plan to skip versions when you upgrade, ensure that you read the
 
 WARNING: Be sure to run scripts on the correct database since `gravitee` is not always the default database! Check your db name by running `show dbs;`
 
-include::https://raw.githubusercontent.com/gravitee-io/release/master/upgrades/3.0.0/README.adoc[leveloffset=+1]
+include::https://raw.githubusercontent.com/gravitee-io/release/master/upgrades/3.x/3.0.0/README.adoc[leveloffset=+1]
 
 endif::[]
