@@ -388,7 +388,8 @@
         ],
         [
             "gravitee-management-rest-api",
-            "gravitee-management-webui"
+            "gravitee-management-webui",
+	    "gravitee-portal-webui"
         ]
     ]
 }
