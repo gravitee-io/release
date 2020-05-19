@@ -279,7 +279,7 @@
         },
         {
             "name": "gravitee-policy-role-based-access-control",
-            "version": "1.0.1-SNAPSHOT"
+            "version": "1.0.1"
         },
         {
             "name": "gravitee-policy-ssl-enforcement",
