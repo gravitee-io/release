@@ -122,3 +122,12 @@ services:
     enabled: true
 ----
 
+== Docker
+
+Docker images for Gravitee.io APIM have been renamed to follow the same conventions as the others Gravitee.io modules.
+
+In the case of Gravitee.io APIM, all the images have been prefixed by `-apim`.
+
+For example, for the API gateway `graviteeio/gateway` has been replaced by `graviteeio/apim-gateway`.
+
+Please have a look to the documentation at: https://docs.gravitee.io/apim/3.x/apim_installguide_docker_images.html
