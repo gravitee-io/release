@@ -31,7 +31,7 @@
         },
         {
             "name": "gravitee-portal-webui",
-            "version": "3.0.0-SNAPSHOT"
+            "version": "3.0.0"
         },
         {
             "name": "gravitee-plugin",
@@ -389,7 +389,7 @@
         [
             "gravitee-management-rest-api",
             "gravitee-management-webui",
-	    "gravitee-portal-webui"
+	        "gravitee-portal-webui"
         ]
     ]
 }
