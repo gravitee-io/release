@@ -373,6 +373,7 @@
             "gravitee-policy-role-based-access-control",
             "gravitee-policy-ssl-enforcement",
             "gravitee-policy-xml-validation",
+            "gravitee-policy-xsd",
             "gravitee-elasticsearch",
             "gravitee-reporter-file",
             "gravitee-reporter-kafka",
