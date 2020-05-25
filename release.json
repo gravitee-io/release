@@ -284,10 +284,6 @@
         {
             "name": "gravitee-policy-ssl-enforcement",
             "version": "1.0.1"
-        },
-        {
-            "name": "gravitee-policy-xsd",
-            "version": "1.0.0-SNAPSHOT"
         }
     ],
     "buildDependencies": [
@@ -372,8 +368,6 @@
             "gravitee-policy-assign-attributes",
             "gravitee-policy-role-based-access-control",
             "gravitee-policy-ssl-enforcement",
-            "gravitee-policy-xml-validation",
-            "gravitee-policy-xsd",
             "gravitee-elasticsearch",
             "gravitee-reporter-file",
             "gravitee-reporter-kafka",
