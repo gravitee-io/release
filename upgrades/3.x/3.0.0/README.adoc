@@ -32,7 +32,7 @@ In this new version, if api-keys used to call an API is invalid or has expired, 
 
 === Management API
 If you are using the REST API directly, please note that you will have to adapt the URL
-from `https://host/management/` to `https://host/management/DEFAULT/`
+from `https://host/management/` to `https://host/management/organizations/DEFAULT/environments/DEFAULT/`
 
 The resource `/views/default` has been deleted since a view does not have a *default* field anymore.
 
