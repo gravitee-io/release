@@ -1,7 +1,7 @@
 {
     "name": "Gravitee.io",
     "version": "1.30.11-SNAPSHOT",
-    "buildTimestamp": "2020-06-01T11:13:13+0000",
+    "buildTimestamp": "2020-06-01T11:29:37+0000",
     "scmSshUrl": "git@github.com:gravitee-io",
     "scmHttpUrl": "https://github.com/gravitee-io/",
     "components": [
@@ -27,7 +27,7 @@
         },
         {
             "name": "gravitee-management-webui",
-            "version": "1.30.11-SNAPSHOT"
+            "version": "1.30.11"
         },
         {
             "name": "gravitee-plugin",
@@ -171,7 +171,7 @@
         },
         {
             "name": "gravitee-elasticsearch",
-            "version": "1.30.5-SNAPSHOT"
+            "version": "1.30.5"
         },
         {
             "name": "gravitee-repository-jdbc",
