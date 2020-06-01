@@ -160,7 +160,7 @@
         },
         {
             "name": "gravitee-repository-mongodb",
-            "version": "1.30.5"
+            "version": "1.30.6-SNAPSHOT"
         },
         {
             "name": "gravitee-repository-redis",
