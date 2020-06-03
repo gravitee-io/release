@@ -7,31 +7,27 @@
     "components": [
         {
             "name": "gravitee-common",
-            "version": "1.17.0"
+            "version": "1.17.1"
         },
         {
             "name": "gravitee-definition",
-            "version": "1.21.0"
+            "version": "1.21.1-SNAPSHOT"
         },
         {
-            "name": "gravitee-gateway",
-            "version": "3.0.1"
+            "name": "gravitee-gateway"
         },
         {
             "name": "gravitee-gateway-api",
             "version": "1.20.0"
         },
         {
-            "name": "gravitee-management-rest-api",
-            "version": "3.0.1"
+            "name": "gravitee-management-rest-api"
         },
         {
-            "name": "gravitee-management-webui",
-            "version": "3.0.1"
+            "name": "gravitee-management-webui"
         },
         {
-            "name": "gravitee-portal-webui",
-            "version": "3.0.1"
+            "name": "gravitee-portal-webui"
         },
         {
             "name": "gravitee-plugin",
@@ -143,7 +139,7 @@
         },
         {
             "name": "gravitee-policy-callout-http",
-            "version": "1.8.0"
+            "version": "1.9.0-SNAPSHOT"
         },
         {
             "name": "gravitee-policy-assign-attributes",
@@ -159,15 +155,15 @@
         },
         {
             "name": "gravitee-repository",
-            "version": "3.0.0"
+            "version": "3.1.0-SNAPSHOT"
         },
         {
             "name": "gravitee-repository-test",
-            "version": "3.0.0"
+            "version": "3.1.0-SNAPSHOT"
         },
         {
             "name": "gravitee-repository-mongodb",
-            "version": "3.0.0"
+            "version": "3.1.0-SNAPSHOT"
         },
         {
             "name": "gravitee-repository-redis",
@@ -175,11 +171,11 @@
         },
         {
             "name": "gravitee-elasticsearch",
-            "version": "3.0.0"
+            "version": "3.1.0-SNAPSHOT"
         },
         {
             "name": "gravitee-repository-jdbc",
-            "version": "3.0.0"
+            "version": "3.1.0-SNAPSHOT"
         },
         {
             "name": "gravitee-resource-api",
@@ -235,7 +231,7 @@
         },
         {
             "name": "gravitee-repository-gateway-bridge-http",
-            "version": "3.0.0"
+            "version": "3.1.0-SNAPSHOT"
         },
         {
             "name": "gravitee-policy-url-rewriting",
@@ -283,7 +279,7 @@
         },
         {
             "name": "gravitee-policy-role-based-access-control",
-            "version": "1.0.1"
+            "version": "1.0.2-SNAPSHOT"
         },
         {
             "name": "gravitee-policy-ssl-enforcement",
