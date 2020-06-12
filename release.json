@@ -215,7 +215,7 @@
         },
         {
             "name": "gravitee-fetcher-gitlab",
-            "version": "1.9.0"
+            "version": "1.9.1-SNAPSHOT"
         },
         {
             "name": "gravitee-fetcher-bitbucket",
