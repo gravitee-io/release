@@ -1,7 +1,7 @@
 {
     "name": "Gravitee.io",
     "version": "1.30.12-SNAPSHOT",
-    "buildTimestamp": "2020-06-01T11:37:55+0000",
+    "buildTimestamp": "2020-06-15T16:43:12+0000",
     "scmSshUrl": "git@github.com:gravitee-io",
     "scmHttpUrl": "https://github.com/gravitee-io/",
     "components": [
@@ -155,15 +155,15 @@
         },
         {
             "name": "gravitee-repository",
-            "version": "1.30.5-SNAPSHOT"
+            "version": "1.30.5"
         },
         {
             "name": "gravitee-repository-test",
-            "version": "1.30.4-SNAPSHOT"
+            "version": "1.30.4"
         },
         {
             "name": "gravitee-repository-mongodb",
-            "version": "1.30.7-SNAPSHOT"
+            "version": "1.30.7"
         },
         {
             "name": "gravitee-repository-redis",
@@ -175,7 +175,7 @@
         },
         {
             "name": "gravitee-repository-jdbc",
-            "version": "1.30.6-SNAPSHOT"
+            "version": "1.30.6"
         },
         {
             "name": "gravitee-resource-api",
@@ -255,7 +255,7 @@
         },
         {
             "name": "gravitee-notifier-email",
-            "version": "1.2.3-SNAPSHOT"
+            "version": "1.2.3"
         },
         {
             "name": "gravitee-alert-api",
@@ -275,7 +275,7 @@
         },
         {
             "name": "gravitee-service-discovery-eureka",
-            "version": "1.1.1-SNAPSHOT"
+            "version": "1.1.1"
         },
         {
             "name": "gravitee-policy-role-based-access-control",
