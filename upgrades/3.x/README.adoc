@@ -1,6 +1,8 @@
 = Upgrade Notes
 
 ifdef::env-github[]
+include::3.4.0/README.adoc[leveloffset=+1]
+
 include::3.3.0/README.adoc[leveloffset=+1]
 
 include::3.0.2/README.adoc[leveloffset=+1]
@@ -17,6 +19,8 @@ You may be required to perform manual actions as part of the upgrade.
 
 WARNING: Be sure to run scripts on the correct database since `gravitee` is not always the default database!
 Check your db name by running `show dbs;`
+
+include::https://raw.githubusercontent.com/gravitee-io/release/master/upgrades/3.x/3.4.0/README.adoc[leveloffset=+1]
 
 include::https://raw.githubusercontent.com/gravitee-io/release/master/upgrades/3.x/3.3.0/README.adoc[leveloffset=+1]
 
