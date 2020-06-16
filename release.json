@@ -151,7 +151,7 @@
         },
         {
             "name": "gravitee-reporter-file",
-            "version": "1.6.1-SNAPSHOT"
+            "version": "1.6.2-SNAPSHOT"
         },
         {
             "name": "gravitee-repository",
@@ -215,7 +215,7 @@
         },
         {
             "name": "gravitee-fetcher-gitlab",
-            "version": "1.9.1-SNAPSHOT"
+            "version": "1.9.2-SNAPSHOT"
         },
         {
             "name": "gravitee-fetcher-bitbucket",
