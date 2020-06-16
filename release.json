@@ -183,7 +183,7 @@
         },
         {
             "name": "gravitee-repository-jdbc",
-            "version": "3.3.0"
+            "version": "3.4.0-SNAPSHOT"
         },
         {
             "name": "gravitee-resource-api",
