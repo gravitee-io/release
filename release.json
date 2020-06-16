@@ -1,7 +1,7 @@
 {
     "name": "Gravitee.io",
-    "version": "1.30.12-SNAPSHOT",
-    "buildTimestamp": "2020-06-16T06:24:27+0000",
+    "version": "1.30.12",
+    "buildTimestamp": "2020-06-16T07:48:44+0000",
     "scmSshUrl": "git@github.com:gravitee-io",
     "scmHttpUrl": "https://github.com/gravitee-io/",
     "components": [
@@ -23,11 +23,11 @@
         },
         {
             "name": "gravitee-management-rest-api",
-            "version": "1.30.12-SNAPSHOT"
+            "version": "1.30.12"
         },
         {
             "name": "gravitee-management-webui",
-            "version": "1.30.12-SNAPSHOT"
+            "version": "1.30.12"
         },
         {
             "name": "gravitee-plugin",
@@ -151,7 +151,7 @@
         },
         {
             "name": "gravitee-reporter-file",
-            "version": "1.6.2-SNAPSHOT"
+            "version": "1.6.2"
         },
         {
             "name": "gravitee-repository",
@@ -215,7 +215,7 @@
         },
         {
             "name": "gravitee-fetcher-gitlab",
-            "version": "1.9.2-SNAPSHOT"
+            "version": "1.9.2"
         },
         {
             "name": "gravitee-fetcher-bitbucket",
