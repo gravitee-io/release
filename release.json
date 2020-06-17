@@ -1,6 +1,6 @@
 {
     "name": "Gravitee.io",
-    "version": "3.1.0-SNAPSHOT",
+    "version": "3.0.3-SNAPSHOT",
     "buildTimestamp": "2020-06-03T18:33:59+0000",
     "scmSshUrl": "git@github.com:gravitee-io",
     "scmHttpUrl": "https://github.com/gravitee-io/",
@@ -99,7 +99,7 @@
         },
         {
             "name": "gravitee-policy-jwt",
-            "version": "1.14.2"
+            "version": "1.14.3"
         },
         {
             "name": "gravitee-policy-override-http-method",
@@ -107,7 +107,7 @@
         },
         {
             "name": "gravitee-policy-request-validation",
-            "version": "1.7.1"
+            "version": "1.7.2"
         },
         {
             "name": "gravitee-policy-resource-filtering",
@@ -151,19 +151,19 @@
         },
         {
             "name": "gravitee-reporter-file",
-            "version": "1.6.0"
+            "version": "1.6.2"
         },
         {
             "name": "gravitee-repository",
-            "version": "3.1.0"
+            "version": "3.0.3-SNAPSHOT"
         },
         {
             "name": "gravitee-repository-test",
-            "version": "3.1.0"
+            "version": "3.0.3-SNAPSHOT"
         },
         {
             "name": "gravitee-repository-mongodb",
-            "version": "3.1.0"
+            "version": "3.0.3-SNAPSHOT"
         },
         {
             "name": "gravitee-repository-redis",
@@ -171,11 +171,11 @@
         },
         {
             "name": "gravitee-elasticsearch",
-            "version": "3.1.0"
+            "version": "3.0.3-SNAPSHOT"
         },
         {
             "name": "gravitee-repository-jdbc",
-            "version": "3.1.0"
+            "version": "3.0.3-SNAPSHOT"
         },
         {
             "name": "gravitee-resource-api",
@@ -215,7 +215,7 @@
         },
         {
             "name": "gravitee-fetcher-gitlab",
-            "version": "1.9.0"
+            "version": "1.9.2"
         },
         {
             "name": "gravitee-fetcher-bitbucket",
@@ -247,7 +247,7 @@
         },
         {
             "name": "graviteeio-node",
-            "version": "1.6.5"
+            "version": "1.6.6"
         },
         {
             "name": "gravitee-notifier-api",
@@ -255,11 +255,11 @@
         },
         {
             "name": "gravitee-notifier-email",
-            "version": "1.2.2"
+            "version": "1.2.3"
         },
         {
             "name": "gravitee-alert-api",
-            "version": "1.4.0"
+            "version": "1.5.0"
         },
         {
             "name": "gravitee-service-discovery-api",
@@ -275,7 +275,7 @@
         },
         {
             "name": "gravitee-service-discovery-eureka",
-            "version": "1.1.0"
+            "version": "1.1.1"
         },
         {
             "name": "gravitee-policy-role-based-access-control",
