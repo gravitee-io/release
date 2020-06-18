@@ -155,15 +155,15 @@
         },
         {
             "name": "gravitee-repository",
-            "version": "3.1.0"
+            "version": "3.1.0-SNAPSHOT"
         },
         {
             "name": "gravitee-repository-test",
-            "version": "3.1.0"
+            "version": "3.1.0-SNAPSHOT"
         },
         {
             "name": "gravitee-repository-mongodb",
-            "version": "3.1.0"
+            "version": "3.1.0-SNAPSHOT"
         },
         {
             "name": "gravitee-repository-redis",
@@ -171,11 +171,11 @@
         },
         {
             "name": "gravitee-elasticsearch",
-            "version": "3.1.0"
+            "version": "3.1.0-SNAPSHOT"
         },
         {
             "name": "gravitee-repository-jdbc",
-            "version": "3.1.0"
+            "version": "3.1.0-SNAPSHOT"
         },
         {
             "name": "gravitee-resource-api",
@@ -231,7 +231,7 @@
         },
         {
             "name": "gravitee-repository-gateway-bridge-http",
-            "version": "3.1.0"
+            "version": "3.1.0-SNAPSHOT"
         },
         {
             "name": "gravitee-policy-url-rewriting",
