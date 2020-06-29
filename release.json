@@ -7,31 +7,27 @@
     "components": [
         {
             "name": "gravitee-common",
-            "version": "1.17.1"
+            "version": "1.17.2"
         },
         {
             "name": "gravitee-definition",
-            "version": "1.22.0"
+            "version": "1.22.1-SNAPSHOT"
         },
         {
-            "name": "gravitee-gateway",
-            "version": "3.0.3"
+            "name": "gravitee-gateway"
         },
         {
             "name": "gravitee-gateway-api",
             "version": "1.20.0"
         },
         {
-            "name": "gravitee-management-rest-api",
-            "version": "3.0.3"
+            "name": "gravitee-management-rest-api"
         },
         {
-            "name": "gravitee-management-webui",
-            "version": "3.0.3"
+            "name": "gravitee-management-webui"
         },
         {
-            "name": "gravitee-portal-webui",
-            "version": "3.0.3"
+            "name": "gravitee-portal-webui"
         },
         {
             "name": "gravitee-plugin",
@@ -159,19 +155,19 @@
         },
         {
             "name": "gravitee-repository",
-            "version": "3.0.3"
+            "version": "3.0.4-SNAPSHOT"
         },
         {
             "name": "gravitee-repository-test",
-            "version": "3.0.3"
+            "version": "3.0.4-SNAPSHOT"
         },
         {
             "name": "gravitee-repository-mongodb",
-            "version": "3.0.3"
+            "version": "3.0.4-SNAPSHOT"
         },
         {
             "name": "gravitee-repository-redis",
-            "version": "3.0.0"
+            "version": "3.0.3-SNAPSHOT"
         },
         {
             "name": "gravitee-elasticsearch",
@@ -179,7 +175,7 @@
         },
         {
             "name": "gravitee-repository-jdbc",
-            "version": "3.0.3"
+            "version": "3.0.4-SNAPSHOT"
         },
         {
             "name": "gravitee-resource-api",
