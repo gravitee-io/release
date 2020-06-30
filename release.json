@@ -227,7 +227,7 @@
         },
         {
             "name": "gravitee-expression-language",
-            "version": "1.4.0"
+            "version": "1.4.1-SNAPSHOT"
         },
         {
             "name": "gravitee-repository-gateway-bridge-http",
