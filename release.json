@@ -1,41 +1,45 @@
 {
     "name": "Gravitee.io",
     "version": "3.1.0-SNAPSHOT",
-    "buildTimestamp": "2020-07-01T12:10:27+0000",
+    "buildTimestamp": "2020-07-17T14:42:40+0000",
     "scmSshUrl": "git@github.com:gravitee-io",
     "scmHttpUrl": "https://github.com/gravitee-io/",
     "components": [
         {
             "name": "gravitee-common",
-            "version": "1.18.0-SNAPSHOT"
+            "version": "1.18.0"
         },
         {
             "name": "gravitee-definition",
-            "version": "1.23.0-SNAPSHOT"
+            "version": "1.23.0"
         },
         {
-            "name": "gravitee-gateway"
+            "name": "gravitee-gateway",
+            "version": "3.1.0"
         },
         {
             "name": "gravitee-gateway-api",
-            "version": "1.21.0-SNAPSHOT"
+            "version": "1.21.0"
         },
         {
-            "name": "gravitee-management-rest-api"
+            "name": "gravitee-management-rest-api",
+            "version": "3.1.0-SNAPSHOT"
         },
         {
-            "name": "gravitee-management-webui"
+            "name": "gravitee-management-webui",
+            "version": "3.1.0-SNAPSHOT"
         },
         {
-            "name": "gravitee-portal-webui"
+            "name": "gravitee-portal-webui",
+            "version": "3.1.0-SNAPSHOT"
         },
         {
             "name": "gravitee-plugin",
-            "version": "1.13.0-SNAPSHOT"
+            "version": "1.13.0"
         },
         {
             "name": "gravitee-policy-api",
-            "version": "1.9.0-SNAPSHOT"
+            "version": "1.9.0"
         },
         {
             "name": "gravitee-policy-apikey",
@@ -63,7 +67,7 @@
         },
         {
             "name": "gravitee-policy-ipfiltering",
-            "version": "1.4.0-SNAPSHOT"
+            "version": "1.4.0"
         },
         {
             "name": "gravitee-policy-mock",
@@ -107,7 +111,7 @@
         },
         {
             "name": "gravitee-policy-request-validation",
-            "version": "1.8.0-SNAPSHOT"
+            "version": "1.8.0"
         },
         {
             "name": "gravitee-policy-resource-filtering",
@@ -147,7 +151,7 @@
         },
         {
             "name": "gravitee-reporter-api",
-            "version": "1.18.0-SNAPSHOT"
+            "version": "1.18.0"
         },
         {
             "name": "gravitee-reporter-file",
@@ -155,27 +159,27 @@
         },
         {
             "name": "gravitee-repository",
-            "version": "3.1.1-SNAPSHOT"
+            "version": "3.1.1"
         },
         {
             "name": "gravitee-repository-test",
-            "version": "3.1.1-SNAPSHOT"
+            "version": "3.1.1"
         },
         {
             "name": "gravitee-repository-mongodb",
-            "version": "3.1.1-SNAPSHOT"
+            "version": "3.1.1"
         },
         {
             "name": "gravitee-repository-redis",
-            "version": "3.1.1-SNAPSHOT"
+            "version": "3.1.1"
         },
         {
             "name": "gravitee-elasticsearch",
-            "version": "3.1.1-SNAPSHOT"
+            "version": "3.1.1"
         },
         {
             "name": "gravitee-repository-jdbc",
-            "version": "3.1.1-SNAPSHOT"
+            "version": "3.1.1"
         },
         {
             "name": "gravitee-resource-api",
@@ -231,7 +235,7 @@
         },
         {
             "name": "gravitee-repository-gateway-bridge-http",
-            "version": "3.1.1-SNAPSHOT"
+            "version": "3.1.1"
         },
         {
             "name": "gravitee-policy-url-rewriting",
@@ -287,15 +291,15 @@
         },
         {
             "name": "gravitee-policy-json-threat-protection",
-            "version": "1.0.0-SNAPSHOT"
+            "version": "1.0.0"
         },
         {
             "name": "gravitee-policy-regex-threat-protection",
-            "version": "1.0.0-SNAPSHOT"
+            "version": "1.0.0"
         },
         {
             "name": "gravitee-policy-xml-threat-protection",
-            "version": "1.0.0-SNAPSHOT"
+            "version": "1.0.0"
         }
     ],
     "buildDependencies": [
