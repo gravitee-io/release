@@ -31,11 +31,11 @@
         },
         {
             "name": "gravitee-plugin",
-            "version": "1.11.0"
+            "version": "1.13.0-SNAPSHOT"
         },
         {
             "name": "gravitee-policy-api",
-            "version": "1.8.0"
+            "version": "1.9.0-SNAPSHOT"
         },
         {
             "name": "gravitee-policy-apikey",
