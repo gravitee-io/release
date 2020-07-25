@@ -1,7 +1,7 @@
 {
     "name": "Gravitee.io",
-    "version": "1.30.16-SNAPSHOT",
-    "buildTimestamp": "2020-07-08T16:31:19+0000",
+    "version": "1.30.16",
+    "buildTimestamp": "2020-07-25T07:52:20+0000",
     "scmSshUrl": "git@github.com:gravitee-io",
     "scmHttpUrl": "https://github.com/gravitee-io/",
     "components": [
@@ -22,10 +22,12 @@
             "version": "1.20.0"
         },
         {
-            "name": "gravitee-management-rest-api"
+            "name": "gravitee-management-rest-api",
+            "version": "1.30.16"
         },
         {
-            "name": "gravitee-management-webui"
+            "name": "gravitee-management-webui",
+            "version": "1.30.16"
         },
         {
             "name": "gravitee-plugin",
