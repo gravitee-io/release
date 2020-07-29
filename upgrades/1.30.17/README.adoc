@@ -1,0 +1,12 @@
+= Upgrade to 1.30.17
+
+== Groups management
+
+Starting with Gravitee.io 1.30.17, we introduce a new option in groups, apis and applications: notify members.
+If true (default), each member added to the group/api/application will receive a notification email.
+
+== Repository
+=== Mongodb
+
+https://raw.githubusercontent.com/gravitee-io/release/master/upgrades/1.30.17/mongodb/1-notifyMembers-migration.js[upgrades/1.30.17/mongodb/1-notifyMembers-migration.js]::
+This script update groups, apis and applications according to the new option "notify members".
