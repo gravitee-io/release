@@ -155,15 +155,15 @@
         },
         {
             "name": "gravitee-repository",
-            "version": "3.1.1"
+            "version": "3.1.2-SNAPSHOT"
         },
         {
             "name": "gravitee-repository-test",
-            "version": "3.1.1"
+            "version": "3.1.2-SNAPSHOT"
         },
         {
             "name": "gravitee-repository-mongodb",
-            "version": "3.1.1"
+            "version": "3.1.2-SNAPSHOT"
         },
         {
             "name": "gravitee-repository-redis",
@@ -175,7 +175,7 @@
         },
         {
             "name": "gravitee-repository-jdbc",
-            "version": "3.1.1"
+            "version": "3.1.2-SNAPSHOT"
         },
         {
             "name": "gravitee-resource-api",
@@ -267,7 +267,7 @@
         },
         {
             "name": "gravitee-service-discovery-consul",
-            "version": "1.1.1"
+            "version": "1.2.0-SNAPSHOT"
         },
         {
             "name": "gravitee-policy-generate-jwt",
