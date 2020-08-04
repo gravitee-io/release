@@ -1,7 +1,7 @@
 {
     "name": "Gravitee.io",
     "version": "3.1.2-SNAPSHOT",
-    "buildTimestamp": "2020-07-20T22:42:42+0000",
+    "buildTimestamp": "2020-08-04T07:25:45+0000",
     "scmSshUrl": "git@github.com:gravitee-io",
     "scmHttpUrl": "https://github.com/gravitee-io/",
     "components": [
@@ -14,20 +14,24 @@
             "version": "1.23.0"
         },
         {
-            "name": "gravitee-gateway"
+            "name": "gravitee-gateway",
+            "version": "3.1.2"
         },
         {
             "name": "gravitee-gateway-api",
             "version": "1.21.0"
         },
         {
-            "name": "gravitee-management-rest-api"
+            "name": "gravitee-management-rest-api",
+            "version": "3.1.2-SNAPSHOT"
         },
         {
-            "name": "gravitee-management-webui"
+            "name": "gravitee-management-webui",
+            "version": "3.1.2-SNAPSHOT"
         },
         {
-            "name": "gravitee-portal-webui"
+            "name": "gravitee-portal-webui",
+            "version": "3.1.2-SNAPSHOT"
         },
         {
             "name": "gravitee-plugin",
@@ -155,15 +159,15 @@
         },
         {
             "name": "gravitee-repository",
-            "version": "3.1.2-SNAPSHOT"
+            "version": "3.1.2"
         },
         {
             "name": "gravitee-repository-test",
-            "version": "3.1.2-SNAPSHOT"
+            "version": "3.1.2"
         },
         {
             "name": "gravitee-repository-mongodb",
-            "version": "3.1.2-SNAPSHOT"
+            "version": "3.1.2"
         },
         {
             "name": "gravitee-repository-redis",
@@ -175,7 +179,7 @@
         },
         {
             "name": "gravitee-repository-jdbc",
-            "version": "3.1.2-SNAPSHOT"
+            "version": "3.1.2"
         },
         {
             "name": "gravitee-resource-api",
@@ -267,7 +271,7 @@
         },
         {
             "name": "gravitee-service-discovery-consul",
-            "version": "1.2.0-SNAPSHOT"
+            "version": "1.2.0"
         },
         {
             "name": "gravitee-policy-generate-jwt",
