@@ -107,7 +107,7 @@
         },
         {
             "name": "gravitee-policy-request-validation",
-            "version": "1.8.0"
+            "version": "1.8.1"
         },
         {
             "name": "gravitee-policy-resource-filtering",
@@ -155,15 +155,15 @@
         },
         {
             "name": "gravitee-repository",
-            "version": "3.1.1"
+            "version": "3.1.2"
         },
         {
             "name": "gravitee-repository-test",
-            "version": "3.1.1"
+            "version": "3.1.2"
         },
         {
             "name": "gravitee-repository-mongodb",
-            "version": "3.1.1"
+            "version": "3.1.2"
         },
         {
             "name": "gravitee-repository-redis",
@@ -171,11 +171,11 @@
         },
         {
             "name": "gravitee-elasticsearch",
-            "version": "3.1.1"
+            "version": "3.1.2"
         },
         {
             "name": "gravitee-repository-jdbc",
-            "version": "3.1.1"
+            "version": "3.1.2"
         },
         {
             "name": "gravitee-resource-api",
@@ -267,7 +267,7 @@
         },
         {
             "name": "gravitee-service-discovery-consul",
-            "version": "1.1.1"
+            "version": "1.2.0"
         },
         {
             "name": "gravitee-policy-generate-jwt",
