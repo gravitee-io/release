@@ -1,7 +1,7 @@
 {
     "name": "Gravitee.io",
-    "version": "1.30.18-SNAPSHOT",
-    "buildTimestamp": "2020-07-31T12:48:53+0000",
+    "version": "1.30.18",
+    "buildTimestamp": "2020-08-05T08:22:13+0000",
     "scmSshUrl": "git@github.com:gravitee-io",
     "scmHttpUrl": "https://github.com/gravitee-io/",
     "components": [
@@ -14,17 +14,20 @@
             "version": "1.20.2"
         },
         {
-            "name": "gravitee-gateway"
+            "name": "gravitee-gateway",
+            "version": "1.30.18"
         },
         {
             "name": "gravitee-gateway-api",
             "version": "1.20.0"
         },
         {
-            "name": "gravitee-management-rest-api"
+            "name": "gravitee-management-rest-api",
+            "version": "1.30.18"
         },
         {
-            "name": "gravitee-management-webui"
+            "name": "gravitee-management-webui",
+            "version": "1.30.18"
         },
         {
             "name": "gravitee-plugin",
@@ -168,7 +171,7 @@
         },
         {
             "name": "gravitee-elasticsearch",
-            "version": "1.30.8-SNAPSHOT"
+            "version": "1.30.8"
         },
         {
             "name": "gravitee-repository-jdbc",
