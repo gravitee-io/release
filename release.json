@@ -11,11 +11,11 @@
         },
         {
             "name": "gravitee-definition",
-            "version": "1.20.2"
+            "version": "1.20.3-SNAPSHOT"
         },
         {
             "name": "gravitee-gateway",
-            "version": "1.30.18"
+            "version": "1.30.19-SNAPSHOT"
         },
         {
             "name": "gravitee-gateway-api",
@@ -23,11 +23,11 @@
         },
         {
             "name": "gravitee-management-rest-api",
-            "version": "1.30.18"
+            "version": "1.30.19-SNAPSHOT"
         },
         {
             "name": "gravitee-management-webui",
-            "version": "1.30.18"
+            "version": "1.30.19-SNAPSHOT"
         },
         {
             "name": "gravitee-plugin",
@@ -171,7 +171,7 @@
         },
         {
             "name": "gravitee-elasticsearch",
-            "version": "1.30.8"
+            "version": "1.30.9-SNAPSHOT"
         },
         {
             "name": "gravitee-repository-jdbc",
