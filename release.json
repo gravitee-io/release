@@ -1,7 +1,7 @@
 {
     "name": "Gravitee.io",
-    "version": "3.0.7-SNAPSHOT",
-    "buildTimestamp": "2020-07-30T05:21:56+0000",
+    "version": "3.0.7",
+    "buildTimestamp": "2020-08-19T13:22:39+0000",
     "scmSshUrl": "git@github.com:gravitee-io",
     "scmHttpUrl": "https://github.com/gravitee-io/",
     "components": [
@@ -11,23 +11,27 @@
         },
         {
             "name": "gravitee-definition",
-            "version": "1.22.2-SNAPSHOT"
+            "version": "1.22.2"
         },
         {
-            "name": "gravitee-gateway"
+            "name": "gravitee-gateway",
+            "version": "3.0.7"
         },
         {
             "name": "gravitee-gateway-api",
             "version": "1.20.0"
         },
         {
-            "name": "gravitee-management-rest-api"
+            "name": "gravitee-management-rest-api",
+            "version": "3.0.7"
         },
         {
-            "name": "gravitee-management-webui"
+            "name": "gravitee-management-webui",
+            "version": "3.0.7"
         },
         {
-            "name": "gravitee-portal-webui"
+            "name": "gravitee-portal-webui",
+            "version": "3.0.7"
         },
         {
             "name": "gravitee-plugin",
@@ -155,15 +159,15 @@
         },
         {
             "name": "gravitee-repository",
-            "version": "3.0.5-SNAPSHOT"
+            "version": "3.0.5"
         },
         {
             "name": "gravitee-repository-test",
-            "version": "3.0.5-SNAPSHOT"
+            "version": "3.0.5"
         },
         {
             "name": "gravitee-repository-mongodb",
-            "version": "3.0.5-SNAPSHOT"
+            "version": "3.0.5"
         },
         {
             "name": "gravitee-repository-redis",
@@ -171,11 +175,11 @@
         },
         {
             "name": "gravitee-elasticsearch",
-            "version": "3.0.5-SNAPSHOT"
+            "version": "3.0.5"
         },
         {
             "name": "gravitee-repository-jdbc",
-            "version": "3.0.5-SNAPSHOT"
+            "version": "3.0.5"
         },
         {
             "name": "gravitee-resource-api",
