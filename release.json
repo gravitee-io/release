@@ -159,11 +159,11 @@
         },
         {
             "name": "gravitee-repository-test",
-            "version": "1.30.6"
+            "version": "1.30.7-SNAPSHOT"
         },
         {
             "name": "gravitee-repository-mongodb",
-            "version": "1.30.9"
+            "version": "1.30.10-SNAPSHOT"
         },
         {
             "name": "gravitee-repository-redis",
@@ -175,7 +175,7 @@
         },
         {
             "name": "gravitee-repository-jdbc",
-            "version": "1.30.8"
+            "version": "1.30.9-SNAPSHOT"
         },
         {
             "name": "gravitee-resource-api",
