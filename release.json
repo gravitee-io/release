@@ -14,20 +14,17 @@
             "version": "1.20.3"
         },
         {
-            "name": "gravitee-gateway",
-            "version": "1.30.20"
+            "name": "gravitee-gateway"
         },
         {
             "name": "gravitee-gateway-api",
             "version": "1.20.0"
         },
         {
-            "name": "gravitee-management-rest-api",
-            "version": "1.30.20"
+            "name": "gravitee-management-rest-api"
         },
         {
-            "name": "gravitee-management-webui",
-            "version": "1.30.20"
+            "name": "gravitee-management-webui"
         },
         {
             "name": "gravitee-plugin",
@@ -67,7 +64,7 @@
         },
         {
             "name": "gravitee-policy-mock",
-            "version": "1.8.0"
+            "version": "1.8.1-SNAPSHOT"
         },
         {
             "name": "gravitee-policy-cache",
@@ -171,7 +168,7 @@
         },
         {
             "name": "gravitee-elasticsearch",
-            "version": "1.30.10"
+            "version": "1.30.11-SNAPSHOT"
         },
         {
             "name": "gravitee-repository-jdbc",
@@ -207,7 +204,7 @@
         },
         {
             "name": "gravitee-fetcher-http",
-            "version": "1.10.0"
+            "version": "1.10.1-SNAPSHOT"
         },
         {
             "name": "gravitee-fetcher-git",
@@ -215,15 +212,15 @@
         },
         {
             "name": "gravitee-fetcher-gitlab",
-            "version": "1.9.2"
+            "version": "1.9.3-SNAPSHOT"
         },
         {
             "name": "gravitee-fetcher-bitbucket",
-            "version": "1.5.0"
+            "version": "1.5.1-SNAPSHOT"
         },
         {
             "name": "gravitee-fetcher-github",
-            "version": "1.4.0"
+            "version": "1.4.1-SNAPSHOT"
         },
         {
             "name": "gravitee-expression-language",
