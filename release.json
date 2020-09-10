@@ -1,7 +1,7 @@
 {
     "name": "Gravitee.io",
     "version": "1.30.21-SNAPSHOT",
-    "buildTimestamp": "2020-09-10T08:06:53+0000",
+    "buildTimestamp": "2020-09-10T09:30:32+0000",
     "scmSshUrl": "git@github.com:gravitee-io",
     "scmHttpUrl": "https://github.com/gravitee-io/",
     "components": [
@@ -207,7 +207,7 @@
         },
         {
             "name": "gravitee-fetcher-http",
-            "version": "1.10.1-SNAPSHOT"
+            "version": "1.10.1"
         },
         {
             "name": "gravitee-fetcher-git",
