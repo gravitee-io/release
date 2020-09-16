@@ -1,7 +1,7 @@
 {
     "name": "Gravitee.io",
     "version": "3.1.4-SNAPSHOT",
-    "buildTimestamp": "2020-08-28T14:19:42+0000",
+    "buildTimestamp": "2020-09-16T14:43:21+0000",
     "scmSshUrl": "git@github.com:gravitee-io",
     "scmHttpUrl": "https://github.com/gravitee-io/",
     "components": [
@@ -11,7 +11,7 @@
         },
         {
             "name": "gravitee-definition",
-            "version": "1.23.2-SNAPSHOT"
+            "version": "1.23.2"
         },
         {
             "name": "gravitee-gateway",
@@ -159,15 +159,15 @@
         },
         {
             "name": "gravitee-repository",
-            "version": "3.1.4-SNAPSHOT"
+            "version": "3.1.4"
         },
         {
             "name": "gravitee-repository-test",
-            "version": "3.1.4-SNAPSHOT"
+            "version": "3.1.4"
         },
         {
             "name": "gravitee-repository-mongodb",
-            "version": "3.1.4-SNAPSHOT"
+            "version": "3.1.4"
         },
         {
             "name": "gravitee-repository-redis",
