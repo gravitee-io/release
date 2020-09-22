@@ -30,6 +30,10 @@
             "name": "gravitee-portal-webui"
         },
         {
+            "name": "gravitee-identityprovider-api",
+            "version": "1.0.0-SNAPSHOT"
+        },
+        {
             "name": "gravitee-plugin",
             "version": "1.14.0-SNAPSHOT"
         },
@@ -323,7 +327,8 @@
             "gravitee-repository-gateway-bridge-http",
             "gravitee-fetcher-api",
             "gravitee-alert-api",
-            "gravitee-notifier-email"
+            "gravitee-notifier-email",
+            "gravitee-identityprovider-api"
         ],
         [
             "gravitee-gateway-api"
