@@ -255,7 +255,7 @@
         },
         {
             "name": "graviteeio-node",
-            "version": "1.6.6"
+            "version": "1.8.0-SNAPSHOT"
         },
         {
             "name": "gravitee-notifier-api",
