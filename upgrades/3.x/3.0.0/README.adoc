@@ -4,6 +4,8 @@
 If you are using mongoDB, it is *strongly recommended* to run the scripts to upgrade your database *before* starting the new version of the gravitee REST APIs.
 Otherwise, you could experience data corruption issues.
 
+IMPORTANT: Mongo version *MUST* be at least *3.6*
+
 == General
 
 === Organization & Environment
