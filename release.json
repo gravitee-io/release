@@ -1,7 +1,7 @@
 {
     "name": "Gravitee.io",
-    "version": "3.2.1-SNAPSHOT",
-    "buildTimestamp": "2020-09-22T17:12:11+0000",
+    "version": "3.2.1",
+    "buildTimestamp": "2020-09-30T16:21:16+0000",
     "scmSshUrl": "git@github.com:gravitee-io",
     "scmHttpUrl": "https://github.com/gravitee-io/",
     "components": [
@@ -14,20 +14,24 @@
             "version": "1.23.2"
         },
         {
-            "name": "gravitee-gateway"
+            "name": "gravitee-gateway",
+            "version": "3.2.1"
         },
         {
             "name": "gravitee-gateway-api",
             "version": "1.21.1"
         },
         {
-            "name": "gravitee-management-rest-api"
+            "name": "gravitee-management-rest-api",
+            "version": "3.2.1"
         },
         {
-            "name": "gravitee-management-webui"
+            "name": "gravitee-management-webui",
+            "version": "3.2.1"
         },
         {
-            "name": "gravitee-portal-webui"
+            "name": "gravitee-portal-webui",
+            "version": "3.2.1"
         },
         {
             "name": "gravitee-identityprovider-api",
@@ -51,7 +55,7 @@
         },
         {
             "name": "gravitee-policy-ratelimit",
-            "version": "1.9.1-SNAPSHOT"
+            "version": "1.9.1"
         },
         {
             "name": "gravitee-policy-request-content-limit",
@@ -71,7 +75,7 @@
         },
         {
             "name": "gravitee-policy-ipfiltering",
-            "version": "1.4.1-SNAPSHOT"
+            "version": "1.4.1"
         },
         {
             "name": "gravitee-policy-mock",
