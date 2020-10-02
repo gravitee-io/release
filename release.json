@@ -250,6 +250,10 @@
             "version": "1.4.0"
         },
         {
+            "name": "gravitee-policy-xml-validation",
+            "version": "1.0.0-SNAPSHOT"
+        },
+        {
             "name": "gravitee-reporter-kafka",
             "version": "1.2.0"
         },
@@ -385,6 +389,7 @@
             "gravitee-policy-jws",
             "gravitee-policy-url-rewriting",
             "gravitee-policy-json-validation",
+            "gravitee-policy-xml-validation",
             "gravitee-policy-callout-http",
             "gravitee-policy-generate-jwt",
             "gravitee-policy-assign-attributes",
