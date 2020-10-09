@@ -7,7 +7,10 @@
 Before running any script, please create a dump of your existing database.
 
 https://raw.githubusercontent.com/gravitee-io/release/master/upgrades/3.x/3.3.0/mongodb/1-update-users-and-identityProviders.js[upgrades/3.x/3.3.0/mongodb/1-update-users-and-identityProviders.js]::
-This script replaces *referenceId* and *referenceType* with *organizationId* for 'users' and 'identity_providers' collections.
+This script replaces *referenceId* and *referenceType* with *organizationId* for `users` and `identity_providers` collections.
+
+https://raw.githubusercontent.com/gravitee-io/release/master/upgrades/3.x/3.3.0/mongodb/2-update-json-validation-policy-scopes.js[upgrades/3.x/3.3.0/mongodb/2-update-json-validation-policy-scopes.js]::
+This script replaces *REQUEST* and *RESPONSE* with *REQUEST_CONTENT* and *RESPONSE_CONTENT* for json-validation policy configuration in `apis` collections.
 
 
 == Deprecation
