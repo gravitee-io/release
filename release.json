@@ -18,7 +18,7 @@
         },
         {
             "name": "gravitee-gateway-api",
-            "version": "1.21.1"
+            "version": "1.22.0-SNAPSHOT"
         },
         {
             "name": "gravitee-management-rest-api"
@@ -63,7 +63,7 @@
         },
         {
             "name": "gravitee-policy-rest-to-soap",
-            "version": "1.8.0"
+            "version": "1.9.0-SNAPSHOT"
         },
         {
             "name": "gravitee-policy-transformqueryparams",
@@ -75,7 +75,7 @@
         },
         {
             "name": "gravitee-policy-mock",
-            "version": "1.10.0"
+            "version": "1.11.0-SNAPSHOT"
         },
         {
             "name": "gravitee-policy-cache",
@@ -115,7 +115,7 @@
         },
         {
             "name": "gravitee-policy-request-validation",
-            "version": "1.9.0"
+            "version": "1.10.0-SNAPSHOT"
         },
         {
             "name": "gravitee-policy-resource-filtering",
@@ -147,11 +147,11 @@
         },
         {
             "name": "gravitee-policy-callout-http",
-            "version": "1.10.0"
+            "version": "1.11.0-SNAPSHOT"
         },
         {
             "name": "gravitee-policy-assign-attributes",
-            "version": "1.3.0"
+            "version": "1.4.0-SNAPSHOT"
         },
         {
             "name": "gravitee-reporter-api",
