@@ -14,24 +14,20 @@
             "version": "1.23.2"
         },
         {
-            "name": "gravitee-gateway",
-            "version": "3.2.1"
+            "name": "gravitee-gateway"
         },
         {
             "name": "gravitee-gateway-api",
             "version": "1.21.1"
         },
         {
-            "name": "gravitee-management-rest-api",
-            "version": "3.2.1"
+            "name": "gravitee-management-rest-api"
         },
         {
-            "name": "gravitee-management-webui",
-            "version": "3.2.1"
+            "name": "gravitee-management-webui"
         },
         {
-            "name": "gravitee-portal-webui",
-            "version": "3.2.1"
+            "name": "gravitee-portal-webui"
         },
         {
             "name": "gravitee-identityprovider-api",
@@ -111,7 +107,7 @@
         },
         {
             "name": "gravitee-policy-jwt",
-            "version": "1.14.4"
+            "version": "1.14.5"
         },
         {
             "name": "gravitee-policy-override-http-method",
@@ -151,7 +147,7 @@
         },
         {
             "name": "gravitee-policy-callout-http",
-            "version": "1.9.1"
+            "version": "1.9.2"
         },
         {
             "name": "gravitee-policy-assign-attributes",
@@ -183,11 +179,11 @@
         },
         {
             "name": "gravitee-elasticsearch",
-            "version": "3.2.0"
+            "version": "3.2.1-SNAPSHOT"
         },
         {
             "name": "gravitee-repository-jdbc",
-            "version": "3.2.0"
+            "version": "3.2.1-SNAPSHOT"
         },
         {
             "name": "gravitee-resource-api",
@@ -267,7 +263,7 @@
         },
         {
             "name": "gravitee-notifier-email",
-            "version": "1.2.3"
+            "version": "1.2.7"
         },
         {
             "name": "gravitee-alert-api",

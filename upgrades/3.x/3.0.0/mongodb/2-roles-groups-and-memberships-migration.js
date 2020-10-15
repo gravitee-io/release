@@ -272,7 +272,17 @@ db.memberships.find().forEach(
                     newMembership['updatedAt'] = membership.updatedAt;
                 }
 
-                db.memberships.insert(newMembership);
+                let countMembership = db.memberships.count({
+                    'memberId': newMembership['memberId'],
+                    'memberType': newMembership['memberType'],
+                    'referenceId': newMembership['referenceId'],
+                    'referenceType': newMembership['referenceType'],
+                    'roleId': newMembership['roleId']
+                });
+
+                if (countMembership === 0) {
+                    db.memberships.insert(newMembership);
+                }
             });
             db.memberships.remove({'_id' : oldId});
         }
