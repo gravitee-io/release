@@ -1,7 +1,7 @@
 {
     "name": "Gravitee.io",
     "version": "1.30.24-SNAPSHOT",
-    "buildTimestamp": "2020-10-06T10:14:01+0000",
+    "buildTimestamp": "2020-10-16T12:43:57+0000",
     "scmSshUrl": "git@github.com:gravitee-io",
     "scmHttpUrl": "https://github.com/gravitee-io/",
     "components": [
@@ -14,17 +14,20 @@
             "version": "1.20.4"
         },
         {
-            "name": "gravitee-gateway"
+            "name": "gravitee-gateway",
+            "version": "1.30.24"
         },
         {
             "name": "gravitee-gateway-api",
             "version": "1.20.0"
         },
         {
-            "name": "gravitee-management-rest-api"
+            "name": "gravitee-management-rest-api",
+            "version": "1.30.24-SNAPSHOT"
         },
         {
-            "name": "gravitee-management-webui"
+            "name": "gravitee-management-webui",
+            "version": "1.30.24-SNAPSHOT"
         },
         {
             "name": "gravitee-plugin",
@@ -108,7 +111,7 @@
         },
         {
             "name": "gravitee-policy-resource-filtering",
-            "version": "1.5.2-SNAPSHOT"
+            "version": "1.5.2"
         },
         {
             "name": "gravitee-policy-json-to-json",
@@ -136,7 +139,7 @@
         },
         {
             "name": "gravitee-policy-callout-http",
-            "version": "1.9.3-SNAPSHOT"
+            "version": "1.9.3"
         },
         {
             "name": "gravitee-policy-assign-attributes",
@@ -152,7 +155,7 @@
         },
         {
             "name": "gravitee-repository",
-            "version": "1.30.9-SNAPSHOT"
+            "version": "1.30.9"
         },
         {
             "name": "gravitee-repository-test",
