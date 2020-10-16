@@ -159,7 +159,7 @@
         },
         {
             "name": "gravitee-repository",
-            "version": "3.0.6"
+            "version": "3.0.7-SNAPSHOT"
         },
         {
             "name": "gravitee-repository-test",
