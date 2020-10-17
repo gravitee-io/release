@@ -1,6 +1,8 @@
 = Upgrade Notes
 
 ifdef::env-github[]
+include::1.30.24/README.adoc[leveloffset=+1]
+
 include::1.26.0/README.adoc[leveloffset=+1]
 
 include::1.25.23/README.adoc[leveloffset=+1]
@@ -59,6 +61,8 @@ NOTE: Files specified in this guide can be found at https://github.com/gravitee-
 WARNING: If you plan to skip versions when you upgrade, ensure that you read the version-specific upgrade notes for each intermediate version. You may be required to perform manual actions as part of the upgrade.
 
 WARNING: Be sure to run scripts on the correct database since `gravitee` is not always the default database! Check your db name by running `show dbs;`
+
+include::https://raw.githubusercontent.com/gravitee-io/release/master/upgrades/1.x/1.30.24/README.adoc[leveloffset=+1]
 
 include::https://raw.githubusercontent.com/gravitee-io/release/master/upgrades/1.x/1.26.0/README.adoc[leveloffset=+1]
 
