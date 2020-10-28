@@ -167,11 +167,11 @@
         },
         {
             "name": "gravitee-repository-test",
-            "version": "3.3.0"
+            "version": "3.4.0-SNAPSHOT"
         },
         {
             "name": "gravitee-repository-mongodb",
-            "version": "3.3.0"
+            "version": "3.4.0-SNAPSHOT"
         },
         {
             "name": "gravitee-repository-redis",
