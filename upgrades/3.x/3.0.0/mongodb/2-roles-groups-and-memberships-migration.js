@@ -1,8 +1,8 @@
 
 loadMigrationArray = function () {
     let roleMigrationArray = [];
-    roleMigrationArray[1] = []; 
-    roleMigrationArray[2] = []; 
+    roleMigrationArray[1] = [];
+    roleMigrationArray[2] = [];
     roleMigrationArray[1][1000]={'newScope':6,'newPermission':1000};
     roleMigrationArray[1][1200]={'newScope':6,'newPermission':1200};
     roleMigrationArray[1][1300]={'newScope':6,'newPermission':1300};
@@ -52,7 +52,7 @@ db.roles.find().sort( { '_id.scope': 1 } ).forEach(
         const oldScope = role._id.scope;
         if (oldScope === 1) {
             if (hasPermValue(role.permissions, 1600) || hasPermValue(role.permissions, 2100)) {
-                
+
                 let newRole = Object.assign({}, role);
                 newRole._id = 'ORGANIZATION_' + oldId.name;
                 newRole.scope = 'ORGANIZATION';
@@ -81,7 +81,7 @@ db.roles.find().sort( { '_id.scope': 1 } ).forEach(
                     db.roles.remove({'_id': existingRoleCursor.next()._id});
                 }
                 db.roles.insert(newRole);
-            } 
+            }
 
             let roleNewPermissions = []
             role.permissions.forEach(
@@ -148,7 +148,7 @@ db.roles.find().sort( { '_id.scope': 1 } ).forEach(
                 role.name = oldId.name;
                 role.referenceId = 'DEFAULT';
                 role.referenceType = 'ORGANIZATION';
-    
+
                 db.roles.remove({ '_id' : oldId });
                 let existingRoleCursor = db.roles.find({scope: 'ENVIRONMENT', name: oldId.name, referenceId: 'DEFAULT', referenceType: 'ORGANIZATION'});
                 if (existingRoleCursor.hasNext()) {
@@ -223,7 +223,7 @@ db.memberships.find().forEach(
                     let portalRoleCursor = db.roles.find({'_id':newOrganizationRoleId});
                     if (portalRoleCursor.hasNext()) {
                         let newOrganizationMembership = {
-                            '_id': UUID().toString().split('"')[1], 
+                            '_id': UUID().toString().split('"')[1],
                             'memberId': oldId.userId,
                             'memberType': 'USER',
                             'referenceId': 'DEFAULT',
@@ -232,7 +232,7 @@ db.memberships.find().forEach(
                             'createdAt': membership.createdAt,
                             'updatedAt': membership.updatedAt
                         };
-        
+
                         db.memberships.insert(newOrganizationMembership);
                     }
 
@@ -258,7 +258,7 @@ db.memberships.find().forEach(
                 }
 
                 let newMembership = {
-                    '_id': UUID().toString().split('"')[1], 
+                    '_id': UUID().toString().split('"')[1],
                     'memberId': oldId.userId,
                     'memberType': 'USER',
                     'referenceId': newReferenceId,
@@ -320,7 +320,7 @@ db.groups.find().forEach(
                 }
 
                 let newMembership = {
-                    '_id': UUID().toString().split('"')[1], 
+                    '_id': UUID().toString().split('"')[1],
                     'memberId': group._id,
                     'memberType': 'GROUP',
                     'referenceId': null,
