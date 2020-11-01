@@ -107,7 +107,7 @@
         },
         {
             "name": "gravitee-policy-jwt",
-            "version": "1.15.0"
+            "version": "1.15.1-SNAPSHOT"
         },
         {
             "name": "gravitee-policy-override-http-method",
@@ -119,7 +119,7 @@
         },
         {
             "name": "gravitee-policy-resource-filtering",
-            "version": "1.6.0"
+            "version": "1.6.1-SNAPSHOT"
         },
         {
             "name": "gravitee-policy-json-to-json",
@@ -147,7 +147,7 @@
         },
         {
             "name": "gravitee-policy-callout-http",
-            "version": "1.10.0"
+            "version": "1.10.1-SNAPSHOT"
         },
         {
             "name": "gravitee-policy-assign-attributes",
@@ -163,7 +163,7 @@
         },
         {
             "name": "gravitee-repository",
-            "version": "3.3.0"
+            "version": "3.3.1-SNAPSHOT"
         },
         {
             "name": "gravitee-repository-test",
@@ -179,11 +179,11 @@
         },
         {
             "name": "gravitee-elasticsearch",
-            "version": "3.2.0"
+            "version": "3.2.1"
         },
         {
             "name": "gravitee-repository-jdbc",
-            "version": "3.3.0"
+            "version": "3.3.1-SNAPSHOT"
         },
         {
             "name": "gravitee-resource-api",
@@ -235,11 +235,11 @@
         },
         {
             "name": "gravitee-expression-language",
-            "version": "1.4.1"
+            "version": "1.4.2"
         },
         {
             "name": "gravitee-repository-gateway-bridge-http",
-            "version": "3.3.0"
+            "version": "3.3.1-SNAPSHOT"
         },
         {
             "name": "gravitee-policy-url-rewriting",
@@ -267,7 +267,7 @@
         },
         {
             "name": "gravitee-notifier-email",
-            "version": "1.2.3"
+            "version": "1.2.7"
         },
         {
             "name": "gravitee-alert-api",
