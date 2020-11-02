@@ -79,7 +79,7 @@
         },
         {
             "name": "gravitee-policy-cache",
-            "version": "1.7.0"
+            "version": "1.7.1-SNAPSHOT"
         },
         {
             "name": "gravitee-policy-xslt",
