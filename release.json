@@ -1,7 +1,7 @@
 {
     "name": "Gravitee.io",
-    "version": "3.3.1-SNAPSHOT",
-    "buildTimestamp": "2020-10-15T07:19:32+0000",
+    "version": "3.3.1",
+    "buildTimestamp": "2020-11-03T00:00:49+0000",
     "scmSshUrl": "git@github.com:gravitee-io",
     "scmHttpUrl": "https://github.com/gravitee-io/",
     "components": [
@@ -14,20 +14,24 @@
             "version": "1.23.3"
         },
         {
-            "name": "gravitee-gateway"
+            "name": "gravitee-gateway",
+            "version": "3.3.1"
         },
         {
             "name": "gravitee-gateway-api",
             "version": "1.21.1"
         },
         {
-            "name": "gravitee-management-rest-api"
+            "name": "gravitee-management-rest-api",
+            "version": "3.3.1"
         },
         {
-            "name": "gravitee-management-webui"
+            "name": "gravitee-management-webui",
+            "version": "3.3.1"
         },
         {
-            "name": "gravitee-portal-webui"
+            "name": "gravitee-portal-webui",
+            "version": "3.3.1"
         },
         {
             "name": "gravitee-identityprovider-api",
@@ -79,7 +83,7 @@
         },
         {
             "name": "gravitee-policy-cache",
-            "version": "1.7.1-SNAPSHOT"
+            "version": "1.7.1"
         },
         {
             "name": "gravitee-policy-xslt",
@@ -107,7 +111,7 @@
         },
         {
             "name": "gravitee-policy-jwt",
-            "version": "1.15.1-SNAPSHOT"
+            "version": "1.15.1"
         },
         {
             "name": "gravitee-policy-override-http-method",
@@ -119,7 +123,7 @@
         },
         {
             "name": "gravitee-policy-resource-filtering",
-            "version": "1.6.1-SNAPSHOT"
+            "version": "1.6.1"
         },
         {
             "name": "gravitee-policy-json-to-json",
@@ -147,7 +151,7 @@
         },
         {
             "name": "gravitee-policy-callout-http",
-            "version": "1.10.1-SNAPSHOT"
+            "version": "1.10.1"
         },
         {
             "name": "gravitee-policy-assign-attributes",
@@ -163,7 +167,7 @@
         },
         {
             "name": "gravitee-repository",
-            "version": "3.3.1-SNAPSHOT"
+            "version": "3.3.1"
         },
         {
             "name": "gravitee-repository-test",
@@ -183,7 +187,7 @@
         },
         {
             "name": "gravitee-repository-jdbc",
-            "version": "3.3.1-SNAPSHOT"
+            "version": "3.3.1"
         },
         {
             "name": "gravitee-resource-api",
@@ -239,7 +243,7 @@
         },
         {
             "name": "gravitee-repository-gateway-bridge-http",
-            "version": "3.3.1-SNAPSHOT"
+            "version": "3.3.1"
         },
         {
             "name": "gravitee-policy-url-rewriting",
