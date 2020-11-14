@@ -1,7 +1,7 @@
 {
     "name": "Gravitee.io",
-    "version": "1.30.25-SNAPSHOT",
-    "buildTimestamp": "2020-10-16T17:55:38+0000",
+    "version": "1.30.25",
+    "buildTimestamp": "2020-11-14T18:09:01+0000",
     "scmSshUrl": "git@github.com:gravitee-io",
     "scmHttpUrl": "https://github.com/gravitee-io/",
     "components": [
@@ -11,20 +11,23 @@
         },
         {
             "name": "gravitee-definition",
-            "version": "1.20.5-SNAPSHOT"
+            "version": "1.20.5"
         },
         {
-            "name": "gravitee-gateway"
+            "name": "gravitee-gateway",
+            "version": "1.30.25"
         },
         {
             "name": "gravitee-gateway-api",
-            "version": "1.20.1-SNAPSHOT"
+            "version": "1.20.1"
         },
         {
-            "name": "gravitee-management-rest-api"
+            "name": "gravitee-management-rest-api",
+            "version": "1.30.25"
         },
         {
-            "name": "gravitee-management-webui"
+            "name": "gravitee-management-webui",
+            "version": "1.30.25"
         },
         {
             "name": "gravitee-plugin",
@@ -168,7 +171,7 @@
         },
         {
             "name": "gravitee-elasticsearch",
-            "version": "1.30.14-SNAPSHOT"
+            "version": "1.30.14"
         },
         {
             "name": "gravitee-repository-jdbc",
@@ -192,7 +195,7 @@
         },
         {
             "name": "gravitee-resource-oauth2-provider-am",
-            "version": "1.10.1-SNAPSHOT"
+            "version": "1.10.1"
         },
         {
             "name": "gravitee-resource-oauth2-provider-keycloak",
