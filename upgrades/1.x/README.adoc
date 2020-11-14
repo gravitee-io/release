@@ -1,6 +1,8 @@
 = Upgrade Notes
 
 ifdef::env-github[]
+include::1.30.24/README.adoc[leveloffset=+1]
+
 include::1.26.0/README.adoc[leveloffset=+1]
 
 include::1.25.23/README.adoc[leveloffset=+1]
