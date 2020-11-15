@@ -24,8 +24,7 @@
             "name": "gravitee-management-rest-api"
         },
         {
-            "name": "gravitee-management-webui",
-            "version": "3.0.11"
+            "name": "gravitee-management-webui"
         },
         {
             "name": "gravitee-portal-webui"
