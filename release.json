@@ -119,7 +119,7 @@
         },
         {
             "name": "gravitee-policy-resource-filtering",
-            "version": "1.6.0"
+            "version": "1.7.0-SNAPSHOT"
         },
         {
             "name": "gravitee-policy-json-to-json",
@@ -195,7 +195,7 @@
         },
         {
             "name": "gravitee-resource-cache",
-            "version": "1.3.0"
+            "version": "1.4.0-SNAPSHOT"
         },
         {
             "name": "gravitee-resource-oauth2-provider-api",
@@ -203,15 +203,15 @@
         },
         {
             "name": "gravitee-resource-oauth2-provider-generic",
-            "version": "1.13.0"
+            "version": "1.14.0-SNAPSHOT"
         },
         {
             "name": "gravitee-resource-oauth2-provider-am",
-            "version": "1.10.0"
+            "version": "1.11.0-SNAPSHOT"
         },
         {
             "name": "gravitee-resource-oauth2-provider-keycloak",
-            "version": "1.7.0"
+            "version": "1.8.0-SNAPSHOT"
         },
         {
             "name": "gravitee-fetcher-api",
