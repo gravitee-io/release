@@ -11,27 +11,27 @@
         },
         {
             "name": "gravitee-definition",
-            "version": "1.23.3"
+            "version": "1.23.4-SNAPSHOT"
         },
         {
             "name": "gravitee-gateway",
-            "version": "3.3.3"
+            "version": "3.3.4-SNAPSHOT"
         },
         {
             "name": "gravitee-gateway-api",
-            "version": "1.21.1"
+            "version": "1.21.2-SNAPSHOT"
         },
         {
             "name": "gravitee-management-rest-api",
-            "version": "3.3.3"
+            "version": "3.3.4-SNAPSHOT"
         },
         {
             "name": "gravitee-management-webui",
-            "version": "3.3.3"
+            "version": "3.3.4-SNAPSHOT"
         },
         {
             "name": "gravitee-portal-webui",
-            "version": "3.3.3"
+            "version": "3.3.4-SNAPSHOT"
         },
         {
             "name": "gravitee-identityprovider-api",
@@ -183,7 +183,7 @@
         },
         {
             "name": "gravitee-elasticsearch",
-            "version": "3.2.1"
+            "version": "3.2.2-SNAPSHOT"
         },
         {
             "name": "gravitee-repository-jdbc",
@@ -207,7 +207,7 @@
         },
         {
             "name": "gravitee-resource-oauth2-provider-am",
-            "version": "1.10.0"
+            "version": "1.10.1"
         },
         {
             "name": "gravitee-resource-oauth2-provider-keycloak",
