@@ -179,7 +179,7 @@
         },
         {
             "name": "gravitee-elasticsearch",
-            "version": "3.2.2-SNAPSHOT"
+            "version": "3.4.0-SNAPSHOT"
         },
         {
             "name": "gravitee-repository-jdbc",
