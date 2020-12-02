@@ -1,7 +1,7 @@
 {
     "name": "Gravitee.io",
     "version": "1.30.28-SNAPSHOT",
-    "buildTimestamp": "2020-12-02T09:10:13+0000",
+    "buildTimestamp": "2020-12-02T12:38:24+0000",
     "scmSshUrl": "git@github.com:gravitee-io",
     "scmHttpUrl": "https://github.com/gravitee-io/",
     "components": [
@@ -27,7 +27,7 @@
         },
         {
             "name": "gravitee-management-webui",
-            "version": "1.30.28-SNAPSHOT"
+            "version": "1.30.28"
         },
         {
             "name": "gravitee-plugin",
@@ -191,11 +191,11 @@
         },
         {
             "name": "gravitee-resource-oauth2-provider-generic",
-            "version": "1.15.0-SNAPSHOT"
+            "version": "1.15.0"
         },
         {
             "name": "gravitee-resource-oauth2-provider-am",
-            "version": "1.12.0-SNAPSHOT"
+            "version": "1.12.0"
         },
         {
             "name": "gravitee-resource-oauth2-provider-keycloak",
