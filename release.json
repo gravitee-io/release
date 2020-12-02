@@ -27,7 +27,7 @@
         },
         {
             "name": "gravitee-management-webui",
-            "version": "1.30.28-SNAPHOT"
+            "version": "1.30.28-SNAPSHOT"
         },
         {
             "name": "gravitee-plugin",
