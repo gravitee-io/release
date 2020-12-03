@@ -43,8 +43,8 @@ jobs:
           command: |
                     echo "Checking pipeline env. : "
                     ls -allh
-                    export GITHUB_ORG=gravitee-lab
-                    export SECRETHUB_ORG=gravitee-io
+                    export GITHUB_ORG=gravitee-io
+                    export SECRETHUB_ORG=graviteeio
                     export SECRETHUB_REPO=cicd
                     echo "GITHUB_ORG=${GITHUB_ORG}"
                     echo "SECRETHUB_ORG=${SECRETHUB_ORG}"
@@ -86,8 +86,8 @@ jobs:
           command: |
                     echo "Checking pipeline env. : "
                     ls -allh
-                    export GITHUB_ORG=gravitee-lab
-                    export SECRETHUB_ORG=gravitee-io
+                    export GITHUB_ORG=gravitee-io
+                    export SECRETHUB_ORG=graviteeio
                     export SECRETHUB_REPO=cicd
                     echo "GITHUB_ORG=${GITHUB_ORG}"
                     echo "SECRETHUB_ORG=${SECRETHUB_ORG}"
