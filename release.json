@@ -1,7 +1,7 @@
 {
     "name": "Gravitee.io",
     "version": "3.4.1-SNAPSHOT",
-    "buildTimestamp": "2020-12-08T23:30:28+0000",
+    "buildTimestamp": "2020-12-09T07:50:08+0000",
     "scmSshUrl": "git@github.com:gravitee-io",
     "scmHttpUrl": "https://github.com/gravitee-io/",
     "components": [
@@ -31,7 +31,7 @@
         },
         {
             "name": "gravitee-portal-webui",
-            "version": "3.4.1-SNAPSHOT"
+            "version": "3.4.1"
         },
         {
             "name": "gravitee-identityprovider-api",
