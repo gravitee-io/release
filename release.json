@@ -147,7 +147,7 @@
         },
         {
             "name": "gravitee-policy-callout-http",
-            "version": "1.11.0"
+            "version": "1.12.0-SNAPSHOT"
         },
         {
             "name": "gravitee-policy-assign-attributes",
