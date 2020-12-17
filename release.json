@@ -312,7 +312,11 @@
         {
             "name": "gravitee-policy-xml-threat-protection",
             "version": "1.1.0"
-        }
+        },
+        {
+	    "name": "gravitee-policy-retry",
+            "version": "1.0.0-SNAPSHOT"
+	}
     ],
     "buildDependencies": [
         [
@@ -403,6 +407,7 @@
             "gravitee-policy-json-threat-protection",
             "gravitee-policy-regex-threat-protection",
             "gravitee-policy-xml-threat-protection",
+            "gravitee-policy-retry",
             "gravitee-elasticsearch",
             "gravitee-reporter-file",
             "gravitee-reporter-kafka",
