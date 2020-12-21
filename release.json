@@ -18,7 +18,7 @@
         },
         {
             "name": "gravitee-gateway-api",
-            "version": "1.22.0"
+            "version": "1.23.0-SNAPSHOT"
         },
         {
             "name": "gravitee-management-rest-api"
@@ -59,15 +59,15 @@
         },
         {
             "name": "gravitee-policy-transformheaders",
-            "version": "1.7.0"
+            "version": "1.8.0-SNAPSHOT"
         },
         {
             "name": "gravitee-policy-rest-to-soap",
-            "version": "1.9.0"
+            "version": "1.10.0-SNAPSHOT"
         },
         {
             "name": "gravitee-policy-transformqueryparams",
-            "version": "1.5.0"
+            "version": "1.6.0-SNAPSHOT"
         },
         {
             "name": "gravitee-policy-ipfiltering",
@@ -75,15 +75,15 @@
         },
         {
             "name": "gravitee-policy-mock",
-            "version": "1.11.0"
+            "version": "1.12.0-SNAPSHOT"
         },
         {
             "name": "gravitee-policy-cache",
-            "version": "1.8.0"
+            "version": "1.9.0-SNAPSHOT"
         },
         {
             "name": "gravitee-policy-xslt",
-            "version": "1.5.0"
+            "version": "1.6.0-SNAPSHOT"
         },
         {
             "name": "gravitee-policy-xml-json",
@@ -91,7 +91,7 @@
         },
         {
             "name": "gravitee-policy-oauth2",
-            "version": "1.14.0"
+            "version": "1.15.0-SNAPSHOT"
         },
         {
             "name": "gravitee-policy-html-json",
@@ -103,7 +103,7 @@
         },
         {
             "name": "gravitee-policy-dynamic-routing",
-            "version": "1.10.0"
+            "version": "1.11.0-SNAPSHOT"
         },
         {
             "name": "gravitee-policy-jwt",
@@ -115,7 +115,7 @@
         },
         {
             "name": "gravitee-policy-request-validation",
-            "version": "1.10.0"
+            "version": "1.11.0-SNAPSHOT"
         },
         {
             "name": "gravitee-policy-resource-filtering",
@@ -123,7 +123,7 @@
         },
         {
             "name": "gravitee-policy-json-to-json",
-            "version": "1.5.0"
+            "version": "1.6.0-SNAPSHOT"
         },
         {
             "name": "gravitee-policy-keyless",
@@ -131,7 +131,7 @@
         },
         {
             "name": "gravitee-policy-openid-connect-userinfo",
-            "version": "1.3.0"
+            "version": "1.4.0-SNAPSHOT"
         },
         {
             "name": "gravitee-policy-latency",
@@ -151,7 +151,7 @@
         },
         {
             "name": "gravitee-policy-assign-attributes",
-            "version": "1.4.0"
+            "version": "1.5.0-SNAPSHOT"
         },
         {
             "name": "gravitee-reporter-api",
@@ -239,7 +239,7 @@
         },
         {
             "name": "gravitee-expression-language",
-            "version": "1.4.2"
+            "version": "1.5.0-SNAPSHOT"
         },
         {
             "name": "gravitee-repository-gateway-bridge-http",
@@ -247,7 +247,7 @@
         },
         {
             "name": "gravitee-policy-url-rewriting",
-            "version": "1.3.0"
+            "version": "1.4.0-SNAPSHOT"
         },
         {
             "name": "gravitee-policy-json-validation",
@@ -287,7 +287,7 @@
         },
         {
             "name": "gravitee-policy-generate-jwt",
-            "version": "1.4.0"
+            "version": "1.5.0-SNAPSHOT"
         },
         {
             "name": "gravitee-service-discovery-eureka",
