@@ -175,7 +175,7 @@
         },
         {
             "name": "gravitee-repository-jdbc",
-            "version": "3.0.9-SNAPSHOT<"
+            "version": "3.0.9-SNAPSHOT"
         },
         {
             "name": "gravitee-resource-api",
