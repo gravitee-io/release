@@ -1,7 +1,7 @@
 {
     "name": "Gravitee.io",
     "version": "3.5.0-SNAPSHOT",
-    "buildTimestamp": "2020-12-23T05:20:36+0000",
+    "buildTimestamp": "2020-12-23T05:29:41+0000",
     "scmSshUrl": "git@github.com:gravitee-io",
     "scmHttpUrl": "https://github.com/gravitee-io/",
     "components": [
@@ -71,7 +71,7 @@
         },
         {
             "name": "gravitee-policy-transformqueryparams",
-            "version": "1.6.0-SNAPSHOT"
+            "version": "1.6.0"
         },
         {
             "name": "gravitee-policy-ipfiltering",
@@ -127,7 +127,7 @@
         },
         {
             "name": "gravitee-policy-json-to-json",
-            "version": "1.6.0-SNAPSHOT"
+            "version": "1.6.0"
         },
         {
             "name": "gravitee-policy-keyless",
@@ -143,7 +143,7 @@
         },
         {
             "name": "gravitee-policy-assign-content",
-            "version": "1.6.0-SNAPSHOT"
+            "version": "1.6.0"
         },
         {
             "name": "gravitee-policy-jws",
