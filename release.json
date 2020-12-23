@@ -1,7 +1,7 @@
 {
     "name": "Gravitee.io",
     "version": "3.5.0-SNAPSHOT",
-    "buildTimestamp": "2020-12-22T23:32:45+0000",
+    "buildTimestamp": "2020-12-23T05:20:36+0000",
     "scmSshUrl": "git@github.com:gravitee-io",
     "scmHttpUrl": "https://github.com/gravitee-io/",
     "components": [
@@ -79,27 +79,27 @@
         },
         {
             "name": "gravitee-policy-mock",
-            "version": "1.12.0-SNAPSHOT"
+            "version": "1.12.0"
         },
         {
             "name": "gravitee-policy-cache",
-            "version": "1.9.0-SNAPSHOT"
+            "version": "1.9.0"
         },
         {
             "name": "gravitee-policy-xslt",
-            "version": "1.6.0-SNAPSHOT"
+            "version": "1.6.0"
         },
         {
             "name": "gravitee-policy-xml-json",
-            "version": "1.7.0-SNAPSHOT"
+            "version": "1.7.0"
         },
         {
             "name": "gravitee-policy-oauth2",
-            "version": "1.15.0-SNAPSHOT"
+            "version": "1.15.0"
         },
         {
             "name": "gravitee-policy-html-json",
-            "version": "1.6.0-SNAPSHOT"
+            "version": "1.6.0"
         },
         {
             "name": "gravitee-policy-groovy",
@@ -107,7 +107,7 @@
         },
         {
             "name": "gravitee-policy-dynamic-routing",
-            "version": "1.11.0-SNAPSHOT"
+            "version": "1.11.0"
         },
         {
             "name": "gravitee-policy-jwt",
@@ -119,7 +119,7 @@
         },
         {
             "name": "gravitee-policy-request-validation",
-            "version": "1.11.0-SNAPSHOT"
+            "version": "1.11.0"
         },
         {
             "name": "gravitee-policy-resource-filtering",
@@ -147,7 +147,7 @@
         },
         {
             "name": "gravitee-policy-jws",
-            "version": "1.3.0-SNAPSHOT"
+            "version": "1.3.0"
         },
         {
             "name": "gravitee-policy-callout-http",
@@ -255,7 +255,7 @@
         },
         {
             "name": "gravitee-policy-json-validation",
-            "version": "1.6.0-SNAPSHOT"
+            "version": "1.6.0"
         },
         {
             "name": "gravitee-policy-xml-validation",
