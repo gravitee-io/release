@@ -1,0 +1,6 @@
+= Upgrade to 3.6.0
+
+=== Elasticsearch
+
+With Elasticsearch version above 7.x, `geoip` and `user_agent` plugins are automatically enabled.
+
