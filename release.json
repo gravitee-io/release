@@ -18,7 +18,7 @@
         },
         {
             "name": "gravitee-gateway-api",
-            "version": "1.23.0"
+            "version": "1.24.0-SNAPSHOT"
         },
         {
             "name": "gravitee-management-rest-api"
@@ -155,11 +155,15 @@
         },
         {
             "name": "gravitee-reporter-api",
-            "version": "1.18.0"
+            "version": "1.19.0-SNAPSHOT"
         },
         {
             "name": "gravitee-reporter-file",
-            "version": "2.0.0"
+            "version": "2.1.0-SNAPSHOT"
+        },
+        {
+            "name": "gravitee-reporter-tcp",
+            "version": "1.0.0-SNAPSHOT"
         },
         {
             "name": "gravitee-repository",
@@ -179,7 +183,7 @@
         },
         {
             "name": "gravitee-elasticsearch",
-            "version": "3.5.0"
+            "version": "3.6.0-SNAPSHOT"
         },
         {
             "name": "gravitee-repository-jdbc",
@@ -316,6 +320,10 @@
         {
             "name": "gravitee-policy-retry",
             "version": "1.0.0"
+        },
+        {
+            "name": "gravitee-policy-assign-metrics",
+            "version": "1.0.0-SNAPSHOT"
         }
     ],
     "buildDependencies": [
@@ -408,9 +416,11 @@
             "gravitee-policy-regex-threat-protection",
             "gravitee-policy-xml-threat-protection",
             "gravitee-policy-retry",
+            "gravitee-policy-assign-metrics",
             "gravitee-elasticsearch",
             "gravitee-reporter-file",
             "gravitee-reporter-kafka",
+            "gravitee-reporter-tcp",
             "gravitee-fetcher-http",
             "gravitee-fetcher-git",
             "gravitee-fetcher-gitlab",
