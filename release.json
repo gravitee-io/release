@@ -15,7 +15,6 @@
         },
         {
             "name": "gravitee-gateway",
-            "version": "1.30.29"
         },
         {
             "name": "gravitee-gateway-api",
@@ -23,11 +22,9 @@
         },
         {
             "name": "gravitee-management-rest-api",
-            "version": "1.30.29"
         },
         {
             "name": "gravitee-management-webui",
-            "version": "1.30.29"
         },
         {
             "name": "gravitee-plugin",
