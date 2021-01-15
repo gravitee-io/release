@@ -167,11 +167,11 @@
         },
         {
             "name": "gravitee-repository-test",
-            "version": "3.5.0"
+            "version": "3.6.0-SNAPSHOT"
         },
         {
             "name": "gravitee-repository-mongodb",
-            "version": "3.5.0"
+            "version": "3.6.0-SNAPSHOT"
         },
         {
             "name": "gravitee-repository-redis",
@@ -183,7 +183,7 @@
         },
         {
             "name": "gravitee-repository-jdbc",
-            "version": "3.5.0"
+            "version": "3.6.0-SNAPSHOT"
         },
         {
             "name": "gravitee-repository-hazelcast",
