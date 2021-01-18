@@ -199,7 +199,7 @@
         },
         {
             "name": "gravitee-resource-oauth2-provider-am",
-            "version": "1.12.1"
+            "version": "1.12.2-SNAPSHOT"
         },
         {
             "name": "gravitee-resource-oauth2-provider-keycloak",
