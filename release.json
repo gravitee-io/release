@@ -167,15 +167,15 @@
         },
         {
             "name": "gravitee-repository",
-            "version": "3.4.0"
+            "version": "3.4.1-SNAPSHOT"
         },
         {
             "name": "gravitee-repository-test",
-            "version": "3.4.1"
+            "version": "3.4.2-SNAPSHOT"
         },
         {
             "name": "gravitee-repository-mongodb",
-            "version": "3.4.1"
+            "version": "3.4.2-SNAPSHOT"
         },
         {
             "name": "gravitee-repository-redis",
@@ -187,7 +187,7 @@
         },
         {
             "name": "gravitee-repository-jdbc",
-            "version": "3.4.1"
+            "version": "3.4.2-SNAPSHOT"
         },
         {
             "name": "gravitee-repository-hazelcast",
@@ -211,7 +211,7 @@
         },
         {
             "name": "gravitee-resource-oauth2-provider-am",
-            "version": "1.12.1"
+            "version": "1.12.2"
         },
         {
             "name": "gravitee-resource-oauth2-provider-keycloak",
@@ -247,7 +247,7 @@
         },
         {
             "name": "gravitee-repository-gateway-bridge-http",
-            "version": "3.4.0"
+            "version": "3.4.1-SNAPSHOT"
         },
         {
             "name": "gravitee-policy-url-rewriting",
