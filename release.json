@@ -23,15 +23,15 @@
         },
         {
             "name": "gravitee-management-rest-api",
-            "version": "3.5.1"
+            "version": "3.5.2-SNAPSHOT"
         },
         {
             "name": "gravitee-management-webui",
-            "version": "3.5.1"
+            "version": "3.5.2-SNAPSHOT"
         },
         {
             "name": "gravitee-portal-webui",
-            "version": "3.5.1"
+            "version": "3.5.2-SNAPSHOT"
         },
         {
             "name": "gravitee-identityprovider-api",
@@ -75,7 +75,7 @@
         },
         {
             "name": "gravitee-policy-ipfiltering",
-            "version": "1.6.0"
+            "version": "1.6.1-SNAPSHOT"
         },
         {
             "name": "gravitee-policy-mock",
@@ -183,7 +183,7 @@
         },
         {
             "name": "gravitee-elasticsearch",
-            "version": "3.5.0"
+            "version": "3.5.1-SNAPSHOT"
         },
         {
             "name": "gravitee-repository-jdbc",
