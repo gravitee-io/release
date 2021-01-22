@@ -1,9 +1,10 @@
 = Upgrade to 3.5.0
 
+== Repository
+
 === Mongodb
 
 Before running any script, please create a dump of your existing database.
 
 https://raw.githubusercontent.com/gravitee-io/release/master/upgrades/3.x/3.5.0/mongodb/1-duplicate-some-parameters-for-console.js[upgrades/3.x/3.5.0/mongodb/1-duplicate-some-parameters-for-console.js]::
 This script duplicates some parameters for the console to have different behaviors between portal and console. It also modifies the _id of each mongo document to add referenceId and referenceType.
-
