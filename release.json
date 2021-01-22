@@ -1,7 +1,7 @@
 {
     "name": "Gravitee.io",
-    "version": "3.5.2-SNAPSHOT",
-    "buildTimestamp": "2021-01-13T21:05:33+0000",
+    "version": "3.5.2",
+    "buildTimestamp": "2021-01-22T21:51:59+0000",
     "scmSshUrl": "git@github.com:gravitee-io",
     "scmHttpUrl": "https://github.com/gravitee-io/",
     "components": [
@@ -15,7 +15,7 @@
         },
         {
             "name": "gravitee-gateway",
-            "version": "3.5.2-SNAPSHOT"
+            "version": "3.5.2"
         },
         {
             "name": "gravitee-gateway-api",
@@ -23,15 +23,15 @@
         },
         {
             "name": "gravitee-management-rest-api",
-            "version": "3.5.2-SNAPSHOT"
+            "version": "3.5.2"
         },
         {
             "name": "gravitee-management-webui",
-            "version": "3.5.2-SNAPSHOT"
+            "version": "3.5.2"
         },
         {
             "name": "gravitee-portal-webui",
-            "version": "3.5.2-SNAPSHOT"
+            "version": "3.5.2"
         },
         {
             "name": "gravitee-identityprovider-api",
@@ -67,7 +67,7 @@
         },
         {
             "name": "gravitee-policy-rest-to-soap",
-            "version": "1.10.1-SNAPSHOT"
+            "version": "1.10.1"
         },
         {
             "name": "gravitee-policy-transformqueryparams",
@@ -75,7 +75,7 @@
         },
         {
             "name": "gravitee-policy-ipfiltering",
-            "version": "1.6.1-SNAPSHOT"
+            "version": "1.6.1"
         },
         {
             "name": "gravitee-policy-mock",
@@ -165,10 +165,10 @@
             "name": "gravitee-reporter-file",
             "version": "2.0.0"
         },
-	{
+        {
             "name": "gravitee-reporter-tcp",
-	    "version": "1.0.0"
-	},
+            "version": "1.0.0"
+        },
         {
             "name": "gravitee-repository",
             "version": "3.5.0"
@@ -187,11 +187,11 @@
         },
         {
             "name": "gravitee-elasticsearch",
-            "version": "3.5.1-SNAPSHOT"
+            "version": "3.5.1"
         },
         {
             "name": "gravitee-repository-jdbc",
-            "version": "3.5.1-SNAPSHOT"
+            "version": "3.5.1"
         },
         {
             "name": "gravitee-repository-hazelcast",
@@ -419,7 +419,7 @@
             "gravitee-elasticsearch",
             "gravitee-reporter-file",
             "gravitee-reporter-kafka",
-	    "gravitee-reporter-tcp",
+            "gravitee-reporter-tcp",
             "gravitee-fetcher-http",
             "gravitee-fetcher-git",
             "gravitee-fetcher-gitlab",
