@@ -1,5 +1,11 @@
 = Upgrade to 3.5.0
 
+== Distribution
+From this version, Gravitee.IO APIM is distributed with MongoDB and JDBC plugins, as well as Hybrid HTTP plugin (gateway-bridge-http), in the `full` ZIP. +
+You no longer have to choose between the "full" or "full-jdbc" ZIP file.
+
+== Repository
+
 === Mongodb
 
 Before running any script, please create a dump of your existing database.
