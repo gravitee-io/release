@@ -126,6 +126,10 @@
             "version": "1.6.0"
         },
         {
+            "name": "gravitee-policy-json-to-xml",
+            "version": "1.0.0"
+        },
+        {
             "name": "gravitee-policy-keyless",
             "version": "1.3.0"
         },
@@ -389,6 +393,7 @@
             "gravitee-policy-jwt",
             "gravitee-policy-resource-filtering",
             "gravitee-policy-json-to-json",
+            "gravitee-policy-json-to-xml",
             "gravitee-policy-keyless",
             "gravitee-policy-override-http-method",
             "gravitee-policy-request-validation",
