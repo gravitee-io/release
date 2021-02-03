@@ -328,6 +328,10 @@
         {
             "name": "gravitee-policy-assign-metrics",
             "version": "1.0.0-SNAPSHOT"
+        },
+        {
+            "name": "gravitee-policy-http-signature",
+            "version": "1.0.0-SNAPSHOT"
         }
     ],
     "buildDependencies": [
@@ -422,6 +426,7 @@
             "gravitee-policy-xml-threat-protection",
             "gravitee-policy-retry",
             "gravitee-policy-assign-metrics",
+            "gravitee-policy-http-signature",
             "gravitee-elasticsearch",
             "gravitee-reporter-file",
             "gravitee-reporter-kafka",
