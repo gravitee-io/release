@@ -126,7 +126,7 @@
             "version": "1.6.0"
         },
         {
-            "name": "gravitee-policy-json-to-xml",
+            "name": "gravitee-policy-json-xml",
             "version": "1.0.0-SNAPSHOT"
         },
         {
