@@ -22,8 +22,7 @@
             "version": "1.20.1"
         },
         {
-            "name": "gravitee-management-rest-api",
-            "version": "3.0.15"
+            "name": "gravitee-management-rest-api"
         },
         {
             "name": "gravitee-management-webui",
@@ -159,15 +158,15 @@
         },
         {
             "name": "gravitee-repository",
-            "version": "3.0.8"
+            "version": "3.0.9-SNAPSHOT"
         },
         {
             "name": "gravitee-repository-test",
-            "version": "3.0.8"
+            "version": "3.0.9-SNAPSHOT"
         },
         {
             "name": "gravitee-repository-mongodb",
-            "version": "3.0.8"
+            "version": "3.0.9-SNAPSHOT"
         },
         {
             "name": "gravitee-repository-redis",
@@ -179,7 +178,7 @@
         },
         {
             "name": "gravitee-repository-jdbc",
-            "version": "3.0.10"
+            "version": "3.0.11-SNAPSHOT"
         },
         {
             "name": "gravitee-resource-api",
