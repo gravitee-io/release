@@ -340,6 +340,10 @@
         {
             "name": "gravitee-policy-http-signature",
             "version": "1.0.0-SNAPSHOT"
+        },
+        {
+            "name": "gravitee-cockpit-connectors",
+            "version": "3.0.0-SNAPSHOT"
         }
     ],
     "buildDependencies": [
@@ -444,7 +448,8 @@
             "gravitee-fetcher-git",
             "gravitee-fetcher-gitlab",
             "gravitee-fetcher-bitbucket",
-            "gravitee-fetcher-github"
+            "gravitee-fetcher-github",
+            "gravitee-cockpit-connectors"
         ],
         [
             "gravitee-management-rest-api",
