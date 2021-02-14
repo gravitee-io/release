@@ -338,8 +338,8 @@
             "version": "1.0.0-SNAPSHOT"
         },
         {
-            "name": "gravitee-cockpit-connectors",
-            "version": "3.0.0-SNAPSHOT"
+            "name": "gravitee-cockpit-connectors-ws",
+            "version": "1.0.0-SNAPSHOT"
         }
     ],
     "buildDependencies": [
