@@ -98,10 +98,6 @@
             "version": "1.12.1"
         },
         {
-            "name": "gravitee-policy-data-logging-masking",
-            "version": "1.0.0-SNAPSHOT"
-        },
-        {
             "name": "gravitee-policy-dynamic-routing",
             "version": "1.11.0"
         },
@@ -330,10 +326,6 @@
             "version": "1.1.0-SNAPSHOT"
         },
         {
-            "name": "gravitee-policy-assign-metrics",
-            "version": "1.0.0-SNAPSHOT"
-        },
-        {
             "name": "gravitee-policy-http-signature",
             "version": "1.0.0-SNAPSHOT"
         },
@@ -409,7 +401,6 @@
             "gravitee-policy-oauth2",
             "gravitee-policy-html-json",
             "gravitee-policy-groovy",
-            "gravitee-policy-data-logging-masking",
             "gravitee-policy-dynamic-routing",
             "gravitee-policy-jwt",
             "gravitee-policy-resource-filtering",
@@ -434,7 +425,6 @@
             "gravitee-policy-regex-threat-protection",
             "gravitee-policy-xml-threat-protection",
             "gravitee-policy-retry",
-            "gravitee-policy-assign-metrics",
             "gravitee-policy-http-signature",
             "gravitee-elasticsearch",
             "gravitee-reporter-file",
