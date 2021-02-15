@@ -95,7 +95,7 @@
         },
         {
             "name": "gravitee-policy-groovy",
-            "version": "1.12.0"
+            "version": "1.12.1"
         },
         {
             "name": "gravitee-policy-data-logging-masking",
