@@ -75,7 +75,7 @@
         },
         {
             "name": "gravitee-policy-cache",
-            "version": "1.9.0"
+            "version": "1.10.0-SNAPSHOT"
         },
         {
             "name": "gravitee-policy-xslt",
@@ -87,7 +87,7 @@
         },
         {
             "name": "gravitee-policy-oauth2",
-            "version": "1.15.0"
+            "version": "1.16.0-SNAPSHOT"
         },
         {
             "name": "gravitee-policy-html-json",
@@ -203,7 +203,7 @@
         },
         {
             "name": "gravitee-resource-cache",
-            "version": "1.4.0"
+            "version": "1.5.0-SNAPSHOT"
         },
         {
             "name": "gravitee-resource-oauth2-provider-api",
@@ -271,7 +271,7 @@
         },
         {
             "name": "graviteeio-node",
-            "version": "1.10.0"
+            "version": "1.11.0-SNAPSHOT"
         },
         {
             "name": "gravitee-notifier-api",
