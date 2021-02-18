@@ -1,2 +1,9 @@
 node_modules
 .idea
+gpg.script.snippet.sh
+graviteebot/.secrets/.gungpg/graviteebot.gpg.priv.key
+graviteebot/.secrets/.gungpg/graviteebot.gpg.pub.key
+graviteebot.gpg.priv.key
+graviteebot.gpg.pub.key
+.secrets.json
+.secrethub.credential
