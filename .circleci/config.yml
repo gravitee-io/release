@@ -3,10 +3,14 @@ version: 2.1
 parameters:
   gio_action:
     type: enum
-    enum: [release, dry_release, blank]
+    enum: [release, dry_release, nexus_staging, publish_bundles, blank]
     default: blank
+  gio_release_version:
+    type: string
+    default: $GIO_RELEASE_VERSION
 orbs:
   secrethub: secrethub/cli@1.0.0
+  gravitee: gravitee-io/gravitee@dev:1.0.4
 jobs:
   empty_job:
     docker:
@@ -15,7 +19,7 @@ jobs:
     working_directory: /mnt/ramdisk
     steps:
       - run:
-          name: "This is a dummy empty job (isn't it ?)"
+          name: "This is a blank job"
           command: echo "No task is executed."
 
   dry_run_orchestrator:
@@ -23,30 +27,31 @@ jobs:
       image: 'ubuntu-1604:201903-01'
     environment:
       GITHUB_ORG: ${GITHUB_ORG}
-      SECRETHUB_ORG: ${SECRETHUB_ORG}
-      SECRETHUB_REPO: ${SECRETHUB_REPO}
+      SECRETHUB_ORG: graviteeio
+      SECRETHUB_REPO: cicd
     steps:
       - checkout
       - secrethub/install
-      - run:
-          name: "Testing local docker installation"
-          command: docker version
-      - run:
-          name: "What branch am I on ?"
-          command: echo ${CIRCLE_BRANCH}
+      - gravitee/nexus_staging_prepare_bucket:
+          dry_run: true
+          maven_container_image_tag: stable-latest
+          maven_profile_id: gio-release
+          secrethub_org: graviteeio
+          secrethub_repo: cicd
+
       - run:
           name: "Docker pull"
           command: |
                     docker pull quay.io/gravitee-lab/cicd-orchestrator:stable-latest
       - run:
-          name: "DRY RUN RELEASE : Running the Gio CICD Orchestrator as docker container"
+          name: "Running the Gio CICD Orchestrator as docker container"
           command: |
                     echo "Checking pipeline env. : "
                     ls -allh
                     export GITHUB_ORG=gravitee-io
                     export SECRETHUB_ORG=graviteeio
                     export SECRETHUB_REPO=cicd
-                    export MAVEN_PROFILE_ID=gravitee-dry-run
+                    export MAVEN_PROFILE_ID='gio-release'
                     echo "GITHUB_ORG=${GITHUB_ORG}"
                     echo "SECRETHUB_ORG=${SECRETHUB_ORG}"
                     echo "SECRETHUB_REPO=${SECRETHUB_REPO}"
@@ -56,42 +61,44 @@ jobs:
                     # --> .secrets.json is used by Gravitee CI CD Orchestrator to authenticate to Circle CI
                     CCI_SECRET_FILE=$PWD/.secrets.json
                     secrethub read --out-file ${CCI_SECRET_FILE} ${SECRETHUB_ORG}/${SECRETHUB_REPO}/graviteebot/circleci/api/.secret.json
+                    secrethub read ${SECRETHUB_ORG}/${SECRETHUB_REPO}/graviteebot/circleci/secrethub-svc-account/token > ./.secrethub.credential
                     ls -allh ${CCI_SECRET_FILE}
                     # Docker volumes to map pipeline checked out git tree, .env file and .secrets.json files inside the docker container
                     # export DOCKER_VOLUMES="-v $PWD:/graviteeio/cicd/pipeline -v $PWD/.env:/graviteeio/cicd/.env -v $PWD/.secrets.json:/graviteeio/cicd/.secrets.json"
-                    export DOCKER_VOLUMES="-v $PWD:/graviteeio/cicd/pipeline -v $PWD/.secrets.json:/graviteeio/cicd/.secrets.json"
+                    export DOCKER_VOLUMES="-v $PWD:/graviteeio/cicd/pipeline -v $PWD/.secrets.json:/graviteeio/cicd/.secrets.json -v $PWD/.secrethub.credential:/graviteeio/cicd/.secrethub.credential"
                     export ENV_VARS="--env GH_ORG=${GITHUB_ORG} --env SECRETHUB_ORG=${SECRETHUB_ORG} --env SECRETHUB_REPO=${SECRETHUB_REPO} --env MAVEN_PROFILE_ID=${MAVEN_PROFILE_ID}"
                     docker run --name orchestrator ${ENV_VARS} ${DOCKER_VOLUMES} --restart no -it quay.io/gravitee-lab/cicd-orchestrator:stable-latest -s mvn_release --dry-run
                     exit "$?"
+
   run_orchestrator:
     machine:
       image: 'ubuntu-1604:201903-01'
     environment:
       GITHUB_ORG: ${GITHUB_ORG}
-      SECRETHUB_ORG: ${SECRETHUB_ORG}
-      SECRETHUB_REPO: ${SECRETHUB_REPO}
+      SECRETHUB_ORG: graviteeio
+      SECRETHUB_REPO: cicd
     steps:
       - checkout
       - secrethub/install
-      - run:
-          name: "Testing local docker installation"
-          command: docker version
-      - run:
-          name: "What branch am I on ?"
-          command: echo ${CIRCLE_BRANCH}
+      - gravitee/nexus_staging_prepare_bucket:
+          dry_run: false
+          maven_container_image_tag: stable-latest
+          maven_profile_id: gio-release
+          secrethub_org: graviteeio
+          secrethub_repo: cicd
       - run:
           name: "Docker pull"
           command: |
                     docker pull quay.io/gravitee-lab/cicd-orchestrator:stable-latest
       - run:
-          name: "FULLY FLEDGED RELEASE (NOT A DRY RUN) : Running the Gio CICD Orchestrator as docker container"
+          name: "Running the Gio CICD Orchestrator as docker container"
           command: |
                     echo "Checking pipeline env. : "
                     ls -allh
                     export GITHUB_ORG=gravitee-io
                     export SECRETHUB_ORG=graviteeio
                     export SECRETHUB_REPO=cicd
-                    export MAVEN_PROFILE_ID=gio-release
+                    export MAVEN_PROFILE_ID='gio-release'
                     echo "GITHUB_ORG=${GITHUB_ORG}"
                     echo "SECRETHUB_ORG=${SECRETHUB_ORG}"
                     echo "SECRETHUB_REPO=${SECRETHUB_REPO}"
@@ -101,13 +108,80 @@ jobs:
                     # --> .secrets.json is used by Gravitee CI CD Orchestrator to authenticate to Circle CI
                     CCI_SECRET_FILE=$PWD/.secrets.json
                     secrethub read --out-file ${CCI_SECRET_FILE} ${SECRETHUB_ORG}/${SECRETHUB_REPO}/graviteebot/circleci/api/.secret.json
+                    secrethub read ${SECRETHUB_ORG}/${SECRETHUB_REPO}/graviteebot/circleci/secrethub-svc-account/token > ./.secrethub.credential
                     ls -allh ${CCI_SECRET_FILE}
                     # Docker volumes to map pipeline checked out git tree, .env file and .secrets.json files inside the docker container
                     # export DOCKER_VOLUMES="-v $PWD:/graviteeio/cicd/pipeline -v $PWD/.env:/graviteeio/cicd/.env -v $PWD/.secrets.json:/graviteeio/cicd/.secrets.json"
-                    export DOCKER_VOLUMES="-v $PWD:/graviteeio/cicd/pipeline -v $PWD/.secrets.json:/graviteeio/cicd/.secrets.json"
+                    export DOCKER_VOLUMES="-v $PWD:/graviteeio/cicd/pipeline -v $PWD/.secrets.json:/graviteeio/cicd/.secrets.json -v $PWD/.secrethub.credential:/graviteeio/cicd/.secrethub.credential"
                     export ENV_VARS="--env GH_ORG=${GITHUB_ORG} --env SECRETHUB_ORG=${SECRETHUB_ORG} --env SECRETHUB_REPO=${SECRETHUB_REPO} --env MAVEN_PROFILE_ID=${MAVEN_PROFILE_ID}"
                     docker run --name orchestrator ${ENV_VARS} ${DOCKER_VOLUMES} --restart no -it quay.io/gravitee-lab/cicd-orchestrator:stable-latest -s mvn_release --dry-run false
                     exit "$?"
+
+  orchestrated_nexus_staging:
+    machine:
+      image: 'ubuntu-1604:201903-01'
+    environment:
+      GITHUB_ORG: ${GITHUB_ORG}
+      GIO_PRODUCT_VERSION: << pipeline.parameters.gio_release_version >>
+      SECRETHUB_ORG: graviteeio
+      SECRETHUB_REPO: cicd
+    steps:
+      - checkout
+      - secrethub/install
+      - run:
+          name: "Go back to release"
+          command: |
+                    echo "Go back to Release version [${GIO_PRODUCT_VERSION}]"
+                    git checkout ${GIO_PRODUCT_VERSION}
+                    cat ./release.json
+      - run:
+          name: "Docker pull"
+          command: |
+                    docker pull quay.io/gravitee-lab/cicd-orchestrator:stable-latest
+      - run:
+          name: "Running the Gio CICD Orchestrator as docker container"
+          command: |
+                    echo "Checking pipeline env. : "
+                    ls -allh
+                    export GITHUB_ORG=gravitee-io
+                    export SECRETHUB_ORG=graviteeio
+                    export SECRETHUB_REPO=cicd
+                    export MAVEN_PROFILE_ID='gravitee-release'
+                    echo "GITHUB_ORG=${GITHUB_ORG}"
+                    echo "SECRETHUB_ORG=${SECRETHUB_ORG}"
+                    echo "SECRETHUB_REPO=${SECRETHUB_REPO}"
+                    echo "MAVEN_PROFILE_ID=${MAVEN_PROFILE_ID}"
+                    # checking docker image pulled in previous step is there
+                    docker images
+                    # --> .secrets.json is used by Gravitee CI CD Orchestrator to authenticate to Circle CI
+                    CCI_SECRET_FILE=$PWD/.secrets.json
+                    secrethub read --out-file ${CCI_SECRET_FILE} ${SECRETHUB_ORG}/${SECRETHUB_REPO}/graviteebot/circleci/api/.secret.json
+                    secrethub read ${SECRETHUB_ORG}/${SECRETHUB_REPO}/graviteebot/circleci/secrethub-svc-account/token > ./.secrethub.credential
+                    ls -allh ${CCI_SECRET_FILE}
+                    # Docker volumes to map pipeline checked out git tree, .env file and .secrets.json files inside the docker container
+                    # export DOCKER_VOLUMES="-v $PWD:/graviteeio/cicd/pipeline -v $PWD/.env:/graviteeio/cicd/.env -v $PWD/.secrets.json:/graviteeio/cicd/.secrets.json"
+                    export DOCKER_VOLUMES="-v $PWD:/graviteeio/cicd/pipeline -v $PWD/.secrets.json:/graviteeio/cicd/.secrets.json -v $PWD/.secrethub.credential:/graviteeio/cicd/.secrethub.credential"
+                    export ENV_VARS="--env GH_ORG=${GITHUB_ORG} --env SECRETHUB_ORG=${SECRETHUB_ORG} --env SECRETHUB_REPO=${SECRETHUB_REPO} --env MAVEN_PROFILE_ID=${MAVEN_PROFILE_ID}"
+                    docker run --name orchestrator ${ENV_VARS} ${DOCKER_VOLUMES} --restart no -it quay.io/gravitee-lab/cicd-orchestrator:stable-latest -s mvn_nexus_staging --dry-run false
+                    exit "$?"
+
+  publish_bundles_job:
+    machine:
+      image: 'ubuntu-1604:201903-01'
+    environment:
+      GITHUB_ORG: ${GITHUB_ORG}
+      SECRETHUB_ORG: graviteeio
+      SECRETHUB_REPO: cicd
+    steps:
+      - checkout
+      - secrethub/install
+      - gravitee/publish_bundles:
+          dry_run: false
+          maven_container_image_tag: stable-latest
+          maven_profile_id: gio-release
+          secrethub_org: graviteeio
+          secrethub_repo: cicd
+          gio_release_version: << pipeline.parameters.gio_release_version >>
 workflows:
   version: 2.1
   # Blank process invoked when pull requests events are triggered
@@ -117,7 +191,6 @@ workflows:
     jobs:
       - empty_job:
           context: cicd-orchestrator
-  # Release Process DRY RUN
   dry_release_process:
     when:
       equal: [ dry_release, << pipeline.parameters.gio_action >> ]
@@ -126,46 +199,36 @@ workflows:
           context: cicd-orchestrator
           filters:
             branches:
-              # ---
-              # Will run only when git commits are pushed to a release branch
-              # Therefore, will be triggered when a pull request, with target branch being
-              # a release branch, is accepted
               only:
-                - 1.20.x
-                - 1.25.x
-                - 1.29.x
-                - 1.30.x
-                - 3.0.0-beta
-                - 3.0.x
-                - 3.1.x
-                - 3.2.x
-                - 3.4.x
-                - 3.5.x
-                - 3.6.x
-                - master # ? as discussed ? if un-commented, any new pushed commit to master will trigger a Release Process DRY RUN
+                - /^[0-9]+.[0-9]+.x/ # e.g. 4.5.x
+                - /^[0-9]+.[0-9]+.[0-9]+-beta/ # e.g. 3.0.0-beta
+                - master
   release_process:
     when:
       equal: [ release, << pipeline.parameters.gio_action >> ]
     jobs:
       - run_orchestrator:
           context: cicd-orchestrator
-          # one cannot filters branches when conditonal workflows ?
           filters:
             branches:
-              # ---
-              # Will run only when git commits are pushed to master branch
-              # Therefore, will be triggered when a pull request is accepted, with target branch being
-              # the master branch.
               only:
-                - 1.20.x
-                - 1.25.x
-                - 1.29.x
-                - 1.30.x
-                - 3.0.0-beta
-                - 3.0.x
-                - 3.1.x
-                - 3.2.x
-                - 3.4.x
-                - 3.5.x
-                - 3.6.x
-                - master # ? as discussed ? if un-commented, any new pushed commit to master will trigger a Release Process DRY RUN
+                - /^[0-9]+.[0-9]+.x/ # e.g. 4.5.x
+                - /^[0-9]+.[0-9]+.[0-9]+-beta/ # e.g. 3.0.0-beta
+                - master
+  nexus_staging_workflow:
+    when:
+      equal: [ nexus_staging, << pipeline.parameters.gio_action >> ]
+    jobs:
+      - orchestrated_nexus_staging:
+          context: cicd-orchestrator
+          filters:
+            tags:
+              only:
+                - /^[0-9]+.[0-9]+.[0-9]+/
+
+  publish_bundles:
+    when:
+      equal: [ publish_bundles, << pipeline.parameters.gio_action >> ]
+    jobs:
+      - publish_bundles_job:
+          context: cicd-orchestrator
