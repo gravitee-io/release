@@ -232,7 +232,7 @@ workflows:
     when:
       equal: [ publish_bundles, << pipeline.parameters.gio_action >> ]
     jobs:
-      - gravtiee/publish_bundles:
+      - gravitee/publish_bundles:
           context: cicd-orchestrator
           secrethub_org: graviteeio
           secrethub_repo: cicd
