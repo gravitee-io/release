@@ -175,10 +175,11 @@ jobs:
     steps:
       - checkout
       - secrethub/install
-      - gravitee/publish_bundles:
-          dry_run: false
-          maven_container_image_tag: stable-latest
-          maven_profile_id: gio-release
+      # - gravitee/publish_bundles:
+      - gravitee/package_bundles_py:
+          # dry_run: false
+          # maven_container_image_tag: stable-latest
+          # maven_profile_id: gio-release
           secrethub_org: graviteeio
           secrethub_repo: cicd
           gio_release_version: << pipeline.parameters.gio_release_version >>
