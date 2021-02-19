@@ -232,5 +232,9 @@ workflows:
     when:
       equal: [ publish_bundles, << pipeline.parameters.gio_action >> ]
     jobs:
-      - publish_bundles_job:
+      - gravtiee/publish_bundles:
           context: cicd-orchestrator
+          secrethub_org: graviteeio
+          secrethub_repo: cicd
+          gio_release_version: << pipeline.parameters.gio_release_version >>
+          artifactory_repo_name: "nexus-and-non-dry-run-releases"
