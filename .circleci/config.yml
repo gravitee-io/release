@@ -183,6 +183,7 @@ jobs:
           secrethub_org: graviteeio
           secrethub_repo: cicd
           gio_release_version: << pipeline.parameters.gio_release_version >>
+          artifactory_repo_name: "nexus-and-non-dry-run-releases"
 workflows:
   version: 2.1
   # Blank process invoked when pull requests events are triggered
