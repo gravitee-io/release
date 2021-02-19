@@ -165,25 +165,6 @@ jobs:
                     docker run --name orchestrator ${ENV_VARS} ${DOCKER_VOLUMES} --restart no -it quay.io/gravitee-lab/cicd-orchestrator:stable-latest -s mvn_nexus_staging --dry-run false
                     exit "$?"
 
-  publish_bundles_job:
-    machine:
-      image: 'ubuntu-1604:201903-01'
-    environment:
-      GITHUB_ORG: ${GITHUB_ORG}
-      SECRETHUB_ORG: graviteeio
-      SECRETHUB_REPO: cicd
-    steps:
-      - checkout
-      - secrethub/install
-      # - gravitee/publish_bundles:
-      - gravitee/package_bundles_py:
-          # dry_run: false
-          # maven_container_image_tag: stable-latest
-          # maven_profile_id: gio-release
-          secrethub_org: graviteeio
-          secrethub_repo: cicd
-          gio_release_version: << pipeline.parameters.gio_release_version >>
-          artifactory_repo_name: "nexus-and-non-dry-run-releases"
 workflows:
   version: 2.1
   # Blank process invoked when pull requests events are triggered
