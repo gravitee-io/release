@@ -8,6 +8,32 @@ parameters:
   gio_release_version:
     type: string
     default: $GIO_RELEASE_VERSION
+  # -- Entreprise Edition Package Bundle related params.
+  with_ee:
+    type: boolean
+    default: true
+    description: "Run the Package Bundle for Entreprise Edition?"
+  ae_version:
+    type: string
+    default: $AE_VERSION
+    description: "The Gravitee.io version number of Alert Engine"
+  license_version:
+    type: string
+    default: $LICENSE_VERSION
+    description: "The Gravitee.io version number of the Gravitee.io EE License "
+  notifier_slack_version:
+    type: string
+    default: $NOTIFIER_SLACK_VERSION
+    description: "The Gravitee.io version number of the Gravitee.io EE Slack Notifier Plugin"
+  notifier_webhook_version:
+    type: string
+    default: $NOTIFIER_WEBHOOK_VERSION
+    description: "The Gravitee.io version number of the Gravitee.io EE Webhook Notifier Plugin"
+  notifier_email_version:
+    type: string
+    default: $NOTIFIER_EMAIL_VERSION
+    description: "The Gravitee.io version number of the Gravitee.io EE Email Notifier Plugin"
+
 orbs:
   secrethub: secrethub/cli@1.0.0
   gravitee: gravitee-io/gravitee@dev:1.0.4
@@ -219,3 +245,9 @@ workflows:
           secrethub_repo: cicd
           gio_release_version: << pipeline.parameters.gio_release_version >>
           artifactory_repo_name: "nexus-and-non-dry-run-releases"
+          ae_version: << pipeline.parameters.ae_version >>
+          license_version: << pipeline.parameters.license_version >>
+          notifier_slack_version: << pipeline.parameters.notifier_slack_version >>
+          notifier_webhook_version: << pipeline.parameters.notifier_webhook_version >>
+          notifier_email_version: << pipeline.parameters.notifier_email_version >>
+          with_ee: << pipeline.parameters.with_ee >>
