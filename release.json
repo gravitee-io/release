@@ -14,24 +14,20 @@
             "version": "1.25.0"
         },
         {
-            "name": "gravitee-gateway",
-            "version": "3.5.5"
+            "name": "gravitee-gateway"
         },
         {
             "name": "gravitee-gateway-api",
             "version": "1.23.0"
         },
         {
-            "name": "gravitee-management-rest-api",
-            "version": "3.5.5"
+            "name": "gravitee-management-rest-api"
         },
         {
-            "name": "gravitee-management-webui",
-            "version": "3.5.5"
+            "name": "gravitee-management-webui"
         },
         {
-            "name": "gravitee-portal-webui",
-            "version": "3.5.5"
+            "name": "gravitee-portal-webui"
         },
         {
             "name": "gravitee-identityprovider-api",
