@@ -3,7 +3,7 @@ version: 2.1
 parameters:
   gio_action:
     type: enum
-    enum: [release, dry_release, nexus_staging, publish_bundles, blank]
+    enum: [release, dry_release, nexus_staging, publish_bundles, publish_rpms, blank]
     default: blank
   gio_release_version:
     type: string
@@ -251,3 +251,13 @@ workflows:
           notifier_webhook_version: << pipeline.parameters.notifier_webhook_version >>
           notifier_email_version: << pipeline.parameters.notifier_email_version >>
           with_ee: << pipeline.parameters.with_ee >>
+
+  publish_rpms:
+    when:
+      equal: [ publish_rpms, << pipeline.parameters.gio_action >> ]
+    jobs:
+      - gravitee/publish_rpms:
+          context: cicd-orchestrator
+          secrethub_org: graviteeio
+          secrethub_repo: cicd
+          gio_release_version: << pipeline.parameters.gio_release_version >>
