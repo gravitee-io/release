@@ -3,15 +3,11 @@ version: 2.1
 parameters:
   gio_action:
     type: enum
-    enum: [release, dry_release, nexus_staging, publish_bundles, publish_rpms, changelog_apim, changelog_am, blank]
+    enum: [release, dry_release, nexus_staging, publish_bundles, publish_rpms, blank]
     default: blank
   gio_release_version:
     type: string
     default: $GIO_RELEASE_VERSION
-  gio_milestone_version:
-    type: string
-    default: $GIO_MILESTONE_VERSION
-    description: "The Gravitee.io Milestone version https://github.com/gravitee-io/issues/milestones for which we want to generate Changelog"
   # -- Entreprise Edition Package Bundle related params.
   with_ee:
     type: boolean
@@ -265,23 +261,3 @@ workflows:
           secrethub_org: graviteeio
           secrethub_repo: cicd
           gio_release_version: << pipeline.parameters.gio_release_version >>
-
-  changelog_apim:
-    when:
-      equal: [ changelog_apim, << pipeline.parameters.gio_action >> ]
-    jobs:
-      - gravitee/changelog_apim:
-          context: cicd-orchestrator
-          secrethub_org: graviteeio
-          secrethub_repo: cicd
-          gio_milestone_version: << pipeline.parameters.gio_milestone_version >>
-
-  changelog_am:
-    when:
-      equal: [ changelog_am, << pipeline.parameters.gio_action >> ]
-    jobs:
-      - gravitee/changelog_am:
-          context: cicd-orchestrator
-          secrethub_org: graviteeio
-          secrethub_repo: cicd
-          gio_milestone_version: << pipeline.parameters.gio_milestone_version >>
