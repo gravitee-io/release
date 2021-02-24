@@ -8,6 +8,10 @@ parameters:
   gio_release_version:
     type: string
     default: $GIO_RELEASE_VERSION
+  gio_milestone_version:
+    type: string
+    default: $GIO_MILESTONE_VERSION
+    description: "The Gravitee.io Milestone version https://github.com/gravitee-io/issues/milestones for which we want to generate Changelog"
   # -- Entreprise Edition Package Bundle related params.
   with_ee:
     type: boolean
@@ -270,9 +274,9 @@ workflows:
           context: cicd-orchestrator
           secrethub_org: graviteeio
           secrethub_repo: cicd
-          gio_release_version: << pipeline.parameters.gio_release_version >>
+          gio_milestone_version: << pipeline.parameters.gio_milestone_version >>
       - gravitee/changelog_am:
           context: cicd-orchestrator
           secrethub_org: graviteeio
           secrethub_repo: cicd
-          gio_release_version: << pipeline.parameters.gio_release_version >>
+          gio_milestone_version: << pipeline.parameters.gio_milestone_version >>
