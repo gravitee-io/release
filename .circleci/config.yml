@@ -3,11 +3,15 @@ version: 2.1
 parameters:
   gio_action:
     type: enum
-    enum: [release, dry_release, nexus_staging, publish_bundles, publish_rpms, blank]
+    enum: [release, dry_release, nexus_staging, publish_bundles, publish_rpms, publish_docs, blank]
     default: blank
   gio_release_version:
     type: string
     default: $GIO_RELEASE_VERSION
+  dry_run:
+    type: boolean
+    default: true
+    description: "Run Continuous Deployment of https://docs.gravitee.io in Dry Run Mode ? (if set to true, will actually trigger)"
   # -- Entreprise Edition Package Bundle related params.
   with_ee:
     type: boolean
@@ -261,3 +265,16 @@ workflows:
           secrethub_org: graviteeio
           secrethub_repo: cicd
           gio_release_version: << pipeline.parameters.gio_release_version >>
+
+  publish_docs:
+    when:
+      equal: [ publish_docs, << pipeline.parameters.gio_action >> ]
+    jobs:
+      - gravitee/publish_docs:
+          context: cicd-orchestrator
+          dry_run: << pipeline.parameters.dry_run >>
+          secrethub_org: graviteeio
+          secrethub_repo: cicd
+          gio_release_version: << pipeline.parameters.gio_release_version >>
+          # pr_source_branch_root: "develop"
+          # pr_target_branch: "master"
