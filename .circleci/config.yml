@@ -223,9 +223,6 @@ jobs:
                     echo $GIO_GPG_PUB_KEY > /tmp/graviteebot/.secrets/.gungpg/graviteebot.gpg.pub.key
                     echo $GIO_GPG_PRV_KEY > /tmp/graviteebot/.secrets/.gungpg/graviteebot.gpg.priv.key
 
-                    export PUB_KEY_CONTENT=$(cat /tmp/graviteebot/.secrets/.gungpg/graviteebot.gpg.pub.key)
-                    echo $PUB_KEY_CONTENT | tr ' ' '\n' | tee /tmp/graviteebot/.secrets/.gungpg/graviteebot.gpg.pub.key
-
                     echo " content of gpg public key : "
 
                     cat /tmp/graviteebot/.secrets/.gungpg/graviteebot.gpg.pub.key
@@ -281,6 +278,9 @@ jobs:
                     export GNUPGHOME=${EPHEMERAL_KEYRING_FOLDER_ZERO}
                     echo "Checking content of GNUPGHOME=[${GNUPGHOME}]"
                     ls -allh ${GNUPGHOME}
+                    
+                    export PUB_KEY_CONTENT=$(cat /tmp/graviteebot/.secrets/.gungpg/graviteebot.gpg.pub.key)
+                    echo "$PUB_KEY_CONTENT" | tr ' ' '\n' | tee /tmp/graviteebot/.secrets/.gungpg/graviteebot.gpg.pub.key
 
                     echo " content of gpg public key : "
 
