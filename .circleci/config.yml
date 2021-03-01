@@ -207,7 +207,7 @@ jobs:
       # GIO_GPG_PUB_KEY: 'secrethub://gravitee-lab/cicd/graviteebot/gpg/pub_key'
       # GIO_GPG_PRV_KEY: 'secrethub://gravitee-lab/cicd/graviteebot/gpg/private_key'
       GIO_GPG_PUB_KEY: 'secrethub://graviteeio/cicd/graviteebot/gpg/armor_format_private_key'
-      GIO_GPG_PRV_KEY: 'secrethub://graviteeio/cicd/graviteebot/gpg/armor_format_private_key'
+      GIO_GPG_PRV_KEY: 'secrethub://graviteeio/cicd/graviteebot/gpg/armor_format_pub_key'
     steps:
       - secrethub/exec:
           command: |
@@ -278,9 +278,14 @@ jobs:
                     export GNUPGHOME=${EPHEMERAL_KEYRING_FOLDER_ZERO}
                     echo "Checking content of GNUPGHOME=[${GNUPGHOME}]"
                     ls -allh ${GNUPGHOME}
-                    
+
                     export PUB_KEY_CONTENT=$(cat /tmp/graviteebot/.secrets/.gungpg/graviteebot.gpg.pub.key)
                     echo "$PUB_KEY_CONTENT" | tr ' ' '\n' | tee /tmp/graviteebot/.secrets/.gungpg/graviteebot.gpg.pub.key
+
+
+echo '-----BEGIN PGP PRIVATE KEY BLOCK-----'
+echo '-----END PGP PRIVATE KEY BLOCK-----'
+
 
                     echo " content of gpg public key : "
 
