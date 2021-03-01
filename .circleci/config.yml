@@ -224,7 +224,7 @@ jobs:
                     echo $GIO_GPG_PRV_KEY > /tmp/graviteebot/.secrets/.gungpg/graviteebot.gpg.priv.key
 
                     export PUB_KEY_CONTENT=$(cat /tmp/graviteebot/.secrets/.gungpg/graviteebot.gpg.pub.key)
-                    echo $PUB_KEY_CONTENT | tr ' ' '\n' - | tee /tmp/graviteebot/.secrets/.gungpg/graviteebot.gpg.pub.key
+                    echo $PUB_KEY_CONTENT | tr ' ' '\n' | tee /tmp/graviteebot/.secrets/.gungpg/graviteebot.gpg.pub.key
 
                     echo " content of gpg public key : "
 
