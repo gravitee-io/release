@@ -202,12 +202,12 @@ jobs:
     # working_directory: /mnt/ramdisk
     environment:
       RELEASE_REPO: git@github.com:gravitee-lab/release-with-nexus-staging-test1
-      SECRETHUB_ORG: gravitee-lab
+      SECRETHUB_ORG: graviteeio
       SECRETHUB_REPO: cicd
       # GIO_GPG_PUB_KEY: 'secrethub://gravitee-lab/cicd/graviteebot/gpg/pub_key'
       # GIO_GPG_PRV_KEY: 'secrethub://gravitee-lab/cicd/graviteebot/gpg/private_key'
-      GIO_GPG_PUB_KEY: 'secrethub://gravitee-lab/cicd/graviteebot/gpg/armor_format_private_key'
-      GIO_GPG_PRV_KEY: 'secrethub://gravitee-lab/cicd/graviteebot/gpg/armor_format_private_key'
+      GIO_GPG_PUB_KEY: 'secrethub://graviteeio/cicd/graviteebot/gpg/armor_format_private_key'
+      GIO_GPG_PRV_KEY: 'secrethub://graviteeio/cicd/graviteebot/gpg/armor_format_private_key'
     steps:
       - secrethub/exec:
           command: |
