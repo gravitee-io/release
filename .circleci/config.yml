@@ -278,6 +278,10 @@ jobs:
                     export GNUPGHOME=${EPHEMERAL_KEYRING_FOLDER_ZERO}
                     echo "Checking content of GNUPGHOME=[${GNUPGHOME}]"
                     ls -allh ${GNUPGHOME}
+                    
+                    echo " content of gpg public key : "
+
+                    cat /tmp/graviteebot/.secrets/.gungpg/graviteebot.gpg.pub.key
 
       - gravitee/gpg_config:
           gnupghome_path: "/tmp/graviteebot/ephemeral_gpg_ring"
