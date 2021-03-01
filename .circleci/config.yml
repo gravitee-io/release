@@ -279,12 +279,12 @@ jobs:
                     echo "Checking content of GNUPGHOME=[${GNUPGHOME}]"
                     ls -allh ${GNUPGHOME}
 
-                    export PUB_KEY_CONTENT=$(cat /tmp/graviteebot/.secrets/.gungpg/graviteebot.gpg.pub.key)
-                    echo "$PUB_KEY_CONTENT" | tr ' ' '\n' | tee /tmp/graviteebot/.secrets/.gungpg/graviteebot.gpg.pub.key
+                    # export PUB_KEY_CONTENT=$(cat /tmp/graviteebot/.secrets/.gungpg/graviteebot.gpg.pub.key)
+                    # echo "$PUB_KEY_CONTENT" | tr ' ' '\n' | tee /tmp/graviteebot/.secrets/.gungpg/graviteebot.gpg.pub.key
 
 
-echo '-----BEGIN PGP PRIVATE KEY BLOCK-----'
-echo '-----END PGP PRIVATE KEY BLOCK-----'
+                    # echo '-----BEGIN PGP PRIVATE KEY BLOCK-----'
+                    # echo '-----END PGP PRIVATE KEY BLOCK-----'
 
 
                     echo " content of gpg public key : "
