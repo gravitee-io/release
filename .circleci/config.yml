@@ -255,9 +255,6 @@ jobs:
     docker:
      - image: 'cimg/base:stable'
     resource_class: medium
-    # working_directory: /mnt/ramdisk
-    environment:
-      GIO_GPG_KEY_ID: 'secrethub://graviteeio/cicd/graviteebot/gpg/key_id'
     steps:
       - attach_workspace:
           at: /tmp
@@ -307,7 +304,7 @@ jobs:
           gnupghome_path: "/tmp/graviteebot/ephemeral_gpg_ring"
           path_to_gpg_pub_key_file: "/tmp/graviteebot/.secrets/.gungpg/graviteebot.gpg.pub.key"
           path_to_gpg_private_key_file: "/tmp/graviteebot/.secrets/.gungpg/graviteebot.gpg.priv.key"
-          gpg_signing_key_id: ${GIO_GPG_KEY_ID}
+          gpg_signing_key_id: 870B61A8E14DC301
 
 workflows:
   version: 2.1
