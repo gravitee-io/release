@@ -3,7 +3,7 @@ version: 2.1
 parameters:
   gio_action:
     type: enum
-    enum: [release, dry_release, nexus_staging, publish_bundles, publish_rpms, publish_docs, cicd_test2, blank]
+    enum: [release, dry_release, nexus_staging, publish_bundles, publish_rpms, publish_docs, cicd_test_gpg, blank]
     default: blank
   gio_release_version:
     type: string
@@ -195,7 +195,7 @@ jobs:
                     docker run --name orchestrator ${ENV_VARS} ${DOCKER_VOLUMES} --restart no -it quay.io/gravitee-lab/cicd-orchestrator:stable-latest -s mvn_nexus_staging --dry-run false
                     exit "$?"
 
-  cicd_test2_job1:
+  cicd_test_gpg_job1:
     docker:
      - image: 'cimg/base:stable'
     resource_class: medium
@@ -237,7 +237,7 @@ jobs:
             - graviteebot
             # - graviteebot/ephemeral_gpg_ring
 
-  cicd_test2_job2:
+  cicd_test_gpg_job2:
     docker:
      - image: 'cimg/base:stable'
     resource_class: medium
@@ -353,13 +353,13 @@ workflows:
           # pr_source_branch_root: "develop"
           # pr_target_branch: "master"
 
-  cicd_test2_wf:
+  cicd_test_gpg_wf:
     when:
-      equal: [ cicd_test2, << pipeline.parameters.gio_action >> ]
+      equal: [ cicd_test_gpg, << pipeline.parameters.gio_action >> ]
     jobs:
-      - cicd_test2_job1:
+      - cicd_test_gpg_job1:
           context: cicd-orchestrator
-      - cicd_test2_job2:
+      - cicd_test_gpg_job2:
           requires:
-            - cicd_test2_job1
+            - cicd_test_gpg_job1
           context: cicd-orchestrator
