@@ -257,7 +257,7 @@ jobs:
     resource_class: medium
     # working_directory: /mnt/ramdisk
     environment:
-      GIO_GPG_KEY_ID: 'secrethub://gravitee-lab/cicd/graviteebot/gpg/key_id'
+      GIO_GPG_KEY_ID: 'secrethub://graviteeio/cicd/graviteebot/gpg/key_id'
     steps:
       - attach_workspace:
           at: /tmp
@@ -308,58 +308,6 @@ jobs:
           path_to_gpg_pub_key_file: "/tmp/graviteebot/.secrets/.gungpg/graviteebot.gpg.pub.key"
           path_to_gpg_private_key_file: "/tmp/graviteebot/.secrets/.gungpg/graviteebot.gpg.priv.key"
           gpg_signing_key_id: ${GIO_GPG_KEY_ID}
-
-  cicd_test_gpg_job3:
-    docker:
-     - image: 'cimg/base:stable'
-    resource_class: medium
-    # working_directory: /mnt/ramdisk
-    environment:
-      RELEASE_REPO: git@github.com:gravitee-lab/release-with-nexus-staging-test1
-      SECRETHUB_ORG: graviteeio
-      SECRETHUB_REPO: cicd
-      # GIO_GPG_PUB_KEY: 'secrethub://gravitee-lab/cicd/graviteebot/gpg/pub_key'
-      # GIO_GPG_PRV_KEY: 'secrethub://gravitee-lab/cicd/graviteebot/gpg/private_key'
-      GIO_GPG_PUB_KEY: 'secrethub://graviteeio/cicd/graviteebot/gpg/armor_format_pub_key:2'
-      GIO_GPG_PRV_KEY: 'secrethub://graviteeio/cicd/graviteebot/gpg/armor_format_private_key:2'
-    steps:
-      - secrethub/exec:
-          command: |
-                    mkdir -p /tmp/other/graviteebot/.secrets/.gungpg
-
-                    echo -e "$GIO_GPG_PUB_KEY" > /tmp/other/graviteebot/.secrets/.gungpg/graviteebot.gpg.pub.key
-                    echo -e "$GIO_GPG_PRV_KEY" > /tmp/other/graviteebot/.secrets/.gungpg/graviteebot.gpg.priv.key
-
-  # This job to test method of https://discuss.circleci.com/t/gpg-keys-as-environment-variables/28641/4
-  cicd_test_gpg_job4:
-    docker:
-     - image: 'cimg/base:stable'
-    resource_class: medium
-    environment:
-      GIO_GPG_KEY_ID: 'secrethub://gravitee-lab/cicd/graviteebot/gpg/key_id'
-    steps:
-      - attach_workspace:
-          at: /tmp
-      - run:
-          name: "Retrieving GPG config from workspace"
-          command: |
-                    echo "Checking content of [/tmp]"
-                    ls -allh /tmp/
-                    echo "Checking content of [/tmp/other/graviteebot/.secrets/.gungpg/]"
-                    ls -allh /tmp/other/graviteebot/.secrets/.gungpg/
-
-                    export EPHEMERAL_KEYRING_FOLDER_ZERO="/tmp/graviteebot/ephemeral_gpg_ring"
-                    echo "Checking content of EPHEMERAL_KEYRING_FOLDER_ZERO=[${EPHEMERAL_KEYRING_FOLDER_ZERO}]"
-                    ls -allh ${EPHEMERAL_KEYRING_FOLDER_ZERO}
-                    export GNUPGHOME=${EPHEMERAL_KEYRING_FOLDER_ZERO}
-                    mkdir -p ${GNUPGHOME}
-                    echo "GPG init keyring : "
-                    gpg --list-keys
-                    echo "Checking content of GNUPGHOME=[${GNUPGHOME}]"
-                    ls -allh ${GNUPGHOME}
-                    echo "Quick test trying to import private GPG key like [https://discuss.circleci.com/t/gpg-keys-as-environment-variables/28641/4]"
-                    gpg --import /tmp/other/graviteebot/.secrets/.gungpg/graviteebot.gpg.priv.key
-
 
 workflows:
   version: 2.1
