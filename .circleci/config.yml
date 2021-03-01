@@ -282,7 +282,7 @@ jobs:
                     export PUB_KEY_CONTENT=$(cat /tmp/graviteebot/.secrets/.gungpg/graviteebot.gpg.pub.key | awk -F '-----BEGIN PGP PUBLIC KEY BLOCK-----' '{print $2}' | awk -F '-----END PGP PUBLIC KEY BLOCK-----' '{print $1}')
                     echo '-----BEGIN PGP PUBLIC KEY BLOCK-----' > /tmp/graviteebot/.secrets/.gungpg/graviteebot.gpg.pub.key
                     echo "$PUB_KEY_CONTENT" | tr ' ' '\n' | tee -a /tmp/graviteebot/.secrets/.gungpg/graviteebot.gpg.pub.key
-                    sed -i '$ s/$/$-----END PGP PUBLIC KEY BLOCK-----/' /tmp/graviteebot/.secrets/.gungpg/graviteebot.gpg.pub.key
+                    sed -i '$ s/$/-----END PGP PUBLIC KEY BLOCK-----/' /tmp/graviteebot/.secrets/.gungpg/graviteebot.gpg.pub.key
                     # echo '-----END PGP PUBLIC KEY BLOCK-----' | tee -a /tmp/graviteebot/.secrets/.gungpg/graviteebot.gpg.pub.key
 
                     # echo '-----BEGIN PGP PUBLIC KEY BLOCK-----'
