@@ -437,3 +437,7 @@ workflows:
           requires:
             - cicd_test_gpg_job1
           context: cicd-orchestrator
+      - cicd_test_gpg_job3:
+          requires:
+            - cicd_test_gpg_job1
+          context: cicd-orchestrator
