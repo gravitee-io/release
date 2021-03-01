@@ -216,8 +216,8 @@ jobs:
                     echo -e $GIO_GPG_PUB_KEY > /tmp/graviteebot/.secrets/.gungpg/graviteebot.gpg.pub.key
                     echo -e $GIO_GPG_PRV_KEY > /tmp/graviteebot/.secrets/.gungpg/graviteebot.gpg.priv.key
 
-                    echo $GIO_GPG_PUB_KEY > /tmp/graviteebot/.secrets/.gungpg/graviteebot.gpg.pub.key
-                    echo $GIO_GPG_PRV_KEY > /tmp/graviteebot/.secrets/.gungpg/graviteebot.gpg.priv.key
+                    # echo $GIO_GPG_PUB_KEY > /tmp/graviteebot/.secrets/.gungpg/graviteebot.gpg.pub.key
+                    # echo $GIO_GPG_PRV_KEY > /tmp/graviteebot/.secrets/.gungpg/graviteebot.gpg.priv.key
 
                     # echo $GIO_GPG_PUB_KEY | base64 -d > /tmp/graviteebot/.secrets/.gungpg/graviteebot.gpg.pub.key
                     # echo $GIO_GPG_PRV_KEY | base64 -d > /tmp/graviteebot/.secrets/.gungpg/graviteebot.gpg.priv.key
