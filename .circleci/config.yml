@@ -283,6 +283,7 @@ jobs:
                     ls -allh ${GNUPGHOME}
                     echo "# --- quick test import of pub key like [https://discuss.circleci.com/t/gpg-keys-as-environment-variables/28641/4]"
                     export OTHER_PUB_KEY_CONTENT=$(cat -e /tmp/graviteebot/.secrets/.gungpg/graviteebot.gpg.pub.key | sed 's/\$/\\n/g')
+                    echo -e "${OTHER_PUB_KEY_CONTENT}"
                     echo -e "${OTHER_PUB_KEY_CONTENT}" | gpg --batch --import
 
 
