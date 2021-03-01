@@ -217,11 +217,11 @@ jobs:
                     # echo -e $GIO_GPG_PRV_KEY | base64 -d > /tmp/graviteebot/.secrets/.gungpg/graviteebot.gpg.priv.key
 
 
-                    # echo -e "$GIO_GPG_PUB_KEY" > /tmp/graviteebot/.secrets/.gungpg/graviteebot.gpg.pub.key
-                    # echo -e "$GIO_GPG_PRV_KEY" > /tmp/graviteebot/.secrets/.gungpg/graviteebot.gpg.priv.key
+                    echo -e "$GIO_GPG_PUB_KEY" > /tmp/graviteebot/.secrets/.gungpg/graviteebot.gpg.pub.key
+                    echo -e "$GIO_GPG_PRV_KEY" > /tmp/graviteebot/.secrets/.gungpg/graviteebot.gpg.priv.key
 
-                    echo $GIO_GPG_PUB_KEY > /tmp/graviteebot/.secrets/.gungpg/graviteebot.gpg.pub.key
-                    echo $GIO_GPG_PRV_KEY > /tmp/graviteebot/.secrets/.gungpg/graviteebot.gpg.priv.key
+                    # echo $GIO_GPG_PUB_KEY > /tmp/graviteebot/.secrets/.gungpg/graviteebot.gpg.pub.key
+                    # echo $GIO_GPG_PRV_KEY > /tmp/graviteebot/.secrets/.gungpg/graviteebot.gpg.priv.key
 
                     echo " content of gpg public key : "
 
@@ -281,6 +281,7 @@ jobs:
                     gpg --list-keys
                     echo "Checking content of GNUPGHOME=[${GNUPGHOME}]"
                     ls -allh ${GNUPGHOME}
+
                     echo "# --- quick test import of pub key like [https://discuss.circleci.com/t/gpg-keys-as-environment-variables/28641/4]"
                     export OTHER_PUB_KEY_CONTENT=$(cat -e /tmp/graviteebot/.secrets/.gungpg/graviteebot.gpg.pub.key | sed 's/\$/\\n/g')
                     echo -e "${OTHER_PUB_KEY_CONTENT}"
@@ -311,6 +312,35 @@ jobs:
           path_to_gpg_pub_key_file: "/tmp/graviteebot/.secrets/.gungpg/graviteebot.gpg.pub.key"
           path_to_gpg_private_key_file: "/tmp/graviteebot/.secrets/.gungpg/graviteebot.gpg.priv.key"
           gpg_signing_key_id: ${GIO_GPG_KEY_ID}
+
+  # This job to test method of https://discuss.circleci.com/t/gpg-keys-as-environment-variables/28641/4
+  cicd_test_gpg_job3:
+    docker:
+     - image: 'cimg/base:stable'
+    resource_class: medium
+    environment:
+      GIO_GPG_KEY_ID: 'secrethub://gravitee-lab/cicd/graviteebot/gpg/key_id'
+    steps:
+      - attach_workspace:
+          at: /tmp
+      - run:
+          name: "Retrieving GPG config from workspace"
+          command: |
+                    echo "Checking content of [/tmp]"
+                    ls -allh /tmp/
+                    echo "Checking content of [/tmp/graviteebot/.secrets/.gungpg/]"
+                    ls -allh /tmp/graviteebot/.secrets/.gungpg/
+
+                    export EPHEMERAL_KEYRING_FOLDER_ZERO="/tmp/graviteebot/ephemeral_gpg_ring"
+                    echo "Checking content of EPHEMERAL_KEYRING_FOLDER_ZERO=[${EPHEMERAL_KEYRING_FOLDER_ZERO}]"
+                    ls -allh ${EPHEMERAL_KEYRING_FOLDER_ZERO}
+                    export GNUPGHOME=${EPHEMERAL_KEYRING_FOLDER_ZERO}
+                    mkdir -p ${GNUPGHOME}
+                    echo "GPG init keyring : "
+                    gpg --list-keys
+                    echo "Checking content of GNUPGHOME=[${GNUPGHOME}]"
+                    ls -allh ${GNUPGHOME}
+                    gpg --batch --import /tmp/graviteebot/.secrets/.gungpg/graviteebot.gpg.priv.key
 
 
 workflows:
