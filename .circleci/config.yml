@@ -294,6 +294,7 @@ jobs:
                     echo " content of gpg public key : "
 
                     cat -E /tmp/graviteebot/.secrets/.gungpg/graviteebot.gpg.pub.key
+                    gpg --version
 
       - gravitee/gpg_config:
           gnupghome_path: "/tmp/graviteebot/ephemeral_gpg_ring"
