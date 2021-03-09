@@ -1,7 +1,7 @@
 {
     "name": "Gravitee.io",
     "version": "3.5.6-SNAPSHOT",
-    "buildTimestamp": "2021-02-23T17:12:51+0000",
+    "buildTimestamp": "2021-03-09T12:16:06+0000",
     "scmSshUrl": "git@github.com:gravitee-io",
     "scmHttpUrl": "https://github.com/gravitee-io/",
     "components": [
@@ -14,20 +14,24 @@
             "version": "1.25.0"
         },
         {
-            "name": "gravitee-gateway"
+            "name": "gravitee-gateway",
+            "version": "3.5.6"
         },
         {
             "name": "gravitee-gateway-api",
             "version": "1.23.0"
         },
         {
-            "name": "gravitee-management-rest-api"
+            "name": "gravitee-management-rest-api",
+            "version": "3.5.6-SNAPSHOT"
         },
         {
-            "name": "gravitee-management-webui"
+            "name": "gravitee-management-webui",
+            "version": "3.5.6-SNAPSHOT"
         },
         {
-            "name": "gravitee-portal-webui"
+            "name": "gravitee-portal-webui",
+            "version": "3.5.6-SNAPSHOT"
         },
         {
             "name": "gravitee-identityprovider-api",
@@ -159,7 +163,7 @@
         },
         {
             "name": "gravitee-reporter-file",
-            "version": "2.0.1-SNAPSHOT"
+            "version": "2.0.1"
         },
         {
             "name": "gravitee-reporter-tcp",
@@ -247,7 +251,7 @@
         },
         {
             "name": "gravitee-repository-gateway-bridge-http",
-            "version": "3.5.3-SNAPSHOT"
+            "version": "3.5.3"
         },
         {
             "name": "gravitee-policy-url-rewriting",
