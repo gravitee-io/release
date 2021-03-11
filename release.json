@@ -1,6 +1,6 @@
 {
     "name": "Gravitee.io",
-    "version": "3.8.0-SNAPSHOT",
+    "version": "3.7.0-SNAPSHOT",
     "buildTimestamp": "2021-02-17T20:55:06+0000",
     "scmSshUrl": "git@github.com:gravitee-io",
     "scmHttpUrl": "https://github.com/gravitee-io/",
@@ -11,32 +11,23 @@
         },
         {
             "name": "gravitee-definition",
-            "version": "1.27.0",
-            "since": "3.7.0"
+            "version": "1.27.0-SNAPSHOT"
         },
         {
-            "name": "gravitee-gateway",
-            "version": "3.7.0",
-            "since": "3.7.0"
+            "name": "gravitee-gateway"
         },
         {
             "name": "gravitee-gateway-api",
             "version": "1.24.0"
         },
         {
-            "name": "gravitee-management-rest-api",
-            "version": "3.7.0",
-            "since": "3.7.0"
+            "name": "gravitee-management-rest-api"
         },
         {
-            "name": "gravitee-management-webui",
-            "version": "3.7.0",
-            "since": "3.7.0"
+            "name": "gravitee-management-webui"
         },
         {
-            "name": "gravitee-portal-webui",
-            "version": "3.7.0",
-            "since": "3.7.0"
+            "name": "gravitee-portal-webui"
         },
         {
             "name": "gravitee-identityprovider-api",
@@ -84,8 +75,7 @@
         },
         {
             "name": "gravitee-policy-cache",
-            "version": "1.10.0",
-            "since": "3.7.0"
+            "version": "1.10.0-SNAPSHOT"
         },
         {
             "name": "gravitee-policy-xslt",
@@ -97,8 +87,7 @@
         },
         {
             "name": "gravitee-policy-oauth2",
-            "version": "1.16.0",
-            "since": "3.7.0"
+            "version": "1.16.0-SNAPSHOT"
         },
         {
             "name": "gravitee-policy-html-json",
@@ -166,8 +155,7 @@
         },
         {
             "name": "gravitee-reporter-api",
-            "version": "1.20.0",
-            "since": "3.7.0"
+            "version": "1.20.0-SNAPSHOT"
         },
         {
             "name": "gravitee-reporter-file",
@@ -175,23 +163,19 @@
         },
         {
             "name": "gravitee-reporter-tcp",
-            "version": "1.2.0",
-            "since": "3.7.0"
+            "version": "1.2.0-SNAPSHOT"
         },
         {
             "name": "gravitee-repository",
-            "version": "3.7.0",
-            "since": "3.7.0"
+            "version": "3.7.0-SNAPSHOT"
         },
         {
             "name": "gravitee-repository-test",
-            "version": "3.7.0",
-            "since": "3.7.0"
+            "version": "3.7.0-SNAPSHOT"
         },
         {
             "name": "gravitee-repository-mongodb",
-            "version": "3.7.0",
-            "since": "3.7.0"
+            "version": "3.7.0-SNAPSHOT"
         },
         {
             "name": "gravitee-repository-redis",
@@ -203,8 +187,7 @@
         },
         {
             "name": "gravitee-repository-jdbc",
-            "version": "3.7.0",
-            "since": "3.7.0"
+            "version": "3.7.0-SNAPSHOT"
         },
         {
             "name": "gravitee-repository-hazelcast",
@@ -216,8 +199,7 @@
         },
         {
             "name": "gravitee-resource-cache",
-            "version": "1.5.0",
-            "since": "3.7.0"
+            "version": "1.5.0-SNAPSHOT"
         },
         {
             "name": "gravitee-resource-oauth2-provider-api",
@@ -285,8 +267,7 @@
         },
         {
             "name": "graviteeio-node",
-            "version": "1.11.0",
-            "since": "3.7.0"
+            "version": "1.11.0-SNAPSHOT"
         },
         {
             "name": "gravitee-notifier-api",
