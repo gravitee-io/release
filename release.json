@@ -1,7 +1,7 @@
 {
     "name": "Gravitee.io",
     "version": "3.5.7-SNAPSHOT",
-    "buildTimestamp": "2021-03-09T12:59:49+0000",
+    "buildTimestamp": "2021-03-11T09:12:18+0000",
     "scmSshUrl": "git@github.com:gravitee-io",
     "scmHttpUrl": "https://github.com/gravitee-io/",
     "components": [
@@ -15,7 +15,7 @@
         },
         {
             "name": "gravitee-gateway",
-            "version": "3.5.7-SNAPSHOT"
+            "version": "3.5.7"
         },
         {
             "name": "gravitee-gateway-api",
@@ -27,7 +27,7 @@
         },
         {
             "name": "gravitee-management-webui",
-            "version": "3.5.7-SNAPSHOT"
+            "version": "3.5.7"
         },
         {
             "name": "gravitee-portal-webui",
@@ -163,7 +163,7 @@
         },
         {
             "name": "gravitee-reporter-file",
-            "version": "2.0.2-SNAPSHOT"
+            "version": "2.0.2"
         },
         {
             "name": "gravitee-reporter-tcp",
