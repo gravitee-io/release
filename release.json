@@ -67,7 +67,7 @@
         },
         {
             "name": "gravitee-policy-rest-to-soap",
-            "version": "1.10.1"
+            "version": "1.11.1-SNAPSHOT"
         },
         {
             "name": "gravitee-policy-transformqueryparams",
