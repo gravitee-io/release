@@ -3,11 +3,41 @@ version: 2.1
 parameters:
   gio_action:
     type: enum
-    enum: [release, dry_release, nexus_staging, publish_bundles, blank]
+    enum: [release, dry_release, nexus_staging, publish_bundles, publish_rpms, publish_docs, cicd_test_gpg, blank]
     default: blank
   gio_release_version:
     type: string
     default: $GIO_RELEASE_VERSION
+  dry_run:
+    type: boolean
+    default: true
+    description: "Run Continuous Deployment of https://docs.gravitee.io in Dry Run Mode ? (if set to true, will actually trigger)"
+  # -- Entreprise Edition Package Bundle related params.
+  with_ee:
+    type: boolean
+    default: true
+    description: "Run the Package Bundle for Entreprise Edition?"
+  ae_version:
+    type: string
+    default: $AE_VERSION
+    description: "The Gravitee.io version number of Alert Engine"
+  license_version:
+    type: string
+    default: $LICENSE_VERSION
+    description: "The Gravitee.io version number of the Gravitee.io EE License "
+  notifier_slack_version:
+    type: string
+    default: $NOTIFIER_SLACK_VERSION
+    description: "The Gravitee.io version number of the Gravitee.io EE Slack Notifier Plugin"
+  notifier_webhook_version:
+    type: string
+    default: $NOTIFIER_WEBHOOK_VERSION
+    description: "The Gravitee.io version number of the Gravitee.io EE Webhook Notifier Plugin"
+  notifier_email_version:
+    type: string
+    default: $NOTIFIER_EMAIL_VERSION
+    description: "The Gravitee.io version number of the Gravitee.io EE Email Notifier Plugin"
+
 orbs:
   secrethub: secrethub/cli@1.0.0
   gravitee: gravitee-io/gravitee@dev:1.0.4
@@ -165,6 +195,117 @@ jobs:
                     docker run --name orchestrator ${ENV_VARS} ${DOCKER_VOLUMES} --restart no -it quay.io/gravitee-lab/cicd-orchestrator:stable-latest -s mvn_nexus_staging --dry-run false
                     exit "$?"
 
+  cicd_test_gpg_job1:
+    docker:
+     - image: 'cimg/base:stable'
+    resource_class: medium
+    # working_directory: /mnt/ramdisk
+    environment:
+      RELEASE_REPO: git@github.com:gravitee-lab/release-with-nexus-staging-test1
+      SECRETHUB_ORG: graviteeio
+      SECRETHUB_REPO: cicd
+      # GIO_GPG_PUB_KEY: 'secrethub://gravitee-lab/cicd/graviteebot/gpg/pub_key'
+      # GIO_GPG_PRV_KEY: 'secrethub://gravitee-lab/cicd/graviteebot/gpg/private_key'
+      GIO_GPG_PUB_KEY: 'secrethub://graviteeio/cicd/graviteebot/gpg/armor_format_pub_key'
+      GIO_GPG_PRV_KEY: 'secrethub://graviteeio/cicd/graviteebot/gpg/armor_format_private_key'
+    steps:
+      - secrethub/exec:
+          command: |
+                    mkdir -p /tmp/graviteebot/.secrets/.gungpg
+
+                    # echo -e $GIO_GPG_PUB_KEY | base64 -d > /tmp/graviteebot/.secrets/.gungpg/graviteebot.gpg.pub.key
+                    # echo -e $GIO_GPG_PRV_KEY | base64 -d > /tmp/graviteebot/.secrets/.gungpg/graviteebot.gpg.priv.key
+
+                    # echo $GIO_GPG_PUB_KEY | base64 -d > /tmp/graviteebot/.secrets/.gungpg/graviteebot.gpg.pub.key
+                    # echo $GIO_GPG_PRV_KEY | base64 -d > /tmp/graviteebot/.secrets/.gungpg/graviteebot.gpg.priv.key
+
+                    # echo -e "$GIO_GPG_PUB_KEY" > /tmp/graviteebot/.secrets/.gungpg/graviteebot.gpg.pub.key
+                    # echo -e "$GIO_GPG_PRV_KEY" > /tmp/graviteebot/.secrets/.gungpg/graviteebot.gpg.priv.key
+
+                    echo $GIO_GPG_PUB_KEY > /tmp/graviteebot/.secrets/.gungpg/graviteebot.gpg.pub.key
+                    echo $GIO_GPG_PRV_KEY > /tmp/graviteebot/.secrets/.gungpg/graviteebot.gpg.priv.key
+
+                    echo " content of gpg public key : "
+
+                    cat /tmp/graviteebot/.secrets/.gungpg/graviteebot.gpg.pub.key
+
+                    echo ""
+                    echo ""
+
+
+                    # export EPHEMERAL_KEYRING_FOLDER_ZERO=$(mktemp -d -t "gpg_home-XXXXXXXXXX")
+                    export EPHEMERAL_KEYRING_FOLDER_ZERO="/tmp/graviteebot/ephemeral_gpg_ring"
+                    mkdir -p ${EPHEMERAL_KEYRING_FOLDER_ZERO}
+                    chmod 700 ${EPHEMERAL_KEYRING_FOLDER_ZERO}
+                    export GNUPGHOME=${EPHEMERAL_KEYRING_FOLDER_ZERO}
+                    echo "GPG Keys before import : "
+                    # This will generate a new Key ring into ${EPHEMERAL_KEYRING_FOLDER_ZERO}
+                    gpg --list-keys
+                    echo "content of [\${EPHEMERAL_KEYRING_FOLDER_ZERO}]=[${EPHEMERAL_KEYRING_FOLDER_ZERO}] : "
+                    ls -allh ${EPHEMERAL_KEYRING_FOLDER_ZERO}
+                    exit 0
+
+      - persist_to_workspace:
+          root: /tmp
+          paths:
+            - graviteebot
+            # - graviteebot/ephemeral_gpg_ring
+
+  cicd_test_gpg_job2:
+    docker:
+     - image: 'cimg/base:stable'
+    resource_class: medium
+    steps:
+      - attach_workspace:
+          at: /tmp
+      - run:
+          name: "Retrieving GPG config from workspace"
+          command: |
+                    echo "Checking content of [/tmp]"
+                    ls -allh /tmp/
+                    echo "Checking content of [/tmp/graviteebot/.secrets/.gungpg/]"
+                    ls -allh /tmp/graviteebot/.secrets/.gungpg/
+
+                    export EPHEMERAL_KEYRING_FOLDER_ZERO="/tmp/graviteebot/ephemeral_gpg_ring"
+                    echo "Checking content of EPHEMERAL_KEYRING_FOLDER_ZERO=[${EPHEMERAL_KEYRING_FOLDER_ZERO}]"
+                    ls -allh ${EPHEMERAL_KEYRING_FOLDER_ZERO}
+                    export GNUPGHOME=${EPHEMERAL_KEYRING_FOLDER_ZERO}
+                    mkdir -p ${GNUPGHOME}
+                    echo "GPG init keyring : "
+                    gpg --list-keys
+                    echo "Checking content of GNUPGHOME=[${GNUPGHOME}]"
+                    ls -allh ${GNUPGHOME}
+
+                    export PUB_KEY_CONTENT=$(cat /tmp/graviteebot/.secrets/.gungpg/graviteebot.gpg.pub.key | awk -F '-----BEGIN PGP PUBLIC KEY BLOCK-----' '{print $2}' | awk -F '-----END PGP PUBLIC KEY BLOCK-----' '{print $1}')
+                    echo '-----BEGIN PGP PUBLIC KEY BLOCK-----' > /tmp/graviteebot/.secrets/.gungpg/graviteebot.gpg.pub.key
+                    echo "$PUB_KEY_CONTENT" | tr ' ' '\n' | tee -a /tmp/graviteebot/.secrets/.gungpg/graviteebot.gpg.pub.key
+                    sed -i '$ s/$/-----END PGP PUBLIC KEY BLOCK-----/' /tmp/graviteebot/.secrets/.gungpg/graviteebot.gpg.pub.key
+
+                    export PRIV_KEY_CONTENT=$(cat /tmp/graviteebot/.secrets/.gungpg/graviteebot.gpg.priv.key | awk -F '-----BEGIN PGP PRIVATE KEY BLOCK-----' '{print $2}' | awk -F '-----END PGP PUBLIC KEY BLOCK-----' '{print $1}')
+                    echo '-----BEGIN PGP PRIVATE KEY BLOCK-----' > /tmp/graviteebot/.secrets/.gungpg/graviteebot.gpg.priv.key
+                    echo "$PRIV_KEY_CONTENT" | tr ' ' '\n' | tee -a /tmp/graviteebot/.secrets/.gungpg/graviteebot.gpg.priv.key
+                    sed -i '$ s/$/-----END PGP PRIVATE KEY BLOCK-----/' /tmp/graviteebot/.secrets/.gungpg/graviteebot.gpg.priv.key
+
+
+                    # echo '-----BEGIN PGP PUBLIC KEY BLOCK-----'
+                    # echo '-----END PGP PUBLIC KEY BLOCK-----'
+                    # echo '-----BEGIN PGP PRIVATE KEY BLOCK-----'
+                    # echo '-----END PGP PRIVATE KEY BLOCK-----'
+
+
+                    echo " content of gpg public key : "
+
+                    cat -E /tmp/graviteebot/.secrets/.gungpg/graviteebot.gpg.pub.key
+                    echo "# --- quick test import of pub key"
+                    gpg --import /tmp/graviteebot/.secrets/.gungpg/graviteebot.gpg.pub.key
+                    gpg --version
+
+      - gravitee/gpg_config:
+          gnupghome_path: "/tmp/graviteebot/ephemeral_gpg_ring"
+          path_to_gpg_pub_key_file: "/tmp/graviteebot/.secrets/.gungpg/graviteebot.gpg.pub.key"
+          path_to_gpg_private_key_file: "/tmp/graviteebot/.secrets/.gungpg/graviteebot.gpg.priv.key"
+          gpg_signing_key_id: 870B61A8E14DC301
+
 workflows:
   version: 2.1
   # Blank process invoked when pull requests events are triggered
@@ -219,3 +360,43 @@ workflows:
           secrethub_repo: cicd
           gio_release_version: << pipeline.parameters.gio_release_version >>
           artifactory_repo_name: "nexus-and-non-dry-run-releases"
+          ae_version: << pipeline.parameters.ae_version >>
+          license_version: << pipeline.parameters.license_version >>
+          notifier_slack_version: << pipeline.parameters.notifier_slack_version >>
+          notifier_webhook_version: << pipeline.parameters.notifier_webhook_version >>
+          notifier_email_version: << pipeline.parameters.notifier_email_version >>
+          with_ee: << pipeline.parameters.with_ee >>
+
+  publish_rpms:
+    when:
+      equal: [ publish_rpms, << pipeline.parameters.gio_action >> ]
+    jobs:
+      - gravitee/publish_apim_rpms:
+          context: cicd-orchestrator
+          secrethub_org: graviteeio
+          secrethub_repo: cicd
+          gio_release_version: << pipeline.parameters.gio_release_version >>
+
+  publish_docs:
+    when:
+      equal: [ publish_docs, << pipeline.parameters.gio_action >> ]
+    jobs:
+      - gravitee/publish_docs:
+          context: cicd-orchestrator
+          dry_run: << pipeline.parameters.dry_run >>
+          secrethub_org: graviteeio
+          secrethub_repo: cicd
+          gio_release_version: << pipeline.parameters.gio_release_version >>
+          # pr_source_branch_root: "develop"
+          # pr_target_branch: "master"
+
+  cicd_test_gpg_wf:
+    when:
+      equal: [ cicd_test_gpg, << pipeline.parameters.gio_action >> ]
+    jobs:
+      - cicd_test_gpg_job1:
+          context: cicd-orchestrator
+      - cicd_test_gpg_job2:
+          requires:
+            - cicd_test_gpg_job1
+          context: cicd-orchestrator
