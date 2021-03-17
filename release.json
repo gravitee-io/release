@@ -159,7 +159,7 @@
         },
         {
             "name": "gravitee-reporter-file",
-            "version": "2.1.0"
+            "version": "2.1.1-SNAPSHOT"
         },
         {
             "name": "gravitee-reporter-tcp",
@@ -251,7 +251,7 @@
         },
         {
             "name": "gravitee-repository-gateway-bridge-http",
-            "version": "3.6.0"
+            "version": "3.6.1-SNAPSHOT"
         },
         {
             "name": "gravitee-policy-url-rewriting",
