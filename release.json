@@ -163,7 +163,7 @@
         },
         {
             "name": "gravitee-reporter-tcp",
-            "version": "1.2.0"
+            "version": "1.2.0-SNAPSHOT"
         },
         {
             "name": "gravitee-repository",
