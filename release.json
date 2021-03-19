@@ -59,7 +59,7 @@
         },
         {
             "name": "gravitee-policy-rest-to-soap",
-            "version": "1.11.0"
+            "version": "1.12.0-SNAPSHOT"
         },
         {
             "name": "gravitee-policy-transformqueryparams",
@@ -159,11 +159,11 @@
         },
         {
             "name": "gravitee-reporter-file",
-            "version": "2.1.0"
+            "version": "2.2.0-SNAPSHOT"
         },
         {
             "name": "gravitee-reporter-tcp",
-            "version": "1.2.0-SNAPSHOT"
+            "version": "1.2.0"
         },
         {
             "name": "gravitee-repository",
@@ -247,7 +247,7 @@
         },
         {
             "name": "gravitee-repository-gateway-bridge-http",
-            "version": "3.6.0"
+            "version": "3.7.0-SNAPSHOT"
         },
         {
             "name": "gravitee-policy-url-rewriting",
@@ -323,7 +323,7 @@
         },
         {
             "name": "gravitee-policy-http-signature",
-            "version": "1.0.0"
+            "version": "1.1.0-SNAPSHOT"
         },
         {
             "name": "gravitee-cockpit-connectors-ws",
