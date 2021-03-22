@@ -1,11 +1,25 @@
 = Upgrade Notes
 
 ifdef::env-github[]
+include::3.7.0/README.adoc[leveloffset=+1]
+
+include::3.6.0/README.adoc[leveloffset=+1]
+
+include::3.5.2/README.adoc[leveloffset=+1]
+
 include::3.5.0/README.adoc[leveloffset=+1]
 
 include::3.4.0/README.adoc[leveloffset=+1]
 
 include::3.3.0/README.adoc[leveloffset=+1]
+
+include::3.2.0/README.adoc[leveloffset=+1]
+
+include::3.1.0/README.adoc[leveloffset=+1]
+
+include::3.0.10/README.adoc[leveloffset=+1]
+
+include::3.0.7/README.adoc[leveloffset=+1]
 
 include::3.0.2/README.adoc[leveloffset=+1]
 
@@ -22,6 +36,12 @@ You may be required to perform manual actions as part of the upgrade.
 WARNING: Be sure to run scripts on the correct database since `gravitee` is not always the default database!
 Check your db name by running `show dbs;`
 
+include::https://raw.githubusercontent.com/gravitee-io/release/master/upgrades/3.x/3.7.0/README.adoc[leveloffset=+1]
+
+include::https://raw.githubusercontent.com/gravitee-io/release/master/upgrades/3.x/3.6.0/README.adoc[leveloffset=+1]
+
+include::https://raw.githubusercontent.com/gravitee-io/release/master/upgrades/3.x/3.5.2/README.adoc[leveloffset=+1]
+
 include::https://raw.githubusercontent.com/gravitee-io/release/master/upgrades/3.x/3.5.0/README.adoc[leveloffset=+1]
 
 include::https://raw.githubusercontent.com/gravitee-io/release/master/upgrades/3.x/3.4.0/README.adoc[leveloffset=+1]
@@ -31,6 +51,8 @@ include::https://raw.githubusercontent.com/gravitee-io/release/master/upgrades/3
 include::https://raw.githubusercontent.com/gravitee-io/release/master/upgrades/3.x/3.2.0/README.adoc[leveloffset=+1]
 
 include::https://raw.githubusercontent.com/gravitee-io/release/master/upgrades/3.x/3.1.0/README.adoc[leveloffset=+1]
+
+include::https://raw.githubusercontent.com/gravitee-io/release/master/upgrades/3.x/3.0.10/README.adoc[leveloffset=+1]
 
 include::https://raw.githubusercontent.com/gravitee-io/release/master/upgrades/3.x/3.0.7/README.adoc[leveloffset=+1]
 
