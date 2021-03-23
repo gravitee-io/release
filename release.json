@@ -350,6 +350,10 @@
         {
             "name": "gravitee-cockpit-connectors-ws",
             "version": "1.0.0"
+        },
+        {
+            "name": "gravitee-policy-traffic-shadowing",
+            "version": "1.0.0-SNAPSHOT"
         }
     ],
     "buildDependencies": [
@@ -444,6 +448,7 @@
             "gravitee-policy-xml-threat-protection",
             "gravitee-policy-retry",
             "gravitee-policy-http-signature",
+            "gravitee-policy-traffic-shadowing",
             "gravitee-elasticsearch",
             "gravitee-reporter-file",
             "gravitee-reporter-kafka",
