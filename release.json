@@ -287,8 +287,8 @@
         },
         {
             "name": "graviteeio-node",
-            "version": "1.11.0",
-            "since": "3.7.0"
+            "version": "1.12.0-SNAPSHOT",
+            "since": "3.8.0"
         },
         {
             "name": "gravitee-notifier-api",
