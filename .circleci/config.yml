@@ -371,7 +371,7 @@ workflows:
     when:
       equal: [ publish_rpms, << pipeline.parameters.gio_action >> ]
     jobs:
-      - gravitee/publish_rpms:
+      - gravitee/publish_apim_rpms:
           context: cicd-orchestrator
           secrethub_org: graviteeio
           secrethub_repo: cicd
