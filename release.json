@@ -14,8 +14,7 @@
             "version": "1.22.4"
         },
         {
-            "name": "gravitee-gateway",
-            "version": "3.0.15"
+            "name": "gravitee-gateway"
         },
         {
             "name": "gravitee-gateway-api",
@@ -25,8 +24,7 @@
             "name": "gravitee-management-rest-api"
         },
         {
-            "name": "gravitee-management-webui",
-            "version": "3.0.15"
+            "name": "gravitee-management-webui"
         },
         {
             "name": "gravitee-portal-webui",
@@ -174,7 +172,7 @@
         },
         {
             "name": "gravitee-elasticsearch",
-            "version": "3.0.10"
+            "version": "3.0.11-SNAPSHOT"
         },
         {
             "name": "gravitee-repository-jdbc",
