@@ -14,7 +14,9 @@
             "version": "1.22.4"
         },
         {
-            "name": "gravitee-gateway"
+            "name": "gravitee-gateway",
+            "version": "3.0.16",
+            "since": "3.0.16"
         },
         {
             "name": "gravitee-gateway-api",
@@ -155,15 +157,18 @@
         },
         {
             "name": "gravitee-repository",
-            "version": "3.0.9-SNAPSHOT"
+            "version": "3.0.9",
+            "since": "3.0.16"
         },
         {
             "name": "gravitee-repository-test",
-            "version": "3.0.9-SNAPSHOT"
+            "version": "3.0.9",
+            "since": "3.0.16"
         },
         {
             "name": "gravitee-repository-mongodb",
-            "version": "3.0.9-SNAPSHOT"
+            "version": "3.0.9",
+            "since": "3.0.16"
         },
         {
             "name": "gravitee-repository-redis",
@@ -175,7 +180,8 @@
         },
         {
             "name": "gravitee-repository-jdbc",
-            "version": "3.0.11-SNAPSHOT"
+            "version": "3.0.11",
+            "since": "3.0.16"
         },
         {
             "name": "gravitee-resource-api",
