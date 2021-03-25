@@ -15,7 +15,7 @@
         },
         {
             "name": "gravitee-gateway",
-            "version": "3.5.8",
+            "version": "3.5.9-SNAPSHOT",
             "since": "3.5.8"
         },
         {
@@ -24,17 +24,17 @@
         },
         {
             "name": "gravitee-management-rest-api",
-            "version": "3.5.8",
+            "version": "3.5.9-SNAPSHOT",
             "since": "3.5.8"
         },
         {
             "name": "gravitee-management-webui",
-            "version": "3.5.8",
+            "version": "3.5.9-SNAPSHOT",
             "since": "3.5.8"
         },
         {
             "name": "gravitee-portal-webui",
-            "version": "3.5.8",
+            "version": "3.5.9-SNAPSHOT",
             "since": "3.5.8"
         },
         {
@@ -176,15 +176,15 @@
         },
         {
             "name": "gravitee-repository",
-            "version": "3.5.1"
+            "version": "3.5.2-SNAPSHOT"
         },
         {
             "name": "gravitee-repository-test",
-            "version": "3.5.2"
+            "version": "3.5.3-SNAPSHOT"
         },
         {
             "name": "gravitee-repository-mongodb",
-            "version": "3.5.2"
+            "version": "3.5.3-SNAPSHOT"
         },
         {
             "name": "gravitee-repository-redis",
@@ -192,11 +192,11 @@
         },
         {
             "name": "gravitee-elasticsearch",
-            "version": "3.5.2"
+            "version": "3.5.3-SNAPSHOT"
         },
         {
             "name": "gravitee-repository-jdbc",
-            "version": "3.5.2"
+            "version": "3.5.3-SNAPSHOT"
         },
         {
             "name": "gravitee-repository-hazelcast",
