@@ -11,11 +11,11 @@
         },
         {
             "name": "gravitee-definition",
-            "version": "1.26.0"
+            "version": "1.27.1-SNAPSHOT"
         },
         {
             "name": "gravitee-gateway",
-            "version": "3.6.1",
+            "version": "3.6.2-SNAPSHOT",
             "since": "3.6.1"
         },
         {
@@ -24,17 +24,17 @@
         },
         {
             "name": "gravitee-management-rest-api",
-            "version": "3.6.1",
+            "version": "3.6.2-SNAPSHOT",
             "since": "3.6.1"
         },
         {
             "name": "gravitee-management-webui",
-            "version": "3.6.1",
+            "version": "3.6.2-SNAPSHOT",
             "since": "3.6.1"
         },
         {
             "name": "gravitee-portal-webui",
-            "version": "3.6.1",
+            "version": "3.6.2-SNAPSHOT",
             "since": "3.6.1"
         },
         {
@@ -67,7 +67,8 @@
         },
         {
             "name": "gravitee-policy-rest-to-soap",
-            "version": "1.11.1"
+            "version": "1.11.1",
+            "since": "3.5.8"
         },
         {
             "name": "gravitee-policy-transformqueryparams",
@@ -111,7 +112,8 @@
         },
         {
             "name": "gravitee-policy-jwt",
-            "version": "1.17.0"
+            "version": "1.17.1",
+            "since": "3.5.9"
         },
         {
             "name": "gravitee-policy-override-http-method",
@@ -177,16 +179,17 @@
         },
         {
             "name": "gravitee-repository",
-            "version": "3.6.0"
+            "version": "3.6.1-SNAPSHOT",
+            "since": "3.5.9"
         },
         {
             "name": "gravitee-repository-test",
-            "version": "3.6.1",
+            "version": "3.6.2-SNAPSHOT",
             "since": "3.6.1"
         },
         {
             "name": "gravitee-repository-mongodb",
-            "version": "3.6.1",
+            "version": "3.6.2-SNAPSHOT",
             "since": "3.6.1"
         },
         {
@@ -195,11 +198,11 @@
         },
         {
             "name": "gravitee-elasticsearch",
-            "version": "3.6.0"
+            "version": "3.6.1-SNAPSHOT"
         },
         {
             "name": "gravitee-repository-jdbc",
-            "version": "3.6.1",
+            "version": "3.6.2-SNAPSHOT",
             "since": "3.6.1"
         },
         {
