@@ -115,7 +115,7 @@
         },
         {
             "name": "gravitee-policy-jwt",
-            "version": "1.17.0"
+            "version": "1.18.0-SNAPSHOT"
         },
         {
             "name": "gravitee-policy-override-http-method",
