@@ -85,7 +85,7 @@
         },
         {
             "name": "gravitee-policy-cache",
-            "version": "1.10.0",
+            "version": "1.11.0-SNAPSHOT",
             "since": "3.7.0"
         },
         {
@@ -98,7 +98,7 @@
         },
         {
             "name": "gravitee-policy-oauth2",
-            "version": "1.16.0",
+            "version": "1.17.0-SNAPSHOT",
             "since": "3.7.0"
         },
         {
@@ -217,7 +217,7 @@
         },
         {
             "name": "gravitee-resource-cache",
-            "version": "1.5.0",
+            "version": "1.6.0-SNAPSHOT",
             "since": "3.7.0"
         },
         {
@@ -354,6 +354,10 @@
         {
             "name": "gravitee-policy-traffic-shadowing",
             "version": "1.0.0-SNAPSHOT"
+        },
+        {
+            "name": "gravitee-resource-cache-provider-api",
+            "version": "1.0.0-SNAPSHOT"
         }
     ],
     "buildDependencies": [
@@ -400,7 +404,8 @@
         ],
         [
             "gravitee-gateway",
-            "gravitee-resource-oauth2-provider-api"
+            "gravitee-resource-oauth2-provider-api",
+            "gravitee-resource-cache-provider-api"
         ],
         [
             "gravitee-resource-cache",
