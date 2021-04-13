@@ -394,7 +394,8 @@
             "gravitee-gateway-api"
         ],
         [
-            "gravitee-policy-api"
+            "gravitee-policy-api",
+            "gravitee-resource-cache-provider-api"
         ],
         [
             "gravitee-plugin"
@@ -404,8 +405,7 @@
         ],
         [
             "gravitee-gateway",
-            "gravitee-resource-oauth2-provider-api",
-            "gravitee-resource-cache-provider-api"
+            "gravitee-resource-oauth2-provider-api"
         ],
         [
             "gravitee-resource-cache",
