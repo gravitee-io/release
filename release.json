@@ -266,7 +266,7 @@
         },
         {
             "name": "gravitee-repository-gateway-bridge-http",
-            "version": "3.7.0",
+            "version": "3.8.0-SNAPSHOT",
             "since": "3.7.0"
         },
         {
