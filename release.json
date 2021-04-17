@@ -16,7 +16,6 @@
         },
         {
             "name": "gravitee-gateway",
-            "version": "3.8.0",
             "since": "3.8.0"
         },
         {
@@ -26,17 +25,14 @@
         },
         {
             "name": "gravitee-management-rest-api",
-            "version": "3.8.0",
             "since": "3.8.0"
         },
         {
             "name": "gravitee-management-webui",
-            "version": "3.8.0",
             "since": "3.8.0"
         },
         {
             "name": "gravitee-portal-webui",
-            "version": "3.8.0",
             "since": "3.8.0"
         },
         {
