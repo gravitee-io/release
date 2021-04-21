@@ -1,6 +1,6 @@
 {
     "name": "Gravitee.io",
-    "version": "3.5.10-SNAPSHOT",
+    "version": "3.5.10",
     "buildTimestamp": "2021-03-11T11:31:24+0000",
     "scmSshUrl": "git@github.com:gravitee-io",
     "scmHttpUrl": "https://github.com/gravitee-io/",
@@ -15,7 +15,8 @@
         },
         {
             "name": "gravitee-gateway",
-            "since": "3.5.9"
+            "since": "3.5.10",
+            "version": "3.5.10"
         },
         {
             "name": "gravitee-gateway-api",
@@ -23,15 +24,18 @@
         },
         {
             "name": "gravitee-management-rest-api",
-            "since": "3.5.9"
+            "since": "3.5.10",
+            "version": "3.5.10"
         },
         {
             "name": "gravitee-management-webui",
-            "since": "3.5.9"
+            "since": "3.5.10",
+            "version": "3.5.10"
         },
         {
             "name": "gravitee-portal-webui",
-            "since": "3.5.9"
+            "since": "3.5.10",
+            "version": "3.5.10"
         },
         {
             "name": "gravitee-identityprovider-api",
@@ -104,7 +108,8 @@
         },
         {
             "name": "gravitee-policy-groovy",
-            "version": "1.12.2-SNAPSHOT"
+            "version": "1.12.2",
+            "since": "3.5.10"
         },
         {
             "name": "gravitee-policy-dynamic-routing",
@@ -133,7 +138,8 @@
         },
         {
             "name": "gravitee-policy-keyless",
-            "version": "1.3.1-SNAPSHOT"
+            "version": "1.3.1",
+            "since": "3.5.10"
         },
         {
             "name": "gravitee-policy-openid-connect-userinfo",
