@@ -16,7 +16,6 @@
         },
         {
             "name": "gravitee-gateway",
-            "version": "3.7.1",
             "since": "3.7.1"
         },
         {
@@ -25,17 +24,14 @@
         },
         {
             "name": "gravitee-management-rest-api",
-            "version": "3.7.2-SNAPSHOT",
             "since": "3.7.1"
         },
         {
             "name": "gravitee-portal-webui",
-            "version": "3.7.1",
             "since": "3.7.1"
         },
         {
             "name": "gravitee-management-webui",
-            "version": "3.7.2-SNAPSHOT",
             "since": "3.7.1"
         },
         {
@@ -107,7 +103,7 @@
         },
         {
             "name": "gravitee-policy-groovy",
-            "version": "1.12.1"
+            "version": "1.12.2"
         },
         {
             "name": "gravitee-policy-dynamic-routing",
@@ -140,7 +136,7 @@
         },
         {
             "name": "gravitee-policy-keyless",
-            "version": "1.3.0"
+            "version": "1.3.1"
         },
         {
             "name": "gravitee-policy-openid-connect-userinfo",
@@ -346,7 +342,7 @@
         },
         {
             "name": "gravitee-policy-http-signature",
-            "version": "1.1.0",
+            "version": "1.1.1",
             "since": "3.7.0"
         },
         {
