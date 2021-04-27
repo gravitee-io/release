@@ -11,7 +11,7 @@
         },
         {
             "name": "gravitee-definition",
-            "version": "1.27.0",
+            "version": "1.27.1",
             "since": "3.7.0"
         },
         {
@@ -203,7 +203,8 @@
         },
         {
             "name": "gravitee-elasticsearch",
-            "version": "3.6.0"
+            "version": "3.6.1",
+            "since": "3.6.2"
         },
         {
             "name": "gravitee-repository-jdbc",
