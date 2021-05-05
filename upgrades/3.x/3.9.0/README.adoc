@@ -1,5 +1,13 @@
 = Upgrade to 3.9.0
 
+== Memory management
+
+Starting from this new version, the default Xms and Xmx parameters has been fixed to 256m.
+Previous value was too high and does not reflect real memory usage for both the API Gateway and Management API.
+
+If, for some reasons, you need to increase those default values, you can set the `GIO_MIN_MEM` and `GIO_MAX_MEM` environment variables in your scripts.
+Those variables are then "injected" into the JAVA_OPTS during bootstrap.
+
 == APIM API - Tags and Tenants
 
 This version changes permissions' scope from `ENVIRONMENT` to `ORGANIZATION` for:
