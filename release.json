@@ -29,12 +29,12 @@
         {
             "name": "gravitee-management-webui",
             "since": "3.5.11",
-            "version": "3.5.11"
+            "version": null
         },
         {
             "name": "gravitee-portal-webui",
             "since": "3.5.11",
-            "version": "3.5.11"
+            "version": null
         },
         {
             "name": "gravitee-identityprovider-api",
