@@ -1,6 +1,6 @@
 {
     "name": "Gravitee.io",
-    "version": "3.5.11-SNAPSHOT",
+    "version": "3.5.11",
     "buildTimestamp": "2021-03-11T11:31:24+0000",
     "scmSshUrl": "git@github.com:gravitee-io",
     "scmHttpUrl": "https://github.com/gravitee-io/",
@@ -30,12 +30,12 @@
         {
             "name": "gravitee-management-webui",
             "since": "3.5.11",
-            "version": null
+            "version": "3.5.11"
         },
         {
             "name": "gravitee-portal-webui",
             "since": "3.5.11",
-            "version": null
+            "version": "3.5.11"
         },
         {
             "name": "gravitee-identityprovider-api",
