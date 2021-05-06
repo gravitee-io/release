@@ -24,7 +24,8 @@
         },
         {
             "name": "gravitee-management-rest-api",
-            "since": "3.5.10"
+            "since": "3.5.11",
+            "version": "3.5.11"
         },
         {
             "name": "gravitee-management-webui",
