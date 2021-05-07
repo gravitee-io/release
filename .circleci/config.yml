@@ -408,7 +408,7 @@ workflows:
     # when:
       # equal: [ apim_nightly_deploy, << pipeline.parameters.gio_action >> ]
     jobs:
-      - d_apim_nightly_secrets:
+      - gravitee/d_apim_nightly_secrets:
           name: secrets_resolution
           context: cicd-orchestrator
           filters:
