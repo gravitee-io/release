@@ -291,7 +291,7 @@
         },
         {
             "name": "graviteeio-node",
-            "version": "1.12.0",
+            "version": "1.13.0",
             "since": "3.7.0"
         },
         {
@@ -353,7 +353,7 @@
         },
         {
             "name": "gravitee-cockpit-connectors-ws",
-            "version": "1.0.1"
+            "version": "1.4.0"
         },
         {
             "name": "gravitee-policy-traffic-shadowing",
