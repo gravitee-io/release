@@ -299,7 +299,6 @@ jobs:
 
 workflows:
   version: 2.1
-  # Blank process invoked when pull requests events are triggered
   blank:
     when:
       equal: [ blank, << pipeline.parameters.gio_action >> ]
