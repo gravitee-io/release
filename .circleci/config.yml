@@ -3,7 +3,7 @@ version: 2.1
 parameters:
   gio_action:
     type: enum
-    enum: [release, dry_release, nexus_staging, publish_bundles, publish_rpms, publish_docs, cicd_test_gpg, blank]
+    enum: [release, dry_release, nexus_staging, publish_bundles, publish_bundles_nightly, publish_rpms, publish_docs, cicd_test_gpg, blank]
     default: blank
   gio_release_version:
     type: string
@@ -385,6 +385,51 @@ workflows:
           notifier_webhook_version: << pipeline.parameters.notifier_webhook_version >>
           notifier_email_version: << pipeline.parameters.notifier_email_version >>
           with_ee: << pipeline.parameters.with_ee >>
+
+  publish_bundles_nightly:
+    when:
+      equal: [ publish_bundles_nightly, << pipeline.parameters.gio_action >> ]
+    jobs:
+      - gravitee/publish_bundles_nightly:
+          context: cicd-orchestrator
+          secrethub_org: graviteeio
+          secrethub_repo: cicd
+          # gio_release_version is not necessary : the current git branch on the release repo will be the base
+          # gio_release_version: << pipeline.parameters.gio_release_version >>
+          artifactory_repo_name: "nexus-and-non-dry-run-releases"
+          ae_version: << pipeline.parameters.ae_version >>
+          license_version: << pipeline.parameters.license_version >>
+          notifier_slack_version: << pipeline.parameters.notifier_slack_version >>
+          notifier_webhook_version: << pipeline.parameters.notifier_webhook_version >>
+          notifier_email_version: << pipeline.parameters.notifier_email_version >>
+          with_ee: << pipeline.parameters.with_ee >>
+
+  apim_nightly_deploy:
+    # when:
+      # equal: [ apim_nightly_deploy, << pipeline.parameters.gio_action >> ]
+    jobs:
+      - d_apim_nightly_secrets:
+        name: secrets_resolution
+          context: cicd-orchestrator
+          filters:
+            branches:
+              only:
+                - /^[0-9]+.[0-9]+.x/ # e.g. 4.5.x
+                - /^[0-9]+.[0-9]+.[0-9]+-beta/ # e.g. 3.0.0-beta
+                - master
+                - cicd/apim-nightly
+      - gravitee/apim_nightly:
+          type: approval
+          requires:
+            - secrets_resolution
+          filters:
+            branches:
+              only:
+                - /^[0-9]+.[0-9]+.x/ # e.g. 4.5.x
+                - /^[0-9]+.[0-9]+.[0-9]+-beta/ # e.g. 3.0.0-beta
+                - master
+                - cicd/apim-nightly
+
 
   publish_rpms:
     when:
