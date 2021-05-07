@@ -414,7 +414,7 @@ workflows:
           filters:
             branches:
               only:
-                - /^[0-9]+.[0-9]+.x/ # e.g. 4.5.x
+                - /^[0-9]+.[0-9]+.x/
                 - master
                 - cicd/apim-nightly
       - gravitee/apim_nightly:
@@ -423,7 +423,7 @@ workflows:
           filters:
             branches:
               only:
-                - /^[0-9]+.[0-9]+.x/ # e.g. 4.5.x
+                - /^[0-9]+.[0-9]+.x/
                 - master
                 - cicd/apim-nightly
 
