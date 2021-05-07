@@ -1,5 +1,11 @@
 = Upgrade to 3.9.0
 
+== Breaking changes
+
+From this version, in order to propose a better swagger descriptor, all enum values *returned* by the APIM API are in uppercase.
+
+NOTE: Lowercase and uppercase values are still accepted in incoming requests.
+
 == Memory management
 
 Starting from this new version, the default Xms and Xmx parameters has been fixed to 256m.
@@ -11,6 +17,7 @@ Those variables are then "injected" into the JAVA_OPTS during bootstrap.
 == APIM API - Tags and Tenants
 
 This version changes permissions' scope from `ENVIRONMENT` to `ORGANIZATION` for:
+
     * TAG
     * TENANT
     * ENTRYPOINT
