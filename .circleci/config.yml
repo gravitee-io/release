@@ -418,7 +418,6 @@ workflows:
                 - master
                 - cicd/apim-nightly
       - gravitee/apim_nightly:
-          type: approval
           requires:
             - secrets_resolution
           filters:
