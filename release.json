@@ -16,7 +16,7 @@
         },
         {
             "name": "gravitee-gateway",
-            "since": "3.7.2",
+            "since": "3.7.3-SNAPSHOT",
             "version": "3.7.2"
         },
         {
@@ -25,17 +25,17 @@
         },
         {
             "name": "gravitee-management-rest-api",
-            "since": "3.7.2",
+            "since": "3.7.3-SNAPSHOT",
             "version": "3.7.2"
         },
         {
             "name": "gravitee-portal-webui",
-            "since": "3.7.2",
+            "since": "3.7.3-SNAPSHOT",
             "version": "3.7.2"
         },
         {
             "name": "gravitee-management-webui",
-            "since": "3.7.2",
+            "since": "3.7.3-SNAPSHOT",
             "version": "3.7.2"
         },
         {
@@ -173,7 +173,7 @@
         },
         {
             "name": "gravitee-reporter-file",
-            "version": "2.2.0",
+            "version": "2.2.1-SNAPSHOT",
             "since": "3.7.0"
         },
         {
@@ -182,17 +182,17 @@
         },
         {
             "name": "gravitee-repository",
-            "version": "3.7.1",
+            "version": "3.7.2-SNAPSHOT",
             "since": "3.7.1"
         },
         {
             "name": "gravitee-repository-test",
-            "version": "3.7.1",
+            "version": "3.7.2-SNAPSHOT",
             "since": "3.7.1"
         },
         {
             "name": "gravitee-repository-mongodb",
-            "version": "3.7.1",
+            "version": "3.7.2-SNAPSHOT",
             "since": "3.7.1"
         },
         {
@@ -206,7 +206,7 @@
         },
         {
             "name": "gravitee-repository-jdbc",
-            "version": "3.7.2",
+            "version": "3.7.3-SNAPSHOT",
             "since": "3.7.2"
         },
         {
