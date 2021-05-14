@@ -401,7 +401,6 @@ workflows:
           notifier_email_version: << pipeline.parameters.notifier_email_version >>
           with_ee: << pipeline.parameters.with_ee >>
 
- 
   apim_nightly_deploy:
     # when:
       # equal: [ apim_nightly_deploy, << pipeline.parameters.gio_action >> ]
