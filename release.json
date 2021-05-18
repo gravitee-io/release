@@ -1,6 +1,6 @@
 {
     "name": "Gravitee.io",
-    "version": "3.5.12-SNAPSHOT",
+    "version": "3.5.12",
     "buildTimestamp": "2021-03-11T11:31:24+0000",
     "scmSshUrl": "git@github.com:gravitee-io",
     "scmHttpUrl": "https://github.com/gravitee-io/",
@@ -24,15 +24,18 @@
         },
         {
             "name": "gravitee-management-rest-api",
-            "since": "3.5.11"
+            "since": "3.5.12",
+            "version": "3.5.12"
         },
         {
             "name": "gravitee-management-webui",
-            "since": "3.5.11"
+            "since": "3.5.12",
+            "version": "3.5.12"
         },
         {
             "name": "gravitee-portal-webui",
-            "since": "3.5.11"
+            "since": "3.5.12",
+            "version": "3.5.12"
         },
         {
             "name": "gravitee-identityprovider-api",
@@ -196,8 +199,8 @@
         },
         {
             "name": "gravitee-elasticsearch",
-            "version": "3.5.4-SNAPSHOT",
-            "since": "3.5.9"
+            "version": "3.5.4",
+            "since": "3.5.12"
         },
         {
             "name": "gravitee-repository-jdbc",
