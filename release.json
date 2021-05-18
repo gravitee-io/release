@@ -15,7 +15,8 @@
         },
         {
             "name": "gravitee-gateway",
-            "since": "3.5.11"
+            "since": "3.5.12",
+            "version": "3.5.12"
         },
         {
             "name": "gravitee-gateway-api",
