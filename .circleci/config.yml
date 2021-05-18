@@ -383,7 +383,7 @@ workflows:
           with_ee: << pipeline.parameters.with_ee >>
 
   # --- ---
-  # --
+  # ---
   publish_bundles_nightly:
     when:
       equal: [ publish_bundles_nightly, << pipeline.parameters.gio_action >> ]
