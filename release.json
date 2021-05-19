@@ -183,7 +183,7 @@
         },
         {
             "name": "gravitee-repository-jdbc",
-            "version": "3.0.11",
+            "version": "3.0.12-SNAPSHOT",
             "since": "3.0.16"
         },
         {
