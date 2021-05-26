@@ -45,7 +45,7 @@
         },
         {
             "name": "gravitee-policy-api",
-            "version": "1.10.0"
+            "version": "1.11.0-SNAPSHOT"
         },
         {
             "name": "gravitee-policy-apikey",
@@ -83,7 +83,7 @@
         },
         {
             "name": "gravitee-policy-cache",
-            "version": "1.11.0",
+            "version": "1.12.0-SNAPSHOT",
             "since": "3.8.0"
         },
         {
