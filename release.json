@@ -175,8 +175,8 @@
         },
         {
             "name": "gravitee-reporter-file",
-            "version": "2.2.0",
-            "since": "3.7.0"
+            "version": "2.2.1",
+            "since": "3.7.3"
         },
         {
             "name": "gravitee-reporter-tcp",
