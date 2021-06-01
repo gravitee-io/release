@@ -416,9 +416,10 @@ workflows:
                 - /^[0-9]+.[0-9]+.x/
                 - master
                 - cicd/apim-nightly
-                
+
       # - gravitee/apim_nightly:
       - gravitee/apim_nightly_redesign:
+          context: cicd-orchestrator
           requires:
             - secrets_resolution
           artifactory_repo_name: gravitee-nightly
