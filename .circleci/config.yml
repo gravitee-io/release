@@ -420,6 +420,7 @@ workflows:
       - gravitee/apim_nightly_redesign:
           requires:
             - secrets_resolution
+          artifactory_repo_name: gravitee-nightly
           filters:
             branches:
               only:
