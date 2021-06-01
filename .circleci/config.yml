@@ -431,7 +431,6 @@ workflows:
                 - master
                 - cicd/apim-nightly
 
-
   publish_rpms:
     when:
       equal: [ publish_rpms, << pipeline.parameters.gio_action >> ]
