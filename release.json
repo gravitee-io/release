@@ -4,6 +4,28 @@
     "buildTimestamp": "2021-03-17T20:55:06+0000",
     "scmSshUrl": "git@github.com:gravitee-io",
     "scmHttpUrl": "https://github.com/gravitee-io/",
+    "eecomponents": [
+        {
+            "name": "gravitee-license",
+            "version": "1.1.2"
+        },
+        {
+            "name": "gravitee-notifier-webhook",
+            "version": "1.0.4"
+        },
+        {
+            "name": "gravitee-notifier-EMAIL",
+            "version": "1.2.7"
+        },
+        {
+            "name": "gravitee-notifier-SLACK",
+            "version": "1.0.3"
+        },
+        {
+            "name": "gravitee-alert-engine",
+            "version": "1.2.18"
+        }
+      ],
     "components": [
         {
             "name": "gravitee-common",
