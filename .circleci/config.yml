@@ -421,6 +421,7 @@ workflows:
           requires:
             - secrets_resolution
           artifactory_repo_name: gravitee-nightly
+          gio_product: apim_3x
           filters:
             branches:
               only:
