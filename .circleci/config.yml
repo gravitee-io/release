@@ -416,6 +416,7 @@ workflows:
                 - /^[0-9]+.[0-9]+.x/
                 - master
                 - cicd/apim-nightly
+                
       # - gravitee/apim_nightly:
       - gravitee/apim_nightly_redesign:
           requires:
