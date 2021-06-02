@@ -223,7 +223,7 @@
         },
         {
             "name": "gravitee-resource-cache",
-            "version": "1.6.0",
+            "version": "1.6.1-SNAPSHOT",
             "since": "3.8.0"
         },
         {
