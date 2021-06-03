@@ -1,5 +1,68 @@
 = Upgrade to 3.5.0
 
+== Breaking Changes
+
+=== Environment variables
+
+Some environment variables have been doubled for the portal and the console, see correspondence table:
+
+[cols="1,1,1"]
+|===
+|before 3.5.0|after 3.5.0 (for portal)| after 3.5.0 (for console)
+
+|authentication.localLogin.enabled
+|portal.authentication.localLogin.enabled
+|console.authentication.localLogin.enabled
+
+|scheduler.tasks
+|portal.scheduler.tasks
+|console.scheduler.tasks
+
+|scheduler.notifications
+|portal.scheduler.notifications
+|console.scheduler.notifications
+
+|reCaptcha.enabled
+|portal.reCaptcha.enabled
+|console.reCaptcha.enabled
+
+|reCaptcha.siteKey
+|portal.reCaptcha.siteKey
+|console.reCaptcha.siteKey
+
+|portal.support.enabled
+|portal.support.enabled
+|console.support.enabled
+
+|portal.userCreation.enabled
+|portal.userCreation.enabled
+|console.userCreation.enabled
+
+|portal.userCreation.automaticValidation.enabled
+|portal.userCreation.automaticValidation.enabled
+|console.userCreation.automaticValidation.enabled
+
+|http.cors.allow-origin
+|portal.http.cors.allow-origin
+|console.http.cors.allow-origin
+
+|http.cors.allow-headers
+|portal.http.cors.allow-headers
+|console.http.cors.allow-headers
+
+|http.cors.allow-methods
+|portal.http.cors.allow-methods
+|console.http.cors.allow-methods
+
+|http.cors.exposed-headers
+|portal.http.cors.exposed-headers
+|console.http.cors.exposed-headers
+
+|http.cors.max-age
+|portal.http.cors.max-age
+|console.http.cors.max-age
+|===
+
 == Repository
 
 === Mongodb
