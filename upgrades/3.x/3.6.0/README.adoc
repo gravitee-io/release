@@ -1,10 +1,10 @@
 = Upgrade to 3.6.0
 
-=== Elasticsearch
+== Elasticsearch
 
 With Elasticsearch version above 7.x, `geoip` and `user_agent` plugins are automatically enabled.
 
-=== APIM API
+== APIM API
 
 Two new configuration keys have been added to the `gravitee.yml` file, they should be set with the URLs of the UI console and the management API:
 ```yml
