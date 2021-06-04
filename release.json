@@ -96,7 +96,7 @@
         },
         {
             "name": "gravitee-policy-oauth2",
-            "version": "1.17.0",
+            "version": "1.18.0-SNAPSHOT",
             "since": "3.8.0"
         },
         {
