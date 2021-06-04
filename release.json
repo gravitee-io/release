@@ -296,7 +296,7 @@
         },
         {
             "name": "gravitee-notifier-api",
-            "version": "1.4.0"
+            "version": "1.4.1-SNAPSHOT"
         },
         {
             "name": "gravitee-notifier-email",
