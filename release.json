@@ -16,8 +16,7 @@
         },
         {
             "name": "gravitee-gateway",
-            "since": "3.9.0",
-            "version": "3.9.0"
+            "since": "3.9.0"
         },
         {
             "name": "gravitee-gateway-api",
@@ -26,18 +25,15 @@
         },
         {
             "name": "gravitee-management-rest-api",
-            "since": "3.9.0",
-            "version": "3.9.0"
+            "since": "3.9.0"
         },
         {
             "name": "gravitee-management-webui",
-            "since": "3.9.0",
-            "version": "3.9.0"
+            "since": "3.9.0"
         },
         {
             "name": "gravitee-portal-webui",
-            "since": "3.9.0",
-            "version": "3.9.0"
+            "since": "3.9.0"
         },
         {
             "name": "gravitee-identityprovider-api",
@@ -192,17 +188,17 @@
         },
         {
             "name": "gravitee-repository",
-            "version": "3.9.0",
+            "version": "3.10.0-SNAPSHOT",
             "since": "3.9.0"
         },
         {
             "name": "gravitee-repository-test",
-            "version": "3.9.0",
+            "version": "3.10.0-SNAPSHOT",
             "since": "3.9.0"
         },
         {
             "name": "gravitee-repository-mongodb",
-            "version": "3.9.0",
+            "version": "3.10.0-SNAPSHOT",
             "since": "3.9.0"
         },
         {
@@ -216,7 +212,7 @@
         },
         {
             "name": "gravitee-repository-jdbc",
-            "version": "3.9.0",
+            "version": "3.10.0-SNAPSHOT",
             "since": "3.9.0"
         },
         {
