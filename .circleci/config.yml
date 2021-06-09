@@ -406,6 +406,7 @@ workflows:
   apim_nightly_deploy:
     # when:
       # equal: [ apim_nightly_deploy, << pipeline.parameters.gio_action >> ]
+    # will be a curl
     jobs:
       - gravitee/d_apim_nightly_secrets:
           name: secrets_resolution
@@ -423,6 +424,8 @@ workflows:
           requires:
             - secrets_resolution
           gio_product: apim_3x
+          dry_run: << pipeline.parameters.dry_run >>
+          with_ee: << pipeline.parameters.with_ee >>
           filters:
             branches:
               only:
