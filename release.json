@@ -14,11 +14,11 @@
             "version": "1.0.4"
         },
         {
-            "name": "gravitee-notifier-EMAIL",
+            "name": "gravitee-notifier-email",
             "version": "1.2.7"
         },
         {
-            "name": "gravitee-notifier-SLACK",
+            "name": "gravitee-notifier-slack",
             "version": "1.0.3"
         },
         {
