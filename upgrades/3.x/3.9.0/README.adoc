@@ -1,5 +1,12 @@
 = Upgrade to 3.9.0
 
+== Warning
+*For JDBC users only*, please don't upgrade to 3.9.0 since we detected a critical bug in a liquibase script that could lead to data loss. +
+This will be fixed in 3.9.1. +
+We apologize for this inconvenience.
+
+GitHub issue: https://github.com/gravitee-io/issues/issues/5711[5711]
+
 == Breaking changes
 
 From this version, in order to propose a better swagger descriptor, all enum values *returned* by the APIM API are in uppercase.
