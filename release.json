@@ -41,7 +41,7 @@
         },
         {
             "name": "gravitee-plugin",
-            "version": "1.16.0"
+            "version": "1.18.0-SNAPSHOT"
         },
         {
             "name": "gravitee-policy-api",
