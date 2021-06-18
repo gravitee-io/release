@@ -16,8 +16,7 @@
         },
         {
             "name": "gravitee-gateway",
-            "since": "3.5.15",
-            "version": "3.5.15"
+            "since": "3.5.15"
         },
         {
             "name": "gravitee-gateway-api",
@@ -25,18 +24,15 @@
         },
         {
             "name": "gravitee-management-rest-api",
-            "since": "3.5.15",
-            "version": "3.5.15"
+            "since": "3.5.15"
         },
         {
             "name": "gravitee-management-webui",
-            "since": "3.5.15",
-            "version": "3.5.15"
+            "since": "3.5.15"
         },
         {
             "name": "gravitee-portal-webui",
-            "since": "3.5.15",
-            "version": "3.5.15"
+            "since": "3.5.15"
         },
         {
             "name": "gravitee-identityprovider-api",
