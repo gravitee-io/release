@@ -176,7 +176,7 @@
         },
         {
             "name": "gravitee-reporter-file",
-            "version": null,
+            "version": "2.3.1",
             "since": "3.8.5"
         },
         {
