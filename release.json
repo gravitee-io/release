@@ -17,8 +17,8 @@
         },
         {
             "name": "gravitee-gateway",
-            "since": "3.8.4",
-            "version": "3.8.5-SNAPSHOT"
+            "since": "3.8.5",
+            "version": "3.8.5"
         },
         {
             "name": "gravitee-gateway-api",
@@ -176,8 +176,8 @@
         },
         {
             "name": "gravitee-reporter-file",
-            "version": "2.3.1-SNAPSHOT",
-            "since": "3.7.3"
+            "version": "2.3.1",
+            "since": "3.8.5"
         },
         {
             "name": "gravitee-reporter-tcp",
@@ -223,8 +223,8 @@
         },
         {
             "name": "gravitee-resource-cache",
-            "version": "1.6.1-SNAPSHOT",
-            "since": "3.8.0"
+            "version": "1.6.1",
+            "since": "3.8.5"
         },
         {
             "name": "gravitee-resource-oauth2-provider-api",
@@ -293,8 +293,8 @@
         },
         {
             "name": "graviteeio-node",
-            "version": "1.12.1-SNAPSHOT",
-            "since": "3.7.0"
+            "version": "1.12.1",
+            "since": "3.8.5"
         },
         {
             "name": "gravitee-notifier-api",
