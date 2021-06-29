@@ -17,8 +17,8 @@
         },
         {
             "name": "gravitee-gateway",
-            "since": "3.8.5",
-            "version": "3.8.5"
+            "since": "3.8.4",
+            "version": "3.8.5-SNAPSHOT"
         },
         {
             "name": "gravitee-gateway-api",
@@ -171,8 +171,8 @@
         },
         {
             "name": "gravitee-reporter-api",
-            "version": "1.20.1",
-            "since": "3.8.5"
+            "version": "1.20.1-SNAPSHOT",
+            "since": "3.7.0"
         },
         {
             "name": "gravitee-reporter-file",
