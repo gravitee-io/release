@@ -16,6 +16,10 @@
             "since": "3.9.0"
         },
         {
+            "name": "gravitee-api-management",
+            "version": "3.10.0-SNAPSHOT"
+        },
+        {
             "name": "gravitee-gateway",
             "since": "3.9.0"
         },
@@ -189,38 +193,9 @@
             "since": "3.8.5"
         },
         {
-            "name": "gravitee-repository",
-            "version": "3.10.0-SNAPSHOT",
-            "since": "3.9.0"
-        },
-        {
-            "name": "gravitee-repository-test",
-            "version": "3.10.0-SNAPSHOT",
-            "since": "3.9.0"
-        },
-        {
-            "name": "gravitee-repository-mongodb",
-            "version": "3.10.0-SNAPSHOT",
-            "since": "3.9.0"
-        },
-        {
-            "name": "gravitee-repository-redis",
-            "version": "3.2.1",
-            "since": "3.5.13"
-        },
-        {
             "name": "gravitee-elasticsearch",
             "version": "3.8.0-SNAPSHOT",
             "since": "3.9.0"
-        },
-        {
-            "name": "gravitee-repository-jdbc",
-            "version": "3.10.0-SNAPSHOT",
-            "since": "3.9.0"
-        },
-        {
-            "name": "gravitee-repository-hazelcast",
-            "version": "3.4.0"
         },
         {
             "name": "gravitee-resource-api",
@@ -274,11 +249,6 @@
         {
             "name": "gravitee-expression-language",
             "version": "1.6.0-SNAPSHOT"
-        },
-        {
-            "name": "gravitee-repository-gateway-bridge-http",
-            "version": "3.10.0-SNAPSHOT",
-            "since": "3.9.0"
         },
         {
             "name": "gravitee-policy-url-rewriting",
@@ -380,13 +350,12 @@
             "gravitee-common"
         ],
         [
-            "gravitee-repository",
+            "gravitee-api-management",
             "gravitee-expression-language",
             "gravitee-service-discovery-api",
             "gravitee-notifier-api"
         ],
         [
-            "gravitee-repository-test",
             "gravitee-service-discovery-consul",
             "gravitee-service-discovery-eureka"
         ],
@@ -394,11 +363,6 @@
             "gravitee-reporter-api",
             "gravitee-resource-api",
             "gravitee-definition",
-            "gravitee-repository-mongodb",
-            "gravitee-repository-redis",
-            "gravitee-repository-jdbc",
-            "gravitee-repository-hazelcast",
-            "gravitee-repository-gateway-bridge-http",
             "gravitee-fetcher-api",
             "gravitee-alert-api",
             "gravitee-notifier-email",
