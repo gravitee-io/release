@@ -14,6 +14,10 @@
             "version": "1.22.4"
         },
         {
+            "name": "gravitee-api-management",
+            "version": "3.0.18-SNAPSHOT"
+        },
+        {
             "name": "gravitee-gateway",
             "since": "3.0.17",
             "version": "3.0.17"
@@ -162,33 +166,9 @@
             "version": "1.6.2"
         },
         {
-            "name": "gravitee-repository",
-            "version": "3.0.9",
-            "since": "3.0.16"
-        },
-        {
-            "name": "gravitee-repository-test",
-            "version": "3.0.9",
-            "since": "3.0.16"
-        },
-        {
-            "name": "gravitee-repository-mongodb",
-            "version": "3.0.9",
-            "since": "3.0.16"
-        },
-        {
-            "name": "gravitee-repository-redis",
-            "version": "3.0.3"
-        },
-        {
             "name": "gravitee-elasticsearch",
             "version": "3.0.11",
             "since": "3.0.16"
-        },
-        {
-            "name": "gravitee-repository-jdbc",
-            "version": "3.0.12",
-            "since": "3.0.17"
         },
         {
             "name": "gravitee-resource-api",
@@ -241,10 +221,6 @@
         {
             "name": "gravitee-expression-language",
             "version": "1.4.2"
-        },
-        {
-            "name": "gravitee-repository-gateway-bridge-http",
-            "version": "3.0.6"
         },
         {
             "name": "gravitee-policy-url-rewriting",
@@ -304,13 +280,12 @@
             "gravitee-common"
         ],
         [
-            "gravitee-repository",
+            "gravitee-api-management",
             "gravitee-expression-language",
             "gravitee-service-discovery-api",
             "gravitee-notifier-api"
         ],
         [
-            "gravitee-repository-test",
             "gravitee-service-discovery-consul",
             "gravitee-service-discovery-eureka"
         ],
@@ -318,10 +293,6 @@
             "gravitee-reporter-api",
             "gravitee-resource-api",
             "gravitee-definition",
-            "gravitee-repository-mongodb",
-            "gravitee-repository-redis",
-            "gravitee-repository-jdbc",
-            "gravitee-repository-gateway-bridge-http",
             "gravitee-fetcher-api",
             "gravitee-alert-api",
             "gravitee-notifier-email"
