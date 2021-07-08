@@ -20,7 +20,7 @@
         },
         {
             "name": "gravitee-gateway",
-            "since": "3.5.17",
+            "since": "3.5.17"
         },
         {
             "name": "gravitee-gateway-api",
@@ -28,15 +28,15 @@
         },
         {
             "name": "gravitee-management-rest-api",
-            "since": "3.5.17",
+            "since": "3.5.17"
         },
         {
             "name": "gravitee-management-webui",
-            "since": "3.5.17",
+            "since": "3.5.17"
         },
         {
             "name": "gravitee-portal-webui",
-            "since": "3.5.17",
+            "since": "3.5.17"
         },
         {
             "name": "gravitee-identityprovider-api",
