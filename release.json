@@ -22,7 +22,7 @@
         {
             "name": "gravitee-gateway",
             "since": "3.8.5",
-            "version": "3.8.5"
+            "version": "3.8.6-SNAPSHOT"
         },
         {
             "name": "gravitee-gateway-api",
@@ -32,17 +32,17 @@
         {
             "name": "gravitee-management-rest-api",
             "since": "3.8.5",
-            "version": "3.8.5"
+            "version": "3.8.6-SNAPSHOT"
         },
         {
             "name": "gravitee-management-webui",
             "since": "3.8.5",
-            "version": "3.8.5"
+            "version": "3.8.6-SNAPSHOT"
         },
         {
             "name": "gravitee-portal-webui",
             "since": "3.8.5",
-            "version": "3.8.5"
+            "version": "3.8.6-SNAPSHOT"
         },
         {
             "name": "gravitee-identityprovider-api",
@@ -71,7 +71,8 @@
         },
         {
             "name": "gravitee-policy-transformheaders",
-            "version": "1.8.0"
+            "version": "1.8.1",
+            "since": "3.5.17"
         },
         {
             "name": "gravitee-policy-rest-to-soap",
@@ -114,7 +115,7 @@
         },
         {
             "name": "gravitee-policy-groovy",
-            "version": "1.12.2"
+            "version": "1.12.3"
         },
         {
             "name": "gravitee-policy-dynamic-routing",
