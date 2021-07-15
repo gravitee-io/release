@@ -12,7 +12,7 @@
         },
         {
             "name": "gravitee-definition",
-            "version": "1.25.0"
+            "version": "1.25.1-SNAPSHOT"
         },
         {
             "name": "gravitee-api-management",
