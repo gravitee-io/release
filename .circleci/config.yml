@@ -48,7 +48,7 @@ orbs:
   # gravitee: gravitee-io/gravitee@dev:1.0.4
   slack: circleci/slack@4.4.0
   aws-s3: circleci/aws-s3@1.0.6
-  
+
 
 jobs:
   web_ui:
@@ -56,8 +56,6 @@ jobs:
       - image: 'circleci/python:latest'
     environment:
       GITHUB_ORG: ${GITHUB_ORG}
-      SECRETHUB_ORG: graviteeio
-      SECRETHUB_REPO: cicd
 
     steps:
       - checkout
