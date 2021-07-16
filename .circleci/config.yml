@@ -3,7 +3,7 @@ version: 2.1
 parameters:
   gio_action:
     type: enum
-    enum: [release, dry_release, nexus_staging, publish_bundles, publish_rpms, publish_docs, cicd_test_gpg, blank]
+    enum: [release, dry_release, nexus_staging, publish_bundles, publish_rpms, publish_docs, cicd_test_gpg, blank, Web_Ui_update]
     default: blank
   gio_release_version:
     type: string
@@ -37,14 +37,41 @@ parameters:
     type: string
     default: $NOTIFIER_EMAIL_VERSION
     description: "The Gravitee.io version number of the Gravitee.io EE Email Notifier Plugin"
+  s3_bucket_name:
+    type: string
+    default: "gravitee-releases-downloads"
+    description: "Name of the S3 Bucket to publish to https://download.gravitee.io"
 
 orbs:
   secrethub: secrethub/cli@1.0.0
   gravitee: gravitee-io/gravitee@1.0
   # gravitee: gravitee-io/gravitee@dev:1.0.4
   slack: circleci/slack@4.4.0
+  aws-s3: circleci/aws-s3@1.0.6
 
 jobs:
+  web_ui:
+    docker:
+      - image: 'circleci/python:latest'
+    environment:
+      GITHUB_ORG: ${GITHUB_ORG}
+      SECRETHUB_ORG: graviteeio
+      SECRETHUB_REPO: cicd
+
+    steps:
+      - checkout
+      - aws-s3/sync:
+          from: Bucket
+          to: 's3://gravitee-dry-releases-downloads.cellar-c2.services.clever-cloud.com'
+          arguments: |
+            --acl public-read \
+            --cache-control "max-age=86400" \
+            --exclude ".git/*" \
+            --exclude ".gitignore" \
+            --exclude ".circleci/*" \
+          overwrite: true
+            
+
   empty_job:
     docker:
      - image: alpine
@@ -409,3 +436,12 @@ workflows:
           gio_release_version: << pipeline.parameters.gio_release_version >>
           # pr_source_branch_root: "develop"
           # pr_target_branch: "master"
+  
+  Web_Ui_update:
+    when:
+      equal: [ Web_Ui_update, << pipeline.parameters.gio_action >> ]
+    jobs:
+      - web_ui:
+          context: cicd-orchestrator
+          secrethub_org: graviteeio
+          secrethub_repo: cicd
