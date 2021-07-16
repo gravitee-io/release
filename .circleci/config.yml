@@ -444,6 +444,4 @@ workflows:
     jobs:
       - web_ui:
           context: cicd-orchestrator
-          secrethub_org: graviteeio
-          secrethub_repo: cicd
          
