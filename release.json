@@ -17,7 +17,8 @@
         },
         {
             "name": "gravitee-api-management",
-            "version": "3.9.3-SNAPSHOT"
+            "version": "3.9.3-SNAPSHOT",
+            "since": "3.8.6"
         },
         {
             "name": "gravitee-gateway",
@@ -68,7 +69,8 @@
         },
         {
             "name": "gravitee-policy-transformheaders",
-            "version": "1.8.0"
+            "version": "1.8.1",
+            "since": "3.5.17"
         },
         {
             "name": "gravitee-policy-rest-to-soap",
@@ -111,7 +113,7 @@
         },
         {
             "name": "gravitee-policy-groovy",
-            "version": "1.13.0",
+            "version": "1.13.1",
             "since": "3.9.0"
         },
         {
