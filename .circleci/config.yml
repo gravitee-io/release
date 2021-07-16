@@ -375,6 +375,7 @@ workflows:
     jobs:
       - gravitee/publish_bundles:
           context: cicd-orchestrator
+          dry_run: << pipeline.parameters.dry_run >>
           secrethub_org: graviteeio
           secrethub_repo: cicd
           gio_release_version: << pipeline.parameters.gio_release_version >>
