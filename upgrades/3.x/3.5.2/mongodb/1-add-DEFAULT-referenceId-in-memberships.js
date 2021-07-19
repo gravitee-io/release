@@ -8,5 +8,5 @@ try {
         print(`No memberships referenceId has been modified to DEFAULT.`)
     }
 } catch(e) {
-    print(`Error while updating memberships' referenceId to DEFAULT.\nError: ${e}`);
+    print(`Error while updating memberships referenceId to DEFAULT.\nError: ${e}`);
 }
