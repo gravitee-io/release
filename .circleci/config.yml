@@ -442,6 +442,11 @@ workflows:
     when:
       equal: [ Web_Ui_update, << pipeline.parameters.gio_action >> ]
     jobs:
-      - web_ui:
+
+      - gravitee/d_release_secrets:
           context: cicd-orchestrator
+          name: release_secrets_resolution
+      - web_ui:
+          requires:
+            - release_secrets_resolution
          
