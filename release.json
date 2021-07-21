@@ -112,7 +112,7 @@
         },
         {
             "name": "gravitee-policy-groovy",
-            "version": "1.14.1",
+            "version": "1.15.0-SNAPSHOT",
             "since": "3.9.0"
         },
         {
