@@ -22,7 +22,7 @@
         },
         {
             "name": "gravitee-gateway",
-            "since": "3.9.3",
+            "since": "3.9.3"
         },
         {
             "name": "gravitee-gateway-api",
@@ -31,15 +31,15 @@
         },
         {
             "name": "gravitee-management-rest-api",
-            "since": "3.9.3",
+            "since": "3.9.3"
         },
         {
             "name": "gravitee-management-webui",
-            "since": "3.9.3",
+            "since": "3.9.3"
         },
         {
             "name": "gravitee-portal-webui",
-            "since": "3.9.3",
+            "since": "3.9.3"
         },
         {
             "name": "gravitee-identityprovider-api",
@@ -69,7 +69,7 @@
         },
         {
             "name": "gravitee-policy-transformheaders",
-            "version": "1.8.1",
+            "version": "1.8.1"
         },
         {
             "name": "gravitee-policy-rest-to-soap",
