@@ -344,6 +344,14 @@
             "name": "gravitee-resource-cache-provider-api",
             "version": "1.1.0-SNAPSHOT",
             "since": "3.8.0"
+        },
+        {
+            "name": "gravitee-tracing-api",
+            "version": "1.0.0-SNAPSHOT"
+        },
+        {
+            "name": "gravitee-tracer-jaeger",
+            "version": "1.0.0-SNAPSHOT"
         }
     ],
     "buildDependencies": [
@@ -368,7 +376,8 @@
             "gravitee-alert-api",
             "gravitee-notifier-email",
             "gravitee-identityprovider-api",
-            "gravitee-cockpit-api"
+            "gravitee-cockpit-api",
+            "gravitee-tracing-api"
         ],
         [
             "gravitee-gateway-api"
@@ -444,7 +453,8 @@
             "gravitee-fetcher-gitlab",
             "gravitee-fetcher-bitbucket",
             "gravitee-fetcher-github",
-            "gravitee-cockpit-connectors"
+            "gravitee-cockpit-connectors",
+            "gravitee-tracer-jaeger"
         ],
         [
             "gravitee-management-rest-api",
