@@ -45,15 +45,15 @@ orbs:
   slack: circleci/slack@4.4.0
 
 jobs:
-  empty_job:
+  check-releasejson:
     docker:
-     - image: alpine
+      - image: cimg/node:lts
     resource_class: small
-    working_directory: /mnt/ramdisk
     steps:
+      - checkout
       - run:
-          name: "This is a blank job"
-          command: echo "No task is executed."
+          name: Check if `release.json` is a valid JSON file
+          command: npx jsonlint release.json
 
   bom_to_slack:
     machine:
@@ -301,11 +301,11 @@ jobs:
 workflows:
   version: 2.1
   # Blank process invoked when pull requests events are triggered
-  blank:
+  validate:
     when:
       equal: [ blank, << pipeline.parameters.gio_action >> ]
     jobs:
-      - empty_job:
+      - check-releasejson:
           context: cicd-orchestrator
   dry_release_process:
     when:
