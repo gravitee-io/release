@@ -26,7 +26,7 @@
         },
         {
             "name": "gravitee-gateway-api",
-            "version": "1.26.0",
+            "version": "1.26.1-SNAPSHOT",
             "since": "3.8.0"
         },
         {
@@ -269,7 +269,7 @@
         },
         {
             "name": "graviteeio-node",
-            "version": "1.15.1",
+            "version": "1.16.0-SNAPSHOT",
             "since": "3.9.2"
         },
         {
