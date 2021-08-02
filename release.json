@@ -268,7 +268,7 @@
             "version": "1.2.0"
         },
         {
-            "name": "graviteeio-node",
+            "name": "gravitee-node",
             "version": "1.16.0-SNAPSHOT",
             "since": "3.9.2"
         },
@@ -390,7 +390,7 @@
             "gravitee-plugin"
         ],
         [
-            "graviteeio-node"
+            "gravitee-node"
         ],
         [
             "gravitee-gateway",
