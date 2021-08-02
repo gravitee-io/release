@@ -249,7 +249,8 @@
         },
         {
             "name": "gravitee-expression-language",
-            "version": "1.6.0-SNAPSHOT"
+            "version": "1.6.0",
+            "since": "3.10.0"
         },
         {
             "name": "gravitee-policy-url-rewriting",
