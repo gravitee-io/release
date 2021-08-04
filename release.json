@@ -12,7 +12,8 @@
         },
         {
             "name": "gravitee-definition",
-            "version": "1.25.1-SNAPSHOT"
+            "version": "1.25.1",
+            "since": "3.5.18"
         },
         {
             "name": "gravitee-api-management",
@@ -21,8 +22,8 @@
         },
         {
             "name": "gravitee-gateway",
-            "version": "3.5.18-SNAPSHOT",
-            "since": "3.5.17"
+            "version": "3.5.18",
+            "since": "3.5.18"
         },
         {
             "name": "gravitee-gateway-api",
@@ -65,7 +66,8 @@
         },
         {
             "name": "gravitee-policy-ratelimit",
-            "version": "1.11.1-SNAPSHOT"
+            "version": "1.11.1",
+            "since": "3.5.18"
         },
         {
             "name": "gravitee-policy-request-content-limit",
@@ -178,12 +180,13 @@
         },
         {
             "name": "gravitee-reporter-file",
-            "version": "2.0.4-SNAPSHOT",
-            "since": "3.5.11"
+            "version": "2.0.4",
+            "since": "3.5.18"
         },
         {
             "name": "gravitee-reporter-tcp",
-            "version": "1.1.2-SNAPSHOT"
+            "version": "1.1.2",
+            "since": "3.5.18"
         },
         {
             "name": "gravitee-elasticsearch",
