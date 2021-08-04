@@ -16,7 +16,8 @@
         },
         {
             "name": "gravitee-api-management",
-            "version": "3.5.18-SNAPSHOT"
+            "version": "3.5.18",
+            "since": "3.5.18"
         },
         {
             "name": "gravitee-gateway",
