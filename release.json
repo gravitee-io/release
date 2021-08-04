@@ -7,8 +7,8 @@
     "components": [
         {
             "name": "gravitee-common",
-            "version": "1.19.3-SNAPSHOT",
-            "since": "3.5.13"
+            "version": "1.19.3",
+            "since": "3.5.18"
         },
         {
             "name": "gravitee-definition",
