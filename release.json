@@ -27,11 +27,6 @@
             "version": "1.20.1"
         },
         {
-            "name": "gravitee-management-rest-api",
-            "since": "3.0.17",
-            "version": "3.0.17"
-        },
-        {
             "name": "gravitee-management-webui",
             "since": "3.0.17",
             "version": "3.0.17"
@@ -280,7 +275,6 @@
             "gravitee-common"
         ],
         [
-            "gravitee-api-management",
             "gravitee-expression-language",
             "gravitee-service-discovery-api",
             "gravitee-notifier-api"
@@ -362,7 +356,7 @@
             "gravitee-fetcher-github"
         ],
         [
-            "gravitee-management-rest-api",
+            "gravitee-api-management",
             "gravitee-management-webui",
             "gravitee-portal-webui"
         ]
