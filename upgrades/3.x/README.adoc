@@ -3,9 +3,13 @@
 ifdef::env-github[]
 include::3.10.0/README.adoc[leveloffset=+1]
 
+include::3.9.3/README.adoc[leveloffset=+1]
+
 include::3.9.2/README.adoc[leveloffset=+1]
 
 include::3.9.0/README.adoc[leveloffset=+1]
+
+include::3.8.6/README.adoc[leveloffset=+1]
 
 include::3.8.0/README.adoc[leveloffset=+1]
 
@@ -14,6 +18,10 @@ include::3.7.0/README.adoc[leveloffset=+1]
 include::3.6.0/README.adoc[leveloffset=+1]
 
 include::3.5.18/README.adoc[leveloffset=+1]
+
+include::3.5.14/README.adoc[leveloffset=+1]
+
+include::3.5.11/README.adoc[leveloffset=+1]
 
 include::3.5.2/README.adoc[leveloffset=+1]
 
@@ -48,9 +56,13 @@ Check your db name by running `show dbs;`
 
 include::https://raw.githubusercontent.com/gravitee-io/release/master/upgrades/3.x/3.10.0/README.adoc[leveloffset=+1]
 
+include::https://raw.githubusercontent.com/gravitee-io/release/master/upgrades/3.x/3.9.3/README.adoc[leveloffset=+1]
+
 include::https://raw.githubusercontent.com/gravitee-io/release/master/upgrades/3.x/3.9.2/README.adoc[leveloffset=+1]
 
 include::https://raw.githubusercontent.com/gravitee-io/release/master/upgrades/3.x/3.9.0/README.adoc[leveloffset=+1]
+
+include::https://raw.githubusercontent.com/gravitee-io/release/master/upgrades/3.x/3.8.6/README.adoc[leveloffset=+1]
 
 include::https://raw.githubusercontent.com/gravitee-io/release/master/upgrades/3.x/3.8.0/README.adoc[leveloffset=+1]
 
@@ -59,6 +71,10 @@ include::https://raw.githubusercontent.com/gravitee-io/release/master/upgrades/3
 include::https://raw.githubusercontent.com/gravitee-io/release/master/upgrades/3.x/3.6.0/README.adoc[leveloffset=+1]
 
 include::https://raw.githubusercontent.com/gravitee-io/release/master/upgrades/3.x/3.5.18/README.adoc[leveloffset=+1]
+
+include::https://raw.githubusercontent.com/gravitee-io/release/master/upgrades/3.x/3.5.14/README.adoc[leveloffset=+1]
+
+include::https://raw.githubusercontent.com/gravitee-io/release/master/upgrades/3.x/3.5.11/README.adoc[leveloffset=+1]
 
 include::https://raw.githubusercontent.com/gravitee-io/release/master/upgrades/3.x/3.5.2/README.adoc[leveloffset=+1]
 
