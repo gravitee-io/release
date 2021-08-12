@@ -1,29 +1,29 @@
 {
     "name": "Gravitee.io",
-    "version": "3.8.7-SNAPSHOT",
+    "version": "3.8.7",
     "buildTimestamp": "2021-02-17T20:55:06+0000",
     "scmSshUrl": "git@github.com:gravitee-io",
     "scmHttpUrl": "https://github.com/gravitee-io/",
     "components": [
         {
             "name": "gravitee-common",
-            "version": "1.20.2-SNAPSHOT",
-            "since": "3.8.4"
+            "version": "1.20.2",
+            "since": "3.8.7"
         },
         {
             "name": "gravitee-definition",
-            "version": "1.27.2-SNAPSHOT",
-            "since": "3.7.0"
+            "version": "1.27.2",
+            "since": "3.8.7"
         },
         {
             "name": "gravitee-api-management",
-            "version": "3.8.7-SNAPSHOT",
-            "since": "3.8.6"
+            "version": "3.8.7",
+            "since": "3.8.7"
         },
         {
             "name": "gravitee-gateway",
-            "version": "3.8.7-SNAPSHOT",
-            "since": "3.8.6"
+            "version": "3.8.7",
+            "since": "3.8.7"
         },
         {
             "name": "gravitee-gateway-api",
@@ -32,18 +32,18 @@
         },
         {
             "name": "gravitee-management-rest-api",
-            "version": "3.8.7-SNAPSHOT",
-            "since": "3.8.6"
+            "version": "3.8.7",
+            "since": "3.8.7"
         },
         {
             "name": "gravitee-management-webui",
-            "version": "3.8.7-SNAPSHOT",
-            "since": "3.8.6"
+            "version": "3.8.7",
+            "since": "3.8.7"
         },
         {
             "name": "gravitee-portal-webui",
-            "version": "3.8.7-SNAPSHOT",
-            "since": "3.8.6"
+            "version": "3.8.7",
+            "since": "3.8.7"
         },
         {
             "name": "gravitee-identityprovider-api",
@@ -63,8 +63,8 @@
         },
         {
             "name": "gravitee-policy-ratelimit",
-            "version": "1.12.1-SNAPSHOT",
-            "since": "3.8.0"
+            "version": "1.12.1",
+            "since": "3.8.7"
         },
         {
             "name": "gravitee-policy-request-content-limit",
@@ -182,13 +182,13 @@
         },
         {
             "name": "gravitee-reporter-file",
-            "version": "2.3.2-SNAPSHOT",
-            "since": "3.8.5"
+            "version": "2.3.2",
+            "since": "3.8.7"
         },
         {
             "name": "gravitee-reporter-tcp",
-            "version": "1.2.2-SNAPSHOT",
-            "since": "3.8.5"
+            "version": "1.2.2",
+            "since": "3.8.7"
         },
         {
             "name": "gravitee-elasticsearch",
