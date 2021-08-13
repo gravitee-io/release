@@ -7,23 +7,23 @@
     "components": [
         {
             "name": "gravitee-common",
-            "version": "1.20.1",
-            "since": "3.8.4"
+            "version": "1.20.2",
+            "since": "3.8.7"
         },
         {
             "name": "gravitee-definition",
-            "version": "1.28.0",
+            "version": "1.28.1-SNAPSHOT",
             "since": "3.9.0"
         },
         {
             "name": "gravitee-api-management",
-            "version": "3.9.3",
+            "version": "3.9.4-SNAPSHOT",
             "since": "3.9.3"
         },
         {
             "name": "gravitee-gateway",
-            "since": "3.9.3",
-            "version": "3.9.3"
+            "version": "3.9.4-SNAPSHOT",
+            "since": "3.9.3"
         },
         {
             "name": "gravitee-gateway-api",
@@ -32,18 +32,18 @@
         },
         {
             "name": "gravitee-management-rest-api",
-            "since": "3.9.3",
-            "version": "3.9.3"
+            "version": "3.9.4-SNAPSHOT",
+            "since": "3.9.3"
         },
         {
             "name": "gravitee-management-webui",
-            "since": "3.9.3",
-            "version": "3.9.3"
+            "version": "3.9.4-SNAPSHOT",
+            "since": "3.9.3"
         },
         {
             "name": "gravitee-portal-webui",
-            "since": "3.9.3",
-            "version": "3.9.3"
+            "version": "3.9.4-SNAPSHOT",
+            "since": "3.9.3"
         },
         {
             "name": "gravitee-identityprovider-api",
@@ -64,8 +64,8 @@
         },
         {
             "name": "gravitee-policy-ratelimit",
-            "version": "1.12.0",
-            "since": "3.8.0"
+            "version": "1.12.1",
+            "since": "3.8.7"
         },
         {
             "name": "gravitee-policy-request-content-limit",
@@ -190,13 +190,13 @@
         },
         {
             "name": "gravitee-reporter-file",
-            "version": "2.3.1",
+            "version": "2.3.2",
             "since": "3.9.0"
         },
         {
             "name": "gravitee-reporter-tcp",
-            "version": "1.2.1",
-            "since": "3.8.5"
+            "version": "1.2.2",
+            "since": "3.8.7"
         },
         {
             "name": "gravitee-elasticsearch",
