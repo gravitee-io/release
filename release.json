@@ -353,7 +353,6 @@
             "graviteeio-node"
         ],
         [
-            "gravitee-gateway",
             "gravitee-resource-oauth2-provider-api"
         ],
         [
@@ -415,6 +414,9 @@
             "gravitee-api-management",
             "gravitee-management-webui",
             "gravitee-portal-webui"
+        ],
+        [
+            "gravitee-gateway"
         ]
     ]
 }
