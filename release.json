@@ -31,11 +31,6 @@
             "since": "3.8.0"
         },
         {
-            "name": "gravitee-management-rest-api",
-            "version": "3.8.7",
-            "since": "3.8.7"
-        },
-        {
             "name": "gravitee-management-webui",
             "version": "3.8.7",
             "since": "3.8.7"
@@ -346,7 +341,6 @@
             "gravitee-common"
         ],
         [
-            "gravitee-api-management",
             "gravitee-expression-language",
             "gravitee-service-discovery-api",
             "gravitee-notifier-api"
@@ -379,7 +373,6 @@
             "graviteeio-node"
         ],
         [
-            "gravitee-gateway",
             "gravitee-resource-oauth2-provider-api"
         ],
         [
@@ -441,9 +434,12 @@
             "gravitee-cockpit-connectors"
         ],
         [
-            "gravitee-management-rest-api",
+            "gravitee-api-management",
             "gravitee-management-webui",
             "gravitee-portal-webui"
+        ],
+        [
+            "gravitee-gateway"
         ]
     ]
 }
