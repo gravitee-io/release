@@ -11,3 +11,21 @@ As a consequence:
 
 
 WARNING: In future versions, others plugins & components might be renamed. Stay tuned!
+
+== Security update
+
+From this version, API properties can be encrypted.
+
+Encryption key is located in gravitee.yml of Rest APIs and gateway.
+
+WARNING: You should not use this default key, and set your own custom 32 bytes length secret.
+
+
+```ỳml
+# Encrypt API properties using this secret
+api:
+  properties:
+    encryption:
+      secret: vvLJ4Q8Khvv9tm2tIPdkGEdmgKUruAL6
+```
+
