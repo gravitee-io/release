@@ -7,13 +7,13 @@
     "components": [
         {
             "name": "gravitee-common",
-            "version": "1.21.0-SNAPSHOT",
-            "since": "3.8.4"
+            "version": "1.21.0",
+            "since": "3.11.0"
         },
         {
             "name": "gravitee-definition",
-            "version": "1.29.0-SNAPSHOT",
-            "since": "3.9.0"
+            "version": "1.29.0",
+            "since": "3.11.0"
         },
         {
             "name": "gravitee-api-management",
@@ -32,13 +32,13 @@
         },
         {
             "name": "gravitee-management-webui",
-            "version": "3.11.0-SNAPSHOT",
-            "since": "3.10.0"
+            "version": "3.11.0",
+            "since": "3.11.0"
         },
         {
             "name": "gravitee-portal-webui",
-            "version": "3.11.0-SNAPSHOT",
-            "since": "3.10.0"
+            "version": "3.11.0",
+            "since": "3.11.0"
         },
         {
             "name": "gravitee-identityprovider-api",
@@ -112,8 +112,8 @@
         },
         {
             "name": "gravitee-policy-groovy",
-            "version": "1.16.0-SNAPSHOT",
-            "since": "3.10.0"
+            "version": "1.16.0",
+            "since": "3.11.0"
         },
         {
             "name": "gravitee-policy-dynamic-routing",
@@ -168,7 +168,8 @@
         },
         {
             "name": "gravitee-policy-callout-http",
-            "version": "1.14.0-SNAPSHOT"
+            "version": "1.14.0",
+            "since": "3.11.0"
         },
         {
             "name": "gravitee-policy-assign-attributes",
@@ -257,8 +258,8 @@
         },
         {
             "name": "gravitee-expression-language",
-            "version": "1.6.1-SNAPSHOT",
-            "since": "3.10.0"
+            "version": "1.6.1",
+            "since": "3.11.0"
         },
         {
             "name": "gravitee-policy-url-rewriting",
