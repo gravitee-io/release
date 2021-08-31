@@ -32,12 +32,12 @@
         },
         {
             "name": "gravitee-management-webui",
-            "version": null,
+            "version": "3.11.0",
             "since": "3.11.0"
         },
         {
             "name": "gravitee-portal-webui",
-            "version": null,
+            "version": "3.11.0",
             "since": "3.11.0"
         },
         {
