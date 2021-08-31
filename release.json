@@ -257,7 +257,7 @@
         },
         {
             "name": "gravitee-expression-language",
-            "version": "1.6.0",
+            "version": "1.6.1-SNAPSHOT",
             "since": "3.10.0"
         },
         {
