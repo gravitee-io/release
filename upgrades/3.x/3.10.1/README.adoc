@@ -1,0 +1,9 @@
+= Upgrade to 3.10.1
+== Repository
+
+=== Mongodb
+
+Before running any script, please create a dump of your existing database.
+
+https://raw.githubusercontent.com/gravitee-io/release/master/upgrades/3.x/3.10.1/mongodb/1-upgrade-parameters-for-theme-console[upgrades/3.x/3.10.1/mongodb/1-upgrade-parameters-for-theme-console]::
+This script upgrade default value of `theme.logo` in parameters
