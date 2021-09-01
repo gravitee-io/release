@@ -338,8 +338,12 @@
             "version": "1.1.0"
         },
         {
+            "name": "gravitee-policy-generate-http-signature",
+            "version": "1.0.0-SNAPSHOT"
+        },
+        {
             "name": "gravitee-policy-http-signature",
-            "version": "1.3.0",
+            "version": "1.4.0-SNAPSHOT",
             "since": "3.7.0"
         },
         {
@@ -452,6 +456,7 @@
             "gravitee-policy-regex-threat-protection",
             "gravitee-policy-xml-threat-protection",
             "gravitee-policy-retry",
+            "gravitee-policy-generate-http-signature",
             "gravitee-policy-http-signature",
             "gravitee-policy-traffic-shadowing",
             "gravitee-policy-metrics-reporter",
