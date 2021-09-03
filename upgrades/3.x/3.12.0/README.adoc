@@ -1,0 +1,9 @@
+= Upgrade to 3.12.0
+
+== Default Settings Change Announcement
+
+HTTP Bridge Service will be disabled by default starting in version 3.13.
+
+If you are using this feature, **do not forget to update your settings.**
+
+For more information, link:https://docs.gravitee.io/apim/3.x/apim_installguide_hybrid_deployment.html[click here] for documentation.
