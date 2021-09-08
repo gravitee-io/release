@@ -298,7 +298,7 @@
         },
         {
             "name": "gravitee-policy-json-threat-protection",
-            "version": "1.2.0"
+            "version": "1.2.2"
         },
         {
             "name": "gravitee-policy-regex-threat-protection",
@@ -306,7 +306,7 @@
         },
         {
             "name": "gravitee-policy-xml-threat-protection",
-            "version": "1.2.0"
+            "version": "1.2.1"
         },
         {
             "name": "gravitee-policy-retry",
