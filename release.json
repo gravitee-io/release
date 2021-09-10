@@ -56,7 +56,7 @@
         },
         {
             "name": "gravitee-policy-apikey",
-            "version": "2.2.0"
+            "version": "2.3.0-SNAPSHOT"
         },
         {
             "name": "gravitee-policy-ratelimit",
