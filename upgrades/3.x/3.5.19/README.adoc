@@ -1,4 +1,4 @@
-= Upgrade to 3.9.4
+= Upgrade to 3.5.19
 
 == Breaking changes
 
