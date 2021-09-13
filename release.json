@@ -27,7 +27,7 @@
         },
         {
             "name": "gravitee-gateway-api",
-            "version": "1.27.0",
+            "version": "1.28.0-SNAPSHOT",
             "since": "3.10.0"
         },
         {
@@ -258,7 +258,7 @@
         },
         {
             "name": "gravitee-expression-language",
-            "version": "1.6.1",
+            "version": "1.7.0-SNAPSHOT",
             "since": "3.11.0"
         },
         {
