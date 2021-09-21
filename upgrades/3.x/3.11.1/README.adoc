@@ -6,4 +6,4 @@
 Before running any script, please create a dump of your existing database.
 
 https://raw.githubusercontent.com/gravitee-io/release/master/upgrades/3.x/3.11.1/mongodb/1-event-debug-migration.js[upgrades/3.x/3.11.1/mongodb/1-event-debug-migration.js]::
-This script changes the `API_ID` property to `API_DEBUG_ID` for events of type `DEBUG`.
+This script removes the `API_ID` property for events of type `DEBUG`.
