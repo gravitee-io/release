@@ -1,29 +1,29 @@
 {
     "name": "Gravitee.io",
-    "version": "3.11.1-SNAPSHOT",
+    "version": "3.11.1",
     "buildTimestamp": "2021-02-17T20:55:06+0000",
     "scmSshUrl": "git@github.com:gravitee-io",
     "scmHttpUrl": "https://github.com/gravitee-io/",
     "components": [
         {
             "name": "gravitee-common",
-            "version": "1.21.1-SNAPSHOT",
-            "since": "3.11.0"
+            "version": "1.21.1",
+            "since": "3.11.1"
         },
         {
             "name": "gravitee-definition",
-            "version": "1.29.1-SNAPSHOT",
-            "since": "3.11.0"
+            "version": "1.29.1",
+            "since": "3.11.1"
         },
         {
             "name": "gravitee-api-management",
-            "version": "3.11.1-SNAPSHOT",
-            "since": "3.11.0"
+            "version": "3.11.1",
+            "since": "3.11.1"
         },
         {
             "name": "gravitee-gateway",
-            "version": "3.11.1-SNAPSHOT",
-            "since": "3.11.0"
+            "version": "3.11.1",
+            "since": "3.11.1"
         },
         {
             "name": "gravitee-gateway-api",
@@ -32,13 +32,13 @@
         },
         {
             "name": "gravitee-management-webui",
-            "version": "3.11.1-SNAPSHOT",
-            "since": "3.11.0"
+            "version": "3.11.1",
+            "since": "3.11.1"
         },
         {
             "name": "gravitee-portal-webui",
-            "version": "3.11.1-SNAPSHOT",
-            "since": "3.11.0"
+            "version": "3.11.1",
+            "since": "3.11.1"
         },
         {
             "name": "gravitee-identityprovider-api",
