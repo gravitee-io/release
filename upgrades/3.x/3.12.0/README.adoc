@@ -23,7 +23,7 @@ Before this version, API keys contained a *key* attribute, which is both the val
 Starting in version 3.12.0, APIKeys now contain distinct attributes:
 
 - *key*: API key value
-- *ID*: API key database unique id
+- *ID*: API key database unique ID
 
 The 3 Portal API endpoints listed below now expose distinct *IDs* and *keys* in the HTTP response (previously, the key attribute was exposed as '*ID*') :
 
