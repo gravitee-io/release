@@ -2,9 +2,9 @@
 
 == Breaking Change
 
-Policy plugin gravitee-policy-apikey prior to version 2.3.0 is no more compatible with APIM 3.12.0.
+Policy plugin `gravitee-policy-apikey` prior to version 2.3.0 is no longer compatible with APIM 3.12.0.
 
-From this version, you have to use gravitee-policy-apikey >= 2.3.0.
+From this version, you must use `gravitee-policy-apikey` >= 2.3.0.
 
 == Default Settings Change Announcement
 
@@ -14,18 +14,18 @@ If you are using this feature, **do not forget to update your settings.**
 
 For more information, link:https://docs.gravitee.io/apim/3.x/apim_installguide_hybrid_deployment.html[click here] for documentation.
 
-== Api Keys
+== API Keys
 
 === Model Change
 
-Before this version, APIKeys contained a *key* attribute, which is both the value of the key and also the database ID.
+Before this version, API keys contained a *key* attribute, which is both the value of the key and also the database ID.
 
 Starting in version 3.12.0, APIKeys now contain distinct attributes:
 
-- *key* : api key value
-- *id* : api key database unique id
+- *key*: API key value
+- *ID*: API key database unique id
 
-The 3 Portal API endpoints listed below now expose distinct *id* and *key* in the HTTP response (previously, the key attribute was exposed as '*id*') :
+The 3 Portal API endpoints listed below now expose distinct *IDs* and *keys* in the HTTP response (previously, the key attribute was exposed as '*ID*') :
 
 - GET /subscriptions/{subscription.id}
 - POST /subscriptions/{subscription.id}
@@ -36,7 +36,7 @@ The 3 Portal API endpoints listed below now expose distinct *id* and *key* in th
 The Rest API endpoints listed below are now deprecated, and will be removed in a future version.
 
 |===
-|Deprecated endpoint|To replace with...
+|Deprecated Endpoint| Replace With
 
 |PUT /apis/{api.id}/keys/{apiKey.key}
 |PUT /apis/{api.id}/subscriptions/{subscription.id}/apikeys/{apiKey.id}
