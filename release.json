@@ -27,7 +27,7 @@
         },
         {
             "name": "gravitee-gateway-api",
-            "version": "1.27.1",
+            "version": "1.27.2-SNAPSHOT",
             "since": "3.10.0"
         },
         {
