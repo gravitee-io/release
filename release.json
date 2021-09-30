@@ -27,8 +27,8 @@
         },
         {
             "name": "gravitee-gateway-api",
-            "version": "1.28.0-SNAPSHOT",
-            "since": "3.10.0"
+            "version": "1.28.0",
+            "since": "3.12.0"
         },
         {
             "name": "gravitee-management-webui",
@@ -258,8 +258,8 @@
         },
         {
             "name": "gravitee-expression-language",
-            "version": "1.7.0-SNAPSHOT",
-            "since": "3.11.0"
+            "version": "1.7.0",
+            "since": "3.12.0"
         },
         {
             "name": "gravitee-policy-url-rewriting",
