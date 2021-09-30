@@ -341,11 +341,11 @@
         },
         {
             "name": "gravitee-policy-generate-http-signature",
-            "version": "1.0.0-SNAPSHOT"
+            "version": "1.0.0"
         },
         {
             "name": "gravitee-policy-http-signature",
-            "version": "1.4.0-SNAPSHOT",
+            "version": "1.4.0",
             "since": "3.7.0"
         },
         {
