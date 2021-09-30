@@ -420,7 +420,6 @@
             "gravitee-resource-oauth2-provider-keycloak"
         ],
         [
-            "gravitee-policy-apikey",
             "gravitee-policy-ratelimit",
             "gravitee-policy-request-content-limit",
             "gravitee-policy-transformheaders",
@@ -480,6 +479,7 @@
             "gravitee-portal-webui"
         ],
         [
+            "gravitee-policy-apikey",
             "gravitee-gateway"
         ]
     ]
