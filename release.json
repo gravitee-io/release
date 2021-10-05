@@ -61,7 +61,7 @@
         },
         {
             "name": "gravitee-policy-ratelimit",
-            "version": "1.13.0",
+            "version": "1.14.0-SNAPSHOT",
             "since": "3.10.0"
         },
         {
@@ -198,7 +198,7 @@
         },
         {
             "name": "gravitee-elasticsearch",
-            "version": "3.8.0",
+            "version": "3.9.0-SNAPSHOT",
             "since": "3.10.0"
         },
         {
@@ -421,7 +421,6 @@
             "gravitee-resource-oauth2-provider-keycloak"
         ],
         [
-            "gravitee-policy-ratelimit",
             "gravitee-policy-request-content-limit",
             "gravitee-policy-transformheaders",
             "gravitee-policy-rest-to-soap",
@@ -462,7 +461,6 @@
             "gravitee-policy-http-signature",
             "gravitee-policy-traffic-shadowing",
             "gravitee-policy-metrics-reporter",
-            "gravitee-elasticsearch",
             "gravitee-reporter-file",
             "gravitee-reporter-kafka",
             "gravitee-reporter-tcp",
@@ -480,7 +478,9 @@
             "gravitee-portal-webui"
         ],
         [
+            "gravitee-policy-ratelimit",
             "gravitee-policy-apikey",
+            "gravitee-elasticsearch",
             "gravitee-gateway"
         ]
     ]
