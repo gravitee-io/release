@@ -17,12 +17,12 @@
         },
         {
             "name": "gravitee-api-management",
-            "version": "3.5.20",
+            "version": "3.5.21-SNAPSHOT",
             "since": "3.5.20"
         },
         {
             "name": "gravitee-gateway",
-            "version": "3.5.20",
+            "version": "3.5.21-SNAPSHOT",
             "since": "3.5.20"
         },
         {
@@ -31,7 +31,7 @@
         },
         {
             "name": "gravitee-portal-webui",
-            "version": "3.5.20",
+            "version": "3.5.21-SNAPSHOT",
             "since": "3.5.20"
         },
         {
