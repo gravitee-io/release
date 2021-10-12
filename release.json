@@ -31,11 +31,6 @@
             "since": "3.10.0"
         },
         {
-            "name": "gravitee-management-webui",
-            "version": "3.11.2-SNAPSHOT",
-            "since": "3.11.1"
-        },
-        {
             "name": "gravitee-portal-webui",
             "version": "3.11.2-SNAPSHOT",
             "since": "3.11.1"
@@ -471,7 +466,6 @@
         ],
         [
             "gravitee-api-management",
-            "gravitee-management-webui",
             "gravitee-portal-webui"
         ],
         [
