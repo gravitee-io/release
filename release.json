@@ -30,11 +30,6 @@
             "version": "1.23.0"
         },
         {
-            "name": "gravitee-management-webui",
-            "version": "3.5.20",
-            "since": "3.5.20"
-        },
-        {
             "name": "gravitee-portal-webui",
             "version": "3.5.20",
             "since": "3.5.20"
@@ -413,7 +408,6 @@
         ],
         [
             "gravitee-api-management",
-            "gravitee-management-webui",
             "gravitee-portal-webui"
         ],
         [
