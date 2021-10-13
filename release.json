@@ -7,12 +7,12 @@
     "components": [
         {
             "name": "gravitee-common",
-            "version": "1.22.1",
+            "version": "1.23.0-SNAPSHOT",
             "since": "3.11.1"
         },
         {
             "name": "gravitee-definition",
-            "version": "1.29.1",
+            "version": "1.30-SNAPSHOT",
             "since": "3.11.1"
         },
         {
@@ -27,7 +27,7 @@
         },
         {
             "name": "gravitee-gateway-api",
-            "version": "1.28.1-SNAPSHOT",
+            "version": "1.29.0-SNAPSHOT",
             "since": "3.12.1"
         },
         {
@@ -36,7 +36,7 @@
         },
         {
             "name": "gravitee-plugin",
-            "version": "1.18.0",
+            "version": "1.20.0-SNAPSHOT",
             "since": "3.10.0"
         },
         {
@@ -269,6 +269,18 @@
             "version": "1.2.0"
         },
         {
+            "name": "gravitee-connector-api",
+            "version": "1.0.0-SNAPSHOT"
+        },
+        {
+            "name": "gravitee-connector-http",
+            "version": "1.0.0-SNAPSHOT"
+        },
+        {
+            "name": "gravitee-connector-kafka",
+            "version": "1.0.0-SNAPSHOT"
+        },
+        {
             "name": "gravitee-node",
             "version": "1.17.1",
             "since": "3.10.0"
@@ -386,7 +398,8 @@
             "gravitee-notifier-email",
             "gravitee-identityprovider-api",
             "gravitee-cockpit-api",
-            "gravitee-tracing-api"
+            "gravitee-tracing-api",
+            "gravitee-connector-api"
         ],
         [
             "gravitee-gateway-api"
@@ -403,6 +416,10 @@
         ],
         [
             "gravitee-resource-oauth2-provider-api"
+        ],
+        [
+            "gravitee-connector-http",
+            "gravitee-connector-kafka"
         ],
         [
             "gravitee-resource-cache",
