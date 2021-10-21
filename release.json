@@ -30,11 +30,6 @@
             "version": "1.23.0"
         },
         {
-            "name": "gravitee-portal-webui",
-            "version": "3.5.21-SNAPSHOT",
-            "since": "3.5.20"
-        },
-        {
             "name": "gravitee-identityprovider-api",
             "version": "1.0.0"
         },
@@ -407,8 +402,7 @@
             "gravitee-fetcher-github"
         ],
         [
-            "gravitee-api-management",
-            "gravitee-portal-webui"
+            "gravitee-api-management"
         ],
         [
             "gravitee-gateway"
