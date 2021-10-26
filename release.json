@@ -7,7 +7,7 @@
     "components": [
         {
             "name": "gravitee-common",
-            "version": "1.22.1-SNAPSHOT",
+            "version": "1.22.1",
             "since": "3.11.1"
         },
         {
@@ -18,17 +18,17 @@
         {
             "name": "gravitee-api-management",
             "version": "3.13.0-SNAPSHOT",
-            "since": "3.12.0"
+            "since": "3.12.1"
         },
         {
             "name": "gravitee-gateway",
             "version": "3.13.0-SNAPSHOT",
-            "since": "3.12.0"
+            "since": "3.12.1"
         },
         {
             "name": "gravitee-gateway-api",
             "version": "1.28.1-SNAPSHOT",
-            "since": "3.12.0"
+            "since": "3.12.1"
         },
         {
             "name": "gravitee-identityprovider-api",
@@ -249,8 +249,8 @@
         },
         {
             "name": "gravitee-expression-language",
-            "version": "1.7.1-SNAPSHOT",
-            "since": "3.12.0"
+            "version": "1.7.1",
+            "since": "3.12.1"
         },
         {
             "name": "gravitee-policy-url-rewriting",
@@ -270,7 +270,7 @@
         },
         {
             "name": "gravitee-node",
-            "version": "1.17.1-SNAPSHOT",
+            "version": "1.17.1",
             "since": "3.10.0"
         },
         {
