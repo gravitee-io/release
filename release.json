@@ -51,7 +51,7 @@
         },
         {
             "name": "gravitee-policy-ratelimit",
-            "version": "1.11.1",
+            "version": "1.11.2-SNAPSHOT",
             "since": "3.5.18"
         },
         {
@@ -60,7 +60,7 @@
         },
         {
             "name": "gravitee-policy-transformheaders",
-            "version": "1.8.1",
+            "version": "1.8.2-SNAPSHOT",
             "since": "3.5.17"
         },
         {
@@ -107,7 +107,7 @@
         },
         {
             "name": "gravitee-policy-dynamic-routing",
-            "version": "1.11.0"
+            "version": "1.11.1-SNAPSHOT"
         },
         {
             "name": "gravitee-policy-jwt",
@@ -184,7 +184,7 @@
         },
         {
             "name": "gravitee-resource-cache",
-            "version": "1.4.0"
+            "version": "1.4.1-SNAPSHOT"
         },
         {
             "name": "gravitee-resource-oauth2-provider-api",
