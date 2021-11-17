@@ -178,12 +178,12 @@
         },
         {
             "name": "gravitee-reporter-file",
-            "version": "2.4.2",
+            "version": "2.4.3-SNAPSHOT",
             "since": "3.5.21"
         },
         {
             "name": "gravitee-reporter-tcp",
-            "version": "1.3.2",
+            "version": "1.3.3-SNAPSHOT",
             "since": "3.5.21"
         },
         {
