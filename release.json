@@ -1,6 +1,6 @@
 {
     "name": "Gravitee.io",
-    "version": "3.10.6-SNAPSHOT",
+    "version": "3.10.6",
     "buildTimestamp": "2021-02-17T20:55:06+0000",
     "scmSshUrl": "git@github.com:gravitee-io",
     "scmHttpUrl": "https://github.com/gravitee-io/",
@@ -17,13 +17,13 @@
         },
         {
             "name": "gravitee-api-management",
-            "version": "3.10.6-SNAPSHOT",
-            "since": "3.10.5"
+            "version": "3.10.6",
+            "since": "3.10.6"
         },
         {
             "name": "gravitee-gateway",
-            "version": "3.10.6-SNAPSHOT",
-            "since": "3.10.5"
+            "version": "3.10.6",
+            "since": "3.10.6"
         },
         {
             "name": "gravitee-gateway-api",
@@ -178,18 +178,18 @@
         },
         {
             "name": "gravitee-reporter-file",
-            "version": "2.4.3-SNAPSHOT",
-            "since": "3.5.21"
+            "version": "2.4.3",
+            "since": "3.10.6"
         },
         {
             "name": "gravitee-reporter-tcp",
-            "version": "1.3.3-SNAPSHOT",
-            "since": "3.5.21"
+            "version": "1.3.3",
+            "since": "3.10.6"
         },
         {
             "name": "gravitee-elasticsearch",
-            "version": "3.8.1-SNAPSHOT",
-            "since": "3.10.0"
+            "version": "3.8.1",
+            "since": "3.10.6"
         },
         {
             "name": "gravitee-resource-api",
@@ -266,7 +266,8 @@
         },
         {
             "name": "gravitee-reporter-kafka",
-            "version": "1.3.0-SNAPSHOT"
+            "version": "1.3.0",
+            "since": "3.10.6"
         },
         {
             "name": "gravitee-node",
