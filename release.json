@@ -12,7 +12,7 @@
         },
         {
             "name": "gravitee-definition",
-            "version": "1.30-SNAPSHOT",
+            "version": "1.30.0-SNAPSHOT",
             "since": "3.11.1"
         },
         {
