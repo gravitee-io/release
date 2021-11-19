@@ -1,6 +1,6 @@
 {
     "name": "Gravitee.io",
-    "version": "3.13.0-SNAPSHOT",
+    "version": "3.13.0",
     "buildTimestamp": "2021-02-17T20:55:06+0000",
     "scmSshUrl": "git@github.com:gravitee-io",
     "scmHttpUrl": "https://github.com/gravitee-io/",
@@ -12,23 +12,23 @@
         },
         {
             "name": "gravitee-definition",
-            "version": "1.30.0-SNAPSHOT",
-            "since": "3.11.1"
+            "version": "1.30.0",
+            "since": "3.13.0"
         },
         {
             "name": "gravitee-api-management",
-            "version": "3.13.0-SNAPSHOT",
-            "since": "3.12.1"
+            "version": "3.13.0",
+            "since": "3.13.0"
         },
         {
             "name": "gravitee-gateway",
-            "version": "3.13.0-SNAPSHOT",
-            "since": "3.12.1"
+            "version": "3.13.0",
+            "since": "3.13.0"
         },
         {
             "name": "gravitee-gateway-api",
-            "version": "1.29.0-SNAPSHOT",
-            "since": "3.12.1"
+            "version": "1.29.0",
+            "since": "3.13.0"
         },
         {
             "name": "gravitee-identityprovider-api",
@@ -36,8 +36,8 @@
         },
         {
             "name": "gravitee-plugin",
-            "version": "1.20.0-SNAPSHOT",
-            "since": "3.10.0"
+            "version": "1.20.0",
+            "since": "3.13.0"
         },
         {
             "name": "gravitee-policy-api",
@@ -51,8 +51,8 @@
         },
         {
             "name": "gravitee-policy-ratelimit",
-            "version": "1.14.0-SNAPSHOT",
-            "since": "3.10.0"
+            "version": "1.14.0",
+            "since": "3.13.0"
         },
         {
             "name": "gravitee-policy-request-content-limit",
@@ -114,8 +114,8 @@
         },
         {
             "name": "gravitee-policy-jwt",
-            "version": "1.21.0-SNAPSHOT",
-            "since": "3.10.0"
+            "version": "1.21.0",
+            "since": "3.13.0"
         },
         {
             "name": "gravitee-policy-override-http-method",
@@ -190,8 +190,8 @@
         },
         {
             "name": "gravitee-elasticsearch",
-            "version": "3.9.0-SNAPSHOT",
-            "since": "3.10.0"
+            "version": "3.9.0",
+            "since": "3.13.0"
         },
         {
             "name": "gravitee-resource-api",
@@ -273,11 +273,13 @@
         },
         {
             "name": "gravitee-connector-api",
-            "version": "1.0.0-SNAPSHOT"
+            "version": "1.0.0",
+            "since": "3.13.0"
         },
         {
             "name": "gravitee-connector-http",
-            "version": "1.0.0-SNAPSHOT"
+            "version": "1.0.0",
+            "since": "3.13.0"
         },
         {
             "name": "gravitee-node",
