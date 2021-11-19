@@ -401,13 +401,13 @@
             "gravitee-notifier-email",
             "gravitee-identityprovider-api",
             "gravitee-cockpit-api",
-            "gravitee-tracing-api",
-            "gravitee-connector-api"
+            "gravitee-tracing-api"
         ],
         [
             "gravitee-gateway-api"
         ],
         [
+            "gravitee-connector-api",
             "gravitee-policy-api",
             "gravitee-resource-cache-provider-api"
         ],
