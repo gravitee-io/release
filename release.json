@@ -280,10 +280,6 @@
             "version": "1.0.0-SNAPSHOT"
         },
         {
-            "name": "gravitee-connector-kafka",
-            "version": "1.0.0-SNAPSHOT"
-        },
-        {
             "name": "gravitee-node",
             "version": "1.18.0",
             "since": "3.10.0"
@@ -421,8 +417,7 @@
             "gravitee-resource-oauth2-provider-api"
         ],
         [
-            "gravitee-connector-http",
-            "gravitee-connector-kafka"
+            "gravitee-connector-http"
         ],
         [
             "gravitee-resource-cache",
