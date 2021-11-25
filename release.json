@@ -21,11 +21,6 @@
             "since": "3.12.4"
         },
         {
-            "name": "gravitee-gateway",
-            "version": "3.12.5-SNAPSHOT",
-            "since": "3.12.4"
-        },
-        {
             "name": "gravitee-gateway-api",
             "version": "1.28.2",
             "since": "3.12.1"
@@ -471,8 +466,7 @@
             "gravitee-api-management"
         ],
         [
-            "gravitee-policy-apikey",
-            "gravitee-gateway"
+            "gravitee-policy-apikey"
         ]
     ]
 }
