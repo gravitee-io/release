@@ -21,11 +21,6 @@
             "since": "3.13.0"
         },
         {
-            "name": "gravitee-gateway",
-            "version": "3.14.0-SNAPSHOT",
-            "since": "3.13.0"
-        },
-        {
             "name": "gravitee-gateway-api",
             "version": "1.30.0-SNAPSHOT",
             "since": "3.13.0"
@@ -485,8 +480,7 @@
         [
             "gravitee-policy-ratelimit",
             "gravitee-policy-apikey",
-            "gravitee-elasticsearch",
-            "gravitee-gateway"
+            "gravitee-elasticsearch"
         ]
     ]
 }
