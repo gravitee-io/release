@@ -3,6 +3,8 @@
 ifdef::env-github[]
 include::3.13.0/README.adoc[leveloffset=+1]
 
+include::3.12.5/README.adoc[leveloffset=+1]
+
 include::3.12.1/README.adoc[leveloffset=+1]
 
 include::3.12.0/README.adoc[leveloffset=+1]
@@ -77,6 +79,8 @@ WARNING: Be sure to run scripts on the correct database since `gravitee` is not 
 Check your db name by running `show dbs;`
 
 include::https://raw.githubusercontent.com/gravitee-io/release/master/upgrades/3.x/3.13.0/README.adoc[leveloffset=+1]
+
+include::https://raw.githubusercontent.com/gravitee-io/release/master/upgrades/3.x/3.12.5/README.adoc[leveloffset=+1]
 
 include::https://raw.githubusercontent.com/gravitee-io/release/master/upgrades/3.x/3.12.1/README.adoc[leveloffset=+1]
 
