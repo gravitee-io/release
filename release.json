@@ -17,12 +17,12 @@
         },
         {
             "name": "gravitee-api-management",
-            "version": "3.13.0",
+            "version": "3.14.0-SNAPSHOT",
             "since": "3.13.0"
         },
         {
             "name": "gravitee-gateway",
-            "version": "3.13.0",
+            "version": "3.14.0-SNAPSHOT",
             "since": "3.13.0"
         },
         {
