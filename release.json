@@ -17,7 +17,7 @@
         },
         {
             "name": "gravitee-api-management",
-            "version": "3.10.7",
+            "version": "3.10.8-SNAPSHOT",
             "since": "3.10.7"
         },
         {
