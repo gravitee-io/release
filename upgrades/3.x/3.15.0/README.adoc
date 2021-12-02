@@ -1,0 +1,41 @@
+= Upgrade to 3.15.0
+
+== Breaking Change
+
+=== Management API
+
+Since they were deprecated since version 3.12.0, the Rest API endpoints listed below have been removed.
+
+|===
+|Removed Endpoint| Replace With
+
+|PUT /apis/{api.id}/keys/{apiKey.key}
+|PUT /apis/{api.id}/subscriptions/{subscription.id}/apikeys/{apiKey.id}
+
+|DELETE /apis/{api.id}/keys/{apiKey.key}
+|DELETE /apis/{api.id}/subscriptions/{subscription.id}/apikeys/{apiKey.id}
+
+|POST /apis/{api.id}/keys/_verify?apiKey={apiKey.key}
+|GET /apis/{api.id}/subscriptions/_canCreate?application={application.id}&key={apiKey.key}
+
+|DELETE /apis/{api.id}/subscriptions/{subscription.id}/keys/{apiKey.key}
+|DELETE /apis/{api.id}/subscriptions/{subscription.id}/apikeys/{apiKey.id}
+
+|GET /apis/{api.id}/subscriptions/{subscription.id}/keys
+|GET /apis/{api.id}/subscriptions/{subscription.id}/apikeys
+
+|POST /apis/{api.id}/subscriptions/{subscription.id}
+|POST /apis/{api.id}/subscriptions/{subscription.id}/apikeys/_renew
+
+|POST /apis/{api.id}/subscriptions/{subscription.id}/keys/{apiKey.key}/_reactivate
+|POST /apis/{api.id}/subscriptions/{subscription.id}/apikeys/{apiKey.id}/_reactivate
+
+|GET /applications/{application.id}/subscriptions/{subscription.id}/keys
+|GET /applications/{application.id}/subscriptions/{subscription.id}/apikeys
+
+|POST /applications/{application.id}/subscriptions/{subscription.id}
+|POST /applications/{application.id}/subscriptions/{subscription.id}/apikeys/_renew
+
+|DELETE /applications/{application.id}/subscriptions/{subscription.id}/keys/{apiKey.key}
+|DELETE /applications/{application.id}/subscriptions/{subscription.id}/apikeys/{apiKey.id}
+|===
