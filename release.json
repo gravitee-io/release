@@ -358,7 +358,7 @@
         },
         {
             "name": "gravitee-tracer-jaeger",
-            "version": "1.0.0",
+            "version": "1.0.1",
             "since": "3.10.0"
         }
     ],
