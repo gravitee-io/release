@@ -17,7 +17,7 @@
         },
         {
             "name": "gravitee-api-management",
-            "version": "3.5.25",
+            "version": "3.5.26-SNAPSHOT",
             "since": "3.5.25"
         },
         {
@@ -298,7 +298,7 @@
         },
         {
             "name": "gravitee-policy-retry",
-            "version": "1.0.1"
+            "version": "1.0.2"
         },
         {
             "name": "gravitee-policy-http-signature",
