@@ -333,7 +333,7 @@
         },
         {
             "name": "gravitee-cockpit-connectors-ws",
-            "version": "2.0.0"
+            "version": "2.0.1"
         },
         {
             "name": "gravitee-policy-traffic-shadowing",
