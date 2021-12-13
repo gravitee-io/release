@@ -7,7 +7,7 @@
     "components": [
         {
             "name": "gravitee-common",
-            "version": "1.23.0",
+            "version": "1.24.0-SNAPSHOT",
             "since": "3.11.1"
         },
         {
@@ -278,7 +278,7 @@
         },
         {
             "name": "gravitee-node",
-            "version": "1.18.0",
+            "version": "1.19.0-SNAPSHOT",
             "since": "3.10.0"
         },
         {
