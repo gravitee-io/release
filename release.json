@@ -183,7 +183,7 @@
         },
         {
             "name": "gravitee-elasticsearch",
-            "version": "3.8.1",
+            "version": "3.8.2-SNAPSHOT",
             "since": "3.10.6"
         },
         {
