@@ -7,7 +7,7 @@
     "components": [
         {
             "name": "gravitee-common",
-            "version": "1.19.4",
+            "version": "1.19.5",
             "since": "3.5.18"
         },
         {
@@ -246,7 +246,7 @@
         },
         {
             "name": "graviteeio-node",
-            "version": "1.10.1"
+            "version": "1.10.2"
         },
         {
             "name": "gravitee-notifier-api",
