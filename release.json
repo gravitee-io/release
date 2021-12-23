@@ -1,6 +1,6 @@
 {
     "name": "Gravitee.io",
-    "version": "3.10.9-SNAPSHOT",
+    "version": "3.10.9",
     "buildTimestamp": "2021-02-17T20:55:06+0000",
     "scmSshUrl": "git@github.com:gravitee-io",
     "scmHttpUrl": "https://github.com/gravitee-io/",
@@ -12,13 +12,13 @@
         },
         {
             "name": "gravitee-definition",
-            "version": "1.28.2-SNAPSHOT",
-            "since": "3.9.4"
+            "version": "1.28.2",
+            "since": "3.10.9"
         },
         {
             "name": "gravitee-api-management",
-            "version": "3.10.9-SNAPSHOT",
-            "since": "3.10.8"
+            "version": "3.10.9",
+            "since": "3.10.9"
         },
         {
             "name": "gravitee-gateway-api",
