@@ -102,6 +102,8 @@ include::https://raw.githubusercontent.com/gravitee-io/release/master/upgrades/3
 
 include::https://raw.githubusercontent.com/gravitee-io/release/master/upgrades/3.x/3.11.0/README.adoc[leveloffset=+1]
 
+include::https://raw.githubusercontent.com/gravitee-io/release/master/upgrades/3.x/3.10.9/README.adoc[leveloffset=+1]
+
 include::https://raw.githubusercontent.com/gravitee-io/release/master/upgrades/3.x/3.10.8/README.adoc[leveloffset=+1]
 
 include::https://raw.githubusercontent.com/gravitee-io/release/master/upgrades/3.x/3.10.4/README.adoc[leveloffset=+1]
