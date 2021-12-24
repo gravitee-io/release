@@ -7,17 +7,17 @@
     "components": [
         {
             "name": "gravitee-common",
-            "version": "1.22.2",
+            "version": "1.22.3",
             "since": "3.11.1"
         },
         {
             "name": "gravitee-definition",
-            "version": "1.29.1",
+            "version": "1.29.2-SNAPSHOT",
             "since": "3.11.1"
         },
         {
             "name": "gravitee-api-management",
-            "version": "3.12.5",
+            "version": "3.12.6-SNAPSHOT",
             "since": "3.12.5"
         },
         {
@@ -185,7 +185,7 @@
         },
         {
             "name": "gravitee-elasticsearch",
-            "version": "3.8.1",
+            "version": "3.8.2",
             "since": "3.10.6"
         },
         {
@@ -268,7 +268,7 @@
         },
         {
             "name": "gravitee-node",
-            "version": "1.17.2",
+            "version": "1.17.3",
             "since": "3.10.0"
         },
         {
@@ -326,7 +326,7 @@
         },
         {
             "name": "gravitee-policy-retry",
-            "version": "1.1.0"
+            "version": "2.0.0"
         },
         {
             "name": "gravitee-policy-generate-http-signature",
@@ -339,7 +339,7 @@
         },
         {
             "name": "gravitee-cockpit-connectors-ws",
-            "version": "2.0.0"
+            "version": "2.0.1"
         },
         {
             "name": "gravitee-policy-traffic-shadowing",
