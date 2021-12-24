@@ -8,4 +8,4 @@ As a consequence:
 
 1. The APIM Gateway component available on https://download.gravitee.io is now `gravitee-*apim-gateway*-x.y.z.zip` instead of `gravitee-gateway-x.y.z.zip`
 
-2. The name of the APIM Gateway folder within the full distribution zip file (graviteeio-full-x.y.z.zip) is now `graviteeio-*apim-gateway*-ui-x.y.z` instead of `graviteeio-gateway-x.y.z`
+2. The name of the APIM Gateway folder within the full distribution zip file (graviteeio-full-x.y.z.zip) is now `graviteeio-*apim-gateway*-x.y.z` instead of `graviteeio-gateway-x.y.z`
