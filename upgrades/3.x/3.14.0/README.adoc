@@ -1,0 +1,10 @@
+= Upgrade to 3.14.0
+
+== Gateway bridge upgrade
+
+On hybrid architectures where gateway bridge feature is enabled, gateways have to be upgraded in this order :
+
+. The bridge server gateway
+. The bridge client gateway
+
+More information on the gateway bridge feature can be found link:https://docs.gravitee.io/apim/3.x/apim_installguide_hybrid_deployment.html#apim_gateway_http_bridge_server[here].
