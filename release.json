@@ -186,7 +186,7 @@
         {
             "name": "gravitee-elasticsearch",
             "version": "3.10.0",
-            "since": "3.13.0"
+            "since": "3.14.0"
         },
         {
             "name": "gravitee-resource-api",
