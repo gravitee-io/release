@@ -17,7 +17,7 @@
         },
         {
             "name": "gravitee-api-management",
-            "version": "3.10.10",
+            "version": "3.10.11-SNAPSHOT",
             "since": "3.10.10"
         },
         {
@@ -183,7 +183,7 @@
         },
         {
             "name": "gravitee-elasticsearch",
-            "version": "3.8.2",
+            "version": "3.8.3-SNAPSHOT",
             "since": "3.10.6"
         },
         {
