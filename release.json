@@ -266,7 +266,7 @@
         },
         {
             "name": "gravitee-node",
-            "version": "1.16.4",
+            "version": "1.16.5-SNAPSHOT",
             "since": "3.10.0"
         },
         {
