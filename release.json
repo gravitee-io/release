@@ -26,18 +26,18 @@
         },
         {
             "name": "gravitee-connector-api",
-            "version": "1.1.0-SNAPSHOT",
-            "since": "3.13.0"
+            "version": "1.1.0",
+            "since": "3.15.0"
         },
         {
             "name": "gravitee-connector-http",
-            "version": "1.1.0-SNAPSHOT",
-            "since": "3.13.0"
+            "version": "1.1.0",
+            "since": "3.15.0"
         },
         {
             "name": "gravitee-definition",
-            "version": "1.31.0-SNAPSHOT",
-            "since": "3.13.2"
+            "version": "1.31.0",
+            "since": "3.15.0"
         },
         {
             "name": "gravitee-elasticsearch",
@@ -102,8 +102,8 @@
         },
         {
             "name": "gravitee-plugin",
-            "version": "1.22.0-SNAPSHOT",
-            "since": "3.13.0"
+            "version": "1.22.0",
+            "since": "3.15.0"
         },
         {
             "name": "gravitee-policy-api",
@@ -302,8 +302,8 @@
         },
         {
             "name": "gravitee-reporter-file",
-            "version": "2.5.0-SNAPSHOT",
-            "since": "3.10.6"
+            "version": "2.5.0",
+            "since": "3.15.0"
         },
         {
             "name": "gravitee-reporter-kafka",
@@ -312,8 +312,8 @@
         },
         {
             "name": "gravitee-reporter-tcp",
-            "version": "1.4.0-SNAPSHOT",
-            "since": "3.10.6"
+            "version": "1.4.0",
+            "since": "3.15.0"
         },
         {
             "name": "gravitee-resource-api",
@@ -321,8 +321,8 @@
         },
         {
             "name": "gravitee-resource-cache",
-            "version": "1.7.0-SNAPSHOT",
-            "since": "3.5.21"
+            "version": "1.7.0",
+            "since": "3.15.0"
         },
         {
             "name": "gravitee-resource-cache-provider-api",
@@ -363,8 +363,8 @@
         },
         {
             "name": "gravitee-tracer-jaeger",
-            "version": "1.1.0-SNAPSHOT",
-            "since": "3.10.0"
+            "version": "1.1.0",
+            "since": "3.15.0"
         },
         {
             "name": "gravitee-tracing-api",
