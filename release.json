@@ -88,7 +88,7 @@
         },
         {
             "name": "gravitee-node",
-            "version": "1.20.0",
+            "version": "1.20.1",
             "since": "3.10.0"
         },
         {
