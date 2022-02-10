@@ -40,6 +40,11 @@ Since they were deprecated since version 3.12.0, the Rest API endpoints listed b
 |DELETE /applications/{application.id}/subscriptions/{subscription.id}/apikeys/{apiKey.id}
 |===
 
+=== Deprecation of path-based API creation
+
+The path-based approach to create APIs will be removed in our next LTS and has been deprecated. From now on, this mode is disabled by default
+but can still be re-activated from your organization settings.
+
 === Gateway
 
 ==== Custom policy breaking changes
