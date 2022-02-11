@@ -12,7 +12,7 @@
         },
         {
             "name": "gravitee-api-management",
-            "version": "3.15.0",
+            "version": "3.16.0-SNAPSHOT",
             "since": "3.15.0"
         },
         {
@@ -88,7 +88,7 @@
         },
         {
             "name": "gravitee-node",
-            "version": "1.20.0",
+            "version": "1.20.1",
             "since": "3.10.0"
         },
         {
@@ -125,7 +125,7 @@
         },
         {
             "name": "gravitee-policy-cache",
-            "version": "1.14.0",
+            "version": "1.15.0",
             "since": "3.10.0"
         },
         {
@@ -245,7 +245,7 @@
         },
         {
             "name": "gravitee-policy-rest-to-soap",
-            "version": "1.12.0",
+            "version": "1.13.0",
             "since": "3.7.0"
         },
         {
