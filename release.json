@@ -76,7 +76,7 @@
         },
         {
             "name": "gravitee-policy-cache",
-            "version": "1.13.0",
+            "version": "1.13.1",
             "since": "3.10.0"
         },
         {
