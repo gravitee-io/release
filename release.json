@@ -36,7 +36,7 @@
         },
         {
             "name": "gravitee-definition",
-            "version": "1.31.0",
+            "version": "1.32.0",
             "since": "3.15.0"
         },
         {
@@ -79,7 +79,7 @@
         },
         {
             "name": "gravitee-gateway-api",
-            "version": "1.31.0",
+            "version": "1.32.0",
             "since": "3.13.0"
         },
         {
