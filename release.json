@@ -1,6 +1,6 @@
 {
     "name": "Gravitee.io",
-    "version": "3.10.11-SNAPSHOT",
+    "version": "3.10.11",
     "buildTimestamp": "2021-02-17T20:55:06+0000",
     "scmSshUrl": "git@github.com:gravitee-io",
     "scmHttpUrl": "https://github.com/gravitee-io/",
@@ -17,8 +17,8 @@
         },
         {
             "name": "gravitee-api-management",
-            "version": "3.10.11-SNAPSHOT",
-            "since": "3.10.10"
+            "version": "3.10.11",
+            "since": "3.10.11"
         },
         {
             "name": "gravitee-gateway-api",
@@ -183,8 +183,8 @@
         },
         {
             "name": "gravitee-elasticsearch",
-            "version": "3.8.3-SNAPSHOT",
-            "since": "3.10.6"
+            "version": "3.8.3",
+            "since": "3.10.11"
         },
         {
             "name": "gravitee-resource-api",
@@ -266,8 +266,8 @@
         },
         {
             "name": "gravitee-node",
-            "version": "1.16.5-SNAPSHOT",
-            "since": "3.10.0"
+            "version": "1.16.5",
+            "since": "3.10.11"
         },
         {
             "name": "gravitee-notifier-api",
