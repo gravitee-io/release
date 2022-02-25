@@ -202,7 +202,7 @@
         },
         {
             "name": "gravitee-policy-metrics-reporter",
-            "version": "1.2.0",
+            "version": "1.2.1",
             "since": "3.9.0"
         },
         {
