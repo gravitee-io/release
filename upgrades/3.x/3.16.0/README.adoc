@@ -11,8 +11,6 @@ we **highly recommend** updating your API definitions by re-exporting your API.
 Otherwise, if you import an API definition which doesn't contain **crossId**,
 Gravitee will do the best-effort to import your API definition without it.
 
-Learn more about API definition import link:{{ '/apim/3.x/apim_publisherguide_import_apis.html' | relative_url}}[here].
-
 == Deprecations
 
 The Rest API endpoints listed below are deprecated since Gravitee v3.0.9, and will be removed in a future version.
