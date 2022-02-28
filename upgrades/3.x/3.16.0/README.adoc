@@ -25,3 +25,4 @@ The Rest API endpoints listed below are deprecated since Gravitee v3.0.9, and wi
 
 |POST /apis/{api.id}/import/swagger
 |PUT /apis/{api.id}/import/swagger
+|===
