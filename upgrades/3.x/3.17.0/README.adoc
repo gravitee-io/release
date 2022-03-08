@@ -1,0 +1,13 @@
+= Upgrade to 3.17.0
+
+== Breaking Changes
+=== Management API Documentation
+
+From this version, APIM's Management API documentation is now using OpenAPI v3 format, instead of the old Swagger v2 format.
+
+As a consequence, the specification of this API is now accessible from:
+
+ * `{host:port}/management/openapi.yaml`
+ * `{host:port}/management/openapi.json`
+
+To allow a smooth transition, the old URL (`{host:port}/management/swagger.json`) will remain available until 3.18.0.
