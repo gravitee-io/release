@@ -306,7 +306,7 @@
         },
         {
             "name": "gravitee-policy-ssl-enforcement",
-            "version": "1.2.0"
+            "version": "1.2.1"
         },
         {
             "name": "gravitee-policy-json-threat-protection",
