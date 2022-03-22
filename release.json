@@ -46,7 +46,7 @@
         },
         {
             "name": "gravitee-expression-language",
-            "version": "1.9.0",
+            "version": "1.9.1",
             "since": "3.15.4"
         },
         {
