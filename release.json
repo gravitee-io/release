@@ -267,7 +267,7 @@
         },
         {
             "name": "gravitee-policy-transformheaders",
-            "version": "1.9.1",
+            "version": "1.10.0",
             "since": "3.5.21"
         },
         {
