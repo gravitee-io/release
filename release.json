@@ -253,7 +253,7 @@
         },
         {
             "name": "gravitee-policy-json-validation",
-            "version": "1.6.0"
+            "version": "1.6.1"
         },
         {
             "name": "gravitee-policy-xml-validation",
@@ -310,16 +310,16 @@
         },
         {
             "name": "gravitee-policy-json-threat-protection",
-            "version": "1.2.2",
+            "version": "1.2.3",
             "since": "3.10.1"
         },
         {
             "name": "gravitee-policy-regex-threat-protection",
-            "version": "1.2.0"
+            "version": "1.2.1"
         },
         {
             "name": "gravitee-policy-xml-threat-protection",
-            "version": "1.2.1",
+            "version": "1.2.2",
             "since": "3.9.4"
         },
         {
