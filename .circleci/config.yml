@@ -379,7 +379,7 @@ workflows:
           secrethub_org: graviteeio
           secrethub_repo: cicd
           gio_release_version: << pipeline.parameters.gio_release_version >>
-          artifactory_repo_name: "nexus-and-non-dry-run-releases"
+          artifactory_repo_name: "nexus-and-dry-run-releases"
           ae_version: << pipeline.parameters.ae_version >>
           license_version: << pipeline.parameters.license_version >>
           notifier_slack_version: << pipeline.parameters.notifier_slack_version >>
