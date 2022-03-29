@@ -54,10 +54,6 @@
             "since": "3.10.0"
         },
         {
-            "name": "gravitee-notifier-email",
-            "version": "1.3.1"
-        },
-        {
             "name": "gravitee-policy-apikey",
             "version": "2.4.0",
             "since": "3.12.0"
@@ -248,11 +244,6 @@
             "since": "3.15.0"
         },
         {
-            "name": "gravitee-reporter-kafka",
-            "version": "1.3.0",
-            "since": "3.10.6"
-        },
-        {
             "name": "gravitee-reporter-tcp",
             "version": "1.4.0",
             "since": "3.15.0"
@@ -273,18 +264,9 @@
             "since": "3.10.0"
         },
         {
-            "name": "gravitee-resource-oauth2-provider-keycloak",
-            "version": "1.9.1",
-            "since": "3.10.0"
-        },
-        {
             "name": "gravitee-service-discovery-consul",
             "version": "1.3.0",
             "since": "3.10.0"
-        },
-        {
-            "name": "gravitee-service-discovery-eureka",
-            "version": "1.1.1"
         },
         {
             "name": "gravitee-tracer-jaeger",
