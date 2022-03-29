@@ -2,6 +2,8 @@
 
 ifdef::env-github[]
 
+include::3.17.0/README.adoc[leveloffset=+1]
+
 include::3.16.2/README.adoc[leveloffset=+1]
 
 include::3.16.0/README.adoc[leveloffset=+1]
