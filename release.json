@@ -206,7 +206,7 @@
         },
         {
             "name": "gravitee-resource-oauth2-provider-am",
-            "version": "1.14.1",
+            "version": "1.14.2",
             "since": "3.10.0"
         },
         {
