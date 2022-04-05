@@ -39,7 +39,7 @@ parameters:
     description: "The Gravitee.io version number of the Gravitee.io EE Email Notifier Plugin"
 
 orbs:
-  secrethub: secrethub/cli@1.0.0
+  keeper: gravitee-io/keeper@0.6.2
   gravitee: gravitee-io/gravitee@1.0
   slack: circleci/slack@4.4.0
 
@@ -64,7 +64,7 @@ jobs:
       SLACK_ACCESS_TOKEN: $SLACK_ACCESS_TOKEN
     steps:
       - checkout
-      - secrethub/install
+      - keeper/install
       - gravitee/nexus_staging_prepare_bucket:
           dry_run: true
           maven_container_image_tag: stable-latest
@@ -93,8 +93,8 @@ jobs:
                     docker images
                     # --> .secrets.json is used by Gravitee CI CD Orchestrator to authenticate to Circle CI
                     CCI_SECRET_FILE=$PWD/.secrets.json
-                    secrethub read --out-file ${CCI_SECRET_FILE} ${SECRETHUB_ORG}/${SECRETHUB_REPO}/graviteebot/circleci/api/.secret.json
-                    secrethub read ${SECRETHUB_ORG}/${SECRETHUB_REPO}/graviteebot/circleci/secrethub-svc-account/token > ./.secrethub.credential
+                    ksm secret notation keeper://G4hBnFUDBYb9Sw3TxhvjHg/custom_field/.secret.json > ${CCI_SECRET_FILE}
+                    ksm secret notation keeper://OFhLNNrENeFGo0zd9JNaJA/custom_field/token > ./.secrethub.credential
                     ls -allh ${CCI_SECRET_FILE}
                     # Docker volumes to map pipeline checked out git tree, .env file and .secrets.json files inside the docker container
                     # export DOCKER_VOLUMES="-v $PWD:/graviteeio/cicd/pipeline -v $PWD/.env:/graviteeio/cicd/.env -v $PWD/.secrets.json:/graviteeio/cicd/.secrets.json"
@@ -145,7 +145,7 @@ jobs:
       SECRETHUB_REPO: cicd
     steps:
       - checkout
-      - secrethub/install
+      - keeper/install
       - gravitee/nexus_staging_prepare_bucket:
           dry_run: true
           maven_container_image_tag: stable-latest
@@ -174,8 +174,8 @@ jobs:
                     docker images
                     # --> .secrets.json is used by Gravitee CI CD Orchestrator to authenticate to Circle CI
                     CCI_SECRET_FILE=$PWD/.secrets.json
-                    secrethub read --out-file ${CCI_SECRET_FILE} ${SECRETHUB_ORG}/${SECRETHUB_REPO}/graviteebot/circleci/api/.secret.json
-                    secrethub read ${SECRETHUB_ORG}/${SECRETHUB_REPO}/graviteebot/circleci/secrethub-svc-account/token > ./.secrethub.credential
+                    ksm secret notation keeper://G4hBnFUDBYb9Sw3TxhvjHg/custom_field/.secret.json > ${CCI_SECRET_FILE}
+                    ksm secret notation keeper://OFhLNNrENeFGo0zd9JNaJA/custom_field/token > ./.secrethub.credential
                     ls -allh ${CCI_SECRET_FILE}
                     # Docker volumes to map pipeline checked out git tree, .env file and .secrets.json files inside the docker container
                     # export DOCKER_VOLUMES="-v $PWD:/graviteeio/cicd/pipeline -v $PWD/.env:/graviteeio/cicd/.env -v $PWD/.secrets.json:/graviteeio/cicd/.secrets.json"
@@ -199,7 +199,7 @@ jobs:
       SECRETHUB_REPO: cicd
     steps:
       - checkout
-      - secrethub/install
+      - keeper/install
       - gravitee/nexus_staging_prepare_bucket:
           dry_run: false
           maven_container_image_tag: stable-latest
@@ -227,8 +227,8 @@ jobs:
                     docker images
                     # --> .secrets.json is used by Gravitee CI CD Orchestrator to authenticate to Circle CI
                     CCI_SECRET_FILE=$PWD/.secrets.json
-                    secrethub read --out-file ${CCI_SECRET_FILE} ${SECRETHUB_ORG}/${SECRETHUB_REPO}/graviteebot/circleci/api/.secret.json
-                    secrethub read ${SECRETHUB_ORG}/${SECRETHUB_REPO}/graviteebot/circleci/secrethub-svc-account/token > ./.secrethub.credential
+                    ksm secret notation keeper://G4hBnFUDBYb9Sw3TxhvjHg/custom_field/.secret.json > ${CCI_SECRET_FILE}
+                    ksm secret notation keeper://OFhLNNrENeFGo0zd9JNaJA/custom_field/token > ./.secrethub.credential
                     ls -allh ${CCI_SECRET_FILE}
                     # Docker volumes to map pipeline checked out git tree, .env file and .secrets.json files inside the docker container
                     # export DOCKER_VOLUMES="-v $PWD:/graviteeio/cicd/pipeline -v $PWD/.env:/graviteeio/cicd/.env -v $PWD/.secrets.json:/graviteeio/cicd/.secrets.json"
@@ -253,7 +253,7 @@ jobs:
       SECRETHUB_REPO: cicd
     steps:
       - checkout
-      - secrethub/install
+      - keeper/install
       - run:
           name: "Go back to release"
           command: |
@@ -281,8 +281,8 @@ jobs:
                     docker images
                     # --> .secrets.json is used by Gravitee CI CD Orchestrator to authenticate to Circle CI
                     CCI_SECRET_FILE=$PWD/.secrets.json
-                    secrethub read --out-file ${CCI_SECRET_FILE} ${SECRETHUB_ORG}/${SECRETHUB_REPO}/graviteebot/circleci/api/.secret.json
-                    secrethub read ${SECRETHUB_ORG}/${SECRETHUB_REPO}/graviteebot/circleci/secrethub-svc-account/token > ./.secrethub.credential
+                    ksm secret notation keeper://G4hBnFUDBYb9Sw3TxhvjHg/custom_field/.secret.json > ${CCI_SECRET_FILE}
+                    ksm secret notation keeper://OFhLNNrENeFGo0zd9JNaJA/custom_field/token > ./.secrethub.credential
                     ls -allh ${CCI_SECRET_FILE}
                     # Docker volumes to map pipeline checked out git tree, .env file and .secrets.json files inside the docker container
                     # export DOCKER_VOLUMES="-v $PWD:/graviteeio/cicd/pipeline -v $PWD/.env:/graviteeio/cicd/.env -v $PWD/.secrets.json:/graviteeio/cicd/.secrets.json"
