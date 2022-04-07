@@ -40,7 +40,7 @@ parameters:
 
 orbs:
   secrethub: secrethub/cli@1.0.0
-  gravitee: gravitee-io/gravitee@1.0
+  gravitee: gravitee-io/gravitee@1.0.44
   slack: circleci/slack@4.4.0
 
 jobs:
