@@ -3,7 +3,7 @@ version: 2.1
 parameters:
   gio_action:
     type: enum
-    enum: [release, dry_release, nexus_staging, publish_bundles, publish_rpms, publish_docs, cicd_test_gpg, blank]
+    enum: [release, dry_release, nexus_staging, publish_bundles, publish_docs, blank]
     default: blank
   gio_release_version:
     type: string
@@ -56,7 +56,7 @@ jobs:
 
   bom_to_slack:
     machine:
-      image: 'ubuntu-1604:201903-01'
+      image: 'ubuntu-2004:202201-01'
     environment:
       GITHUB_ORG: ${GITHUB_ORG}
       SECRETHUB_ORG: graviteeio
@@ -103,42 +103,14 @@ jobs:
                     docker run --name orchestrator ${ENV_VARS} ${DOCKER_VOLUMES} --restart no -it quay.io/gravitee-lab/cicd-orchestrator:stable-latest -s bom --dry-run
                     exit "$?"
       - run:
-          name: "Check Release B.O.M. To Publish to Slack (Release Execution Plan, built from Release.json)"
+          name: "Display Release B.O.M."
           command: |
-                    echo "Here is the generated Release BOM File (Release Execution Plan, built from Release.json)"
+                    echo "Here is the generated Release BOM file:"
                     cat ./.circleci/release.bom
-      - run:
-          name: "Set Release B.O.M. SLACK RAW TEMPLATE in Env To Publish to Slack (Release Execution Plan, built from Release.json)"
-          command: |
-                    echo '# The [GRAVITEE_BOM_SLACK_TEMPLATE] will be available in the next step (the Slack Orb Command)'
-                    echo 'export GRAVITEE_BOM_SLACK_TEMPLATE=$(cat ./.circleci/release.bom.slack)' >> $BASH_ENV
-      - run:
-          name: "Check Release B.O.M. SLACK TEMPLATE To Publish to Slack (Release Execution Plan, built from Release.json)"
-          command: |
-                    echo ''
-                    echo "Here is the raw generated Release BOM File (Release Execution Plan, built from Release.json) : "
-                    echo ''
-                    echo $GRAVITEE_BOM_SLACK_TEMPLATE
-                    echo ''
-                    echo "Here is the beautfied generated Release BOM File (Release Execution Plan, built from Release.json)"
-                    echo ''
-                    cat ./.circleci/release.bom.slack.beautified
-                    echo ''
-                    echo "  Copy the above JSON, ans Go and Check how this Slack Template "
-                    echo "  renders in Slack, at https://app.slack.com/block-kit-builder/"
-                    echo ''
-      - slack/notify:
-          event: pass
-          template: GRAVITEE_BOM_SLACK_TEMPLATE
-          channel: support
-      - run:
-          name: "Tear down the Release B.O.M. File Published to Slack (Release Execution Plan, built from Release.json)"
-          command: |
-                    rm ./.circleci/release.bom
 
   dry_run_orchestrator:
     machine:
-      image: 'ubuntu-1604:201903-01'
+      image: 'ubuntu-2004:202201-01'
     environment:
       GITHUB_ORG: ${GITHUB_ORG}
       SECRETHUB_ORG: graviteeio
@@ -192,7 +164,7 @@ jobs:
 
   run_orchestrator:
     machine:
-      image: 'ubuntu-1604:201903-01'
+      image: 'ubuntu-2004:202201-01'
     environment:
       GITHUB_ORG: ${GITHUB_ORG}
       SECRETHUB_ORG: graviteeio
@@ -245,7 +217,7 @@ jobs:
 
   orchestrated_nexus_staging:
     machine:
-      image: 'ubuntu-1604:201903-01'
+      image: 'ubuntu-2004:202201-01'
     environment:
       GITHUB_ORG: ${GITHUB_ORG}
       GIO_PRODUCT_VERSION: << pipeline.parameters.gio_release_version >>
@@ -386,16 +358,6 @@ workflows:
           notifier_webhook_version: << pipeline.parameters.notifier_webhook_version >>
           notifier_email_version: << pipeline.parameters.notifier_email_version >>
           with_ee: << pipeline.parameters.with_ee >>
-
-  publish_rpms:
-    when:
-      equal: [ publish_rpms, << pipeline.parameters.gio_action >> ]
-    jobs:
-      - gravitee/publish_apim_rpms:
-          context: cicd-orchestrator
-          secrethub_org: graviteeio
-          secrethub_repo: cicd
-          gio_release_version: << pipeline.parameters.gio_release_version >>
 
   publish_docs:
     when:
