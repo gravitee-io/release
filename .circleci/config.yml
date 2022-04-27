@@ -37,10 +37,14 @@ parameters:
     type: string
     default: $NOTIFIER_EMAIL_VERSION
     description: "The Gravitee.io version number of the Gravitee.io EE Email Notifier Plugin"
+  previous_version:
+    type: string
+    default: ""
+    description: "The Gravitee.io previous version needed to be compared with the current one"
 
 orbs:
   secrethub: secrethub/cli@1.0.0
-  gravitee: gravitee-io/gravitee@1.0
+  gravitee: gravitee-io/gravitee@dev:1.0.47
   slack: circleci/slack@4.4.0
 
 jobs:
@@ -373,7 +377,45 @@ workflows:
     when:
       equal: [ publish_bundles, << pipeline.parameters.gio_action >> ]
     jobs:
-      - gravitee/publish_bundles:
+      - gravitee/downloading_bundles:
+          name: download bundles
+          context: cicd-orchestrator
+          dry_run: << pipeline.parameters.dry_run >>
+          secrethub_org: graviteeio
+          secrethub_repo: cicd
+          gio_release_version: << pipeline.parameters.gio_release_version >>
+          artifactory_repo_name: "nexus-and-non-dry-run-releases"
+          previous_version: << pipeline.parameters.previous_version >>
+      - bundle_publish_approval: 
+          name: approval
+          type: approval
+          requires:
+            - download bundles
+      - gravitee/publish_bundles_ce:
+          requires:
+            - approval
+          name: publishing ce bundle
+          context: cicd-orchestrator
+          dry_run: << pipeline.parameters.dry_run >>
+          secrethub_org: graviteeio
+          secrethub_repo: cicd
+          gio_release_version: << pipeline.parameters.gio_release_version >>
+          artifactory_repo_name: "nexus-and-non-dry-run-releases"
+          ae_version: << pipeline.parameters.ae_version >>
+          license_version: << pipeline.parameters.license_version >>
+          notifier_slack_version: << pipeline.parameters.notifier_slack_version >>
+          notifier_webhook_version: << pipeline.parameters.notifier_webhook_version >>
+          notifier_email_version: << pipeline.parameters.notifier_email_version >>
+          with_ee: << pipeline.parameters.with_ee >>
+      - bundle_publish_approval: 
+          name: second_approval
+          type: approval
+          requires:
+            - publishing ce bundle
+      - gravitee/publish_bundles_ee:
+          requires:
+            - second_approval
+          name: publishing ee bundle
           context: cicd-orchestrator
           dry_run: << pipeline.parameters.dry_run >>
           secrethub_org: graviteeio
