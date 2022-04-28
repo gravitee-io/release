@@ -21,7 +21,7 @@
         },
         {
             "name": "gravitee-elasticsearch",
-            "version": "3.11.0",
+            "version": "3.12.0",
             "since": "3.14.0"
         },
         {
@@ -91,7 +91,7 @@
         },
         {
             "name": "gravitee-policy-html-json",
-            "version": "1.6.1"
+            "version": "1.6.0"
         },
         {
             "name": "gravitee-policy-http-signature",
@@ -104,12 +104,12 @@
         },
         {
             "name": "gravitee-policy-json-threat-protection",
-            "version": "1.3.2",
+            "version": "1.3.3",
             "since": "3.10.1"
         },
         {
             "name": "gravitee-policy-json-to-json",
-            "version": "1.7.0"
+            "version": "1.7.1"
         },
         {
             "name": "gravitee-policy-json-validation",
@@ -117,11 +117,11 @@
         },
         {
             "name": "gravitee-policy-json-xml",
-            "version": "1.1.0"
+            "version": "1.1.1"
         },
         {
             "name": "gravitee-policy-jws",
-            "version": "1.3.1"
+            "version": "1.3.2"
         },
         {
             "name": "gravitee-policy-jwt",
@@ -140,7 +140,7 @@
         },
         {
             "name": "gravitee-policy-metrics-reporter",
-            "version": "1.2.1",
+            "version": "1.2.2",
             "since": "3.9.0"
         },
         {
@@ -158,7 +158,7 @@
         },
         {
             "name": "gravitee-policy-override-http-method",
-            "version": "1.3.2"
+            "version": "1.3.0"
         },
         {
             "name": "gravitee-policy-ratelimit",
@@ -167,7 +167,7 @@
         },
         {
             "name": "gravitee-policy-regex-threat-protection",
-            "version": "1.3.1"
+            "version": "1.3.2"
         },
         {
             "name": "gravitee-policy-request-content-limit",
@@ -196,7 +196,7 @@
         },
         {
             "name": "gravitee-policy-ssl-enforcement",
-            "version": "1.2.0"
+            "version": "1.2.1"
         },
         {
             "name": "gravitee-policy-traffic-shadowing",
@@ -218,11 +218,11 @@
         },
         {
             "name": "gravitee-policy-xml-json",
-            "version": "1.8.0"
+            "version": "1.8.1"
         },
         {
             "name": "gravitee-policy-xml-threat-protection",
-            "version": "1.3.1",
+            "version": "1.3.2",
             "since": "3.9.4"
         },
         {
@@ -250,7 +250,7 @@
         },
         {
             "name": "gravitee-resource-oauth2-provider-am",
-            "version": "1.14.1",
+            "version": "1.14.2",
             "since": "3.10.0"
         },
         {
