@@ -170,7 +170,12 @@
             "since": "3.5.21"
         },
         {
-            "name": "gravitee-elasticsearch",
+            "name": "gravitee-common-elasticsearch",
+            "version": "3.5.6",
+            "since": "3.5.29"
+        },
+        {
+            "name": "gravitee-reporter-elasticsearch",
             "version": "3.5.6",
             "since": "3.5.29"
         },
@@ -341,6 +346,7 @@
             "graviteeio-node"
         ],
         [
+            "gravitee-common-elasticsearch",
             "gravitee-resource-oauth2-provider-api"
         ],
         [
@@ -388,7 +394,7 @@
             "gravitee-policy-xml-threat-protection",
             "gravitee-policy-retry",
             "gravitee-policy-http-signature",
-            "gravitee-elasticsearch",
+            "gravitee-reporter-elasticsearch",
             "gravitee-reporter-file",
             "gravitee-reporter-kafka",
             "gravitee-reporter-tcp",
