@@ -379,7 +379,7 @@ workflows:
     jobs:
       - gravitee/downloading_bundles:
           name: download bundles
-          context: cicd-orchestrator
+          #context: cicd-orchestrator
           dry_run: << pipeline.parameters.dry_run >>
           secrethub_org: graviteeio
           secrethub_repo: cicd
