@@ -6,9 +6,28 @@
     "scmHttpUrl": "https://github.com/gravitee-io/",
     "components": [
         {
+            "name": "gravitee-alert-api",
+            "version": "1.7.1",
+            "since": "3.9.0"
+        },
+        {
+            "name": "gravitee-api-management",
+            "version": "3.10.15-SNAPSHOT",
+            "since": "3.10.14"
+        },
+        {
+            "name": "gravitee-cockpit-connectors-ws",
+            "version": "2.0.1"
+        },
+        {
             "name": "gravitee-common",
             "version": "1.20.5",
             "since": "3.8.7"
+        },
+        {
+            "name": "gravitee-common-elasticsearch",
+            "version": "3.8.4",
+            "since": "3.10.11"
         },
         {
             "name": "gravitee-definition",
@@ -16,9 +35,37 @@
             "since": "3.10.9"
         },
         {
-            "name": "gravitee-api-management",
-            "version": "3.10.15-SNAPSHOT",
-            "since": "3.10.14"
+            "name": "gravitee-expression-language",
+            "version": "1.6.3",
+            "since": "3.10.4"
+        },
+        {
+            "name": "gravitee-fetcher-api",
+            "version": "1.4.0"
+        },
+        {
+            "name": "gravitee-fetcher-bitbucket",
+            "version": "1.7.0",
+            "since": "3.10.0"
+        },
+        {
+            "name": "gravitee-fetcher-git",
+            "version": "1.7.0"
+        },
+        {
+            "name": "gravitee-fetcher-github",
+            "version": "1.6.0",
+            "since": "3.10.0"
+        },
+        {
+            "name": "gravitee-fetcher-gitlab",
+            "version": "1.11.0",
+            "since": "3.10.0"
+        },
+        {
+            "name": "gravitee-fetcher-http",
+            "version": "1.12.0",
+            "since": "3.10.0"
         },
         {
             "name": "gravitee-gateway-api",
@@ -28,241 +75,6 @@
         {
             "name": "gravitee-identityprovider-api",
             "version": "1.0.0"
-        },
-        {
-            "name": "gravitee-plugin",
-            "version": "1.18.0",
-            "since": "3.10.0"
-        },
-        {
-            "name": "gravitee-policy-api",
-            "version": "1.11.0",
-            "since": "3.9.0"
-        },
-        {
-            "name": "gravitee-policy-apikey",
-            "version": "2.2.0"
-        },
-        {
-            "name": "gravitee-policy-ratelimit",
-            "version": "1.13.2",
-            "since": "3.5.21"
-        },
-        {
-            "name": "gravitee-policy-request-content-limit",
-            "version": "1.7.0"
-        },
-        {
-            "name": "gravitee-policy-transformheaders",
-            "version": "1.8.2",
-            "since": "3.5.21"
-        },
-        {
-            "name": "gravitee-policy-rest-to-soap",
-            "version": "1.12.0",
-            "since": "3.7.0"
-        },
-        {
-            "name": "gravitee-policy-transformqueryparams",
-            "version": "1.6.0"
-        },
-        {
-            "name": "gravitee-policy-ipfiltering",
-            "version": "1.8.0"
-        },
-        {
-            "name": "gravitee-policy-mock",
-            "version": "1.12.0"
-        },
-        {
-            "name": "gravitee-policy-cache",
-            "version": "1.13.1",
-            "since": "3.10.0"
-        },
-        {
-            "name": "gravitee-policy-xslt",
-            "version": "1.6.1"
-        },
-        {
-            "name": "gravitee-policy-xml-json",
-            "version": "1.7.1"
-        },
-        {
-            "name": "gravitee-policy-oauth2",
-            "version": "1.18.0",
-            "since": "3.9.0"
-        },
-        {
-            "name": "gravitee-policy-html-json",
-            "version": "1.6.0"
-        },
-        {
-            "name": "gravitee-policy-groovy",
-            "version": "1.15.0",
-            "since": "3.10.0"
-        },
-        {
-            "name": "gravitee-policy-dynamic-routing",
-            "version": "1.11.1",
-            "since": "3.5.21"
-        },
-        {
-            "name": "gravitee-policy-jwt",
-            "version": "1.20.0",
-            "since": "3.10.0"
-        },
-        {
-            "name": "gravitee-policy-override-http-method",
-            "version": "1.3.0"
-        },
-        {
-            "name": "gravitee-policy-request-validation",
-            "version": "1.12.0"
-        },
-        {
-            "name": "gravitee-policy-resource-filtering",
-            "version": "1.8.0"
-        },
-        {
-            "name": "gravitee-policy-json-to-json",
-            "version": "1.6.1"
-        },
-        {
-            "name": "gravitee-policy-json-xml",
-            "version": "1.0.1"
-        },
-        {
-            "name": "gravitee-policy-keyless",
-            "version": "1.4.0",
-            "since": "3.9.0"
-        },
-        {
-            "name": "gravitee-policy-openid-connect-userinfo",
-            "version": "1.4.0"
-        },
-        {
-            "name": "gravitee-policy-latency",
-            "version": "1.4.0",
-            "since": "3.10.0"
-        },
-        {
-            "name": "gravitee-policy-assign-content",
-            "version": "1.6.0"
-        },
-        {
-            "name": "gravitee-policy-jws",
-            "version": "1.3.2"
-        },
-        {
-            "name": "gravitee-policy-callout-http",
-            "version": "1.13.0"
-        },
-        {
-            "name": "gravitee-policy-assign-attributes",
-            "version": "1.5.0"
-        },
-        {
-            "name": "gravitee-policy-metrics-reporter",
-            "version": "1.1.1",
-            "since": "3.9.0"
-        },
-        {
-            "name": "gravitee-reporter-api",
-            "version": "1.21.0",
-            "since": "3.10.1"
-        },
-        {
-            "name": "gravitee-reporter-file",
-            "version": "2.4.3",
-            "since": "3.10.6"
-        },
-        {
-            "name": "gravitee-reporter-tcp",
-            "version": "1.3.3",
-            "since": "3.10.6"
-        },
-        {
-            "name": "gravitee-common-elasticsearch",
-            "version": "3.8.4",
-            "since": "3.10.11"
-        },
-        {
-            "name": "gravitee-reporter-elasticsearch",
-            "version": "3.8.4",
-            "since": "3.10.11"
-        },
-        {
-            "name": "gravitee-resource-api",
-            "version": "1.1.0"
-        },
-        {
-            "name": "gravitee-resource-cache",
-            "version": "1.6.2",
-            "since": "3.5.21"
-        },
-        {
-            "name": "gravitee-resource-oauth2-provider-api",
-            "version": "1.3.0"
-        },
-        {
-            "name": "gravitee-resource-oauth2-provider-generic",
-            "version": "1.16.1",
-            "since": "3.10.0"
-        },
-        {
-            "name": "gravitee-resource-oauth2-provider-am",
-            "version": "1.14.2",
-            "since": "3.10.0"
-        },
-        {
-            "name": "gravitee-fetcher-api",
-            "version": "1.4.0"
-        },
-        {
-            "name": "gravitee-fetcher-http",
-            "version": "1.12.0",
-            "since": "3.10.0"
-        },
-        {
-            "name": "gravitee-fetcher-git",
-            "version": "1.7.0"
-        },
-        {
-            "name": "gravitee-fetcher-gitlab",
-            "version": "1.11.0",
-            "since": "3.10.0"
-        },
-        {
-            "name": "gravitee-fetcher-bitbucket",
-            "version": "1.7.0",
-            "since": "3.10.0"
-        },
-        {
-            "name": "gravitee-fetcher-github",
-            "version": "1.6.0",
-            "since": "3.10.0"
-        },
-        {
-            "name": "gravitee-expression-language",
-            "version": "1.6.3",
-            "since": "3.10.4"
-        },
-        {
-            "name": "gravitee-policy-url-rewriting",
-            "version": "1.4.0"
-        },
-        {
-            "name": "gravitee-policy-json-validation",
-            "version": "1.6.1"
-        },
-        {
-            "name": "gravitee-policy-xml-validation",
-            "version": "1.1.0"
-        },
-        {
-            "name": "gravitee-reporter-kafka",
-            "version": "1.3.0",
-            "since": "3.10.6"
         },
         {
             "name": "gravitee-node",
@@ -279,9 +91,246 @@
             "version": "1.3.0"
         },
         {
-            "name": "gravitee-alert-api",
-            "version": "1.7.1",
+            "name": "gravitee-plugin",
+            "version": "1.18.0",
+            "since": "3.10.0"
+        },
+        {
+            "name": "gravitee-policy-api",
+            "version": "1.11.0",
             "since": "3.9.0"
+        },
+        {
+            "name": "gravitee-policy-apikey",
+            "version": "2.2.0"
+        },
+        {
+            "name": "gravitee-policy-assign-attributes",
+            "version": "1.5.0"
+        },
+        {
+            "name": "gravitee-policy-assign-content",
+            "version": "1.6.0"
+        },
+        {
+            "name": "gravitee-policy-cache",
+            "version": "1.13.1",
+            "since": "3.10.0"
+        },
+        {
+            "name": "gravitee-policy-callout-http",
+            "version": "1.13.0"
+        },
+        {
+            "name": "gravitee-policy-dynamic-routing",
+            "version": "1.11.1",
+            "since": "3.5.21"
+        },
+        {
+            "name": "gravitee-policy-generate-jwt",
+            "version": "1.5.0"
+        },
+        {
+            "name": "gravitee-policy-groovy",
+            "version": "1.15.0",
+            "since": "3.10.0"
+        },
+        {
+            "name": "gravitee-policy-html-json",
+            "version": "1.6.0"
+        },
+        {
+            "name": "gravitee-policy-http-signature",
+            "version": "1.3.0",
+            "since": "3.7.0"
+        },
+        {
+            "name": "gravitee-policy-ipfiltering",
+            "version": "1.8.0"
+        },
+        {
+            "name": "gravitee-policy-json-threat-protection",
+            "version": "1.2.3",
+            "since": "3.10.1"
+        },
+        {
+            "name": "gravitee-policy-json-to-json",
+            "version": "1.6.1"
+        },
+        {
+            "name": "gravitee-policy-json-validation",
+            "version": "1.6.1"
+        },
+        {
+            "name": "gravitee-policy-json-xml",
+            "version": "1.0.1"
+        },
+        {
+            "name": "gravitee-policy-jws",
+            "version": "1.3.2"
+        },
+        {
+            "name": "gravitee-policy-jwt",
+            "version": "1.20.0",
+            "since": "3.10.0"
+        },
+        {
+            "name": "gravitee-policy-keyless",
+            "version": "1.4.0",
+            "since": "3.9.0"
+        },
+        {
+            "name": "gravitee-policy-latency",
+            "version": "1.4.0",
+            "since": "3.10.0"
+        },
+        {
+            "name": "gravitee-policy-metrics-reporter",
+            "version": "1.1.1",
+            "since": "3.9.0"
+        },
+        {
+            "name": "gravitee-policy-mock",
+            "version": "1.12.0"
+        },
+        {
+            "name": "gravitee-policy-oauth2",
+            "version": "1.18.0",
+            "since": "3.9.0"
+        },
+        {
+            "name": "gravitee-policy-openid-connect-userinfo",
+            "version": "1.4.0"
+        },
+        {
+            "name": "gravitee-policy-override-http-method",
+            "version": "1.3.0"
+        },
+        {
+            "name": "gravitee-policy-ratelimit",
+            "version": "1.13.2",
+            "since": "3.5.21"
+        },
+        {
+            "name": "gravitee-policy-regex-threat-protection",
+            "version": "1.2.1"
+        },
+        {
+            "name": "gravitee-policy-request-content-limit",
+            "version": "1.7.0"
+        },
+        {
+            "name": "gravitee-policy-request-validation",
+            "version": "1.12.0"
+        },
+        {
+            "name": "gravitee-policy-resource-filtering",
+            "version": "1.8.0"
+        },
+        {
+            "name": "gravitee-policy-rest-to-soap",
+            "version": "1.12.0",
+            "since": "3.7.0"
+        },
+        {
+            "name": "gravitee-policy-retry",
+            "version": "2.0.0"
+        },
+        {
+            "name": "gravitee-policy-role-based-access-control",
+            "version": "1.1.0"
+        },
+        {
+            "name": "gravitee-policy-ssl-enforcement",
+            "version": "1.2.1"
+        },
+        {
+            "name": "gravitee-policy-traffic-shadowing",
+            "version": "1.1.0",
+            "since": "3.8.0"
+        },
+        {
+            "name": "gravitee-policy-transformheaders",
+            "version": "1.8.2",
+            "since": "3.5.21"
+        },
+        {
+            "name": "gravitee-policy-transformqueryparams",
+            "version": "1.6.0"
+        },
+        {
+            "name": "gravitee-policy-url-rewriting",
+            "version": "1.4.0"
+        },
+        {
+            "name": "gravitee-policy-xml-json",
+            "version": "1.7.1"
+        },
+        {
+            "name": "gravitee-policy-xml-threat-protection",
+            "version": "1.2.2",
+            "since": "3.9.4"
+        },
+        {
+            "name": "gravitee-policy-xml-validation",
+            "version": "1.1.0"
+        },
+        {
+            "name": "gravitee-policy-xslt",
+            "version": "1.6.1"
+        },
+        {
+            "name": "gravitee-reporter-api",
+            "version": "1.21.0",
+            "since": "3.10.1"
+        },
+        {
+            "name": "gravitee-reporter-elasticsearch",
+            "version": "3.8.4",
+            "since": "3.10.11"
+        },
+        {
+            "name": "gravitee-reporter-file",
+            "version": "2.4.3",
+            "since": "3.10.6"
+        },
+        {
+            "name": "gravitee-reporter-kafka",
+            "version": "1.3.0",
+            "since": "3.10.6"
+        },
+        {
+            "name": "gravitee-reporter-tcp",
+            "version": "1.3.3",
+            "since": "3.10.6"
+        },
+        {
+            "name": "gravitee-resource-api",
+            "version": "1.1.0"
+        },
+        {
+            "name": "gravitee-resource-cache",
+            "version": "1.6.2",
+            "since": "3.5.21"
+        },
+        {
+            "name": "gravitee-resource-cache-provider-api",
+            "version": "1.1.0",
+            "since": "3.10.0"
+        },
+        {
+            "name": "gravitee-resource-oauth2-provider-am",
+            "version": "1.14.2",
+            "since": "3.10.0"
+        },
+        {
+            "name": "gravitee-resource-oauth2-provider-api",
+            "version": "1.3.0"
+        },
+        {
+            "name": "gravitee-resource-oauth2-provider-generic",
+            "version": "1.16.1",
+            "since": "3.10.0"
         },
         {
             "name": "gravitee-service-discovery-api",
@@ -293,57 +342,8 @@
             "since": "3.10.0"
         },
         {
-            "name": "gravitee-policy-generate-jwt",
-            "version": "1.5.0"
-        },
-        {
             "name": "gravitee-service-discovery-eureka",
             "version": "1.1.1"
-        },
-        {
-            "name": "gravitee-policy-role-based-access-control",
-            "version": "1.1.0"
-        },
-        {
-            "name": "gravitee-policy-ssl-enforcement",
-            "version": "1.2.1"
-        },
-        {
-            "name": "gravitee-policy-json-threat-protection",
-            "version": "1.2.3",
-            "since": "3.10.1"
-        },
-        {
-            "name": "gravitee-policy-regex-threat-protection",
-            "version": "1.2.1"
-        },
-        {
-            "name": "gravitee-policy-xml-threat-protection",
-            "version": "1.2.2",
-            "since": "3.9.4"
-        },
-        {
-            "name": "gravitee-policy-retry",
-            "version": "2.0.0"
-        },
-        {
-            "name": "gravitee-policy-http-signature",
-            "version": "1.3.0",
-            "since": "3.7.0"
-        },
-        {
-            "name": "gravitee-cockpit-connectors-ws",
-            "version": "2.0.1"
-        },
-        {
-            "name": "gravitee-policy-traffic-shadowing",
-            "version": "1.1.0",
-            "since": "3.8.0"
-        },
-        {
-            "name": "gravitee-resource-cache-provider-api",
-            "version": "1.1.0",
-            "since": "3.10.0"
         },
         {
             "name": "gravitee-tracing-api",
