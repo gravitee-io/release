@@ -223,7 +223,7 @@
         },
         {
             "name": "gravitee-resource-oauth2-provider-generic",
-            "version": "1.16.1"
+            "version": "1.16.2"
         },
         {
             "name": "gravitee-service-discovery-consul",
