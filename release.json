@@ -203,7 +203,7 @@
         },
         {
             "name": "gravitee-policy-xslt",
-            "version": "1.6.0"
+            "version": "1.6.1"
         },
         {
             "name": "gravitee-reporter-elasticsearch",
@@ -231,7 +231,7 @@
         },
         {
             "name": "gravitee-resource-oauth2-provider-generic",
-            "version": "1.16.1"
+            "version": "1.16.2"
         },
         {
             "name": "gravitee-resource-oauth2-provider-keycloak",
