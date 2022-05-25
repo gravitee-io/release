@@ -1,13 +1,13 @@
 {
     "name": "Gravitee.io",
-    "version": "3.10.15",
+    "version": "3.10.16-SNAPSHOT",
     "buildTimestamp": "2021-02-17T20:55:06+0000",
     "scmSshUrl": "git@github.com:gravitee-io",
     "scmHttpUrl": "https://github.com/gravitee-io/",
     "components": [
         {
             "name": "gravitee-api-management",
-            "version": "3.10.15"
+            "version": "3.10.16-SNAPSHOT"
         },
         {
             "name": "gravitee-cockpit-connectors-ws",
