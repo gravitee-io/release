@@ -253,10 +253,6 @@
     "buildDependencies": [
         [
             "gravitee-api-management"
-        ],
-        [
-            "gravitee-policy-ratelimit",
-            "gravitee-policy-apikey"
         ]
     ]
 }
