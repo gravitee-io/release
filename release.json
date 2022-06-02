@@ -15,7 +15,7 @@
         },
         {
             "name": "gravitee-connector-http",
-            "version": "1.1.3"
+            "version": "1.1.4"
         },
         {
             "name": "gravitee-fetcher-bitbucket",
@@ -211,7 +211,7 @@
         },
         {
             "name": "gravitee-reporter-file",
-            "version": "2.5.0"
+            "version": "2.5.1"
         },
         {
             "name": "gravitee-reporter-kafka",
@@ -219,7 +219,7 @@
         },
         {
             "name": "gravitee-reporter-tcp",
-            "version": "1.4.0"
+            "version": "1.4.1"
         },
         {
             "name": "gravitee-resource-cache",
@@ -247,7 +247,7 @@
         },
         {
             "name": "gravitee-tracer-jaeger",
-            "version": "1.0.0"
+            "version": "1.1.0"
         }
     ],
     "buildDependencies": [
