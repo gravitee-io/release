@@ -203,11 +203,11 @@
         },
         {
             "name": "gravitee-policy-xslt",
-            "version": "1.6.0"
+            "version": "1.6.1"
         },
         {
             "name": "gravitee-reporter-elasticsearch",
-            "version": "3.12.0"
+            "version": "3.12.1"
         },
         {
             "name": "gravitee-reporter-file",
@@ -231,7 +231,7 @@
         },
         {
             "name": "gravitee-resource-oauth2-provider-generic",
-            "version": "1.16.1"
+            "version": "1.16.2"
         },
         {
             "name": "gravitee-resource-oauth2-provider-keycloak",
@@ -253,10 +253,6 @@
     "buildDependencies": [
         [
             "gravitee-api-management"
-        ],
-        [
-            "gravitee-policy-ratelimit",
-            "gravitee-policy-apikey"
         ]
     ]
 }
