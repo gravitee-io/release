@@ -1,6 +1,6 @@
 {
     "name": "Gravitee.io",
-    "version": "3.5.31",
+    "version": "3.5.32-SNAPSHOT",
     "buildTimestamp": "2021-03-11T11:31:24+0000",
     "scmSshUrl": "git@github.com:gravitee-io",
     "scmHttpUrl": "https://github.com/gravitee-io/",
@@ -17,7 +17,7 @@
         },
         {
             "name": "gravitee-api-management",
-            "version": "3.5.31",
+            "version": "3.5.32-SNAPSHOT",
             "since": "3.5.30"
         },
         {
