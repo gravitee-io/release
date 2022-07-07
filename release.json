@@ -15,7 +15,7 @@
         },
         {
             "name": "gravitee-connector-http",
-            "version": "2.0.1"
+            "version": "2.0.3"
         },
         {
             "name": "gravitee-fetcher-bitbucket",
@@ -39,7 +39,7 @@
         },
         {
             "name": "gravitee-policy-apikey",
-            "version": "2.4.0"
+            "version": "2.5.0"
         },
         {
             "name": "gravitee-policy-assign-attributes",
@@ -55,7 +55,7 @@
         },
         {
             "name": "gravitee-policy-callout-http",
-            "version": "1.15.0"
+            "version": "2.0.0"
         },
         {
             "name": "gravitee-policy-dynamic-routing",
@@ -107,11 +107,11 @@
         },
         {
             "name": "gravitee-policy-jwt",
-            "version": "1.22.0"
+            "version": "2.1.0"
         },
         {
             "name": "gravitee-policy-keyless",
-            "version": "1.4.0"
+            "version": "1.5.0"
         },
         {
             "name": "gravitee-policy-latency",
@@ -119,7 +119,7 @@
         },
         {
             "name": "gravitee-policy-metrics-reporter",
-            "version": "1.2.2"
+            "version": "2.0.0"
         },
         {
             "name": "gravitee-policy-mock",
@@ -127,7 +127,7 @@
         },
         {
             "name": "gravitee-policy-oauth2",
-            "version": "1.19.0"
+            "version": "1.20.0"
         },
         {
             "name": "gravitee-policy-openid-connect-userinfo",
@@ -219,15 +219,15 @@
         },
         {
             "name": "gravitee-resource-cache",
-            "version": "1.7.0"
+            "version": "1.8.0"
         },
         {
             "name": "gravitee-resource-oauth2-provider-am",
-            "version": "1.14.2"
+            "version": "2.0.0"
         },
         {
             "name": "gravitee-resource-oauth2-provider-generic",
-            "version": "1.16.2"
+            "version": "2.0.0"
         },
         {
             "name": "gravitee-resource-oauth2-provider-keycloak",
@@ -239,7 +239,7 @@
         },
         {
             "name": "gravitee-tracer-jaeger",
-            "version": "1.1.0"
+            "version": "1.2.0"
         }
     ],
     "buildDependencies": [
