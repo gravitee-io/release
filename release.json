@@ -1,13 +1,13 @@
 {
     "name": "Gravitee.io",
-    "version": "3.18.1-SNAPSHOT",
+    "version": "3.18.1",
     "buildTimestamp": "2021-02-17T20:55:06+0000",
     "scmSshUrl": "git@github.com:gravitee-io",
     "scmHttpUrl": "https://github.com/gravitee-io/",
     "components": [
         {
             "name": "gravitee-api-management",
-            "version": "3.18.1-SNAPSHOT"
+            "version": "3.18.1"
         },
         {
             "name": "gravitee-alert-engine-connectors-ws",
