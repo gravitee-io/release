@@ -131,7 +131,7 @@
         },
         {
             "name": "gravitee-policy-openid-connect-userinfo",
-            "version": "1.5.1"
+            "version": "1.5.2"
         },
         {
             "name": "gravitee-policy-override-http-method",
